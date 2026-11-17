@@ -1,0 +1,87 @@
+{
+  "model": "gemini-3.8-flash",
+  "temperature": 0.0,
+  "thinking_level": null,
+  "images_scored": 274,
+  "errors": 0,
+  "positive": "tortoise or turtle",
+  "negative": "any other animal, or no animal",
+  "TP": 164,
+  "TN": 108,
+  "FP": 1,
+  "FN": 1,
+  "accuracy": 0.9927,
+  "precision": 0.9939,
+  "recall_sensitivity": 0.9939,
+  "specificity": 0.9908,
+  "f1": 0.9939,
+  "seconds_this_run": 334.4,
+  "token_usage_this_run": {
+    "promptTokenCount": 317692,
+    "candidatesTokenCount": 7812,
+    "totalTokenCount": 388789,
+    "thoughtsTokenCount": 63285
+  },
+  "model_answers_by_true_label": {
+    "blank": {
+      "none": 60,
+      "cattle": 2,
+      "bird": 1,
+      "feral hog": 1,
+      "texas tortoise": 1
+    },
+    "other_animal: bird": {
+      "wild turkey": 1,
+      "sandhill crane": 1
+    },
+    "other_animal: bobcat": {
+      "bobcat": 2,
+      "feral hog": 1
+    },
+    "other_animal: cattle": {
+      "cattle": 1,
+      "white-tailed deer": 1
+    },
+    "other_animal: coyote": {
+      "coyote": 2,
+      "white-tailed deer": 1
+    },
+    "other_animal: deer": {
+      "white-tailed deer": 4
+    },
+    "other_animal: feral hog": {
+      "feral hog": 2,
+      "cattle": 1
+    },
+    "other_animal: nilgai": {
+      "nilgai": 1,
+      "white-tailed deer": 1
+    },
+    "other_animal: nine-banded armadillo": {
+      "nine-banded armadillo": 13,
+      "none": 3
+    },
+    "other_animal: opossum": {
+      "virginia opossum": 1,
+      "none": 1
+    },
+    "other_animal: rabbit": {
+      "cottontail rabbit": 2
+    },
+    "other_animal: raccoon": {
+      "none": 2,
+      "raccoon": 1
+    },
+    "other_animal: wild turkey": {
+      "wild turkey": 2
+    },
+    "tortoise": {
+      "texas tortoise": 152,
+      "tortoise": 5,
+      "desert tortoise": 3,
+      "box turtle": 2,
+      "gopher tortoise": 2,
+      "none": 1
+    }
+  }
+}
