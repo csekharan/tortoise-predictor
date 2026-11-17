@@ -71,8 +71,9 @@ MAGIC = {b"\xff\xd8\xff": "image/jpeg", b"\x89PNG": "image/png",
          b"RIFF": "image/webp", b"GIF8": "image/gif"}
 
 # HTTP codes that mean the request itself is wrong (bad key, bad model id,
-# malformed body): retrying or sending the other 273 images would not help.
-FATAL_HTTP = {400, 401, 403, 404}
+# malformed body) or the account cannot pay (402, prepaid credits used up):
+# retrying or sending the other 273 images would not help.
+FATAL_HTTP = {400, 401, 402, 403, 404}
 RETRY_HTTP = {429, 500, 502, 503, 504}
 
 FIELDS = ["file", "truth_class", "truth_species", "truth_positive",
@@ -310,7 +311,8 @@ def main() -> None:
     elapsed = time.time() - t_start
     if fatal:
         sys.exit(f"\nStopped: the API rejected the request, so every image would fail.\n{fatal[0]}\n"
-                 f"Check the key and the model id ({args.model}). Answers so far are in {pred_csv}.")
+                 f"Check the key, the model id ({args.model}) and the account's billing. "
+                 f"Answers so far are in {pred_csv}.")
 
     # Metrics over every image that has an answer.
     recs = [done[r["file"]] for r in rows if r["file"] in done and done[r["file"]]["outcome"] != "ERROR"]
