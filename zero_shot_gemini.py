@@ -10,15 +10,15 @@ one CSV row per image plus a metrics JSON.
 
 Standard library only, so it runs on any Python 3.10+ without installing
 anything. Requests go straight to the Gemini REST API, several at a time, and
-finished images are appended to the CSV as they come in, so an interrupted run
-resumes where it stopped.
+finished images are saved as they come in, so an interrupted run resumes
+where it stopped and only images that errored are sent again.
 
-Usage:
-    set GEMINI_API_KEY=...          (or GOOGLE_API_KEY, or --env-file path/.env)
+Usage (PowerShell: $env:GEMINI_API_KEY="..."; cmd: set GEMINI_API_KEY=...):
     python zero_shot_gemini.py                     # whole hold-out set
-    python zero_shot_gemini.py --limit 10          # quick smoke test
+    python zero_shot_gemini.py --limit 10          # quick smoke test, mixed classes
     python zero_shot_gemini.py --workers 8         # more parallel requests
-    python zero_shot_gemini.py --model gemini-3.8-flash --out zero_shot_results
+    python zero_shot_gemini.py --env-file ..\\some\\.env
+    python zero_shot_gemini.py --model gemini-3.8-flash --thinking-level low
 """
 from __future__ import annotations
 
@@ -62,12 +62,26 @@ SCHEMA = {
     "required": ["animal_present", "animal", "is_tortoise_or_turtle"],
 }
 
+# Names that count as the positive class when the model's own flag is missing.
 POSITIVE_WORDS = re.compile(
-    r"tortoise|turtle|terrapin|gopherus|testudin|chelon|cooter|slider|snapper",
+    r"tortoise|turtle|terrapin|gopherus|testudin|chelon|cooter|slider",
     re.IGNORECASE)
 
 MAGIC = {b"\xff\xd8\xff": "image/jpeg", b"\x89PNG": "image/png",
          b"RIFF": "image/webp", b"GIF8": "image/gif"}
+
+# HTTP codes that mean the request itself is wrong (bad key, bad model id,
+# malformed body): retrying or sending the other 273 images would not help.
+FATAL_HTTP = {400, 401, 403, 404}
+RETRY_HTTP = {429, 500, 502, 503, 504}
+
+FIELDS = ["file", "truth_class", "truth_species", "truth_positive",
+          "pred_animal_present", "pred_animal", "pred_is_tortoise_or_turtle",
+          "pred_positive", "outcome", "seconds", "error", "raw"]
+
+
+class FatalAPIError(RuntimeError):
+    """An error that will recur for every image; stop the run."""
 
 
 def mime_of(path: str) -> str:
@@ -84,6 +98,8 @@ def load_key(args) -> str:
         with open(args.env_file, encoding="utf-8") as f:
             for line in f:
                 line = line.strip()
+                if line.startswith("export "):
+                    line = line[7:]
                 if line.startswith(("GEMINI_API_KEY=", "GOOGLE_API_KEY=")):
                     return line.split("=", 1)[1].strip().strip('"').strip("'")
         sys.exit(f"No GEMINI_API_KEY or GOOGLE_API_KEY line in {args.env_file}")
@@ -96,28 +112,34 @@ def load_key(args) -> str:
 class Gemini:
     """Thin REST client: one image in, one JSON object out, with retries."""
 
-    def __init__(self, key: str, model: str, timeout: float = 120.0, tries: int = 6):
+    def __init__(self, key: str, model: str, temperature: float, thinking_level: str | None,
+                 timeout: float = 120.0, tries: int = 6):
         self.url = API.format(model=model)
         self.key = key
         self.timeout = timeout
         self.tries = tries
         self.usage = collections.Counter()
         self.lock = threading.Lock()
+        self.gen_config: dict = {
+            "temperature": temperature,
+            "responseMimeType": "application/json",
+            "responseSchema": SCHEMA,
+            # Generous: on thinking models the thoughts count against this
+            # limit, and a tight cap returns an empty answer (MAX_TOKENS).
+            "maxOutputTokens": 4096,
+        }
+        if thinking_level:
+            self.gen_config["thinkingConfig"] = {"thinkingLevel": thinking_level.upper()}
 
     def classify(self, path: str) -> dict:
         with open(path, "rb") as f:
             data = base64.b64encode(f.read()).decode("ascii")
         body = json.dumps({
             "contents": [{"role": "user", "parts": [
-                {"inline_data": {"mime_type": mime_of(path), "data": data}},
+                {"inlineData": {"mimeType": mime_of(path), "data": data}},
                 {"text": PROMPT},
             ]}],
-            "generationConfig": {
-                "temperature": 0,
-                "response_mime_type": "application/json",
-                "response_schema": SCHEMA,
-                "max_output_tokens": 200,
-            },
+            "generationConfig": self.gen_config,
         }).encode("utf-8")
         req = urllib.request.Request(
             self.url, data=body, method="POST",
@@ -131,9 +153,11 @@ class Gemini:
                 break
             except urllib.error.HTTPError as e:
                 detail = e.read().decode("utf-8", "replace")[:300]
-                if e.code in (429, 500, 502, 503, 504) and attempt < self.tries:
+                if e.code in FATAL_HTTP:
+                    raise FatalAPIError(f"HTTP {e.code}: {detail}") from None
+                if e.code in RETRY_HTTP and attempt < self.tries:
                     wait = float(e.headers.get("Retry-After") or 0) or delay
-                    time.sleep(wait + random.uniform(0, 1))
+                    time.sleep(min(wait, 120) + random.uniform(0, 1))
                     delay = min(delay * 2, 60)
                     continue
                 raise RuntimeError(f"HTTP {e.code}: {detail}") from None
@@ -149,13 +173,16 @@ class Gemini:
                 if isinstance(v, int):
                     self.usage[k] += v
         cand = (reply.get("candidates") or [{}])[0]
-        text = "".join(p.get("text", "") for p in cand.get("content", {}).get("parts", []))
+        parts = cand.get("content", {}).get("parts", [])
+        text = "".join(p.get("text", "") for p in parts if not p.get("thought"))
         if not text:
             raise RuntimeError(f"empty reply: finishReason={cand.get('finishReason')} "
                                f"promptFeedback={reply.get('promptFeedback')}")
         try:
             out = json.loads(text)
-        except json.JSONDecodeError:
+            if not isinstance(out, dict):
+                raise ValueError
+        except ValueError:
             # Schema-constrained output should always be JSON; keep the raw text if not.
             out = {"animal_present": None, "animal": text.strip(), "is_tortoise_or_turtle": None}
         out["_raw"] = text.strip()
@@ -163,22 +190,39 @@ class Gemini:
 
 
 def predicted_positive(out: dict) -> bool:
-    """Tortoise or turtle, by either the model's flag or the name it gave."""
+    """Tortoise or turtle, by the model's flag or by the name it gave.
+    'No animal present' wins over a stray tortoise flag."""
+    if out.get("animal_present") is False:
+        return False
     if out.get("is_tortoise_or_turtle") is True:
         return True
-    name = out.get("animal") or ""
-    return bool(out.get("animal_present")) and bool(POSITIVE_WORDS.search(name))
+    return bool(POSITIVE_WORDS.search(out.get("animal") or ""))
+
+
+def write_csv(path: str, recs: list[dict]) -> None:
+    tmp = path + ".part"
+    with open(tmp, "w", encoding="utf-8", newline="") as f:
+        w = csv.DictWriter(f, fieldnames=FIELDS)
+        w.writeheader()
+        w.writerows(recs)
+    os.replace(tmp, path)
 
 
 def main() -> None:
+    # Model answers can contain non-ASCII letters; never let the console encoding kill a worker.
+    sys.stdout.reconfigure(encoding="utf-8", errors="replace")
     ap = argparse.ArgumentParser(description=__doc__.split("\n\n")[0])
     ap.add_argument("--data", default=DATA, help="texas_tortoise_composite folder")
     ap.add_argument("--model", default="gemini-3.8-flash")
     ap.add_argument("--workers", type=int, default=4, help="parallel requests (default 4)")
-    ap.add_argument("--limit", type=int, default=0, help="only the first N images (smoke test)")
+    ap.add_argument("--limit", type=int, default=0, help="only N images, drawn at random across classes (smoke test)")
+    ap.add_argument("--seed", type=int, default=0, help="random seed for --limit")
     ap.add_argument("--out", default=os.path.join(HERE, "zero_shot_results"))
     ap.add_argument("--env-file", help="read the API key from a KEY=VALUE file")
-    ap.add_argument("--seed", type=int, default=0, help="shuffle order with --limit so a smoke test mixes classes")
+    ap.add_argument("--temperature", type=float, default=0.0)
+    ap.add_argument("--thinking-level", choices=["minimal", "low", "medium", "high"],
+                    help="send thinkingConfig.thinkingLevel (Gemini 3 models); default: not sent, model default")
+    ap.add_argument("--fresh", action="store_true", help="ignore earlier results and score every image again")
     args = ap.parse_args()
 
     key = load_key(args)
@@ -187,80 +231,96 @@ def main() -> None:
         rows = [r for r in csv.DictReader(f) if r["split"] == "test"]
     if not rows:
         sys.exit(f"no test rows in {manifest}")
+    missing = [r["file"] for r in rows if not os.path.exists(os.path.join(args.data, r["file"]))]
+    if missing:
+        sys.exit(f"{len(missing)} test images listed in the manifest are not on disk, e.g. {missing[0]}")
     if args.limit:
         random.Random(args.seed).shuffle(rows)
         rows = rows[:args.limit]
+    order = {r["file"]: i for i, r in enumerate(rows)}
 
     os.makedirs(args.out, exist_ok=True)
     tag = re.sub(r"[^A-Za-z0-9.-]+", "_", args.model)
     pred_csv = os.path.join(args.out, f"predictions_{tag}.csv")
     metrics_json = os.path.join(args.out, f"metrics_{tag}.json")
-    fields = ["file", "truth_class", "truth_species", "truth_positive",
-              "pred_animal_present", "pred_animal", "pred_is_tortoise_or_turtle",
-              "pred_positive", "outcome", "seconds", "error", "raw"]
 
-    # Resume: skip images already answered without error.
+    # Resume: keep every earlier answer that did not error.
     done: dict[str, dict] = {}
-    if os.path.exists(pred_csv):
+    if os.path.exists(pred_csv) and not args.fresh:
         with open(pred_csv, encoding="utf-8", newline="") as f:
             for r in csv.DictReader(f):
-                if not r["error"]:
+                if r["outcome"] != "ERROR" and r["file"] in order:
                     done[r["file"]] = r
     todo = [r for r in rows if r["file"] not in done]
-    print(f"{len(rows)} hold-out images, {len(done)} already done, {len(todo)} to send "
+    print(f"{len(rows)} hold-out images, {len(done)} already answered, {len(todo)} to send "
           f"to {args.model} with {args.workers} workers", flush=True)
 
-    client = Gemini(key, args.model)
+    client = Gemini(key, args.model, args.temperature, args.thinking_level)
     lock = threading.Lock()
-    new_file = not os.path.exists(pred_csv)
-    fout = open(pred_csv, "a", encoding="utf-8", newline="")
-    writer = csv.DictWriter(fout, fieldnames=fields)
-    if new_file:
-        writer.writeheader()
-        fout.flush()
+    stop = threading.Event()
+    fatal: list[str] = []
+    counter = [len(done)]
 
-    def work(r: dict) -> dict:
-        path = os.path.join(args.data, r["file"])
+    def save_all() -> None:
+        recs = sorted(done.values(), key=lambda r: order[r["file"]])
+        write_csv(pred_csv, recs)
+
+    def work(r: dict) -> None:
+        if stop.is_set():
+            return
         truth_pos = r["class"] == "tortoise"
-        t0 = time.time()
         rec = {"file": r["file"], "truth_class": r["class"], "truth_species": r["species"],
                "truth_positive": int(truth_pos), "error": "", "raw": ""}
+        t0 = time.time()
         try:
-            out = client.classify(path)
+            out = client.classify(os.path.join(args.data, r["file"]))
             pos = predicted_positive(out)
             rec.update(pred_animal_present=out.get("animal_present"),
                        pred_animal=out.get("animal"),
                        pred_is_tortoise_or_turtle=out.get("is_tortoise_or_turtle"),
                        pred_positive=int(pos), raw=out["_raw"],
                        outcome=("TP" if pos else "FN") if truth_pos else ("FP" if pos else "TN"))
-        except Exception as e:  # noqa: BLE001 - record and move on
+        except FatalAPIError as e:
+            stop.set()
+            with lock:
+                fatal.append(str(e))
+            return
+        except Exception as e:  # noqa: BLE001 - record it; the next run retries it
             rec.update(pred_animal_present="", pred_animal="", pred_is_tortoise_or_turtle="",
                        pred_positive="", outcome="ERROR", error=f"{type(e).__name__}: {e}"[:500])
         rec["seconds"] = round(time.time() - t0, 2)
         with lock:
-            writer.writerow(rec)
-            fout.flush()
             done[r["file"]] = rec
-            n = len(done)
-            print(f"[{n}/{len(rows)}] {rec['outcome']:5} {r['class']:12} {r['species']:22} "
-                  f"-> {rec['pred_animal'] or rec['error'][:60]}", flush=True)
-        return rec
+            counter[0] += 1
+            if counter[0] % 10 == 0:
+                save_all()
+            shown = rec["pred_animal"] if rec["outcome"] != "ERROR" else rec["error"][:70]
+            print(f"[{counter[0]}/{len(rows)}] {rec['outcome']:5} {r['class']:12} {r['species']:22} -> {shown}",
+                  flush=True)
 
     t_start = time.time()
-    with cf.ThreadPoolExecutor(max_workers=args.workers) as ex:
-        list(ex.map(work, todo))
-    fout.close()
+    try:
+        with cf.ThreadPoolExecutor(max_workers=args.workers) as ex:
+            list(ex.map(work, todo))
+    except KeyboardInterrupt:
+        stop.set()
+        print("\ninterrupted; saving what is done so far", flush=True)
+    finally:
+        save_all()
     elapsed = time.time() - t_start
+    if fatal:
+        sys.exit(f"\nStopped: the API rejected the request, so every image would fail.\n{fatal[0]}\n"
+                 f"Check the key and the model id ({args.model}). Answers so far are in {pred_csv}.")
 
     # Metrics over every image that has an answer.
-    recs = [done[r["file"]] for r in rows
-            if r["file"] in done and done[r["file"]]["outcome"] != "ERROR"]
+    recs = [done[r["file"]] for r in rows if r["file"] in done and done[r["file"]]["outcome"] != "ERROR"]
     errors = len(rows) - len(recs)
     c = collections.Counter(r["outcome"] for r in recs)
     tp, tn, fp, fn = c["TP"], c["TN"], c["FP"], c["FN"]
     div = lambda a, b: round(a / b, 4) if b else None  # noqa: E731
     metrics = {
-        "model": args.model, "images_scored": len(recs), "errors": errors,
+        "model": args.model, "temperature": args.temperature, "thinking_level": args.thinking_level,
+        "images_scored": len(recs), "errors": errors,
         "positive": "tortoise or turtle", "negative": "any other animal, or no animal",
         "TP": tp, "TN": tn, "FP": fp, "FN": fn,
         "accuracy": div(tp + tn, tp + tn + fp + fn),
@@ -278,10 +338,10 @@ def main() -> None:
         by_truth[label][(r["pred_animal"] or "").strip().lower() or "(none)"] += 1
     metrics["model_answers_by_true_label"] = {k: dict(v.most_common()) for k, v in sorted(by_truth.items())}
     with open(metrics_json, "w", encoding="utf-8") as f:
-        json.dump(metrics, f, indent=2)
+        json.dump(metrics, f, indent=2, ensure_ascii=False)
 
     print("\n=== Zero-shot results:", args.model, "===")
-    print(f"scored {len(recs)} of {len(rows)} images" + (f", {errors} errors (rerun to retry)" if errors else ""))
+    print(f"scored {len(recs)} of {len(rows)} images" + (f", {errors} errors (run again to retry them)" if errors else ""))
     print(f"TP={tp}  TN={tn}  FP={fp}  FN={fn}")
     for k in ("accuracy", "precision", "recall_sensitivity", "specificity", "f1"):
         print(f"{k:19} {metrics[k]}")
