@@ -71,10 +71,13 @@ MAGIC = {b"\xff\xd8\xff": "image/jpeg", b"\x89PNG": "image/png",
          b"RIFF": "image/webp", b"GIF8": "image/gif"}
 
 # HTTP codes that mean the request itself is wrong (bad key, bad model id,
-# malformed body) or the account cannot pay (402, prepaid credits used up):
-# retrying or sending the other 273 images would not help.
-FATAL_HTTP = {400, 401, 402, 403, 404}
+# malformed body): retrying or sending the other 273 images would not help.
+FATAL_HTTP = {400, 401, 403, 404}
 RETRY_HTTP = {429, 500, 502, 503, 504}
+# 402 = prepaid credits depleted. Seen to come and go for minutes after a
+# top-up, so it is retried with long waits; if it persists, the run stops.
+BILLING_HTTP = 402
+BILLING_WAITS = (15, 30, 60, 90, 120)
 
 FIELDS = ["file", "truth_class", "truth_species", "truth_positive",
           "pred_animal_present", "pred_animal", "pred_is_tortoise_or_turtle",
@@ -156,6 +159,12 @@ class Gemini:
                 detail = e.read().decode("utf-8", "replace")[:300]
                 if e.code in FATAL_HTTP:
                     raise FatalAPIError(f"HTTP {e.code}: {detail}") from None
+                if e.code == BILLING_HTTP:
+                    if attempt <= len(BILLING_WAITS):
+                        time.sleep(BILLING_WAITS[attempt - 1] + random.uniform(0, 3))
+                        continue
+                    raise FatalAPIError(f"HTTP {e.code} after {attempt} tries over "
+                                        f"{sum(BILLING_WAITS) // 60} minutes: {detail}") from None
                 if e.code in RETRY_HTTP and attempt < self.tries:
                     wait = float(e.headers.get("Retry-After") or 0) or delay
                     time.sleep(min(wait, 120) + random.uniform(0, 1))
