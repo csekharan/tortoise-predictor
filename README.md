@@ -4,11 +4,22 @@ Texas tortoises (*Gopherus berlandieri*) hide in thick brush and are hard to sur
 
 This repository asks whether a general-purpose multimodal model can do the same job **with no training at all**. It runs the released Mask R-CNN and Gemini 3.8 Flash on the same 274 hold-out images and compares the results.
 
-**In short:** both find all 164 tortoises. The trained model also calls 18 of the 110 non-tortoise images a tortoise, while Gemini calls 1.
+## At a glance
+
+| | Mask R-CNN, trained | Gemini, original prompt | Gemini, neutral prompt |
+|---|:---:|:---:|:---:|
+| **Tortoises found** (of 164) | **164** | **164** | **164** |
+| **False alarms** (of 110 images without a tortoise) | 18 at threshold 0.5<br/>7 at 0.85 | 1 | **0** |
+| **Species named correctly** | does not name species | 152 (93%) | 60 (37%) |
+| **Training images needed** | 2,705, every tortoise outlined by hand | none | none |
+| **Time for 274 images** | 14 min, laptop CPU | 5.6 min, API | 7.2 min, API |
+| **Runs offline** | yes | no | no |
+
+All three find every tortoise; they differ in false alarms. The original prompt lists example animals, Texas tortoise among them, and the neutral prompt names none. Dropping the hint removed Gemini's one false alarm, but most of its correct species names went with it.
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="sekharan_eval/figures/confusion-dark.svg">
-  <img alt="Confusion matrices. Gemini zero-shot: 164 found, 0 missed, 1 false alarm, 109 correct. Mask R-CNN at threshold 0.5: 164 found, 0 missed, 18 false alarms, 92 correct. Mask R-CNN at threshold 0.85: 164 found, 0 missed, 7 false alarms, 103 correct." src="sekharan_eval/figures/confusion-light.svg">
+  <img alt="Confusion matrices for 164 tortoise and 110 other images. Gemini original prompt: 164 found, 0 missed, 1 false alarm, 109 correct. Gemini neutral prompt: 164 found, 0 missed, 0 false alarms, 110 correct. Mask R-CNN at threshold 0.5: 164 found, 0 missed, 18 false alarms, 92 correct. Mask R-CNN at threshold 0.85: 164 found, 0 missed, 7 false alarms, 103 correct." src="sekharan_eval/figures/confusion-light.svg">
 </picture>
 
 ## The two methods
@@ -32,24 +43,50 @@ flowchart LR
 
 | | Original: Mask R-CNN | New: zero-shot Gemini |
 |---|---|---|
-| Model | Mask R-CNN with a ResNet-50 FPN backbone, pretrained on COCO and fine-tuned for one class, "tortoise" | Gemini 3.8 Flash, a general multimodal model, used as is |
-| What it needs | 2,705 training images with every tortoise outlined by hand | Nothing: no training and no example images |
-| Output per image | Tortoise outlines and boxes, each with a confidence score | A JSON answer: is there an animal, what is it, is it a tortoise or turtle |
-| Called a tortoise when | Any detection scores above a threshold (0.5 by default) | The answer names a tortoise or turtle |
-| Runs on | Your own computer, offline | Google's API, with an internet connection and an API key |
-| Time for 274 images | 14 min on a laptop CPU, 3.0 s per image | 5.6 min with 4 requests at a time, 4.0 s per request |
+| **Model** | Mask R-CNN with a ResNet-50 FPN backbone, pretrained on COCO and fine-tuned for one class, "tortoise" | Gemini 3.8 Flash, a general multimodal model, used as is |
+| **What it needs** | 2,705 training images with every tortoise outlined by hand | Nothing: no training and no example images |
+| **Output per image** | Tortoise outlines and boxes, each with a confidence score | A JSON answer: is there an animal, and what is it |
+| **Called a tortoise when** | Any detection scores above a threshold (0.5 by default) | The answer names a tortoise or turtle |
+| **Runs on** | Your own computer, offline | Google's API, with an internet connection and an API key |
 
-Gemini gets this prompt with each image, at temperature 0, and must reply in a fixed JSON format:
+Gemini gets one of two prompts with each image, at temperature 0, and must answer in a fixed JSON format:
+
+<table>
+<tr><th width="50%">Original prompt</th><th width="50%">Neutral prompt</th></tr>
+<tr>
+<td>
 
 ```text
-Look at this photograph. Is there an animal in it?
-If yes, give the animal's common name as precisely as you can (for example: Texas tortoise,
-box turtle, nine-banded armadillo, raccoon, white-tailed deer, cattle, bird, feral hog, coyote).
+Look at this photograph. Is there an animal
+in it?
+If yes, give the animal's common name as
+precisely as you can (for example: Texas
+tortoise, box turtle, nine-banded armadillo,
+raccoon, white-tailed deer, cattle, bird,
+feral hog, coyote).
 If there is no animal, answer no animal.
 Return JSON only.
 ```
 
-The example names could steer the model toward "tortoise". A second, neutral prompt names no animals and does not ask about tortoises (`--prompt neutral`). Its run is still to do.
+</td>
+<td>
+
+```text
+Look at this photograph. Is there an animal
+in it?
+If yes, give the animal's common name as
+precisely as you can.
+If there is no animal, answer none.
+Return JSON only.
+```
+
+</td>
+</tr>
+<tr>
+<td>Answer fields: <code>animal_present</code>, <code>animal</code>, <code>is_tortoise_or_turtle</code></td>
+<td>Answer fields: <code>animal_present</code>, <code>animal</code>. The tortoise call comes from the name alone.</td>
+</tr>
+</table>
 
 ## The images
 
@@ -72,12 +109,15 @@ One hold-out photo labeled tortoise (`inat-tortoise_inat50015197_p79414426.jpg`)
 
 | Method | Found | Missed | False alarms | Precision | Recall | F1 | Accuracy | False-alarm rate (95% CI) |
 |---|---:|---:|---:|---:|---:|---:|---:|---|
-| **Gemini 3.8 Flash, zero-shot** | 164 | 0 | **1** | **0.994** | 1.000 | **0.997** | **0.996** | **0.9%** (0.0–5.0%) |
+| **Gemini 3.8 Flash, neutral prompt** | **164** | **0** | **0** | **1.000** | **1.000** | **1.000** | **1.000** | **0.0%** (0.0–3.3%) |
+| Gemini 3.8 Flash, original prompt | 164 | 0 | 1 | 0.994 | 1.000 | 0.997 | 0.996 | 0.9% (0.0–5.0%) |
 | Mask R-CNN, threshold 0.5 (paper's default) | 164 | 0 | 18 | 0.901 | 1.000 | 0.948 | 0.934 | 16.4% (10.0–24.6%) |
 | Mask R-CNN, threshold 0.85 (paper's best F1) | 164 | 0 | 7 | 0.959 | 1.000 | 0.979 | 0.974 | 6.4% (2.6–12.7%) |
 | Mask R-CNN, threshold 0.95 | 161 | 3 | 4 | 0.976 | 0.982 | 0.979 | 0.974 | 3.6% (1.0–9.0%) |
 
-Intervals are exact Clopper–Pearson intervals. The two models made their false alarms on different images: 18 that only Mask R-CNN flagged and 1 that only Gemini flagged. That difference is unlikely to be chance (exact McNemar test, p < 0.001).
+Intervals are exact Clopper–Pearson intervals. The two methods made their false alarms on different images, so the gap is unlikely to be chance (exact McNemar test on the 110 non-tortoise images):
+- **Mask R-CNN vs. the original prompt:** 18 images only Mask R-CNN flagged, 1 only Gemini flagged (p < 0.001).
+- **Mask R-CNN vs. the neutral prompt:** 18 against 0 (p < 0.0001).
 
 For context, the paper reports this same model on its own trail-camera hold-out set, at threshold 0.5 and counting each tortoise whose box overlaps the drawn outline: precision 0.93, recall 0.83, accuracy 0.86, false-positive rate 0.09 and F1 0.88 (Table 3). Recall is much higher here because every tortoise in this hold-out set is a clear hand-held photo; see [Limits](#limits).
 
@@ -85,19 +125,19 @@ For context, the paper reports this same model on its own trail-camera hold-out 
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="sekharan_eval/figures/false-alarms-dark.svg">
-  <img alt="Images without a tortoise that each model called tortoise. Mask R-CNN: 6 of 16 armadillos, 3 of 3 feral hogs, 2 of 21 South Texas empty frames, 2 of 4 deer, 2 of 2 wild turkeys, 1 bird, 1 bobcat, and the bulldozer photo. Gemini: 1 South Texas empty frame. Neither flagged any of the 44 Florida empty frames or the 14 other animals." src="sekharan_eval/figures/false-alarms-light.svg">
+  <img alt="Images without a tortoise that each method called tortoise. Mask R-CNN: 6 of 16 armadillos, 3 of 3 feral hogs, 2 of 21 South Texas empty frames, 2 of 4 deer, 2 of 2 wild turkeys, 1 bobcat, 1 bird and the bulldozer photo. Gemini with the original prompt: 1 South Texas empty frame. Gemini with the neutral prompt: none. No method flagged the 44 Florida empty frames or the 14 other animals." src="sekharan_eval/figures/false-alarms-light.svg">
 </picture>
 
-- **Armadillos:** they account for a third of Mask R-CNN's false alarms. Gemini called none of the 16 a tortoise: it named 13 as nine-banded armadillos and saw no animal in the other 3.
+- **Armadillos:** they account for a third of Mask R-CNN's false alarms. Gemini called none of the 16 a tortoise under either prompt.
 - **Other animals:** Mask R-CNN also flagged every feral hog and wild turkey in the set.
-- **Gemini's one error:** it called an empty South Texas trail-camera frame "Texas tortoise".
-- **Empty Florida frames:** neither model flagged any of the 44.
+- **Gemini's one error:** with the original prompt, it called an empty South Texas trail-camera frame "Texas tortoise". With the neutral prompt it called the same frame "wild turkey": not a tortoise call, though the frame is labeled empty.
+- **Empty Florida frames:** no method flagged any of the 44.
 
 ### Raising the threshold does not close the gap
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="sekharan_eval/figures/tradeoff-dark.svg">
-  <img alt="Mask R-CNN's trade-off between tortoises found and false alarms across all thresholds, with Gemini's single point at 1 false alarm and 164 found. Mask R-CNN at 0.5: 18 false alarms, 0 missed; at 0.85: 7 and 0; at 0.95: 4 and 3; at 0.99: 0 and 14." src="sekharan_eval/figures/tradeoff-light.svg">
+  <img alt="Mask R-CNN's trade-off between tortoises found and false alarms across all thresholds, with Gemini's two points: neutral prompt at 0 false alarms and 164 found, original prompt at 1 and 164. Mask R-CNN at 0.5: 18 false alarms, 0 missed; at 0.85: 7 and 0; at 0.95: 4 and 3; at 0.99: 0 and 14." src="sekharan_eval/figures/tradeoff-light.svg">
 </picture>
 
 Mask R-CNN ranks images well (ROC AUC 0.997). Its trouble is a handful of confident mistakes:
@@ -105,31 +145,51 @@ Mask R-CNN ranks images well (ROC AUC 0.997). Its trouble is a handful of confid
 - At its best setting with no missed tortoises, it still raises 6 false alarms.
 - Getting to zero false alarms costs 14 tortoises.
 
-Gemini's single result sits above and to the left of every point on that curve.
+Gemini's two results sit in the top-left corner, where no point on the Mask R-CNN curve reaches.
+
+### Does the prompt matter?
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="sekharan_eval/figures/species-dark.svg">
+  <img alt="What Gemini called the 164 tortoise photos. Original prompt: Texas tortoise 152, tortoise 5, desert tortoise 3, gopher tortoise 2, box turtle 2. Neutral prompt: Texas tortoise 60, tortoise 38, desert tortoise 26, gopher tortoise 22, red-footed tortoise 7, other tortoise species 9, box turtle 2." src="sekharan_eval/figures/species-light.svg">
+</picture>
+
+For finding tortoises, no: both prompts found all 164 tortoises. The neutral prompt even removed the one false alarm.
+
+For naming the species, yes:
+
+| What Gemini called the 164 Texas tortoises | Original prompt | Neutral prompt |
+|---|---:|---:|
+| Texas tortoise, the right species | **152** (93%) | 60 (37%) |
+| "Tortoise", with no species | 5 | 38 |
+| Desert or gopher tortoise, the two other North American *Gopherus* species | 5 | 48 |
+| Species from other continents (red-footed, African spurred, Russian and others) | 0 | 16 |
+| Box turtle | 2 | 2 |
+
+Asked a yes-or-no tortoise question, Gemini does not need the hint. To name the species without it, the model probably needs other context, such as where the photo was taken; that is untested. The scoring here counts any tortoise or turtle answer as a hit. Box turtles also live in South Texas, so a real survey would need to treat "turtle" answers differently.
 
 ### Speed and cost
 
-| | Mask R-CNN | Gemini 3.8 Flash |
-|---|---|---|
-| Where it ran | Laptop CPU (Intel Core i7-1255U), PyTorch, offline | Gemini API |
-| Time per image | 3.0 s (median) | 4.0 s per request (median); 1.2 s per image with 4 requests in parallel |
-| All 274 images | 14 min 14 s | 5 min 34 s |
-| Tokens | none | about 1,400 per image: 1,160 in, 30 out, 230 thinking |
+| | Mask R-CNN | Gemini, original prompt | Gemini, neutral prompt |
+|---|---|---|---|
+| **Where it ran** | Laptop CPU (Intel Core i7-1255U), PyTorch, offline | Gemini API | Gemini API |
+| **Time per request** (median) | 3.0 s per image | 4.0 s | 5.4 s |
+| **All 274 images** | 14 min 14 s | 5 min 34 s, 4 requests at a time | 7 min 10 s, 4 requests at a time |
+| **Tokens per image** | none | about 1,420: 1,160 in, 30 out, 230 thinking | about 1,440: 1,130 in, 17 out, 300 thinking |
 
-A GPU would make Mask R-CNN much faster; that was not measured here. Gemini's time depends on the network and on how many requests run at once.
+A GPU would make Mask R-CNN much faster; that was not measured here. Gemini's time depends on the network and on how many requests run at once. The neutral prompt is shorter, but Gemini spent more tokens thinking about each image.
 
 ## Limits
 
-- **No trail-camera tortoises.** Every tortoise here is a hand-held photo, often a close-up, while the empty frames and most other animals are trail-camera frames. Hard cases from real deployments are untested for both models: tortoises far away, partly hidden or cut off at the frame edge. Both models could also partly be telling phone photos from camera frames.
+- **No trail-camera tortoises.** Every tortoise here is a hand-held photo, often a close-up, while the empty frames and most other animals are trail-camera frames. Hard cases from real deployments are untested for both methods: tortoises far away, partly hidden or cut off at the frame edge. Both methods could also partly be telling phone photos from camera frames.
 - **Possible prior exposure.** The paper drew some of its training tortoises from iNaturalist, and Gemini was trained on web data, so either model may have seen some of these photos before.
-- **Small negative set.** With 110 non-tortoise images, Gemini's 1 false alarm is consistent with a true rate anywhere up to about 5%.
-- **Per-image scoring.** An image counts as found if the model flags it anywhere. The paper's rule also requires the predicted box to overlap the drawn tortoise.
-- **Prompt priming.** The prompt above names tortoises and armadillos as examples. The neutral prompt run will show how much that matters.
+- **Small negative set.** With 110 non-tortoise images, zero false alarms is consistent with a true rate of up to 3.3%, and one false alarm with up to 5%.
+- **Per-image scoring.** An image counts as found if the method flags it anywhere. The paper's rule also requires the predicted box to overlap the drawn tortoise.
 
 ## Next steps
 
-- Run the neutral prompt (`python zero_shot_gemini.py --prompt neutral`).
-- Test both models on real trail-camera tortoise frames, for example the authors' own.
+- Test both methods on real trail-camera tortoise frames, for example the authors' own.
+- Add location to the neutral prompt (for example "taken in South Texas") and see whether species names recover without listing any species.
 - Try few-shot prompts that use images from the training split.
 - Try a cascade: Mask R-CNN screens every frame cheaply and offline, then Gemini checks only the frames it flags.
 
@@ -141,11 +201,12 @@ git clone https://github.com/csekharan/tortoise-predictor.git
 cd tortoise-predictor/sekharan_eval
 pip install -r requirements.txt    # torch, torchvision, pillow (CPU builds are enough)
 
-python eval_maskrcnn.py            # Mask R-CNN on the 274 hold-out images
-export GEMINI_API_KEY=...          # PowerShell: $env:GEMINI_API_KEY="..."
-python zero_shot_gemini.py         # Gemini, original prompt
-python compare_models.py           # breakdown by image type
-python make_figures.py             # redraws the figures and prints the numbers above
+python eval_maskrcnn.py                      # Mask R-CNN on the 274 hold-out images
+export GEMINI_API_KEY=...                    # PowerShell: $env:GEMINI_API_KEY="..."
+python zero_shot_gemini.py                   # Gemini, original prompt
+python zero_shot_gemini.py --prompt neutral  # Gemini, neutral prompt
+python compare_models.py                     # breakdown by image type
+python make_figures.py                       # redraws the figures and prints the numbers above
 ```
 
 Both scorers save as they go and resume where they stopped. See [`sekharan_eval/README.md`](sekharan_eval/README.md) for all options.
@@ -156,11 +217,11 @@ Both scorers save as they go and resume where they stopped. See [`sekharan_eval/
 tortoise-predictor/
 ├── tleimat_original/            original detector code, weights and licence, unchanged
 ├── sekharan_eval/               this comparison; imports nothing from tleimat_original
-│   ├── zero_shot_gemini.py      Gemini scorer (standard library only)
+│   ├── zero_shot_gemini.py      Gemini scorer, both prompts (standard library only)
 │   ├── eval_maskrcnn.py         runs tleimat_original/tortoisemodel.keras on the same images
-│   ├── compare_models.py        joins the two prediction files
+│   ├── compare_models.py        joins the prediction files
 │   ├── make_figures.py          draws the figures in this README
-│   ├── results/                 per-image predictions and metrics for both models
+│   ├── results/                 per-image predictions and metrics for every run
 │   └── figures/
 └── data/
     └── texas_tortoise_composite/   2,979 images, manifest.csv, build scripts; read by both

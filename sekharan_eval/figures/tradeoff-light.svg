@@ -1,12 +1,14 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="900" height="534" viewBox="0 0 900 534" role="img" aria-labelledby="t d" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif">
-<title id="t">Threshold trade-off: Mask R-CNN vs Gemini</title><desc id="d">Gemini: 1 false alarms, 164 of 164 found. Mask R-CNN staircase over all thresholds.</desc>
+<title id="t">Threshold trade-off: Mask R-CNN vs Gemini</title><desc id="d">Gemini neutral prompt: 0 false alarms, 164 of 164 found. Original prompt: 1 false alarms, 164 found. Mask R-CNN staircase over all thresholds.</desc>
 <rect x="0.5" y="0.5" width="899" height="533" rx="12" fill="#fcfcfb" stroke="#0b0b0b" stroke-opacity="0.1"/>
 <text x="32.0" y="44.0" font-size="19" font-weight="600" fill="#0b0b0b" text-anchor="start" >No Mask R-CNN threshold reaches Gemini&#x27;s corner</text>
-<text x="32.0" y="68.0" font-size="13.5" font-weight="400" fill="#52514e" text-anchor="start" >Up and to the left is better. The orange line is Mask R-CNN at every confidence threshold; Gemini has a single operating point.</text>
-<circle cx="38" cy="96" r="5" fill="#2a78d6"/>
-<text x="50.0" y="100.0" font-size="12.5" font-weight="400" fill="#52514e" text-anchor="start" >Gemini 3.8 Flash, zero-shot</text>
-<line x1="282" y1="96" x2="302" y2="96" stroke="#eb6834" stroke-width="2" stroke-linecap="round"/>
-<text x="310.0" y="100.0" font-size="12.5" font-weight="400" fill="#52514e" text-anchor="start" >Mask R-CNN as its threshold varies</text>
+<text x="32.0" y="68.0" font-size="13.5" font-weight="400" fill="#52514e" text-anchor="start" >Up and to the left is better. The orange line is Mask R-CNN at every confidence threshold; each Gemini prompt is one point.</text>
+<circle cx="38" cy="96" r="5" fill="#1baf7a"/>
+<text x="50.0" y="100.0" font-size="12.5" font-weight="400" fill="#52514e" text-anchor="start" >Gemini, neutral prompt</text>
+<circle cx="268" cy="96" r="5" fill="#2a78d6"/>
+<text x="280.0" y="100.0" font-size="12.5" font-weight="400" fill="#52514e" text-anchor="start" >Gemini, original prompt</text>
+<line x1="492" y1="96" x2="508" y2="96" stroke="#eb6834" stroke-width="2" stroke-linecap="round"/>
+<text x="516.0" y="100.0" font-size="12.5" font-weight="400" fill="#52514e" text-anchor="start" >Mask R-CNN as its threshold varies</text>
 <line x1="84.0" y1="130" x2="84.0" y2="470" stroke="#e1e0d9"/>
 <text x="84.0" y="488.0" font-size="12" font-weight="400" fill="#898781" text-anchor="middle" >0</text>
 <line x1="236.8" y1="130" x2="236.8" y2="470" stroke="#e1e0d9"/>
@@ -50,6 +52,7 @@
 <text x="94.0" y="358.0" font-size="12" font-weight="500" fill="#0b0b0b" text-anchor="start" >threshold 0.99</text>
 <text x="94.0" y="373.0" font-size="11.5" font-weight="400" fill="#52514e" text-anchor="start" >0 false alarms, 14 missed</text>
 <circle cx="114.6" cy="175.3" r="7" fill="#2a78d6" stroke="#fcfcfb" stroke-width="2"/>
-<text x="108.6" y="143.3" font-size="12.5" font-weight="600" fill="#0b0b0b" text-anchor="start" >Gemini, zero-shot</text>
-<text x="108.6" y="159.3" font-size="11.5" font-weight="400" fill="#52514e" text-anchor="start" >1 false alarm, 0 missed</text>
+<circle cx="84.0" cy="175.3" r="7" fill="#1baf7a" stroke="#fcfcfb" stroke-width="2"/>
+<text x="86.0" y="143.3" font-size="12.5" font-weight="600" fill="#0b0b0b" text-anchor="start" >Gemini, zero-shot</text>
+<text x="86.0" y="159.3" font-size="11.5" font-weight="400" fill="#52514e" text-anchor="start" >neutral prompt: 0 false alarms  ·  original prompt: 1  ·  none missed</text>
 </svg>

@@ -1,62 +1,83 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="900" height="370" viewBox="0 0 900 370" role="img" aria-labelledby="t d" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif">
-<title id="t">Confusion matrices: Gemini zero-shot vs Mask R-CNN</title><desc id="d">Gemini 3.8 Flash zero-shot, no training: TP 164, FN 0, FP 1, TN 109; Mask R-CNN threshold 0.5 (paper&#x27;s default): TP 164, FN 0, FP 18, TN 92; Mask R-CNN threshold 0.85 (paper&#x27;s best F1): TP 164, FN 0, FP 7, TN 103</desc>
-<rect x="0.5" y="0.5" width="899" height="369" rx="12" fill="#fcfcfb" stroke="#0b0b0b" stroke-opacity="0.1"/>
-<text x="32.0" y="44.0" font-size="19" font-weight="600" fill="#0b0b0b" text-anchor="start" >Both find all 164 tortoises. Mask R-CNN also calls 18 other images tortoise; Gemini calls 1.</text>
-<text x="32.0" y="68.0" font-size="13.5" font-weight="400" fill="#52514e" text-anchor="start" >Hold-out set: 164 tortoise photos and 110 images without a tortoise. Shade shows each cell&#x27;s share of its row.</text>
-<text x="32.0" y="194.0" font-size="13.5" font-weight="600" fill="#0b0b0b" text-anchor="start" >Tortoise</text>
-<text x="32.0" y="212.0" font-size="12.5" font-weight="400" fill="#898781" text-anchor="start" >164 images</text>
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="632" viewBox="0 0 900 632" role="img" aria-labelledby="t d" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif">
+<title id="t">Confusion matrices: Gemini zero-shot vs Mask R-CNN</title><desc id="d">Gemini 3.8 Flash, original prompt, lists example animals: 164 found, 0 missed, 1 false alarms, 109 correct; Gemini 3.8 Flash, neutral prompt, names no animals: 164 found, 0 missed, 0 false alarms, 110 correct; Mask R-CNN, threshold 0.5, the paper&#x27;s default: 164 found, 0 missed, 18 false alarms, 92 correct; Mask R-CNN, threshold 0.85, the paper&#x27;s best F1: 164 found, 0 missed, 7 false alarms, 103 correct</desc>
+<rect x="0.5" y="0.5" width="899" height="631" rx="12" fill="#fcfcfb" stroke="#0b0b0b" stroke-opacity="0.1"/>
+<text x="32.0" y="44.0" font-size="19" font-weight="600" fill="#0b0b0b" text-anchor="start" >Both methods find all 164 tortoises; the false alarms set them apart</text>
+<text x="32.0" y="68.0" font-size="13.5" font-weight="400" fill="#52514e" text-anchor="start" >Hold-out set: 164 tortoise photos and 110 images without one. Shade shows each cell&#x27;s share of its row.</text>
+<text x="32.0" y="202.0" font-size="13.5" font-weight="600" fill="#0b0b0b" text-anchor="start" >Tortoise</text>
+<text x="32.0" y="220.0" font-size="12.5" font-weight="400" fill="#898781" text-anchor="start" >164 images</text>
 <text x="32.0" y="286.0" font-size="13.5" font-weight="600" fill="#0b0b0b" text-anchor="start" >Not a tortoise</text>
 <text x="32.0" y="304.0" font-size="12.5" font-weight="400" fill="#898781" text-anchor="start" >110 images</text>
-<circle cx="174.0" cy="92" r="5" fill="#2a78d6"/>
-<text x="186.0" y="97.0" font-size="14" font-weight="600" fill="#0b0b0b" text-anchor="start" >Gemini 3.8 Flash</text>
-<text x="186.0" y="115.0" font-size="12.5" font-weight="400" fill="#52514e" text-anchor="start" >zero-shot, no training</text>
-<text x="222.0" y="140.0" font-size="12" font-weight="400" fill="#898781" text-anchor="middle" >Called tortoise</text>
-<text x="330.0" y="140.0" font-size="12" font-weight="400" fill="#898781" text-anchor="middle" >Called not</text>
-<rect x="169.0" y="151.0" width="106.0" height="90.0" rx="4" fill="#2a78d6"/>
-<text x="222.0" y="199.0" font-size="26" font-weight="600" fill="#ffffff" text-anchor="middle" >164</text>
-<text x="222.0" y="219.0" font-size="11.5" font-weight="400" fill="#ffffff" text-anchor="middle" fill-opacity="0.85">found · 100%</text>
-<rect x="277.0" y="151.0" width="106.0" height="90.0" rx="4" fill="#ebf1f8"/>
-<text x="330.0" y="199.0" font-size="26" font-weight="600" fill="#0b0b0b" text-anchor="middle" >0</text>
-<text x="330.0" y="219.0" font-size="11.5" font-weight="400" fill="#0b0b0b" text-anchor="middle" fill-opacity="0.85">missed · 0%</text>
-<rect x="169.0" y="243.0" width="106.0" height="90.0" rx="4" fill="#e9f0f8"/>
-<text x="222.0" y="291.0" font-size="26" font-weight="600" fill="#0b0b0b" text-anchor="middle" >1</text>
-<text x="222.0" y="311.0" font-size="11.5" font-weight="400" fill="#0b0b0b" text-anchor="middle" fill-opacity="0.85">false alarm · 1%</text>
-<rect x="277.0" y="243.0" width="106.0" height="90.0" rx="4" fill="#2c79d6"/>
-<text x="330.0" y="291.0" font-size="26" font-weight="600" fill="#ffffff" text-anchor="middle" >109</text>
-<text x="330.0" y="311.0" font-size="11.5" font-weight="400" fill="#ffffff" text-anchor="middle" fill-opacity="0.85">correct · 99%</text>
-<circle cx="416.0" cy="92" r="5" fill="#eb6834"/>
-<text x="428.0" y="97.0" font-size="14" font-weight="600" fill="#0b0b0b" text-anchor="start" >Mask R-CNN</text>
-<text x="428.0" y="115.0" font-size="12.5" font-weight="400" fill="#52514e" text-anchor="start" >threshold 0.5 (paper&#x27;s default)</text>
-<text x="464.0" y="140.0" font-size="12" font-weight="400" fill="#898781" text-anchor="middle" >Called tortoise</text>
-<text x="572.0" y="140.0" font-size="12" font-weight="400" fill="#898781" text-anchor="middle" >Called not</text>
-<rect x="411.0" y="151.0" width="106.0" height="90.0" rx="4" fill="#eb6834"/>
-<text x="464.0" y="199.0" font-size="26" font-weight="600" fill="#ffffff" text-anchor="middle" >164</text>
-<text x="464.0" y="219.0" font-size="11.5" font-weight="400" fill="#ffffff" text-anchor="middle" fill-opacity="0.85">found · 100%</text>
-<rect x="519.0" y="151.0" width="106.0" height="90.0" rx="4" fill="#fbf0eb"/>
-<text x="572.0" y="199.0" font-size="26" font-weight="600" fill="#0b0b0b" text-anchor="middle" >0</text>
-<text x="572.0" y="219.0" font-size="11.5" font-weight="400" fill="#0b0b0b" text-anchor="middle" fill-opacity="0.85">missed · 0%</text>
-<rect x="411.0" y="243.0" width="106.0" height="90.0" rx="4" fill="#f8dacd"/>
-<text x="464.0" y="291.0" font-size="26" font-weight="600" fill="#0b0b0b" text-anchor="middle" >18</text>
-<text x="464.0" y="311.0" font-size="11.5" font-weight="400" fill="#0b0b0b" text-anchor="middle" fill-opacity="0.85">false alarms · 16%</text>
-<rect x="519.0" y="243.0" width="106.0" height="90.0" rx="4" fill="#ee7e52"/>
-<text x="572.0" y="291.0" font-size="26" font-weight="600" fill="#ffffff" text-anchor="middle" >92</text>
-<text x="572.0" y="311.0" font-size="11.5" font-weight="400" fill="#ffffff" text-anchor="middle" fill-opacity="0.85">correct · 84%</text>
-<circle cx="658.0" cy="92" r="5" fill="#eb6834"/>
-<text x="670.0" y="97.0" font-size="14" font-weight="600" fill="#0b0b0b" text-anchor="start" >Mask R-CNN</text>
-<text x="670.0" y="115.0" font-size="12.5" font-weight="400" fill="#52514e" text-anchor="start" >threshold 0.85 (paper&#x27;s best F1)</text>
-<text x="706.0" y="140.0" font-size="12" font-weight="400" fill="#898781" text-anchor="middle" >Called tortoise</text>
-<text x="814.0" y="140.0" font-size="12" font-weight="400" fill="#898781" text-anchor="middle" >Called not</text>
-<rect x="653.0" y="151.0" width="106.0" height="90.0" rx="4" fill="#eb6834"/>
-<text x="706.0" y="199.0" font-size="26" font-weight="600" fill="#ffffff" text-anchor="middle" >164</text>
-<text x="706.0" y="219.0" font-size="11.5" font-weight="400" fill="#ffffff" text-anchor="middle" fill-opacity="0.85">found · 100%</text>
-<rect x="761.0" y="151.0" width="106.0" height="90.0" rx="4" fill="#fbf0eb"/>
-<text x="814.0" y="199.0" font-size="26" font-weight="600" fill="#0b0b0b" text-anchor="middle" >0</text>
-<text x="814.0" y="219.0" font-size="11.5" font-weight="400" fill="#0b0b0b" text-anchor="middle" fill-opacity="0.85">missed · 0%</text>
-<rect x="653.0" y="243.0" width="106.0" height="90.0" rx="4" fill="#fae7df"/>
-<text x="706.0" y="291.0" font-size="26" font-weight="600" fill="#0b0b0b" text-anchor="middle" >7</text>
-<text x="706.0" y="311.0" font-size="11.5" font-weight="400" fill="#0b0b0b" text-anchor="middle" fill-opacity="0.85">false alarms · 6%</text>
-<rect x="761.0" y="243.0" width="106.0" height="90.0" rx="4" fill="#ec7140"/>
-<text x="814.0" y="291.0" font-size="26" font-weight="600" fill="#ffffff" text-anchor="middle" >103</text>
-<text x="814.0" y="311.0" font-size="11.5" font-weight="400" fill="#ffffff" text-anchor="middle" fill-opacity="0.85">correct · 94%</text>
-<text x="32.0" y="354.0" font-size="11.5" font-weight="400" fill="#898781" text-anchor="start" >Scored per image. One photo the manifest labels tortoise shows a bulldozer and a truck; it is counted as not a tortoise.</text>
+<circle cx="170.0" cy="106" r="5" fill="#2a78d6"/>
+<text x="182.0" y="111.0" font-size="14" font-weight="600" fill="#0b0b0b" text-anchor="start" >Gemini 3.8 Flash</text>
+<text x="182.0" y="129.0" font-size="12.5" font-weight="400" fill="#52514e" text-anchor="start" >original prompt, lists example animals</text>
+<text x="248.5" y="153.0" font-size="12" font-weight="400" fill="#898781" text-anchor="middle" >Called tortoise</text>
+<text x="417.5" y="153.0" font-size="12" font-weight="400" fill="#898781" text-anchor="middle" >Called not a tortoise</text>
+<rect x="165.0" y="163.0" width="167.0" height="82.0" rx="4" fill="#2a78d6"/>
+<text x="248.5" y="206.0" font-size="26" font-weight="600" fill="#ffffff" text-anchor="middle" >164</text>
+<text x="248.5" y="226.0" font-size="11.5" font-weight="400" fill="#ffffff" text-anchor="middle" fill-opacity="0.88">found · 100%</text>
+<rect x="334.0" y="163.0" width="167.0" height="82.0" rx="4" fill="#ebf1f8"/>
+<text x="417.5" y="206.0" font-size="26" font-weight="600" fill="#0b0b0b" text-anchor="middle" >0</text>
+<text x="417.5" y="226.0" font-size="11.5" font-weight="400" fill="#0b0b0b" text-anchor="middle" fill-opacity="0.88">missed · 0%</text>
+<rect x="165.0" y="247.0" width="167.0" height="82.0" rx="4" fill="#e9f0f8"/>
+<text x="248.5" y="290.0" font-size="26" font-weight="600" fill="#0b0b0b" text-anchor="middle" >1</text>
+<text x="248.5" y="310.0" font-size="11.5" font-weight="400" fill="#0b0b0b" text-anchor="middle" fill-opacity="0.88">false alarm · 1%</text>
+<rect x="334.0" y="247.0" width="167.0" height="82.0" rx="4" fill="#2c79d6"/>
+<text x="417.5" y="290.0" font-size="26" font-weight="600" fill="#ffffff" text-anchor="middle" >109</text>
+<text x="417.5" y="310.0" font-size="11.5" font-weight="400" fill="#ffffff" text-anchor="middle" fill-opacity="0.88">correct · 99%</text>
+<circle cx="536.0" cy="106" r="5" fill="#1baf7a"/>
+<text x="548.0" y="111.0" font-size="14" font-weight="600" fill="#0b0b0b" text-anchor="start" >Gemini 3.8 Flash</text>
+<text x="548.0" y="129.0" font-size="12.5" font-weight="400" fill="#52514e" text-anchor="start" >neutral prompt, names no animals</text>
+<text x="614.5" y="153.0" font-size="12" font-weight="400" fill="#898781" text-anchor="middle" >Called tortoise</text>
+<text x="783.5" y="153.0" font-size="12" font-weight="400" fill="#898781" text-anchor="middle" >Called not a tortoise</text>
+<rect x="531.0" y="163.0" width="167.0" height="82.0" rx="4" fill="#1baf7a"/>
+<text x="614.5" y="206.0" font-size="26" font-weight="600" fill="#ffffff" text-anchor="middle" >164</text>
+<text x="614.5" y="226.0" font-size="11.5" font-weight="400" fill="#ffffff" text-anchor="middle" fill-opacity="0.88">found · 100%</text>
+<rect x="700.0" y="163.0" width="167.0" height="82.0" rx="4" fill="#eaf6f1"/>
+<text x="783.5" y="206.0" font-size="26" font-weight="600" fill="#0b0b0b" text-anchor="middle" >0</text>
+<text x="783.5" y="226.0" font-size="11.5" font-weight="400" fill="#0b0b0b" text-anchor="middle" fill-opacity="0.88">missed · 0%</text>
+<rect x="531.0" y="247.0" width="167.0" height="82.0" rx="4" fill="#eaf6f1"/>
+<text x="614.5" y="290.0" font-size="26" font-weight="600" fill="#0b0b0b" text-anchor="middle" >0</text>
+<text x="614.5" y="310.0" font-size="11.5" font-weight="400" fill="#0b0b0b" text-anchor="middle" fill-opacity="0.88">false alarms · 0%</text>
+<rect x="700.0" y="247.0" width="167.0" height="82.0" rx="4" fill="#1baf7a"/>
+<text x="783.5" y="290.0" font-size="26" font-weight="600" fill="#ffffff" text-anchor="middle" >110</text>
+<text x="783.5" y="310.0" font-size="11.5" font-weight="400" fill="#ffffff" text-anchor="middle" fill-opacity="0.88">correct · 100%</text>
+<text x="32.0" y="468.0" font-size="13.5" font-weight="600" fill="#0b0b0b" text-anchor="start" >Tortoise</text>
+<text x="32.0" y="486.0" font-size="12.5" font-weight="400" fill="#898781" text-anchor="start" >164 images</text>
+<text x="32.0" y="552.0" font-size="13.5" font-weight="600" fill="#0b0b0b" text-anchor="start" >Not a tortoise</text>
+<text x="32.0" y="570.0" font-size="12.5" font-weight="400" fill="#898781" text-anchor="start" >110 images</text>
+<circle cx="170.0" cy="372" r="5" fill="#eb6834"/>
+<text x="182.0" y="377.0" font-size="14" font-weight="600" fill="#0b0b0b" text-anchor="start" >Mask R-CNN</text>
+<text x="182.0" y="395.0" font-size="12.5" font-weight="400" fill="#52514e" text-anchor="start" >threshold 0.5, the paper&#x27;s default</text>
+<text x="248.5" y="419.0" font-size="12" font-weight="400" fill="#898781" text-anchor="middle" >Called tortoise</text>
+<text x="417.5" y="419.0" font-size="12" font-weight="400" fill="#898781" text-anchor="middle" >Called not a tortoise</text>
+<rect x="165.0" y="429.0" width="167.0" height="82.0" rx="4" fill="#eb6834"/>
+<text x="248.5" y="472.0" font-size="26" font-weight="600" fill="#ffffff" text-anchor="middle" >164</text>
+<text x="248.5" y="492.0" font-size="11.5" font-weight="400" fill="#ffffff" text-anchor="middle" fill-opacity="0.88">found · 100%</text>
+<rect x="334.0" y="429.0" width="167.0" height="82.0" rx="4" fill="#fbf0eb"/>
+<text x="417.5" y="472.0" font-size="26" font-weight="600" fill="#0b0b0b" text-anchor="middle" >0</text>
+<text x="417.5" y="492.0" font-size="11.5" font-weight="400" fill="#0b0b0b" text-anchor="middle" fill-opacity="0.88">missed · 0%</text>
+<rect x="165.0" y="513.0" width="167.0" height="82.0" rx="4" fill="#f8dacd"/>
+<text x="248.5" y="556.0" font-size="26" font-weight="600" fill="#0b0b0b" text-anchor="middle" >18</text>
+<text x="248.5" y="576.0" font-size="11.5" font-weight="400" fill="#0b0b0b" text-anchor="middle" fill-opacity="0.88">false alarms · 16%</text>
+<rect x="334.0" y="513.0" width="167.0" height="82.0" rx="4" fill="#ee7e52"/>
+<text x="417.5" y="556.0" font-size="26" font-weight="600" fill="#ffffff" text-anchor="middle" >92</text>
+<text x="417.5" y="576.0" font-size="11.5" font-weight="400" fill="#ffffff" text-anchor="middle" fill-opacity="0.88">correct · 84%</text>
+<circle cx="536.0" cy="372" r="5" fill="#eb6834"/>
+<text x="548.0" y="377.0" font-size="14" font-weight="600" fill="#0b0b0b" text-anchor="start" >Mask R-CNN</text>
+<text x="548.0" y="395.0" font-size="12.5" font-weight="400" fill="#52514e" text-anchor="start" >threshold 0.85, the paper&#x27;s best F1</text>
+<text x="614.5" y="419.0" font-size="12" font-weight="400" fill="#898781" text-anchor="middle" >Called tortoise</text>
+<text x="783.5" y="419.0" font-size="12" font-weight="400" fill="#898781" text-anchor="middle" >Called not a tortoise</text>
+<rect x="531.0" y="429.0" width="167.0" height="82.0" rx="4" fill="#eb6834"/>
+<text x="614.5" y="472.0" font-size="26" font-weight="600" fill="#ffffff" text-anchor="middle" >164</text>
+<text x="614.5" y="492.0" font-size="11.5" font-weight="400" fill="#ffffff" text-anchor="middle" fill-opacity="0.88">found · 100%</text>
+<rect x="700.0" y="429.0" width="167.0" height="82.0" rx="4" fill="#fbf0eb"/>
+<text x="783.5" y="472.0" font-size="26" font-weight="600" fill="#0b0b0b" text-anchor="middle" >0</text>
+<text x="783.5" y="492.0" font-size="11.5" font-weight="400" fill="#0b0b0b" text-anchor="middle" fill-opacity="0.88">missed · 0%</text>
+<rect x="531.0" y="513.0" width="167.0" height="82.0" rx="4" fill="#fae7df"/>
+<text x="614.5" y="556.0" font-size="26" font-weight="600" fill="#0b0b0b" text-anchor="middle" >7</text>
+<text x="614.5" y="576.0" font-size="11.5" font-weight="400" fill="#0b0b0b" text-anchor="middle" fill-opacity="0.88">false alarms · 6%</text>
+<rect x="700.0" y="513.0" width="167.0" height="82.0" rx="4" fill="#ec7140"/>
+<text x="783.5" y="556.0" font-size="26" font-weight="600" fill="#ffffff" text-anchor="middle" >103</text>
+<text x="783.5" y="576.0" font-size="11.5" font-weight="400" fill="#ffffff" text-anchor="middle" fill-opacity="0.88">correct · 94%</text>
+<text x="32.0" y="614.0" font-size="11.5" font-weight="400" fill="#898781" text-anchor="start" >Scored per image. One photo the manifest labels tortoise shows a bulldozer and a truck; it is counted as not a tortoise.</text>
 </svg>

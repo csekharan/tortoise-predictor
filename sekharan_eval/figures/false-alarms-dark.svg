@@ -1,80 +1,120 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="900" height="628" viewBox="0 0 900 628" role="img" aria-labelledby="t d" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif">
-<title id="t">False alarms by image type</title><desc id="d">Nine-banded armadillo (16 images): Gemini 0, Mask R-CNN 6; Feral hog (3 images): Gemini 0, Mask R-CNN 3; Empty frame, South Texas (21 images): Gemini 1, Mask R-CNN 2; Deer (4 images): Gemini 0, Mask R-CNN 2; Wild turkey (2 images): Gemini 0, Mask R-CNN 2; Bird (2 images): Gemini 0, Mask R-CNN 1; Bobcat (3 images): Gemini 0, Mask R-CNN 1; Bulldozer photo (labeled tortoise) (1 images): Gemini 0, Mask R-CNN 1; Empty frame, Florida (44 images): Gemini 0, Mask R-CNN 0; Other animals (14 images): Gemini 0, Mask R-CNN 0</desc>
-<rect x="0.5" y="0.5" width="899" height="627" rx="12" fill="#1a1a19" stroke="#ffffff" stroke-opacity="0.1"/>
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="634" viewBox="0 0 900 634" role="img" aria-labelledby="t d" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif">
+<title id="t">False alarms by image type</title><desc id="d">Nine-banded armadillo (16 images): Gemini original prompt 0, neutral prompt 0, Mask R-CNN 6; Feral hog (3 images): Gemini original prompt 0, neutral prompt 0, Mask R-CNN 3; Empty frame, South Texas (21 images): Gemini original prompt 1, neutral prompt 0, Mask R-CNN 2; Deer (4 images): Gemini original prompt 0, neutral prompt 0, Mask R-CNN 2; Wild turkey (2 images): Gemini original prompt 0, neutral prompt 0, Mask R-CNN 2; Bobcat (3 images): Gemini original prompt 0, neutral prompt 0, Mask R-CNN 1; Bird (2 images): Gemini original prompt 0, neutral prompt 0, Mask R-CNN 1; Bulldozer photo (labeled tortoise) (1 images): Gemini original prompt 0, neutral prompt 0, Mask R-CNN 1; Empty frame, Florida (44 images): Gemini original prompt 0, neutral prompt 0, Mask R-CNN 0; Other animals (14 images): Gemini original prompt 0, neutral prompt 0, Mask R-CNN 0</desc>
+<rect x="0.5" y="0.5" width="899" height="633" rx="12" fill="#1a1a19" stroke="#ffffff" stroke-opacity="0.1"/>
 <text x="32.0" y="44.0" font-size="19" font-weight="600" fill="#f0efec" text-anchor="start" >Where the false alarms come from</text>
-<text x="32.0" y="68.0" font-size="13.5" font-weight="400" fill="#c3c2b7" text-anchor="start" >The 110 hold-out images without a tortoise, by what they show. Bars count the images each model called tortoise.</text>
-<rect x="32" y="90" width="12" height="12" rx="3" fill="#3987e5"/>
-<text x="52.0" y="100.0" font-size="12.5" font-weight="400" fill="#c3c2b7" text-anchor="start" >Gemini 3.8 Flash, zero-shot  (1 in total)</text>
-<rect x="332" y="90" width="12" height="12" rx="3" fill="#d95926"/>
-<text x="352.0" y="100.0" font-size="12.5" font-weight="400" fill="#c3c2b7" text-anchor="start" >Mask R-CNN, threshold 0.5  (18 in total)</text>
-<line x1="282.0" y1="122" x2="282.0" y2="568" stroke="#2c2c2a" stroke-width="1"/>
-<text x="282.0" y="586.0" font-size="12" font-weight="400" fill="#898781" text-anchor="middle" font-variant-numeric="tabular-nums">0</text>
-<line x1="464.0" y1="122" x2="464.0" y2="568" stroke="#2c2c2a" stroke-width="1"/>
-<text x="464.0" y="586.0" font-size="12" font-weight="400" fill="#898781" text-anchor="middle" font-variant-numeric="tabular-nums">2</text>
-<line x1="646.0" y1="122" x2="646.0" y2="568" stroke="#2c2c2a" stroke-width="1"/>
-<text x="646.0" y="586.0" font-size="12" font-weight="400" fill="#898781" text-anchor="middle" font-variant-numeric="tabular-nums">4</text>
-<line x1="828.0" y1="122" x2="828.0" y2="568" stroke="#2c2c2a" stroke-width="1"/>
-<text x="828.0" y="586.0" font-size="12" font-weight="400" fill="#898781" text-anchor="middle" font-variant-numeric="tabular-nums">6</text>
-<text x="555.0" y="606.0" font-size="12" font-weight="400" fill="#898781" text-anchor="middle" >Images called tortoise</text>
-<line x1="282" y1="122" x2="282" y2="568" stroke="#383835" stroke-width="1"/>
-<text x="32.0" y="143.0" font-size="13" font-weight="500" fill="#f0efec" text-anchor="start" >Nine-banded armadillo</text>
-<text x="32.0" y="159.0" font-size="11.5" font-weight="400" fill="#898781" text-anchor="start" >16 images</text>
+<text x="32.0" y="68.0" font-size="13.5" font-weight="400" fill="#c3c2b7" text-anchor="start" >The 110 hold-out images without a tortoise, by what they show. Bars count the images each method called tortoise.</text>
+<text x="32.0" y="194.0" font-size="13" font-weight="500" fill="#f0efec" text-anchor="start" >Nine-banded armadillo</text>
+<text x="32.0" y="209.0" font-size="11.5" font-weight="400" fill="#898781" text-anchor="start" >16 images</text>
+<line x1="32" y1="216.0" x2="868" y2="216.0" stroke="#2c2c2a"/>
+<text x="32.0" y="234.0" font-size="13" font-weight="500" fill="#f0efec" text-anchor="start" >Feral hog</text>
+<text x="32.0" y="249.0" font-size="11.5" font-weight="400" fill="#898781" text-anchor="start" >3 images</text>
+<line x1="32" y1="256.0" x2="868" y2="256.0" stroke="#2c2c2a"/>
+<text x="32.0" y="274.0" font-size="13" font-weight="500" fill="#f0efec" text-anchor="start" >Empty frame, South Texas</text>
+<text x="32.0" y="289.0" font-size="11.5" font-weight="400" fill="#898781" text-anchor="start" >21 images</text>
+<line x1="32" y1="296.0" x2="868" y2="296.0" stroke="#2c2c2a"/>
+<text x="32.0" y="314.0" font-size="13" font-weight="500" fill="#f0efec" text-anchor="start" >Deer</text>
+<text x="32.0" y="329.0" font-size="11.5" font-weight="400" fill="#898781" text-anchor="start" >4 images</text>
+<line x1="32" y1="336.0" x2="868" y2="336.0" stroke="#2c2c2a"/>
+<text x="32.0" y="354.0" font-size="13" font-weight="500" fill="#f0efec" text-anchor="start" >Wild turkey</text>
+<text x="32.0" y="369.0" font-size="11.5" font-weight="400" fill="#898781" text-anchor="start" >2 images</text>
+<line x1="32" y1="376.0" x2="868" y2="376.0" stroke="#2c2c2a"/>
+<text x="32.0" y="394.0" font-size="13" font-weight="500" fill="#f0efec" text-anchor="start" >Bobcat</text>
+<text x="32.0" y="409.0" font-size="11.5" font-weight="400" fill="#898781" text-anchor="start" >3 images</text>
+<line x1="32" y1="416.0" x2="868" y2="416.0" stroke="#2c2c2a"/>
+<text x="32.0" y="434.0" font-size="13" font-weight="500" fill="#f0efec" text-anchor="start" >Bird</text>
+<text x="32.0" y="449.0" font-size="11.5" font-weight="400" fill="#898781" text-anchor="start" >2 images</text>
+<line x1="32" y1="456.0" x2="868" y2="456.0" stroke="#2c2c2a"/>
+<text x="32.0" y="474.0" font-size="13" font-weight="500" fill="#f0efec" text-anchor="start" >Bulldozer photo (labeled tortoise)</text>
+<text x="32.0" y="489.0" font-size="11.5" font-weight="400" fill="#898781" text-anchor="start" >1 images</text>
+<line x1="32" y1="496.0" x2="868" y2="496.0" stroke="#2c2c2a"/>
+<text x="32.0" y="514.0" font-size="13" font-weight="500" fill="#f0efec" text-anchor="start" >Empty frame, Florida</text>
+<text x="32.0" y="529.0" font-size="11.5" font-weight="400" fill="#898781" text-anchor="start" >44 images</text>
+<line x1="32" y1="536.0" x2="868" y2="536.0" stroke="#2c2c2a"/>
+<text x="32.0" y="554.0" font-size="13" font-weight="500" fill="#f0efec" text-anchor="start" >Other animals</text>
+<text x="32.0" y="569.0" font-size="11.5" font-weight="400" fill="#898781" text-anchor="start" >14 images · cattle, coyote and others</text>
+<circle cx="274.0" cy="102" r="5" fill="#3987e5"/>
+<text x="286.0" y="107.0" font-size="13.5" font-weight="600" fill="#f0efec" text-anchor="start" >Gemini 3.8 Flash</text>
+<text x="286.0" y="125.0" font-size="12.5" font-weight="400" fill="#c3c2b7" text-anchor="start" >original prompt</text>
+<text x="286.0" y="146.0" font-size="12.5" font-weight="600" fill="#f0efec" text-anchor="start" >1 false alarm in total</text>
+<text x="268.0" y="594.0" font-size="11.5" font-weight="400" fill="#898781" text-anchor="middle" >0</text>
+<text x="344.3" y="594.0" font-size="11.5" font-weight="400" fill="#898781" text-anchor="middle" >3</text>
+<text x="420.7" y="594.0" font-size="11.5" font-weight="400" fill="#898781" text-anchor="middle" >6</text>
+<line x1="268.0" y1="168" x2="268.0" y2="576" stroke="#383835"/>
 
-<text x="288.0" y="143.5" font-size="11.5" font-weight="400" fill="#898781" text-anchor="start" >0</text>
-<path d="M282.0,147.0 h542.0 a4,4 0 0 1 4,4 v3.0 a4,4 0 0 1 -4,4 h-542.0 z" fill="#d95926"/>
-<text x="834.0" y="156.5" font-size="11.5" font-weight="500" fill="#c3c2b7" text-anchor="start" >6</text>
-<text x="32.0" y="187.0" font-size="13" font-weight="500" fill="#f0efec" text-anchor="start" >Feral hog</text>
-<text x="32.0" y="203.0" font-size="11.5" font-weight="400" fill="#898781" text-anchor="start" >3 images</text>
+<text x="274.0" y="200.5" font-size="12" font-weight="400" fill="#898781" text-anchor="start" >0</text>
 
-<text x="288.0" y="187.5" font-size="11.5" font-weight="400" fill="#898781" text-anchor="start" >0</text>
-<path d="M282.0,191.0 h269.0 a4,4 0 0 1 4,4 v3.0 a4,4 0 0 1 -4,4 h-269.0 z" fill="#d95926"/>
-<text x="561.0" y="200.5" font-size="11.5" font-weight="500" fill="#c3c2b7" text-anchor="start" >3</text>
-<text x="32.0" y="231.0" font-size="13" font-weight="500" fill="#f0efec" text-anchor="start" >Empty frame, South Texas</text>
-<text x="32.0" y="247.0" font-size="11.5" font-weight="400" fill="#898781" text-anchor="start" >21 images</text>
-<path d="M282.0,222.0 h87.0 a4,4 0 0 1 4,4 v3.0 a4,4 0 0 1 -4,4 h-87.0 z" fill="#3987e5"/>
-<text x="379.0" y="231.5" font-size="11.5" font-weight="500" fill="#c3c2b7" text-anchor="start" >1</text>
-<path d="M282.0,235.0 h178.0 a4,4 0 0 1 4,4 v3.0 a4,4 0 0 1 -4,4 h-178.0 z" fill="#d95926"/>
-<text x="470.0" y="244.5" font-size="11.5" font-weight="500" fill="#c3c2b7" text-anchor="start" >2</text>
-<text x="32.0" y="275.0" font-size="13" font-weight="500" fill="#f0efec" text-anchor="start" >Deer</text>
-<text x="32.0" y="291.0" font-size="11.5" font-weight="400" fill="#898781" text-anchor="start" >4 images</text>
+<text x="274.0" y="240.5" font-size="12" font-weight="400" fill="#898781" text-anchor="start" >0</text>
+<path d="M268.0,269.0 h21.4 a4,4 0 0 1 4,4 v6.0 a4,4 0 0 1 -4,4 h-21.4 z" fill="#3987e5"/>
+<text x="299.4" y="280.5" font-size="12" font-weight="600" fill="#f0efec" text-anchor="start" >1</text>
 
-<text x="288.0" y="275.5" font-size="11.5" font-weight="400" fill="#898781" text-anchor="start" >0</text>
-<path d="M282.0,279.0 h178.0 a4,4 0 0 1 4,4 v3.0 a4,4 0 0 1 -4,4 h-178.0 z" fill="#d95926"/>
-<text x="470.0" y="288.5" font-size="11.5" font-weight="500" fill="#c3c2b7" text-anchor="start" >2</text>
-<text x="32.0" y="319.0" font-size="13" font-weight="500" fill="#f0efec" text-anchor="start" >Wild turkey</text>
-<text x="32.0" y="335.0" font-size="11.5" font-weight="400" fill="#898781" text-anchor="start" >2 images</text>
+<text x="274.0" y="320.5" font-size="12" font-weight="400" fill="#898781" text-anchor="start" >0</text>
 
-<text x="288.0" y="319.5" font-size="11.5" font-weight="400" fill="#898781" text-anchor="start" >0</text>
-<path d="M282.0,323.0 h178.0 a4,4 0 0 1 4,4 v3.0 a4,4 0 0 1 -4,4 h-178.0 z" fill="#d95926"/>
-<text x="470.0" y="332.5" font-size="11.5" font-weight="500" fill="#c3c2b7" text-anchor="start" >2</text>
-<text x="32.0" y="363.0" font-size="13" font-weight="500" fill="#f0efec" text-anchor="start" >Bird</text>
-<text x="32.0" y="379.0" font-size="11.5" font-weight="400" fill="#898781" text-anchor="start" >2 images</text>
+<text x="274.0" y="360.5" font-size="12" font-weight="400" fill="#898781" text-anchor="start" >0</text>
 
-<text x="288.0" y="363.5" font-size="11.5" font-weight="400" fill="#898781" text-anchor="start" >0</text>
-<path d="M282.0,367.0 h87.0 a4,4 0 0 1 4,4 v3.0 a4,4 0 0 1 -4,4 h-87.0 z" fill="#d95926"/>
-<text x="379.0" y="376.5" font-size="11.5" font-weight="500" fill="#c3c2b7" text-anchor="start" >1</text>
-<text x="32.0" y="407.0" font-size="13" font-weight="500" fill="#f0efec" text-anchor="start" >Bobcat</text>
-<text x="32.0" y="423.0" font-size="11.5" font-weight="400" fill="#898781" text-anchor="start" >3 images</text>
+<text x="274.0" y="400.5" font-size="12" font-weight="400" fill="#898781" text-anchor="start" >0</text>
 
-<text x="288.0" y="407.5" font-size="11.5" font-weight="400" fill="#898781" text-anchor="start" >0</text>
-<path d="M282.0,411.0 h87.0 a4,4 0 0 1 4,4 v3.0 a4,4 0 0 1 -4,4 h-87.0 z" fill="#d95926"/>
-<text x="379.0" y="420.5" font-size="11.5" font-weight="500" fill="#c3c2b7" text-anchor="start" >1</text>
-<text x="32.0" y="451.0" font-size="13" font-weight="500" fill="#f0efec" text-anchor="start" >Bulldozer photo (labeled tortoise)</text>
-<text x="32.0" y="467.0" font-size="11.5" font-weight="400" fill="#898781" text-anchor="start" >1 images</text>
+<text x="274.0" y="440.5" font-size="12" font-weight="400" fill="#898781" text-anchor="start" >0</text>
 
-<text x="288.0" y="451.5" font-size="11.5" font-weight="400" fill="#898781" text-anchor="start" >0</text>
-<path d="M282.0,455.0 h87.0 a4,4 0 0 1 4,4 v3.0 a4,4 0 0 1 -4,4 h-87.0 z" fill="#d95926"/>
-<text x="379.0" y="464.5" font-size="11.5" font-weight="500" fill="#c3c2b7" text-anchor="start" >1</text>
-<text x="32.0" y="495.0" font-size="13" font-weight="500" fill="#f0efec" text-anchor="start" >Empty frame, Florida</text>
-<text x="32.0" y="511.0" font-size="11.5" font-weight="400" fill="#898781" text-anchor="start" >44 images</text>
+<text x="274.0" y="480.5" font-size="12" font-weight="400" fill="#898781" text-anchor="start" >0</text>
 
-<text x="288.0" y="495.5" font-size="11.5" font-weight="400" fill="#898781" text-anchor="start" >0</text>
+<text x="274.0" y="520.5" font-size="12" font-weight="400" fill="#898781" text-anchor="start" >0</text>
 
-<text x="288.0" y="508.5" font-size="11.5" font-weight="400" fill="#898781" text-anchor="start" >0</text>
-<text x="32.0" y="539.0" font-size="13" font-weight="500" fill="#f0efec" text-anchor="start" >Other animals</text>
-<text x="32.0" y="555.0" font-size="11.5" font-weight="400" fill="#898781" text-anchor="start" >14 images · cattle and others</text>
+<text x="274.0" y="560.5" font-size="12" font-weight="400" fill="#898781" text-anchor="start" >0</text>
+<circle cx="482.66666666666663" cy="102" r="5" fill="#199e70"/>
+<text x="494.7" y="107.0" font-size="13.5" font-weight="600" fill="#f0efec" text-anchor="start" >Gemini 3.8 Flash</text>
+<text x="494.7" y="125.0" font-size="12.5" font-weight="400" fill="#c3c2b7" text-anchor="start" >neutral prompt</text>
+<text x="494.7" y="146.0" font-size="12.5" font-weight="600" fill="#f0efec" text-anchor="start" >0 false alarms in total</text>
+<text x="476.7" y="594.0" font-size="11.5" font-weight="400" fill="#898781" text-anchor="middle" >0</text>
+<text x="553.0" y="594.0" font-size="11.5" font-weight="400" fill="#898781" text-anchor="middle" >3</text>
+<text x="629.3" y="594.0" font-size="11.5" font-weight="400" fill="#898781" text-anchor="middle" >6</text>
+<line x1="476.66666666666663" y1="168" x2="476.66666666666663" y2="576" stroke="#383835"/>
 
-<text x="288.0" y="539.5" font-size="11.5" font-weight="400" fill="#898781" text-anchor="start" >0</text>
+<text x="482.7" y="200.5" font-size="12" font-weight="400" fill="#898781" text-anchor="start" >0</text>
 
-<text x="288.0" y="552.5" font-size="11.5" font-weight="400" fill="#898781" text-anchor="start" >0</text>
+<text x="482.7" y="240.5" font-size="12" font-weight="400" fill="#898781" text-anchor="start" >0</text>
+
+<text x="482.7" y="280.5" font-size="12" font-weight="400" fill="#898781" text-anchor="start" >0</text>
+
+<text x="482.7" y="320.5" font-size="12" font-weight="400" fill="#898781" text-anchor="start" >0</text>
+
+<text x="482.7" y="360.5" font-size="12" font-weight="400" fill="#898781" text-anchor="start" >0</text>
+
+<text x="482.7" y="400.5" font-size="12" font-weight="400" fill="#898781" text-anchor="start" >0</text>
+
+<text x="482.7" y="440.5" font-size="12" font-weight="400" fill="#898781" text-anchor="start" >0</text>
+
+<text x="482.7" y="480.5" font-size="12" font-weight="400" fill="#898781" text-anchor="start" >0</text>
+
+<text x="482.7" y="520.5" font-size="12" font-weight="400" fill="#898781" text-anchor="start" >0</text>
+
+<text x="482.7" y="560.5" font-size="12" font-weight="400" fill="#898781" text-anchor="start" >0</text>
+<circle cx="691.3333333333333" cy="102" r="5" fill="#d95926"/>
+<text x="703.3" y="107.0" font-size="13.5" font-weight="600" fill="#f0efec" text-anchor="start" >Mask R-CNN</text>
+<text x="703.3" y="125.0" font-size="12.5" font-weight="400" fill="#c3c2b7" text-anchor="start" >threshold 0.5</text>
+<text x="703.3" y="146.0" font-size="12.5" font-weight="600" fill="#f0efec" text-anchor="start" >18 false alarms in total</text>
+<text x="685.3" y="594.0" font-size="11.5" font-weight="400" fill="#898781" text-anchor="middle" >0</text>
+<text x="761.7" y="594.0" font-size="11.5" font-weight="400" fill="#898781" text-anchor="middle" >3</text>
+<text x="838.0" y="594.0" font-size="11.5" font-weight="400" fill="#898781" text-anchor="middle" >6</text>
+<line x1="685.3333333333333" y1="168" x2="685.3333333333333" y2="576" stroke="#383835"/>
+<path d="M685.3,189.0 h148.7 a4,4 0 0 1 4,4 v6.0 a4,4 0 0 1 -4,4 h-148.7 z" fill="#d95926"/>
+<text x="844.0" y="200.5" font-size="12" font-weight="600" fill="#f0efec" text-anchor="start" >6</text>
+<path d="M685.3,229.0 h72.3 a4,4 0 0 1 4,4 v6.0 a4,4 0 0 1 -4,4 h-72.3 z" fill="#d95926"/>
+<text x="767.7" y="240.5" font-size="12" font-weight="600" fill="#f0efec" text-anchor="start" >3</text>
+<path d="M685.3,269.0 h46.9 a4,4 0 0 1 4,4 v6.0 a4,4 0 0 1 -4,4 h-46.9 z" fill="#d95926"/>
+<text x="742.2" y="280.5" font-size="12" font-weight="600" fill="#f0efec" text-anchor="start" >2</text>
+<path d="M685.3,309.0 h46.9 a4,4 0 0 1 4,4 v6.0 a4,4 0 0 1 -4,4 h-46.9 z" fill="#d95926"/>
+<text x="742.2" y="320.5" font-size="12" font-weight="600" fill="#f0efec" text-anchor="start" >2</text>
+<path d="M685.3,349.0 h46.9 a4,4 0 0 1 4,4 v6.0 a4,4 0 0 1 -4,4 h-46.9 z" fill="#d95926"/>
+<text x="742.2" y="360.5" font-size="12" font-weight="600" fill="#f0efec" text-anchor="start" >2</text>
+<path d="M685.3,389.0 h21.4 a4,4 0 0 1 4,4 v6.0 a4,4 0 0 1 -4,4 h-21.4 z" fill="#d95926"/>
+<text x="716.8" y="400.5" font-size="12" font-weight="600" fill="#f0efec" text-anchor="start" >1</text>
+<path d="M685.3,429.0 h21.4 a4,4 0 0 1 4,4 v6.0 a4,4 0 0 1 -4,4 h-21.4 z" fill="#d95926"/>
+<text x="716.8" y="440.5" font-size="12" font-weight="600" fill="#f0efec" text-anchor="start" >1</text>
+<path d="M685.3,469.0 h21.4 a4,4 0 0 1 4,4 v6.0 a4,4 0 0 1 -4,4 h-21.4 z" fill="#d95926"/>
+<text x="716.8" y="480.5" font-size="12" font-weight="600" fill="#f0efec" text-anchor="start" >1</text>
+
+<text x="691.3" y="520.5" font-size="12" font-weight="400" fill="#898781" text-anchor="start" >0</text>
+
+<text x="691.3" y="560.5" font-size="12" font-weight="400" fill="#898781" text-anchor="start" >0</text>
+<text x="868.0" y="616.0" font-size="12" font-weight="400" fill="#898781" text-anchor="end" >Images called tortoise, per method</text>
 </svg>

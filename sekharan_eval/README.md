@@ -7,7 +7,7 @@ Code for the comparison described in the [main README](../README.md): zero-shot 
 | `zero_shot_gemini.py` | Asks Gemini, with no training and no examples, whether each image shows an animal and which one. An image counts as a tortoise when the answer names a tortoise or turtle. | Python 3.10+, `GEMINI_API_KEY` |
 | `eval_maskrcnn.py` | Runs the original model on the same images. An image counts as a tortoise when any detection scores above `--threshold` (default 0.5). | `requirements.txt` |
 | `compare_models.py` | Joins the two prediction files. Prints a breakdown by image type, where the models agree, misses, top false alarms and the threshold sweep. | Python only |
-| `make_figures.py` | Draws the README figures, in light and dark versions, into `figures/`. Prints the numbers the README quotes. | Python only |
+| `make_figures.py` | Draws the four README figures, in light and dark versions, into `figures/`. Prints the numbers the README quotes. Needs both Gemini runs and the Mask R-CNN run in `results/`. | Python only |
 
 ```text
 python zero_shot_gemini.py                    # original prompt
@@ -15,7 +15,8 @@ python zero_shot_gemini.py --prompt neutral   # names no animals, asks no tortoi
 python zero_shot_gemini.py --limit 10         # quick smoke test across classes
 python eval_maskrcnn.py                       # about 14 min on a laptop CPU
 python eval_maskrcnn.py --threshold 0.85      # headline metrics at another threshold
-python compare_models.py                      # or: compare_models.py GEMINI_CSV MASKRCNN_CSV MASKRCNN_JSON
+python compare_models.py                      # original prompt vs Mask R-CNN
+python compare_models.py results/predictions_gemini-3.8-flash_neutral.csv
 python make_figures.py
 ```
 

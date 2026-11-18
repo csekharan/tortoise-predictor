@@ -1,0 +1,103 @@
+{
+  "model": "gemini-3.8-flash",
+  "prompt_variant": "neutral",
+  "prompt": "Look at this photograph. Is there an animal in it?\nIf yes, give the animal's common name as precisely as you can.\nIf there is no animal, answer none.\nReturn JSON only.",
+  "temperature": 0.0,
+  "thinking_level": null,
+  "images_scored": 274,
+  "errors": 0,
+  "positive": "tortoise or turtle",
+  "negative": "any other animal, or no animal",
+  "TP": 164,
+  "TN": 109,
+  "FP": 0,
+  "FN": 1,
+  "accuracy": 0.9964,
+  "precision": 1.0,
+  "recall_sensitivity": 0.9939,
+  "specificity": 1.0,
+  "f1": 0.997,
+  "seconds_this_run": 429.9,
+  "token_usage_this_run": {
+    "promptTokenCount": 308650,
+    "candidatesTokenCount": 4677,
+    "totalTokenCount": 394818,
+    "thoughtsTokenCount": 81491
+  },
+  "model_answers_by_true_label": {
+    "blank": {
+      "none": 58,
+      "wild turkey": 2,
+      "sandhill crane": 1,
+      "cow": 1,
+      "feral hog": 1,
+      "cattle": 1,
+      "bird": 1
+    },
+    "other_animal: bird": {
+      "wild turkey": 1,
+      "sandhill crane": 1
+    },
+    "other_animal: bobcat": {
+      "bobcat": 2,
+      "nine-banded armadillo": 1
+    },
+    "other_animal: cattle": {
+      "cow": 1,
+      "white-tailed deer": 1
+    },
+    "other_animal: coyote": {
+      "coyote": 2,
+      "white-tailed deer": 1
+    },
+    "other_animal: deer": {
+      "white-tailed deer": 4
+    },
+    "other_animal: feral hog": {
+      "feral pig": 1,
+      "cattle": 1,
+      "wild boar": 1
+    },
+    "other_animal: nilgai": {
+      "nilgai": 1,
+      "deer": 1
+    },
+    "other_animal: nine-banded armadillo": {
+      "nine-banded armadillo": 11,
+      "none": 3,
+      "virginia opossum": 1,
+      "armadillo": 1
+    },
+    "other_animal: opossum": {
+      "virginia opossum": 1,
+      "none": 1
+    },
+    "other_animal: rabbit": {
+      "rabbit": 2
+    },
+    "other_animal: raccoon": {
+      "none": 2,
+      "raccoon": 1
+    },
+    "other_animal: wild turkey": {
+      "wild turkey": 2
+    },
+    "tortoise": {
+      "texas tortoise": 60,
+      "tortoise": 37,
+      "desert tortoise": 26,
+      "gopher tortoise": 22,
+      "red-footed tortoise": 7,
+      "box turtle": 2,
+      "african spurred tortoise": 2,
+      "russian tortoise": 2,
+      "hinged tortoise": 1,
+      "greek tortoise": 1,
+      "tortoise and pigeon": 1,
+      "marginated tortoise": 1,
+      "leopard tortoise": 1,
+      "none": 1,
+      "yellow-footed tortoise": 1
+    }
+  }
+}
