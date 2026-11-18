@@ -17,12 +17,12 @@
   "recall_sensitivity": 1.0,
   "specificity": 1.0,
   "f1": 1.0,
-  "seconds_this_run": 5.4,
+  "seconds_this_run": 12.4,
   "token_usage_this_run": {
-    "promptTokenCount": 3485,
-    "candidatesTokenCount": 79,
-    "totalTokenCount": 4174,
-    "thoughtsTokenCount": 610
+    "promptTokenCount": 3478,
+    "candidatesTokenCount": 99,
+    "totalTokenCount": 5866,
+    "thoughtsTokenCount": 2289
   },
   "model_answers_by_true_label": {
     "blank": {

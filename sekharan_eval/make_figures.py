@@ -31,9 +31,8 @@ GROUPS = {
     "animal_pangolin": "Pangolins",
     "animal_crab": "Crabs",
     "animal_sea_creature": "Other sea creatures",
-    "none_vegetation": "Vegetation and bushes",
-    "none_dry_land": "Dry land",
-    "none_beach": "Beaches",
+    "none_grass": "Dense and tall grass",
+    "none_shrub": "Shrubs and bushes",
 }
 
 # Colour follows the method in every chart: blue = Gemini with the original
@@ -212,7 +211,7 @@ def fig_confusion(theme, grid, n_pos, n_neg):
         y = cells_top + 2 * ch + 40
     h = y - 4
     body.append(text(PAD, h - 18, f"Scored per image. Not a tortoise: {n_neg} images, of look-alike animals "
-                     "and of scenes with no animal.", 11.5, t["muted"]))
+                     "and of coastal vegetation with no animal.", 11.5, t["muted"]))
     flat = [p for row in grid for p in row]
     return svg(theme, h, body, "Confusion matrices: Gemini zero-shot vs Mask R-CNN",
                "; ".join(f"{p[0]}, {p[1]}: {p[2]['TP']} found, {p[2]['FN']} missed, {p[2]['FP']} false alarms, "
@@ -222,8 +221,8 @@ def fig_confusion(theme, grid, n_pos, n_neg):
 # ---------------------------------------------------------------- figure 2
 
 SERIES = ("gem", "neu", "mrc")
-GROUP_DETAIL = {"animal_sea_creature": "7 kinds", "none_vegetation": "no animal",
-                "none_dry_land": "no animal", "none_beach": "no animal"}
+GROUP_DETAIL = {"animal_sea_creature": "7 kinds", "none_grass": "coastal, no animal",
+                "none_shrub": "coastal, no animal"}
 
 
 def false_alarm_groups(rows):

@@ -1,129 +1,201 @@
 file,truth_class,truth_species,truth_positive,pred_animal_present,pred_animal,pred_is_tortoise_or_turtle,pred_positive,outcome,seconds,error,raw
-test/blank/none-beach_commons105447183.jpg,blank,none,0,False,none,,0,TN,6.11,,"{""animal_present"": false, ""animal"": ""none""}"
-test/blank/none-beach_commons109960431.jpg,blank,none,0,False,none,,0,TN,5.29,,"{""animal_present"": false, ""animal"": ""none""}"
-test/blank/none-beach_commons110113932.jpg,blank,none,0,False,none,,0,TN,4.78,,"{""animal_present"":false,""animal"":""none""}"
-test/blank/none-beach_commons114028597.jpg,blank,none,0,False,none,,0,TN,7.38,,"{""animal_present"": false, ""animal"": ""none""}"
-test/blank/none-beach_commons114836053.jpg,blank,none,0,False,none,,0,TN,5.24,,"{""animal_present"": false, ""animal"": ""none""}"
-test/blank/none-beach_commons114956623.jpg,blank,none,0,False,none,,0,TN,6.23,,"{""animal_present"": false, ""animal"": ""none""}"
-test/blank/none-beach_commons124965084.jpg,blank,none,0,False,none,,0,TN,11.4,,"{
+test/blank/none-grass_inat101909381_p170252547.jpg,blank,none,0,False,none,,0,TN,6.74,,"{""animal_present"": false, ""animal"": ""none""}"
+test/blank/none-grass_inat101916706_p170266922.jpg,blank,none,0,False,none,,0,TN,5.56,,"{""animal_present"":false,""animal"":""none""}"
+test/blank/none-grass_inat103803026_p173821052.jpg,blank,none,0,False,none,,0,TN,21.21,,"{
   ""animal_present"": false,
   ""animal"": ""none""
 }"
-test/blank/none-beach_commons125721726.jpg,blank,none,0,False,none,,0,TN,6.33,,"{""animal_present"": false, ""animal"": ""none""}"
-test/blank/none-beach_commons126445621.jpg,blank,none,0,False,none,,0,TN,8.95,,"{
+test/blank/none-grass_inat104404915_p174934232.jpg,blank,none,0,False,none,,0,TN,10.1,,"{
   ""animal_present"": false,
   ""animal"": ""none""
 }"
-test/blank/none-beach_commons141198686.jpg,blank,none,0,False,none,,0,TN,5.65,,"{""animal_present"":false,""animal"":""none""}"
-test/blank/none-beach_commons14438303.jpg,blank,none,0,False,none,,0,TN,5.52,,"{""animal_present"":false,""animal"":""none""}"
-test/blank/none-beach_commons153480624.jpg,blank,none,0,False,none,,0,TN,5.63,,"{""animal_present"": false, ""animal"": ""none""}"
-test/blank/none-beach_commons1630159.jpg,blank,none,0,False,none,,0,TN,4.09,,"{""animal_present"":false,""animal"":""none""}"
-test/blank/none-beach_commons164516739.jpg,blank,none,0,False,none,,0,TN,14.16,,"{
+test/blank/none-grass_inat10764995_p15052821.jpg,blank,none,0,False,none,,0,TN,9.41,,"{
   ""animal_present"": false,
   ""animal"": ""none""
 }"
-test/blank/none-beach_commons168346574.jpg,blank,none,0,False,none,,0,TN,5.42,,"{""animal_present"":false,""animal"":""none""}"
-test/blank/none-beach_commons2982089.jpg,blank,none,0,False,none,,0,TN,10.89,,"{
+test/blank/none-grass_inat12062423_p17296143.jpg,blank,none,0,False,none,,0,TN,12.41,,"{
   ""animal_present"": false,
   ""animal"": ""none""
 }"
-test/blank/none-beach_commons47140708.jpg,blank,none,0,False,none,,0,TN,3.68,,"{
+test/blank/none-grass_inat122874914_p208091542.jpg,blank,none,0,False,none,,0,TN,31.07,,"{
   ""animal_present"": false,
   ""animal"": ""none""
 }"
-test/blank/none-beach_commons60037253.jpg,blank,none,0,False,none,,0,TN,5.07,,"{""animal_present"":false,""animal"":""none""}"
-test/blank/none-beach_commons65061786.jpg,blank,none,0,False,none,,0,TN,6.36,,"{""animal_present"":false,""animal"":""none""}"
-test/blank/none-beach_commons80730910.jpg,blank,none,0,True,Namaqua chameleon,,0,TN,22.86,,"{
-  ""animal_present"": true,
-  ""animal"": ""Namaqua chameleon""
-}"
-test/blank/none-beach_commons85592033.jpg,blank,none,0,False,none,,0,TN,3.87,,"{""animal_present"":false,""animal"":""none""}"
-test/blank/none-beach_commons99435030.jpg,blank,none,0,False,none,,0,TN,4.19,,"{""animal_present"": false, ""animal"": ""none""}"
-test/blank/none-dry-land_commons107589129.jpg,blank,none,0,False,none,,0,TN,6.8,,"{""animal_present"": false, ""animal"": ""none""}"
-test/blank/none-dry-land_commons107999407.jpg,blank,none,0,False,none,,0,TN,3.61,,"{""animal_present"": false, ""animal"": ""none""}"
-test/blank/none-dry-land_commons12433183.jpg,blank,none,0,False,none,,0,TN,5.04,,"{""animal_present"": false, ""animal"": ""none""}"
-test/blank/none-dry-land_commons130745001.jpg,blank,none,0,False,none,,0,TN,3.87,,"{
+test/blank/none-grass_inat125681994_p213159438.jpg,blank,none,0,False,none,,0,TN,5.17,,"{""animal_present"":false,""animal"":""none""}"
+test/blank/none-grass_inat125880111_p213522758.jpg,blank,none,0,False,none,,0,TN,27.01,,"{
   ""animal_present"": false,
   ""animal"": ""none""
 }"
-test/blank/none-dry-land_commons135977711.jpg,blank,none,0,False,none,,0,TN,4.22,,"{""animal_present"":false,""animal"":""none""}"
-test/blank/none-dry-land_commons160707971.jpg,blank,none,0,False,none,,0,TN,4.81,,"{""animal_present"": false, ""animal"": ""none""}"
-test/blank/none-dry-land_commons163157811.jpg,blank,none,0,False,none,,0,TN,8.38,,"{""animal_present"": false, ""animal"": ""none""}"
-test/blank/none-dry-land_commons163784473.jpg,blank,none,0,False,none,,0,TN,18.36,,"{
+test/blank/none-grass_inat125964346_p213673540.jpg,blank,none,0,False,none,,0,TN,27.84,,"{
   ""animal_present"": false,
   ""animal"": ""none""
 }"
-test/blank/none-dry-land_commons164630289.jpg,blank,none,0,False,none,,0,TN,5.25,,"{""animal_present"": false, ""animal"": ""none""}"
-test/blank/none-dry-land_commons170761164.jpg,blank,none,0,False,none,,0,TN,6.96,,"{""animal_present"": false, ""animal"": ""none""}"
-test/blank/none-dry-land_commons197746174.jpg,blank,none,0,False,none,,0,TN,7.81,,"{""animal_present"":false,""animal"":""none""}"
-test/blank/none-dry-land_commons203035816.jpg,blank,none,0,False,none,,0,TN,4.49,,"{""animal_present"":false,""animal"":""none""}"
-test/blank/none-dry-land_commons24125157.jpg,blank,none,0,False,none,,0,TN,4.79,,"{""animal_present"": false, ""animal"": ""none""}"
-test/blank/none-dry-land_commons24897439.jpg,blank,none,0,False,none,,0,TN,9.29,,"{
+test/blank/none-grass_inat144031771_p247122926.jpg,blank,none,0,False,none,,0,TN,16.9,,"{
   ""animal_present"": false,
   ""animal"": ""none""
 }"
-test/blank/none-dry-land_commons31196253.jpg,blank,none,0,False,none,,0,TN,16.59,,"{""animal_present"": false, ""animal"": ""none""}"
-test/blank/none-dry-land_commons3193235.jpg,blank,none,0,False,none,,0,TN,5.63,,"{""animal_present"":false,""animal"":""none""}"
-test/blank/none-dry-land_commons3457540.jpg,blank,none,0,False,none,,0,TN,3.32,,"{""animal_present"": false, ""animal"": ""none""}"
-test/blank/none-dry-land_commons36266425.jpg,blank,none,0,False,none,,0,TN,35.17,,"{
+test/blank/none-grass_inat144433314_p247888164.jpg,blank,none,0,False,none,,0,TN,16.0,,"{
   ""animal_present"": false,
   ""animal"": ""none""
 }"
-test/blank/none-dry-land_commons6993047.jpg,blank,none,0,False,none,,0,TN,20.79,,"{
+test/blank/none-grass_inat145461433_p249856951.jpg,blank,none,0,False,none,,0,TN,8.24,,"{
   ""animal_present"": false,
   ""animal"": ""none""
 }"
-test/blank/none-dry-land_commons70538123.jpg,blank,none,0,False,none,,0,TN,4.88,,"{""animal_present"": false, ""animal"": ""none""}"
-test/blank/none-dry-land_commons8949675.jpg,blank,none,0,False,none,,0,TN,3.11,,"{""animal_present"": false, ""animal"": ""none""}"
-test/blank/none-vegetation_inat1291129_p1619630.jpg,blank,none,0,False,none,,0,TN,7.24,,"{""animal_present"":false,""animal"":""none""}"
-test/blank/none-vegetation_inat1297000_p1627406.jpg,blank,none,0,False,none,,0,TN,8.58,,"{
+test/blank/none-grass_inat15918224_p23810234.jpg,blank,none,0,False,none,,0,TN,18.19,,"{
   ""animal_present"": false,
   ""animal"": ""none""
 }"
-test/blank/none-vegetation_inat1369794_p1694191.jpg,blank,none,0,False,none,,0,TN,6.32,,"{""animal_present"": false, ""animal"": ""none""}"
-test/blank/none-vegetation_inat1378447_p1703496.jpg,blank,none,0,False,none,,0,TN,8.72,,"{
+test/blank/none-grass_inat179555076_p312606930.jpg,blank,none,0,False,none,,0,TN,7.76,,"{""animal_present"": false, ""animal"": ""none""}"
+test/blank/none-grass_inat1915250_p2339369.jpg,blank,none,0,False,none,,0,TN,5.36,,"{""animal_present"": false, ""animal"": ""none""}"
+test/blank/none-grass_inat193219436_p339392805.jpg,blank,none,0,False,none,,0,TN,3.12,,"{""animal_present"": false, ""animal"": ""none""}"
+test/blank/none-grass_inat205025108_p362460861.jpg,blank,none,0,False,none,,0,TN,14.52,,"{
   ""animal_present"": false,
   ""animal"": ""none""
 }"
-test/blank/none-vegetation_inat1395046_p1724835.jpg,blank,none,0,False,none,,0,TN,4.54,,"{""animal_present"": false, ""animal"": ""none""}"
-test/blank/none-vegetation_inat1492355_p1849158.jpg,blank,none,0,False,none,,0,TN,6.48,,"{""animal_present"": false, ""animal"": ""none""}"
-test/blank/none-vegetation_inat1553562_p1924054.jpg,blank,none,0,False,none,,0,TN,6.51,,"{""animal_present"": false, ""animal"": ""none""}"
-test/blank/none-vegetation_inat1616321_p1985720.jpg,blank,none,0,False,none,,0,TN,11.1,,"{
+test/blank/none-grass_inat210632781_p372536825.jpg,blank,none,0,False,none,,0,TN,14.21,,"{
   ""animal_present"": false,
   ""animal"": ""none""
 }"
-test/blank/none-vegetation_inat1833844_p2226743.jpg,blank,none,0,False,none,,0,TN,4.73,,"{""animal_present"": false, ""animal"": ""none""}"
-test/blank/none-vegetation_inat1889820_p2304522.jpg,blank,none,0,False,none,,0,TN,9.38,,"{""animal_present"":false,""animal"":""none""}"
-test/blank/none-vegetation_inat204965_p260176.jpg,blank,none,0,False,none,,0,TN,6.61,,"{""animal_present"":false,""animal"":""none""}"
-test/blank/none-vegetation_inat2096300_p2509518.jpg,blank,none,0,False,none,,0,TN,9.63,,"{
+test/blank/none-grass_inat211215975_p373461670.jpg,blank,none,0,False,none,,0,TN,37.2,,"{
   ""animal_present"": false,
   ""animal"": ""none""
 }"
-test/blank/none-vegetation_inat2283851_p2556955.jpg,blank,none,0,False,none,,0,TN,9.26,,"{
+test/blank/none-grass_inat24212849_p37441653.jpg,blank,none,0,False,none,,0,TN,8.32,,"{
   ""animal_present"": false,
   ""animal"": ""none""
 }"
-test/blank/none-vegetation_inat2284879_p2557835.jpg,blank,none,0,False,none,,0,TN,11.12,,"{
+test/blank/none-grass_inat251953046_p450923365.jpg,blank,none,0,False,none,,0,TN,10.74,,"{
   ""animal_present"": false,
   ""animal"": ""none""
 }"
-test/blank/none-vegetation_inat2291117_p2558079.jpg,blank,none,0,False,none,,0,TN,7.78,,"{""animal_present"": false, ""animal"": ""none""}"
-test/blank/none-vegetation_inat2352653_p2614934.jpg,blank,none,0,False,none,,0,TN,4.16,,"{""animal_present"": false, ""animal"": ""none""}"
-test/blank/none-vegetation_inat2363119_p2629367.jpg,blank,none,0,False,none,,0,TN,8.46,,"{
+test/blank/none-grass_inat265729448_p477348785.jpg,blank,none,0,False,none,,0,TN,21.88,,"{
   ""animal_present"": false,
   ""animal"": ""none""
 }"
-test/blank/none-vegetation_inat2370962_p2640437.jpg,blank,none,0,False,none,,0,TN,8.57,,"{
+test/blank/none-grass_inat271675655_p488709583.jpg,blank,none,0,False,none,,0,TN,25.53,,"{
   ""animal_present"": false,
   ""animal"": ""none""
 }"
-test/blank/none-vegetation_inat434377_p547274.jpg,blank,none,0,False,none,,0,TN,9.55,,"{""animal_present"": false, ""animal"": ""none""}"
-test/blank/none-vegetation_inat643306_p810526.jpg,blank,none,0,False,none,,0,TN,3.39,,"{""animal_present"":false,""animal"":""none""}"
-test/blank/none-vegetation_inat727255_p913525.jpg,blank,none,0,False,none,,0,TN,9.73,,"{
+test/blank/none-grass_inat299408400_p539405236.jpg,blank,none,0,False,none,,0,TN,11.34,,"{
   ""animal_present"": false,
   ""animal"": ""none""
 }"
-test/blank/none-vegetation_inat854191_p1082419.jpg,blank,none,0,False,none,,0,TN,5.18,,"{
+test/blank/none-grass_inat312718891_p564647987.jpg,blank,none,0,False,none,,0,TN,17.31,,"{
+  ""animal_present"": false,
+  ""animal"": ""none""
+}"
+test/blank/none-grass_inat327280097_p592896370.jpg,blank,none,0,False,none,,0,TN,5.39,,"{""animal_present"": false, ""animal"": ""none""}"
+test/blank/none-grass_inat330059283_p598421852.jpg,blank,none,0,False,none,,0,TN,11.91,,"{""animal_present"": false, ""animal"": ""none""}"
+test/blank/none-grass_inat4035916_p4773035.jpg,blank,none,0,False,none,,0,TN,7.79,,"{""animal_present"":false,""animal"":""none""}"
+test/blank/none-grass_inat5214860_p6440140.jpg,blank,none,0,False,none,,0,TN,19.56,,"{
+  ""animal_present"": false,
+  ""animal"": ""none""
+}"
+test/blank/none-grass_inat62153175_p99545996.jpg,blank,none,0,False,none,,0,TN,38.74,,"{""animal_present"": false, ""animal"": ""none""}"
+test/blank/none-grass_inat75977678_p124316601.jpg,blank,none,0,False,none,,0,TN,18.45,,"{""animal_present"": false, ""animal"": ""none""}"
+test/blank/none-grass_inat76963836_p125865993.jpg,blank,none,0,False,none,,0,TN,14.36,,"{
+  ""animal_present"": false,
+  ""animal"": ""none""
+}"
+test/blank/none-shrub_inat105098936_p176261414.jpg,blank,none,0,False,none,,0,TN,9.06,,"{
+  ""animal_present"": false,
+  ""animal"": ""none""
+}"
+test/blank/none-shrub_inat105829674_p177659060.jpg,blank,none,0,False,none,,0,TN,7.98,,"{
+  ""animal_present"": false,
+  ""animal"": ""none""
+}"
+test/blank/none-shrub_inat106459778_p178840588.jpg,blank,none,0,False,none,,0,TN,9.48,,"{
+  ""animal_present"": false,
+  ""animal"": ""none""
+}"
+test/blank/none-shrub_inat10819675_p15156413.jpg,blank,none,0,False,none,,0,TN,7.01,,"{""animal_present"": false, ""animal"": ""none""}"
+test/blank/none-shrub_inat11212743_p15903440.jpg,blank,none,0,False,none,,0,TN,23.93,,"{
+  ""animal_present"": false,
+  ""animal"": ""none""
+}"
+test/blank/none-shrub_inat12028644_p17240833.jpg,blank,none,0,False,none,,0,TN,16.55,,"{""animal_present"": false, ""animal"": ""none""}"
+test/blank/none-shrub_inat12078818_p17322333.jpg,blank,none,0,False,none,,0,TN,10.49,,"{
+  ""animal_present"": false,
+  ""animal"": ""none""
+}"
+test/blank/none-shrub_inat141484144_p242399556.jpg,blank,none,0,False,none,,0,TN,11.61,,"{
+  ""animal_present"": false,
+  ""animal"": ""none""
+}"
+test/blank/none-shrub_inat157927092_p273000672.jpg,blank,none,0,False,none,,0,TN,10.89,,"{""animal_present"": false, ""animal"": ""none""}"
+test/blank/none-shrub_inat17244674_p26153405.jpg,blank,none,0,False,none,,0,TN,6.0,,"{
+  ""animal_present"": false,
+  ""animal"": ""none""
+}"
+test/blank/none-shrub_inat1747954_p2121032.jpg,blank,none,0,False,none,,0,TN,31.75,,"{
+  ""animal_present"": false,
+  ""animal"": ""none""
+}"
+test/blank/none-shrub_inat188198664_p329312762.jpg,blank,none,0,False,none,,0,TN,12.41,,"{
+  ""animal_present"": false,
+  ""animal"": ""none""
+}"
+test/blank/none-shrub_inat192124847_p337204201.jpg,blank,none,0,False,none,,0,TN,36.4,,"{
+  ""animal_present"": false,
+  ""animal"": ""none""
+}"
+test/blank/none-shrub_inat201539290_p355785408.jpg,blank,none,0,False,none,,0,TN,4.35,,"{
+  ""animal_present"": false,
+  ""animal"": ""none""
+}"
+test/blank/none-shrub_inat20294965_p31332040.jpg,blank,none,0,False,none,,0,TN,27.61,,"{
+  ""animal_present"": false,
+  ""animal"": ""none""
+}"
+test/blank/none-shrub_inat211877918_p374491448.jpg,blank,none,0,False,none,,0,TN,33.81,,"{
+  ""animal_present"": false,
+  ""animal"": ""none""
+}"
+test/blank/none-shrub_inat256645374_p460204389.jpg,blank,none,0,False,none,,0,TN,4.8,,"{""animal_present"": false, ""animal"": ""none""}"
+test/blank/none-shrub_inat2685523_p3081503.jpg,blank,none,0,False,none,,0,TN,3.96,,"{""animal_present"": false, ""animal"": ""none""}"
+test/blank/none-shrub_inat27971409_p43570423.jpg,blank,none,0,False,none,,0,TN,34.55,,"{""animal_present"": false, ""animal"": ""none""}"
+test/blank/none-shrub_inat28997812_p45241889.jpg,blank,none,0,False,none,,0,TN,23.27,,"{
+  ""animal_present"": false,
+  ""animal"": ""none""
+}"
+test/blank/none-shrub_inat333111452_p604694683.jpg,blank,none,0,False,none,,0,TN,10.72,,"{
+  ""animal_present"": false,
+  ""animal"": ""none""
+}"
+test/blank/none-shrub_inat339773883_p618165883.jpg,blank,none,0,False,none,,0,TN,31.66,,"{
+  ""animal_present"": false,
+  ""animal"": ""none""
+}"
+test/blank/none-shrub_inat340670432_p619994556.jpg,blank,none,0,False,none,,0,TN,14.17,,"{
+  ""animal_present"": false,
+  ""animal"": ""none""
+}"
+test/blank/none-shrub_inat346076100_p630786538.jpg,blank,none,0,False,none,,0,TN,16.67,,"{
+  ""animal_present"": false,
+  ""animal"": ""none""
+}"
+test/blank/none-shrub_inat358781687_p654545470.jpg,blank,none,0,False,none,,0,TN,7.77,,"{""animal_present"": false, ""animal"": ""none""}"
+test/blank/none-shrub_inat59403876_p94915816.jpg,blank,none,0,False,none,,0,TN,12.68,,"{
+  ""animal_present"": false,
+  ""animal"": ""none""
+}"
+test/blank/none-shrub_inat59599820_p95239558.jpg,blank,none,0,False,none,,0,TN,7.92,,"{""animal_present"":false,""animal"":""none""}"
+test/blank/none-shrub_inat64394696_p103507816.jpg,blank,none,0,False,none,,0,TN,10.59,,"{
+  ""animal_present"": false,
+  ""animal"": ""none""
+}"
+test/blank/none-shrub_inat65325650_p105122696.jpg,blank,none,0,False,none,,0,TN,10.17,,"{
+  ""animal_present"": false,
+  ""animal"": ""none""
+}"
+test/blank/none-shrub_inat81548250_p133771438.jpg,blank,none,0,False,none,,0,TN,9.34,,"{""animal_present"": false, ""animal"": ""none""}"
+test/blank/none-shrub_inat84888953_p139565894.jpg,blank,none,0,False,none,,0,TN,19.71,,"{
+  ""animal_present"": false,
+  ""animal"": ""none""
+}"
+test/blank/none-shrub_inat98507907_p164022282.jpg,blank,none,0,False,none,,0,TN,16.4,,"{
   ""animal_present"": false,
   ""animal"": ""none""
 }"

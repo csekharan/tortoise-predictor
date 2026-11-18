@@ -12,14 +12,13 @@ PAPER = {("train", "tortoise"): 1332, ("train", "blank"): 420, ("train", "other_
          ("test", "tortoise"): 165, ("test", "blank"): 65, ("test", "other_animal"): 44}
 CLS = ["tortoise", "blank", "other_animal"]
 SHORT = {"iNaturalist": "iNaturalist photos (hand-held)",
-         "Wikimedia Commons": "Wikimedia Commons photos",
-         "NACTI (LILA BC), Archbold FL": "NACTI trail cameras, Archbold, Florida",
+                  "NACTI (LILA BC), Archbold FL": "NACTI trail cameras, Archbold, Florida",
          "Kutugata et al. 2021 sample (github.com/mkutu/Nilgai), South Texas": "Nilgai-study trail cameras, South Texas"}
 GROUPS = [  # hold-out stratum, label, what it holds
     ("inat_tortoise", "Texas tortoise", "*Gopherus berlandieri*, wild, Texas and northern Mexico"),
-    ("none_vegetation", "No animal: vegetation and bushes", "plants photographed around the paper's four study sites"),
-    ("none_dry_land", "No animal: dry land", "cracked mud, caliche, gravel, bare soil, desert floor, dry creek beds"),
-    ("none_beach", "No animal: beaches", "sand, dunes, seaweed and wrack, driftwood, surf"),
+    ("none_grass", "No animal: dense and tall grass",
+     "sea oats, gulf, saltmarsh and marsh-hay cordgrass, bitter panicgrass, seaside bluestem"),
+    ("none_shrub", "No animal: shrubs and bushes", "sea ox-eye, marsh elder, beach croton, Christmas berry, saltwort"),
     ("animal_armadillo", "Armadillos", "nine-banded armadillos photographed around the paper's four study sites"),
     ("animal_pangolin", "Pangolins", "Africa and Asia"),
     ("animal_crab", "Crabs", "true crabs photographed in Texas"),
@@ -79,24 +78,24 @@ w("- **Tortoises.** The tortoise photos are research-grade iNaturalist observati
   "berlandieri*, chosen as described under the training set below. An earlier version of this hold-out "
   "set had one photo labelled tortoise that shows a bulldozer and no tortoise; it was replaced with "
   "another tortoise photo drawn the same way.")
-w("- **No animal: vegetation and bushes.** Research-grade iNaturalist plant observations from the box "
-  "around the paper's four study sites, chosen like the animal photos below. These are hand-held "
-  "photos of the plants a Texas tortoise lives among, taken the way the tortoise photos were.")
-w("- **No animal: dry land and beaches.** Wikimedia Commons photos found with fixed search phrases for "
-  "each group (the phrases are listed in the script), JPEG, at least 1,000 by 650 pixels, under CC0, "
-  "public-domain, CC BY or CC BY-SA licences. Titles that name an animal, a person, a building, a "
-  "vehicle, a map or a document were skipped. Downloaded at 960 pixels wide.")
+w("- **No animal: dense and tall grass, shrubs and bushes.** Research-grade iNaturalist observations "
+  "of coastal plants photographed in Texas: grasses of the dunes and salt marshes (sea oats, the "
+  "cordgrasses, bitter panicgrass, seaside bluestem) and shrubs of the shore and marsh edge (sea ox-eye, "
+  "marsh elder, beach croton, Christmas berry, saltwort). Each group's species are pooled and drawn "
+  "together, chosen like the animal photos below. These are hand-held photos, taken the way the "
+  "tortoise photos were.")
 w("- **Other animals.** Research-grade iNaturalist observations, wild, with a CC0, CC BY, CC BY-NC, "
   "CC BY-SA or CC BY-NC-SA photo, not annotated as dead or as bones, tracks or moults. Armadillos come "
   "from the box around the paper's four study sites, crabs and most sea creatures from Texas, and "
   "pangolins, horseshoe crabs and chitons from anywhere.")
 w("- **Order and checks.** Each group's candidates are shuffled with a fixed seed and taken in that "
-  "order, at most one image per photographer or Commons author in each group. No hold-out image comes "
+  "order, at most one image per photographer in each group. No hold-out image comes "
   "from an iNaturalist photographer who has images in `train/`. Each picked image was then looked at, "
   "and the next candidate took the place of any that broke these rules:")
-w("  - A no-animal photo must show no animal at all: no birds in the sky, insects on flowers, snails on "
-  "seaweed, people, hands or feet. It must show the kind of ground its group names, and no building, "
-  "vehicle, sign, document, drawing or studio backdrop may be its subject.")
+w("  - A no-animal photo must show the vegetation itself, a stand of grass or a shrub or bush, not a "
+  "close-up of one flower, seed head or leaf. It must show no animal at all (no insects, spiders, "
+  "snails, birds, people, hands or feet) and no equipment or other man-made object: no vehicles, "
+  "machinery, tools, rulers, signs, fences, posts, boardwalks, buildings, roads or litter.")
 w("  - An animal photo must show the animal itself, not a burrow, tracks, a carcass, a bleached "
   "skeleton (most Texas sand-dollar photos are skeletons) or a trail-camera frame, and no other animal "
   "may be the main subject.\n")
@@ -104,9 +103,14 @@ w(f"`REJECTED` in the script lists all {sum(N_REJ.values())} rejected candidates
   f"no-animal photos and {N_REJ['animal']} animal photos, each with its reason.\n")
 w("The models played no part in choosing images, with one exception. After the first runs, every image "
   "that either method got wrong, or that Gemini described differently from its label, got a second, "
-  "closer look. Three broke the rules and were replaced by the next candidates: a beach photo with a "
-  "sea-turtle hatchling in the wrack, a beach photo with what may be a grasshopper, and a worn, empty "
-  "whelk shell. Their entries in `REJECTED` say so.\n")
+  "closer look. Four broke the rules and were replaced by the next candidates: a worn, empty whelk "
+  "shell, and three vegetation photos in which Gemini's neutral prompt named an animal. On a closer "
+  "look one had a dragonfly on a leaf, one a small dark round object on the mud that is probably a "
+  "snail, and one orange shapes in the leaves that may be a butterfly. Their entries in `REJECTED` say "
+  "so. The vegetation photos that Mask R-CNN called a tortoise got the same second look; none hid an "
+  "animal.\n")
+w("An earlier version of the no-animal class used dry-land and beach photos from Wikimedia Commons. It "
+  "was replaced with coastal vegetation only, with no equipment or other man-made objects in frame.\n")
 
 w("## Training set\n")
 w("The training set is the one built for the paper's model M4 and is not used by the comparison in "
@@ -156,7 +160,7 @@ w("## Folder layout\n")
 w("`train/` and `test/` each contain `tortoise/`, `blank/` (no animal) and `other_animal/`. That is "
   "the one-folder-per-class layout that PyTorch `ImageFolder` and Keras `image_dataset_from_directory` "
   "read directly. `manifest.csv` has one row per image: split, class, species, file path, source, "
-  "whether it is a trail-camera frame, the photographer, camera or Commons author it came from "
+  "whether it is a trail-camera frame, the photographer or camera it came from "
   "(`group`), the original URL and page, licence, attribution, place, date and the group within its "
   "class (`stratum`).\n")
 
@@ -173,8 +177,8 @@ w("The paper's tortoise images were mainly frames from its own trail cameras: Br
   "will be higher than the same model would earn on real trail-camera footage. To measure that, you "
   "need the authors' frames.\n")
 w("The paper's negatives were trail-camera frames from its own sites. The hold-out negatives here "
-  "are chosen to be hard in a different way: animals with a hard shell or a domed back, and empty "
-  "scenes of the ground a tortoise walks on, including Texas beaches. The paper also gave the habitat "
+  "are chosen to be hard in a different way: animals with a hard shell or a domed back, and stands of "
+  "the coastal grasses and shrubs a tortoise could hide in. The paper also gave the habitat "
   "mix of its images (Table 5: Tamaulipan thornscrub 678, brush 210, grassland/prairie 465, bare "
   "ground 137); that mix is not reproduced. The paper's training images carried hand-drawn tortoise "
   "outlines (CVAT polygons, COCO format). This set has image-level labels only, with no boxes or "
@@ -186,8 +190,8 @@ w("|---|---:|")
 for lic, n in C(r["license"] for r in rows).most_common():
     w(f"| {lic} | {n:,} |")
 w("")
-w("iNaturalist photos keep their photographers' Creative Commons licences, and Wikimedia Commons "
-  "photos their authors' licences. The `attribution` column holds each credit line. Many iNaturalist "
+w("iNaturalist photos keep their photographers' Creative Commons licences. The `attribution` column "
+  "holds each credit line. Many iNaturalist "
   "photos are non-commercial (NC), so this set is for research use. NACTI is released under the "
   "Community Data License Agreement (permissive); cite Tabak MA et al. 2019, \"Machine learning to "
   "classify animal species in camera trap images: Applications in ecology\", *Methods in Ecology and "

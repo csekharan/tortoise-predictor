@@ -1,149 +1,181 @@
 file,truth_class,truth_species,truth_positive,pred_animal_present,pred_animal,pred_is_tortoise_or_turtle,pred_positive,outcome,seconds,error,raw
-test/blank/none-beach_commons105447183.jpg,blank,none,0,False,none,False,0,TN,10.54,,"{
+test/blank/none-grass_inat101909381_p170252547.jpg,blank,none,0,False,none,False,0,TN,6.87,,"{
   ""animal_present"": false,
   ""animal"": ""none"",
   ""is_tortoise_or_turtle"": false
 }"
-test/blank/none-beach_commons109960431.jpg,blank,none,0,False,none,False,0,TN,4.86,,"{""animal_present"":false,""animal"":""none"",""is_tortoise_or_turtle"":false}"
-test/blank/none-beach_commons110113932.jpg,blank,none,0,False,none,False,0,TN,4.9,,"{""animal_present"":false,""animal"":""none"",""is_tortoise_or_turtle"":false}"
-test/blank/none-beach_commons114028597.jpg,blank,none,0,False,none,False,0,TN,5.65,,"{""animal_present"":false,""animal"":""none"",""is_tortoise_or_turtle"":false}"
-test/blank/none-beach_commons114836053.jpg,blank,none,0,False,none,False,0,TN,8.03,,"{
+test/blank/none-grass_inat101916706_p170266922.jpg,blank,none,0,False,none,False,0,TN,5.36,,"{""animal_present"": false, ""animal"": ""none"", ""is_tortoise_or_turtle"": false}"
+test/blank/none-grass_inat103803026_p173821052.jpg,blank,none,0,False,none,False,0,TN,10.99,,"{
   ""animal_present"": false,
   ""animal"": ""none"",
   ""is_tortoise_or_turtle"": false
 }"
-test/blank/none-beach_commons114956623.jpg,blank,none,0,False,none,False,0,TN,4.47,,"{""animal_present"":false,""animal"":""none"",""is_tortoise_or_turtle"":false}"
-test/blank/none-beach_commons124965084.jpg,blank,none,0,False,none,False,0,TN,4.72,,"{""animal_present"":false,""animal"":""none"",""is_tortoise_or_turtle"":false}"
-test/blank/none-beach_commons125721726.jpg,blank,none,0,False,none,False,0,TN,4.77,,"{""animal_present"":false,""animal"":""none"",""is_tortoise_or_turtle"":false}"
-test/blank/none-beach_commons126445621.jpg,blank,none,0,False,none,False,0,TN,5.65,,"{
+test/blank/none-grass_inat104404915_p174934232.jpg,blank,none,0,False,none,False,0,TN,7.12,,"{""animal_present"": false, ""animal"": ""none"", ""is_tortoise_or_turtle"": false}"
+test/blank/none-grass_inat10764995_p15052821.jpg,blank,none,0,False,none,False,0,TN,8.81,,"{
   ""animal_present"": false,
   ""animal"": ""none"",
   ""is_tortoise_or_turtle"": false
 }"
-test/blank/none-beach_commons141198686.jpg,blank,none,0,False,none,False,0,TN,7.38,,"{""animal_present"":false,""animal"":""none"",""is_tortoise_or_turtle"":false}"
-test/blank/none-beach_commons14438303.jpg,blank,none,0,False,none,False,0,TN,5.58,,"{""animal_present"":false,""animal"":""none"",""is_tortoise_or_turtle"":false}"
-test/blank/none-beach_commons153480624.jpg,blank,none,0,False,none,False,0,TN,5.25,,"{""animal_present"": false, ""animal"": ""none"", ""is_tortoise_or_turtle"": false}"
-test/blank/none-beach_commons1630159.jpg,blank,none,0,False,none,False,0,TN,4.28,,"{
+test/blank/none-grass_inat12062423_p17296143.jpg,blank,none,0,False,none,False,0,TN,6.95,,"{""animal_present"":false,""animal"":""none"",""is_tortoise_or_turtle"":false}"
+test/blank/none-grass_inat122874914_p208091542.jpg,blank,none,0,False,none,False,0,TN,11.65,,"{
   ""animal_present"": false,
   ""animal"": ""none"",
   ""is_tortoise_or_turtle"": false
 }"
-test/blank/none-beach_commons164516739.jpg,blank,none,0,False,none,False,0,TN,4.47,,"{""animal_present"":false,""animal"":""none"",""is_tortoise_or_turtle"":false}"
-test/blank/none-beach_commons168346574.jpg,blank,none,0,False,none,False,0,TN,4.08,,"{""animal_present"":false,""animal"":""none"",""is_tortoise_or_turtle"":false}"
-test/blank/none-beach_commons2982089.jpg,blank,none,0,False,none,False,0,TN,8.02,,"{
+test/blank/none-grass_inat125681994_p213159438.jpg,blank,none,0,False,none,False,0,TN,5.36,,"{""animal_present"": false, ""animal"": ""none"", ""is_tortoise_or_turtle"": false}"
+test/blank/none-grass_inat125880111_p213522758.jpg,blank,none,0,False,none,False,0,TN,11.01,,"{""animal_present"": false, ""animal"": ""none"", ""is_tortoise_or_turtle"": false}"
+test/blank/none-grass_inat125964346_p213673540.jpg,blank,none,0,False,none,False,0,TN,9.89,,"{""animal_present"":false,""animal"":""none"",""is_tortoise_or_turtle"":false}"
+test/blank/none-grass_inat144031771_p247122926.jpg,blank,none,0,False,none,False,0,TN,12.01,,"{
   ""animal_present"": false,
   ""animal"": ""none"",
   ""is_tortoise_or_turtle"": false
 }"
-test/blank/none-beach_commons47140708.jpg,blank,none,0,False,none,False,0,TN,4.48,,"{""animal_present"":false,""animal"":""none"",""is_tortoise_or_turtle"":false}"
-test/blank/none-beach_commons60037253.jpg,blank,none,0,False,none,False,0,TN,4.63,,"{""animal_present"":false,""animal"":""none"",""is_tortoise_or_turtle"":false}"
-test/blank/none-beach_commons65061786.jpg,blank,none,0,False,none,False,0,TN,6.44,,"{
+test/blank/none-grass_inat144433314_p247888164.jpg,blank,none,0,False,none,False,0,TN,8.27,,"{
   ""animal_present"": false,
   ""animal"": ""none"",
   ""is_tortoise_or_turtle"": false
 }"
-test/blank/none-beach_commons80730910.jpg,blank,none,0,False,none,False,0,TN,12.73,,"{
+test/blank/none-grass_inat145461433_p249856951.jpg,blank,none,0,False,none,False,0,TN,4.12,,"{""animal_present"": false, ""animal"": ""none"", ""is_tortoise_or_turtle"": false}"
+test/blank/none-grass_inat15918224_p23810234.jpg,blank,none,0,False,none,False,0,TN,11.12,,"{
   ""animal_present"": false,
   ""animal"": ""none"",
   ""is_tortoise_or_turtle"": false
 }"
-test/blank/none-beach_commons85592033.jpg,blank,none,0,False,none,False,0,TN,5.88,,"{""animal_present"": false, ""animal"": ""none"", ""is_tortoise_or_turtle"": false}"
-test/blank/none-beach_commons99435030.jpg,blank,none,0,False,none,False,0,TN,3.62,,"{""animal_present"":false,""animal"":""none"",""is_tortoise_or_turtle"":false}"
-test/blank/none-dry-land_commons107589129.jpg,blank,none,0,False,none,False,0,TN,5.91,,"{""animal_present"": false, ""animal"": ""none"", ""is_tortoise_or_turtle"": false}"
-test/blank/none-dry-land_commons107999407.jpg,blank,none,0,False,none,False,0,TN,5.09,,"{""animal_present"":false,""animal"":""none"",""is_tortoise_or_turtle"":false}"
-test/blank/none-dry-land_commons12433183.jpg,blank,none,0,False,none,False,0,TN,5.81,,"{
+test/blank/none-grass_inat179555076_p312606930.jpg,blank,none,0,False,none,False,0,TN,6.04,,"{
   ""animal_present"": false,
   ""animal"": ""none"",
   ""is_tortoise_or_turtle"": false
 }"
-test/blank/none-dry-land_commons130745001.jpg,blank,none,0,False,none,False,0,TN,6.1,,"{""animal_present"": false, ""animal"": ""none"", ""is_tortoise_or_turtle"": false}"
-test/blank/none-dry-land_commons135977711.jpg,blank,none,0,False,none,False,0,TN,4.57,,"{""animal_present"": false, ""animal"": ""none"", ""is_tortoise_or_turtle"": false}"
-test/blank/none-dry-land_commons160707971.jpg,blank,none,0,False,none,False,0,TN,8.65,,"{
+test/blank/none-grass_inat1915250_p2339369.jpg,blank,none,0,False,none,False,0,TN,8.21,,"{""animal_present"":false,""animal"":""none"",""is_tortoise_or_turtle"":false}"
+test/blank/none-grass_inat193219436_p339392805.jpg,blank,none,0,False,none,False,0,TN,3.74,,"{
   ""animal_present"": false,
   ""animal"": ""none"",
   ""is_tortoise_or_turtle"": false
 }"
-test/blank/none-dry-land_commons163157811.jpg,blank,none,0,False,none,False,0,TN,7.47,,"{""animal_present"":false,""animal"":""none"",""is_tortoise_or_turtle"":false}"
-test/blank/none-dry-land_commons163784473.jpg,blank,none,0,False,none,False,0,TN,6.18,,"{
+test/blank/none-grass_inat205025108_p362460861.jpg,blank,none,0,False,none,False,0,TN,9.07,,"{""animal_present"":false,""animal"":""none"",""is_tortoise_or_turtle"":false}"
+test/blank/none-grass_inat210632781_p372536825.jpg,blank,none,0,False,none,False,0,TN,8.63,,"{""animal_present"": false, ""animal"": ""none"", ""is_tortoise_or_turtle"": false}"
+test/blank/none-grass_inat211215975_p373461670.jpg,blank,none,0,False,none,False,0,TN,7.91,,"{""animal_present"":false,""animal"":""none"",""is_tortoise_or_turtle"":false}"
+test/blank/none-grass_inat24212849_p37441653.jpg,blank,none,0,False,none,False,0,TN,6.36,,"{""animal_present"":false,""animal"":""none"",""is_tortoise_or_turtle"":false}"
+test/blank/none-grass_inat251953046_p450923365.jpg,blank,none,0,False,none,False,0,TN,7.13,,"{
   ""animal_present"": false,
   ""animal"": ""none"",
   ""is_tortoise_or_turtle"": false
 }"
-test/blank/none-dry-land_commons164630289.jpg,blank,none,0,False,none,False,0,TN,3.66,,"{
+test/blank/none-grass_inat265729448_p477348785.jpg,blank,none,0,False,none,False,0,TN,10.64,,"{
   ""animal_present"": false,
   ""animal"": ""none"",
   ""is_tortoise_or_turtle"": false
 }"
-test/blank/none-dry-land_commons170761164.jpg,blank,none,0,False,none,False,0,TN,6.36,,"{""animal_present"":false,""animal"":""none"",""is_tortoise_or_turtle"":false}"
-test/blank/none-dry-land_commons197746174.jpg,blank,none,0,False,none,False,0,TN,5.32,,"{""animal_present"":false,""animal"":""none"",""is_tortoise_or_turtle"":false}"
-test/blank/none-dry-land_commons203035816.jpg,blank,none,0,False,none,False,0,TN,3.73,,"{""animal_present"": false, ""animal"": ""none"", ""is_tortoise_or_turtle"": false}"
-test/blank/none-dry-land_commons24125157.jpg,blank,none,0,False,none,False,0,TN,4.06,,"{""animal_present"":false,""animal"":""none"",""is_tortoise_or_turtle"":false}"
-test/blank/none-dry-land_commons24897439.jpg,blank,none,0,False,none,False,0,TN,5.89,,"{""animal_present"":false,""animal"":""none"",""is_tortoise_or_turtle"":false}"
-test/blank/none-dry-land_commons31196253.jpg,blank,none,0,False,none,False,0,TN,11.08,,"{""animal_present"":false,""animal"":""none"",""is_tortoise_or_turtle"":false}"
-test/blank/none-dry-land_commons3193235.jpg,blank,none,0,False,none,False,0,TN,7.83,,"{""animal_present"":false,""animal"":""none"",""is_tortoise_or_turtle"":false}"
-test/blank/none-dry-land_commons3457540.jpg,blank,none,0,False,none,False,0,TN,4.61,,"{""animal_present"":false,""animal"":""none"",""is_tortoise_or_turtle"":false}"
-test/blank/none-dry-land_commons36266425.jpg,blank,none,0,False,none,False,0,TN,8.81,,"{""animal_present"": false, ""animal"": ""none"", ""is_tortoise_or_turtle"": false}"
-test/blank/none-dry-land_commons6993047.jpg,blank,none,0,False,none,False,0,TN,13.66,,"{
+test/blank/none-grass_inat271675655_p488709583.jpg,blank,none,0,False,none,False,0,TN,9.2,,"{
   ""animal_present"": false,
   ""animal"": ""none"",
   ""is_tortoise_or_turtle"": false
 }"
-test/blank/none-dry-land_commons70538123.jpg,blank,none,0,False,none,False,0,TN,4.89,,"{""animal_present"": false, ""animal"": ""none"", ""is_tortoise_or_turtle"": false}"
-test/blank/none-dry-land_commons8949675.jpg,blank,none,0,False,none,False,0,TN,3.25,,"{""animal_present"":false,""animal"":""none"",""is_tortoise_or_turtle"":false}"
-test/blank/none-vegetation_inat1291129_p1619630.jpg,blank,none,0,False,none,False,0,TN,4.87,,"{
+test/blank/none-grass_inat299408400_p539405236.jpg,blank,none,0,False,none,False,0,TN,9.13,,"{
   ""animal_present"": false,
   ""animal"": ""none"",
   ""is_tortoise_or_turtle"": false
 }"
-test/blank/none-vegetation_inat1297000_p1627406.jpg,blank,none,0,False,none,False,0,TN,4.2,,"{""animal_present"":false,""animal"":""none"",""is_tortoise_or_turtle"":false}"
-test/blank/none-vegetation_inat1369794_p1694191.jpg,blank,none,0,False,none,False,0,TN,4.74,,"{""animal_present"":false,""animal"":""none"",""is_tortoise_or_turtle"":false}"
-test/blank/none-vegetation_inat1378447_p1703496.jpg,blank,none,0,False,none,False,0,TN,8.04,,"{""animal_present"": false, ""animal"": ""none"", ""is_tortoise_or_turtle"": false}"
-test/blank/none-vegetation_inat1395046_p1724835.jpg,blank,none,0,False,none,False,0,TN,4.32,,"{""animal_present"":false,""animal"":""none"",""is_tortoise_or_turtle"":false}"
-test/blank/none-vegetation_inat1492355_p1849158.jpg,blank,none,0,False,none,False,0,TN,5.02,,"{""animal_present"":false,""animal"":""none"",""is_tortoise_or_turtle"":false}"
-test/blank/none-vegetation_inat1553562_p1924054.jpg,blank,none,0,False,none,False,0,TN,4.89,,"{
+test/blank/none-grass_inat312718891_p564647987.jpg,blank,none,0,False,none,False,0,TN,8.42,,"{""animal_present"":false,""animal"":""none"",""is_tortoise_or_turtle"":false}"
+test/blank/none-grass_inat327280097_p592896370.jpg,blank,none,0,False,none,False,0,TN,3.79,,"{""animal_present"": false, ""animal"": ""none"", ""is_tortoise_or_turtle"": false}"
+test/blank/none-grass_inat330059283_p598421852.jpg,blank,none,0,False,none,False,0,TN,7.81,,"{
   ""animal_present"": false,
   ""animal"": ""none"",
   ""is_tortoise_or_turtle"": false
 }"
-test/blank/none-vegetation_inat1616321_p1985720.jpg,blank,none,0,False,none,False,0,TN,4.07,,"{""animal_present"":false,""animal"":""none"",""is_tortoise_or_turtle"":false}"
-test/blank/none-vegetation_inat1833844_p2226743.jpg,blank,none,0,False,none,False,0,TN,8.04,,"{
+test/blank/none-grass_inat4035916_p4773035.jpg,blank,none,0,False,none,False,0,TN,5.78,,"{""animal_present"": false, ""animal"": ""none"", ""is_tortoise_or_turtle"": false}"
+test/blank/none-grass_inat5214860_p6440140.jpg,blank,none,0,False,none,False,0,TN,18.47,,"{
   ""animal_present"": false,
   ""animal"": ""none"",
   ""is_tortoise_or_turtle"": false
 }"
-test/blank/none-vegetation_inat1889820_p2304522.jpg,blank,none,0,False,none,False,0,TN,3.68,,"{
+test/blank/none-grass_inat62153175_p99545996.jpg,blank,none,0,False,none,False,0,TN,13.12,,"{
   ""animal_present"": false,
   ""animal"": ""none"",
   ""is_tortoise_or_turtle"": false
 }"
-test/blank/none-vegetation_inat204965_p260176.jpg,blank,none,0,False,none,False,0,TN,4.48,,"{""animal_present"":false,""animal"":""none"",""is_tortoise_or_turtle"":false}"
-test/blank/none-vegetation_inat2096300_p2509518.jpg,blank,none,0,False,none,False,0,TN,3.72,,"{""animal_present"":false,""animal"":""none"",""is_tortoise_or_turtle"":false}"
-test/blank/none-vegetation_inat2283851_p2556955.jpg,blank,none,0,False,none,False,0,TN,6.82,,"{""animal_present"":false,""animal"":""none"",""is_tortoise_or_turtle"":false}"
-test/blank/none-vegetation_inat2284879_p2557835.jpg,blank,none,0,False,none,False,0,TN,6.01,,"{""animal_present"":false,""animal"":""none"",""is_tortoise_or_turtle"":false}"
-test/blank/none-vegetation_inat2291117_p2558079.jpg,blank,none,0,False,none,False,0,TN,7.12,,"{
+test/blank/none-grass_inat75977678_p124316601.jpg,blank,none,0,False,none,False,0,TN,18.69,,"{
   ""animal_present"": false,
   ""animal"": ""none"",
   ""is_tortoise_or_turtle"": false
 }"
-test/blank/none-vegetation_inat2352653_p2614934.jpg,blank,none,0,False,none,False,0,TN,3.44,,"{""animal_present"": false, ""animal"": ""none"", ""is_tortoise_or_turtle"": false}"
-test/blank/none-vegetation_inat2363119_p2629367.jpg,blank,none,0,False,none,False,0,TN,5.89,,"{""animal_present"":false,""animal"":""none"",""is_tortoise_or_turtle"":false}"
-test/blank/none-vegetation_inat2370962_p2640437.jpg,blank,none,0,False,none,False,0,TN,7.04,,"{""animal_present"":false,""animal"":""none"",""is_tortoise_or_turtle"":false}"
-test/blank/none-vegetation_inat434377_p547274.jpg,blank,none,0,False,none,False,0,TN,10.19,,"{
+test/blank/none-grass_inat76963836_p125865993.jpg,blank,none,0,False,none,False,0,TN,10.94,,"{
   ""animal_present"": false,
   ""animal"": ""none"",
   ""is_tortoise_or_turtle"": false
 }"
-test/blank/none-vegetation_inat643306_p810526.jpg,blank,none,0,False,none,False,0,TN,4.94,,"{
+test/blank/none-shrub_inat105098936_p176261414.jpg,blank,none,0,False,none,False,0,TN,9.17,,"{""animal_present"":false,""animal"":""none"",""is_tortoise_or_turtle"":false}"
+test/blank/none-shrub_inat105829674_p177659060.jpg,blank,none,0,False,none,False,0,TN,6.01,,"{""animal_present"":false,""animal"":""none"",""is_tortoise_or_turtle"":false}"
+test/blank/none-shrub_inat106459778_p178840588.jpg,blank,none,0,False,none,False,0,TN,3.98,,"{""animal_present"":false,""animal"":""none"",""is_tortoise_or_turtle"":false}"
+test/blank/none-shrub_inat10819675_p15156413.jpg,blank,none,0,False,none,False,0,TN,5.9,,"{""animal_present"":false,""animal"":""none"",""is_tortoise_or_turtle"":false}"
+test/blank/none-shrub_inat11212743_p15903440.jpg,blank,none,0,False,none,False,0,TN,9.72,,"{
   ""animal_present"": false,
   ""animal"": ""none"",
   ""is_tortoise_or_turtle"": false
 }"
-test/blank/none-vegetation_inat727255_p913525.jpg,blank,none,0,False,none,False,0,TN,6.58,,"{""animal_present"":false,""animal"":""none"",""is_tortoise_or_turtle"":false}"
-test/blank/none-vegetation_inat854191_p1082419.jpg,blank,none,0,False,none,False,0,TN,5.43,,"{
+test/blank/none-shrub_inat12028644_p17240833.jpg,blank,none,0,False,none,False,0,TN,8.66,,"{
   ""animal_present"": false,
   ""animal"": ""none"",
   ""is_tortoise_or_turtle"": false
 }"
+test/blank/none-shrub_inat12078818_p17322333.jpg,blank,none,0,False,none,False,0,TN,5.49,,"{""animal_present"": false, ""animal"": ""none"", ""is_tortoise_or_turtle"": false}"
+test/blank/none-shrub_inat141484144_p242399556.jpg,blank,none,0,False,none,False,0,TN,5.62,,"{""animal_present"": false, ""animal"": ""none"", ""is_tortoise_or_turtle"": false}"
+test/blank/none-shrub_inat157927092_p273000672.jpg,blank,none,0,False,none,False,0,TN,6.03,,"{
+  ""animal_present"": false,
+  ""animal"": ""none"",
+  ""is_tortoise_or_turtle"": false
+}"
+test/blank/none-shrub_inat17244674_p26153405.jpg,blank,none,0,False,none,False,0,TN,5.54,,"{""animal_present"":false,""animal"":""none"",""is_tortoise_or_turtle"":false}"
+test/blank/none-shrub_inat1747954_p2121032.jpg,blank,none,0,False,none,False,0,TN,14.49,,"{
+  ""animal_present"": false,
+  ""animal"": ""none"",
+  ""is_tortoise_or_turtle"": false
+}"
+test/blank/none-shrub_inat188198664_p329312762.jpg,blank,none,0,False,none,False,0,TN,6.35,,"{""animal_present"":false,""animal"":""none"",""is_tortoise_or_turtle"":false}"
+test/blank/none-shrub_inat192124847_p337204201.jpg,blank,none,0,False,none,False,0,TN,7.79,,"{""animal_present"":false,""animal"":""none"",""is_tortoise_or_turtle"":false}"
+test/blank/none-shrub_inat201539290_p355785408.jpg,blank,none,0,False,none,False,0,TN,4.61,,"{""animal_present"": false, ""animal"": ""none"", ""is_tortoise_or_turtle"": false}"
+test/blank/none-shrub_inat20294965_p31332040.jpg,blank,none,0,False,none,False,0,TN,10.2,,"{""animal_present"":false,""animal"":""none"",""is_tortoise_or_turtle"":false}"
+test/blank/none-shrub_inat211877918_p374491448.jpg,blank,none,0,False,none,False,0,TN,36.96,,"{""animal_present"": false, ""animal"": ""none"", ""is_tortoise_or_turtle"": false}"
+test/blank/none-shrub_inat256645374_p460204389.jpg,blank,none,0,False,none,False,0,TN,4.54,,"{
+  ""animal_present"": false,
+  ""animal"": ""none"",
+  ""is_tortoise_or_turtle"": false
+}"
+test/blank/none-shrub_inat2685523_p3081503.jpg,blank,none,0,False,none,False,0,TN,4.34,,"{""animal_present"":false,""animal"":""none"",""is_tortoise_or_turtle"":false}"
+test/blank/none-shrub_inat27971409_p43570423.jpg,blank,none,0,False,none,False,0,TN,12.35,,"{
+  ""animal_present"": false,
+  ""animal"": ""none"",
+  ""is_tortoise_or_turtle"": false
+}"
+test/blank/none-shrub_inat28997812_p45241889.jpg,blank,none,0,False,none,False,0,TN,7.23,,"{""animal_present"": false, ""animal"": ""none"", ""is_tortoise_or_turtle"": false}"
+test/blank/none-shrub_inat333111452_p604694683.jpg,blank,none,0,False,none,False,0,TN,5.38,,"{""animal_present"": false, ""animal"": ""none"", ""is_tortoise_or_turtle"": false}"
+test/blank/none-shrub_inat339773883_p618165883.jpg,blank,none,0,False,none,False,0,TN,5.58,,"{""animal_present"":false,""animal"":""none"",""is_tortoise_or_turtle"":false}"
+test/blank/none-shrub_inat340670432_p619994556.jpg,blank,none,0,False,none,False,0,TN,4.42,,"{
+  ""animal_present"": false,
+  ""animal"": ""none"",
+  ""is_tortoise_or_turtle"": false
+}"
+test/blank/none-shrub_inat346076100_p630786538.jpg,blank,none,0,False,none,False,0,TN,6.28,,"{""animal_present"":false,""animal"":""none"",""is_tortoise_or_turtle"":false}"
+test/blank/none-shrub_inat358781687_p654545470.jpg,blank,none,0,False,none,False,0,TN,4.05,,"{""animal_present"":false,""animal"":""none"",""is_tortoise_or_turtle"":false}"
+test/blank/none-shrub_inat59403876_p94915816.jpg,blank,none,0,False,none,False,0,TN,4.93,,"{
+  ""animal_present"": false,
+  ""animal"": ""none"",
+  ""is_tortoise_or_turtle"": false
+}"
+test/blank/none-shrub_inat59599820_p95239558.jpg,blank,none,0,False,none,False,0,TN,6.1,,"{""animal_present"":false,""animal"":""none"",""is_tortoise_or_turtle"":false}"
+test/blank/none-shrub_inat64394696_p103507816.jpg,blank,none,0,False,none,False,0,TN,6.63,,"{
+  ""animal_present"": false,
+  ""animal"": ""none"",
+  ""is_tortoise_or_turtle"": false
+}"
+test/blank/none-shrub_inat65325650_p105122696.jpg,blank,none,0,False,none,False,0,TN,6.21,,"{""animal_present"":false,""animal"":""none"",""is_tortoise_or_turtle"":false}"
+test/blank/none-shrub_inat81548250_p133771438.jpg,blank,none,0,False,none,False,0,TN,5.23,,"{""animal_present"":false,""animal"":""none"",""is_tortoise_or_turtle"":false}"
+test/blank/none-shrub_inat84888953_p139565894.jpg,blank,none,0,False,none,False,0,TN,10.28,,"{
+  ""animal_present"": false,
+  ""animal"": ""none"",
+  ""is_tortoise_or_turtle"": false
+}"
+test/blank/none-shrub_inat98507907_p164022282.jpg,blank,none,0,False,none,False,0,TN,8.46,,"{""animal_present"":false,""animal"":""none"",""is_tortoise_or_turtle"":false}"
 test/other_animal/animal-armadillo_inat191285713_p335532916.jpg,other_animal,Mexican Long-nosed Armadillo,0,True,nine-banded armadillo,False,0,TN,3.68,,"{""animal_present"": true, ""animal"": ""nine-banded armadillo"", ""is_tortoise_or_turtle"": false}"
 test/other_animal/animal-armadillo_inat195807991_p344573270.jpg,other_animal,Mexican Long-nosed Armadillo,0,True,nine-banded armadillo,False,0,TN,3.03,,"{""animal_present"": true, ""animal"": ""nine-banded armadillo"", ""is_tortoise_or_turtle"": false}"
 test/other_animal/animal-armadillo_inat198134424_p349146581.jpg,other_animal,Mexican Long-nosed Armadillo,0,True,nine-banded armadillo,False,0,TN,2.6,,"{""animal_present"":true,""animal"":""nine-banded armadillo"",""is_tortoise_or_turtle"":false}"

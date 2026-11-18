@@ -1,5 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="900" height="632" viewBox="0 0 900 632" role="img" aria-labelledby="t d" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif">
-<title id="t">Confusion matrices: Gemini zero-shot vs Mask R-CNN</title><desc id="d">Gemini 3.8 Flash, original prompt, lists example animals: 165 found, 0 missed, 0 false alarms, 109 correct; Gemini 3.8 Flash, neutral prompt, names no animals: 165 found, 0 missed, 0 false alarms, 109 correct; Mask R-CNN, threshold 0.5, the paper&#x27;s default: 165 found, 0 missed, 38 false alarms, 71 correct; Mask R-CNN, threshold 0.85, the paper&#x27;s best F1: 165 found, 0 missed, 22 false alarms, 87 correct</desc>
+<title id="t">Confusion matrices: Gemini zero-shot vs Mask R-CNN</title><desc id="d">Gemini 3.8 Flash, original prompt, lists example animals: 165 found, 0 missed, 0 false alarms, 109 correct; Gemini 3.8 Flash, neutral prompt, names no animals: 165 found, 0 missed, 0 false alarms, 109 correct; Mask R-CNN, threshold 0.5, the paper&#x27;s default: 165 found, 0 missed, 40 false alarms, 69 correct; Mask R-CNN, threshold 0.85, the paper&#x27;s best F1: 165 found, 0 missed, 22 false alarms, 87 correct</desc>
 <rect x="0.5" y="0.5" width="899" height="631" rx="12" fill="#1a1a19" stroke="#ffffff" stroke-opacity="0.1"/>
 <text x="32.0" y="44.0" font-size="19" font-weight="600" fill="#f0efec" text-anchor="start" >Both methods find all 165 tortoises; the false alarms set them apart</text>
 <text x="32.0" y="68.0" font-size="13.5" font-weight="400" fill="#c3c2b7" text-anchor="start" >Hold-out set: 165 tortoise photos and 109 images without one. Shade shows each cell&#x27;s share of its row.</text>
@@ -56,12 +56,12 @@
 <rect x="334.0" y="429.0" width="167.0" height="82.0" rx="4" fill="#291f1a"/>
 <text x="417.5" y="472.0" font-size="26" font-weight="600" fill="#f0efec" text-anchor="middle" >0</text>
 <text x="417.5" y="492.0" font-size="11.5" font-weight="400" fill="#f0efec" text-anchor="middle" fill-opacity="0.88">missed · 0%</text>
-<rect x="165.0" y="513.0" width="167.0" height="82.0" rx="4" fill="#67331e"/>
-<text x="248.5" y="556.0" font-size="26" font-weight="600" fill="#f0efec" text-anchor="middle" >38</text>
-<text x="248.5" y="576.0" font-size="11.5" font-weight="400" fill="#f0efec" text-anchor="middle" fill-opacity="0.88">false alarms · 35%</text>
-<rect x="334.0" y="513.0" width="167.0" height="82.0" rx="4" fill="#9c4522"/>
-<text x="417.5" y="556.0" font-size="26" font-weight="600" fill="#ffffff" text-anchor="middle" >71</text>
-<text x="417.5" y="576.0" font-size="11.5" font-weight="400" fill="#ffffff" text-anchor="middle" fill-opacity="0.88">correct · 65%</text>
+<rect x="165.0" y="513.0" width="167.0" height="82.0" rx="4" fill="#6a341e"/>
+<text x="248.5" y="556.0" font-size="26" font-weight="600" fill="#f0efec" text-anchor="middle" >40</text>
+<text x="248.5" y="576.0" font-size="11.5" font-weight="400" fill="#f0efec" text-anchor="middle" fill-opacity="0.88">false alarms · 37%</text>
+<rect x="334.0" y="513.0" width="167.0" height="82.0" rx="4" fill="#994422"/>
+<text x="417.5" y="556.0" font-size="26" font-weight="600" fill="#ffffff" text-anchor="middle" >69</text>
+<text x="417.5" y="576.0" font-size="11.5" font-weight="400" fill="#ffffff" text-anchor="middle" fill-opacity="0.88">correct · 63%</text>
 <circle cx="536.0" cy="372" r="5" fill="#d95926"/>
 <text x="548.0" y="377.0" font-size="14" font-weight="600" fill="#f0efec" text-anchor="start" >Mask R-CNN</text>
 <text x="548.0" y="395.0" font-size="12.5" font-weight="400" fill="#c3c2b7" text-anchor="start" >threshold 0.85, the paper&#x27;s best F1</text>
@@ -79,5 +79,5 @@
 <rect x="700.0" y="513.0" width="167.0" height="82.0" rx="4" fill="#b64d24"/>
 <text x="783.5" y="556.0" font-size="26" font-weight="600" fill="#ffffff" text-anchor="middle" >87</text>
 <text x="783.5" y="576.0" font-size="11.5" font-weight="400" fill="#ffffff" text-anchor="middle" fill-opacity="0.88">correct · 80%</text>
-<text x="32.0" y="614.0" font-size="11.5" font-weight="400" fill="#898781" text-anchor="start" >Scored per image. Not a tortoise: 109 images, of look-alike animals and of scenes with no animal.</text>
+<text x="32.0" y="614.0" font-size="11.5" font-weight="400" fill="#898781" text-anchor="start" >Scored per image. Not a tortoise: 109 images, of look-alike animals and of coastal vegetation with no animal.</text>
 </svg>

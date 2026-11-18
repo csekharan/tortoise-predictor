@@ -17,17 +17,16 @@
   "recall_sensitivity": 1.0,
   "specificity": 1.0,
   "f1": 1.0,
-  "seconds_this_run": 11.4,
+  "seconds_this_run": 34.6,
   "token_usage_this_run": {
-    "promptTokenCount": 3386,
-    "candidatesTokenCount": 55,
-    "totalTokenCount": 4859,
-    "thoughtsTokenCount": 1418
+    "promptTokenCount": 3379,
+    "candidatesTokenCount": 53,
+    "totalTokenCount": 11028,
+    "thoughtsTokenCount": 7596
   },
   "model_answers_by_true_label": {
     "blank": {
-      "none": 64,
-      "namaqua chameleon": 1
+      "none": 65
     },
     "other_animal: Atlantic Blue Crab": {
       "blue crab": 4,
