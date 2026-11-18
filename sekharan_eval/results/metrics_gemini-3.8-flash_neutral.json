@@ -8,95 +8,97 @@
   "errors": 0,
   "positive": "tortoise or turtle",
   "negative": "any other animal, or no animal",
-  "TP": 164,
+  "TP": 165,
   "TN": 109,
   "FP": 0,
-  "FN": 1,
-  "accuracy": 0.9964,
+  "FN": 0,
+  "accuracy": 1.0,
   "precision": 1.0,
-  "recall_sensitivity": 0.9939,
+  "recall_sensitivity": 1.0,
   "specificity": 1.0,
-  "f1": 0.997,
-  "seconds_this_run": 429.9,
+  "f1": 1.0,
+  "seconds_this_run": 11.4,
   "token_usage_this_run": {
-    "promptTokenCount": 308650,
-    "candidatesTokenCount": 4677,
-    "totalTokenCount": 394818,
-    "thoughtsTokenCount": 81491
+    "promptTokenCount": 3386,
+    "candidatesTokenCount": 55,
+    "totalTokenCount": 4859,
+    "thoughtsTokenCount": 1418
   },
   "model_answers_by_true_label": {
     "blank": {
-      "none": 58,
-      "wild turkey": 2,
-      "sandhill crane": 1,
-      "cow": 1,
-      "feral hog": 1,
-      "cattle": 1,
-      "bird": 1
+      "none": 64,
+      "namaqua chameleon": 1
     },
-    "other_animal: bird": {
-      "wild turkey": 1,
-      "sandhill crane": 1
+    "other_animal: Atlantic Blue Crab": {
+      "blue crab": 4,
+      "swimming crab": 1,
+      "crab": 1
     },
-    "other_animal: bobcat": {
-      "bobcat": 2,
-      "nine-banded armadillo": 1
+    "other_animal: Atlantic Ghost Crab": {
+      "ghost crab": 3
     },
-    "other_animal: cattle": {
-      "cow": 1,
-      "white-tailed deer": 1
+    "other_animal: Atlantic Horseshoe Crab": {
+      "horseshoe crab": 3
     },
-    "other_animal: coyote": {
-      "coyote": 2,
-      "white-tailed deer": 1
+    "other_animal: Black-bellied Pangolin": {
+      "pangolin": 2,
+      "long-tailed pangolin": 1
     },
-    "other_animal: deer": {
-      "white-tailed deer": 4
+    "other_animal: Cannonball Jelly": {
+      "barrel jellyfish": 1
     },
-    "other_animal: feral hog": {
-      "feral pig": 1,
-      "cattle": 1,
-      "wild boar": 1
+    "other_animal: Gulf Marsh Fiddler Crab": {
+      "fiddler crab": 1
     },
-    "other_animal: nilgai": {
-      "nilgai": 1,
-      "deer": 1
+    "other_animal: Mexican Long-nosed Armadillo": {
+      "nine-banded armadillo": 11
     },
-    "other_animal: nine-banded armadillo": {
-      "nine-banded armadillo": 11,
-      "none": 3,
-      "virginia opossum": 1,
-      "armadillo": 1
+    "other_animal: Portuguese Man o' War": {
+      "portuguese man o' war": 1
     },
-    "other_animal: opossum": {
-      "virginia opossum": 1,
-      "none": 1
+    "other_animal: Purple-brown Urchin": {
+      "sea urchin": 2
     },
-    "other_animal: rabbit": {
-      "rabbit": 2
+    "other_animal: Speckled Swimming Crab": {
+      "speckled swimming crab": 1
     },
-    "other_animal: raccoon": {
-      "none": 2,
-      "raccoon": 1
+    "other_animal: Sunda Pangolin": {
+      "sunda pangolin": 1
     },
-    "other_animal: wild turkey": {
-      "wild turkey": 2
+    "other_animal: Taiwan Pangolin": {
+      "pangolin": 1
+    },
+    "other_animal: Temminck's Ground Pangolin": {
+      "pangolin": 3,
+      "ground pangolin": 1
+    },
+    "other_animal: Texas Lightning Whelk": {
+      "lightning whelk": 1
+    },
+    "other_animal: Two-banded Sea Star": {
+      "brittle star": 1,
+      "starfish": 1
+    },
+    "other_animal: White-bellied Pangolin": {
+      "sunda pangolin": 1,
+      "pangolin": 1
+    },
+    "other_animal: Woody Chiton": {
+      "chiton": 1
     },
     "tortoise": {
-      "texas tortoise": 60,
-      "tortoise": 37,
+      "texas tortoise": 57,
+      "tortoise": 38,
+      "gopher tortoise": 27,
       "desert tortoise": 26,
-      "gopher tortoise": 22,
-      "red-footed tortoise": 7,
+      "red-footed tortoise": 6,
+      "african spurred tortoise": 3,
       "box turtle": 2,
-      "african spurred tortoise": 2,
-      "russian tortoise": 2,
-      "hinged tortoise": 1,
-      "greek tortoise": 1,
       "tortoise and pigeon": 1,
+      "russian tortoise": 1,
       "marginated tortoise": 1,
-      "leopard tortoise": 1,
-      "none": 1,
+      "greek tortoise": 1,
+      "hingeback tortoise": 1,
       "yellow-footed tortoise": 1
     }
   }

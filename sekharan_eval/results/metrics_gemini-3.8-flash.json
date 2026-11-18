@@ -1,87 +1,97 @@
 {
   "model": "gemini-3.8-flash",
+  "prompt_variant": "original",
+  "prompt": "Look at this photograph. Is there an animal in it?\nIf yes, give the animal's common name as precisely as you can (for example: Texas tortoise, box turtle, nine-banded armadillo, raccoon, white-tailed deer, cattle, bird, feral hog, coyote).\nIf there is no animal, answer no animal.\nReturn JSON only.",
   "temperature": 0.0,
   "thinking_level": null,
   "images_scored": 274,
   "errors": 0,
   "positive": "tortoise or turtle",
   "negative": "any other animal, or no animal",
-  "TP": 164,
-  "TN": 108,
-  "FP": 1,
-  "FN": 1,
-  "accuracy": 0.9927,
-  "precision": 0.9939,
-  "recall_sensitivity": 0.9939,
-  "specificity": 0.9908,
-  "f1": 0.9939,
-  "seconds_this_run": 334.4,
+  "TP": 165,
+  "TN": 109,
+  "FP": 0,
+  "FN": 0,
+  "accuracy": 1.0,
+  "precision": 1.0,
+  "recall_sensitivity": 1.0,
+  "specificity": 1.0,
+  "f1": 1.0,
+  "seconds_this_run": 5.4,
   "token_usage_this_run": {
-    "promptTokenCount": 317692,
-    "candidatesTokenCount": 7812,
-    "totalTokenCount": 388789,
-    "thoughtsTokenCount": 63285
+    "promptTokenCount": 3485,
+    "candidatesTokenCount": 79,
+    "totalTokenCount": 4174,
+    "thoughtsTokenCount": 610
   },
   "model_answers_by_true_label": {
     "blank": {
-      "none": 60,
-      "cattle": 2,
-      "bird": 1,
-      "feral hog": 1,
-      "texas tortoise": 1
+      "none": 65
     },
-    "other_animal: bird": {
-      "wild turkey": 1,
-      "sandhill crane": 1
+    "other_animal: Atlantic Blue Crab": {
+      "blue crab": 4,
+      "swimming crab": 1,
+      "crab": 1
     },
-    "other_animal: bobcat": {
-      "bobcat": 2,
-      "feral hog": 1
+    "other_animal: Atlantic Ghost Crab": {
+      "ghost crab": 3
     },
-    "other_animal: cattle": {
-      "cattle": 1,
-      "white-tailed deer": 1
+    "other_animal: Atlantic Horseshoe Crab": {
+      "horseshoe crab": 3
     },
-    "other_animal: coyote": {
-      "coyote": 2,
-      "white-tailed deer": 1
+    "other_animal: Black-bellied Pangolin": {
+      "pangolin": 2,
+      "long-tailed pangolin": 1
     },
-    "other_animal: deer": {
-      "white-tailed deer": 4
+    "other_animal: Cannonball Jelly": {
+      "jellyfish": 1
     },
-    "other_animal: feral hog": {
-      "feral hog": 2,
-      "cattle": 1
+    "other_animal: Gulf Marsh Fiddler Crab": {
+      "fiddler crab": 1
     },
-    "other_animal: nilgai": {
-      "nilgai": 1,
-      "white-tailed deer": 1
+    "other_animal: Mexican Long-nosed Armadillo": {
+      "nine-banded armadillo": 11
     },
-    "other_animal: nine-banded armadillo": {
-      "nine-banded armadillo": 13,
-      "none": 3
+    "other_animal: Portuguese Man o' War": {
+      "portuguese man o' war": 1
     },
-    "other_animal: opossum": {
-      "virginia opossum": 1,
-      "none": 1
+    "other_animal: Purple-brown Urchin": {
+      "sea urchin": 2
     },
-    "other_animal: rabbit": {
-      "cottontail rabbit": 2
+    "other_animal: Speckled Swimming Crab": {
+      "speckled swimming crab": 1
     },
-    "other_animal: raccoon": {
-      "none": 2,
-      "raccoon": 1
+    "other_animal: Sunda Pangolin": {
+      "pangolin": 1
     },
-    "other_animal: wild turkey": {
-      "wild turkey": 2
+    "other_animal: Taiwan Pangolin": {
+      "pangolin": 1
+    },
+    "other_animal: Temminck's Ground Pangolin": {
+      "pangolin": 2,
+      "ground pangolin": 2
+    },
+    "other_animal: Texas Lightning Whelk": {
+      "lightning whelk": 1
+    },
+    "other_animal: Two-banded Sea Star": {
+      "starfish": 1,
+      "sea star": 1
+    },
+    "other_animal: White-bellied Pangolin": {
+      "pangolin": 2
+    },
+    "other_animal: Woody Chiton": {
+      "lined chiton": 1
     },
     "tortoise": {
-      "texas tortoise": 152,
-      "tortoise": 5,
-      "desert tortoise": 3,
+      "texas tortoise": 155,
       "box turtle": 2,
+      "tortoise": 2,
+      "desert tortoise": 2,
       "gopher tortoise": 2,
-      "none": 1
+      "spur-thighed tortoise": 1,
+      "red-footed tortoise": 1
     }
   }
 }

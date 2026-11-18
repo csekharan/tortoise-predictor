@@ -1,739 +1,683 @@
 file,truth_class,truth_species,truth_positive,pred_animal_present,pred_animal,pred_is_tortoise_or_turtle,pred_positive,outcome,seconds,error,raw
-test/blank/nacti-blank_FL-01_0046295.jpg,blank,none,0,False,none,False,0,TN,4.98,,"{""animal_present"":false,""animal"":""none"",""is_tortoise_or_turtle"":false}"
-test/blank/nacti-blank_FL-01_0047689.jpg,blank,none,0,False,none,False,0,TN,4.25,,"{
+test/blank/none-beach_commons105447183.jpg,blank,none,0,False,none,False,0,TN,10.54,,"{
   ""animal_present"": false,
   ""animal"": ""none"",
   ""is_tortoise_or_turtle"": false
 }"
-test/blank/nacti-blank_FL-01_0064110.jpg,blank,none,0,False,none,False,0,TN,5.44,,"{
+test/blank/none-beach_commons109960431.jpg,blank,none,0,False,none,False,0,TN,4.86,,"{""animal_present"":false,""animal"":""none"",""is_tortoise_or_turtle"":false}"
+test/blank/none-beach_commons110113932.jpg,blank,none,0,False,none,False,0,TN,4.9,,"{""animal_present"":false,""animal"":""none"",""is_tortoise_or_turtle"":false}"
+test/blank/none-beach_commons114028597.jpg,blank,none,0,False,none,False,0,TN,5.65,,"{""animal_present"":false,""animal"":""none"",""is_tortoise_or_turtle"":false}"
+test/blank/none-beach_commons114836053.jpg,blank,none,0,False,none,False,0,TN,8.03,,"{
   ""animal_present"": false,
   ""animal"": ""none"",
   ""is_tortoise_or_turtle"": false
 }"
-test/blank/nacti-blank_FL-01_0071339.jpg,blank,none,0,False,none,False,0,TN,5.04,,"{""animal_present"":false,""animal"":""none"",""is_tortoise_or_turtle"":false}"
-test/blank/nacti-blank_FL-01_0072025.jpg,blank,none,0,False,none,False,0,TN,5.3,,"{""animal_present"":false,""animal"":""none"",""is_tortoise_or_turtle"":false}"
-test/blank/nacti-blank_FL-01_0086580.jpg,blank,none,0,False,none,False,0,TN,10.26,,"{
+test/blank/none-beach_commons114956623.jpg,blank,none,0,False,none,False,0,TN,4.47,,"{""animal_present"":false,""animal"":""none"",""is_tortoise_or_turtle"":false}"
+test/blank/none-beach_commons124965084.jpg,blank,none,0,False,none,False,0,TN,4.72,,"{""animal_present"":false,""animal"":""none"",""is_tortoise_or_turtle"":false}"
+test/blank/none-beach_commons125721726.jpg,blank,none,0,False,none,False,0,TN,4.77,,"{""animal_present"":false,""animal"":""none"",""is_tortoise_or_turtle"":false}"
+test/blank/none-beach_commons126445621.jpg,blank,none,0,False,none,False,0,TN,5.65,,"{
   ""animal_present"": false,
   ""animal"": ""none"",
   ""is_tortoise_or_turtle"": false
 }"
-test/blank/nacti-blank_FL-02_0012944.jpg,blank,none,0,False,none,False,0,TN,3.62,,"{
+test/blank/none-beach_commons141198686.jpg,blank,none,0,False,none,False,0,TN,7.38,,"{""animal_present"":false,""animal"":""none"",""is_tortoise_or_turtle"":false}"
+test/blank/none-beach_commons14438303.jpg,blank,none,0,False,none,False,0,TN,5.58,,"{""animal_present"":false,""animal"":""none"",""is_tortoise_or_turtle"":false}"
+test/blank/none-beach_commons153480624.jpg,blank,none,0,False,none,False,0,TN,5.25,,"{""animal_present"": false, ""animal"": ""none"", ""is_tortoise_or_turtle"": false}"
+test/blank/none-beach_commons1630159.jpg,blank,none,0,False,none,False,0,TN,4.28,,"{
   ""animal_present"": false,
   ""animal"": ""none"",
   ""is_tortoise_or_turtle"": false
 }"
-test/blank/nacti-blank_FL-02_0013912.jpg,blank,none,0,False,none,False,0,TN,3.39,,"{""animal_present"": false, ""animal"": ""none"", ""is_tortoise_or_turtle"": false}"
-test/blank/nacti-blank_FL-02_0023980.jpg,blank,none,0,False,none,False,0,TN,3.11,,"{""animal_present"":false,""animal"":""none"",""is_tortoise_or_turtle"":false}"
-test/blank/nacti-blank_FL-02_0048875.jpg,blank,none,0,False,none,False,0,TN,4.82,,"{
+test/blank/none-beach_commons164516739.jpg,blank,none,0,False,none,False,0,TN,4.47,,"{""animal_present"":false,""animal"":""none"",""is_tortoise_or_turtle"":false}"
+test/blank/none-beach_commons168346574.jpg,blank,none,0,False,none,False,0,TN,4.08,,"{""animal_present"":false,""animal"":""none"",""is_tortoise_or_turtle"":false}"
+test/blank/none-beach_commons2982089.jpg,blank,none,0,False,none,False,0,TN,8.02,,"{
   ""animal_present"": false,
   ""animal"": ""none"",
   ""is_tortoise_or_turtle"": false
 }"
-test/blank/nacti-blank_FL-02_0058515.jpg,blank,none,0,False,none,False,0,TN,4.84,,"{""animal_present"":false,""animal"":""none"",""is_tortoise_or_turtle"":false}"
-test/blank/nacti-blank_FL-02_0063792.jpg,blank,none,0,False,none,False,0,TN,3.42,,"{""animal_present"": false, ""animal"": ""none"", ""is_tortoise_or_turtle"": false}"
-test/blank/nacti-blank_FL-05_0010010.jpg,blank,none,0,False,none,False,0,TN,3.79,,"{""animal_present"": false, ""animal"": ""none"", ""is_tortoise_or_turtle"": false}"
-test/blank/nacti-blank_FL-05_0038665.jpg,blank,none,0,False,none,False,0,TN,3.52,,"{
+test/blank/none-beach_commons47140708.jpg,blank,none,0,False,none,False,0,TN,4.48,,"{""animal_present"":false,""animal"":""none"",""is_tortoise_or_turtle"":false}"
+test/blank/none-beach_commons60037253.jpg,blank,none,0,False,none,False,0,TN,4.63,,"{""animal_present"":false,""animal"":""none"",""is_tortoise_or_turtle"":false}"
+test/blank/none-beach_commons65061786.jpg,blank,none,0,False,none,False,0,TN,6.44,,"{
   ""animal_present"": false,
   ""animal"": ""none"",
   ""is_tortoise_or_turtle"": false
 }"
-test/blank/nacti-blank_FL-06_0019241.jpg,blank,none,0,True,cattle,False,0,TN,11.35,,"{
+test/blank/none-beach_commons80730910.jpg,blank,none,0,False,none,False,0,TN,12.73,,"{
+  ""animal_present"": false,
+  ""animal"": ""none"",
+  ""is_tortoise_or_turtle"": false
+}"
+test/blank/none-beach_commons85592033.jpg,blank,none,0,False,none,False,0,TN,5.88,,"{""animal_present"": false, ""animal"": ""none"", ""is_tortoise_or_turtle"": false}"
+test/blank/none-beach_commons99435030.jpg,blank,none,0,False,none,False,0,TN,3.62,,"{""animal_present"":false,""animal"":""none"",""is_tortoise_or_turtle"":false}"
+test/blank/none-dry-land_commons107589129.jpg,blank,none,0,False,none,False,0,TN,5.91,,"{""animal_present"": false, ""animal"": ""none"", ""is_tortoise_or_turtle"": false}"
+test/blank/none-dry-land_commons107999407.jpg,blank,none,0,False,none,False,0,TN,5.09,,"{""animal_present"":false,""animal"":""none"",""is_tortoise_or_turtle"":false}"
+test/blank/none-dry-land_commons12433183.jpg,blank,none,0,False,none,False,0,TN,5.81,,"{
+  ""animal_present"": false,
+  ""animal"": ""none"",
+  ""is_tortoise_or_turtle"": false
+}"
+test/blank/none-dry-land_commons130745001.jpg,blank,none,0,False,none,False,0,TN,6.1,,"{""animal_present"": false, ""animal"": ""none"", ""is_tortoise_or_turtle"": false}"
+test/blank/none-dry-land_commons135977711.jpg,blank,none,0,False,none,False,0,TN,4.57,,"{""animal_present"": false, ""animal"": ""none"", ""is_tortoise_or_turtle"": false}"
+test/blank/none-dry-land_commons160707971.jpg,blank,none,0,False,none,False,0,TN,8.65,,"{
+  ""animal_present"": false,
+  ""animal"": ""none"",
+  ""is_tortoise_or_turtle"": false
+}"
+test/blank/none-dry-land_commons163157811.jpg,blank,none,0,False,none,False,0,TN,7.47,,"{""animal_present"":false,""animal"":""none"",""is_tortoise_or_turtle"":false}"
+test/blank/none-dry-land_commons163784473.jpg,blank,none,0,False,none,False,0,TN,6.18,,"{
+  ""animal_present"": false,
+  ""animal"": ""none"",
+  ""is_tortoise_or_turtle"": false
+}"
+test/blank/none-dry-land_commons164630289.jpg,blank,none,0,False,none,False,0,TN,3.66,,"{
+  ""animal_present"": false,
+  ""animal"": ""none"",
+  ""is_tortoise_or_turtle"": false
+}"
+test/blank/none-dry-land_commons170761164.jpg,blank,none,0,False,none,False,0,TN,6.36,,"{""animal_present"":false,""animal"":""none"",""is_tortoise_or_turtle"":false}"
+test/blank/none-dry-land_commons197746174.jpg,blank,none,0,False,none,False,0,TN,5.32,,"{""animal_present"":false,""animal"":""none"",""is_tortoise_or_turtle"":false}"
+test/blank/none-dry-land_commons203035816.jpg,blank,none,0,False,none,False,0,TN,3.73,,"{""animal_present"": false, ""animal"": ""none"", ""is_tortoise_or_turtle"": false}"
+test/blank/none-dry-land_commons24125157.jpg,blank,none,0,False,none,False,0,TN,4.06,,"{""animal_present"":false,""animal"":""none"",""is_tortoise_or_turtle"":false}"
+test/blank/none-dry-land_commons24897439.jpg,blank,none,0,False,none,False,0,TN,5.89,,"{""animal_present"":false,""animal"":""none"",""is_tortoise_or_turtle"":false}"
+test/blank/none-dry-land_commons31196253.jpg,blank,none,0,False,none,False,0,TN,11.08,,"{""animal_present"":false,""animal"":""none"",""is_tortoise_or_turtle"":false}"
+test/blank/none-dry-land_commons3193235.jpg,blank,none,0,False,none,False,0,TN,7.83,,"{""animal_present"":false,""animal"":""none"",""is_tortoise_or_turtle"":false}"
+test/blank/none-dry-land_commons3457540.jpg,blank,none,0,False,none,False,0,TN,4.61,,"{""animal_present"":false,""animal"":""none"",""is_tortoise_or_turtle"":false}"
+test/blank/none-dry-land_commons36266425.jpg,blank,none,0,False,none,False,0,TN,8.81,,"{""animal_present"": false, ""animal"": ""none"", ""is_tortoise_or_turtle"": false}"
+test/blank/none-dry-land_commons6993047.jpg,blank,none,0,False,none,False,0,TN,13.66,,"{
+  ""animal_present"": false,
+  ""animal"": ""none"",
+  ""is_tortoise_or_turtle"": false
+}"
+test/blank/none-dry-land_commons70538123.jpg,blank,none,0,False,none,False,0,TN,4.89,,"{""animal_present"": false, ""animal"": ""none"", ""is_tortoise_or_turtle"": false}"
+test/blank/none-dry-land_commons8949675.jpg,blank,none,0,False,none,False,0,TN,3.25,,"{""animal_present"":false,""animal"":""none"",""is_tortoise_or_turtle"":false}"
+test/blank/none-vegetation_inat1291129_p1619630.jpg,blank,none,0,False,none,False,0,TN,4.87,,"{
+  ""animal_present"": false,
+  ""animal"": ""none"",
+  ""is_tortoise_or_turtle"": false
+}"
+test/blank/none-vegetation_inat1297000_p1627406.jpg,blank,none,0,False,none,False,0,TN,4.2,,"{""animal_present"":false,""animal"":""none"",""is_tortoise_or_turtle"":false}"
+test/blank/none-vegetation_inat1369794_p1694191.jpg,blank,none,0,False,none,False,0,TN,4.74,,"{""animal_present"":false,""animal"":""none"",""is_tortoise_or_turtle"":false}"
+test/blank/none-vegetation_inat1378447_p1703496.jpg,blank,none,0,False,none,False,0,TN,8.04,,"{""animal_present"": false, ""animal"": ""none"", ""is_tortoise_or_turtle"": false}"
+test/blank/none-vegetation_inat1395046_p1724835.jpg,blank,none,0,False,none,False,0,TN,4.32,,"{""animal_present"":false,""animal"":""none"",""is_tortoise_or_turtle"":false}"
+test/blank/none-vegetation_inat1492355_p1849158.jpg,blank,none,0,False,none,False,0,TN,5.02,,"{""animal_present"":false,""animal"":""none"",""is_tortoise_or_turtle"":false}"
+test/blank/none-vegetation_inat1553562_p1924054.jpg,blank,none,0,False,none,False,0,TN,4.89,,"{
+  ""animal_present"": false,
+  ""animal"": ""none"",
+  ""is_tortoise_or_turtle"": false
+}"
+test/blank/none-vegetation_inat1616321_p1985720.jpg,blank,none,0,False,none,False,0,TN,4.07,,"{""animal_present"":false,""animal"":""none"",""is_tortoise_or_turtle"":false}"
+test/blank/none-vegetation_inat1833844_p2226743.jpg,blank,none,0,False,none,False,0,TN,8.04,,"{
+  ""animal_present"": false,
+  ""animal"": ""none"",
+  ""is_tortoise_or_turtle"": false
+}"
+test/blank/none-vegetation_inat1889820_p2304522.jpg,blank,none,0,False,none,False,0,TN,3.68,,"{
+  ""animal_present"": false,
+  ""animal"": ""none"",
+  ""is_tortoise_or_turtle"": false
+}"
+test/blank/none-vegetation_inat204965_p260176.jpg,blank,none,0,False,none,False,0,TN,4.48,,"{""animal_present"":false,""animal"":""none"",""is_tortoise_or_turtle"":false}"
+test/blank/none-vegetation_inat2096300_p2509518.jpg,blank,none,0,False,none,False,0,TN,3.72,,"{""animal_present"":false,""animal"":""none"",""is_tortoise_or_turtle"":false}"
+test/blank/none-vegetation_inat2283851_p2556955.jpg,blank,none,0,False,none,False,0,TN,6.82,,"{""animal_present"":false,""animal"":""none"",""is_tortoise_or_turtle"":false}"
+test/blank/none-vegetation_inat2284879_p2557835.jpg,blank,none,0,False,none,False,0,TN,6.01,,"{""animal_present"":false,""animal"":""none"",""is_tortoise_or_turtle"":false}"
+test/blank/none-vegetation_inat2291117_p2558079.jpg,blank,none,0,False,none,False,0,TN,7.12,,"{
+  ""animal_present"": false,
+  ""animal"": ""none"",
+  ""is_tortoise_or_turtle"": false
+}"
+test/blank/none-vegetation_inat2352653_p2614934.jpg,blank,none,0,False,none,False,0,TN,3.44,,"{""animal_present"": false, ""animal"": ""none"", ""is_tortoise_or_turtle"": false}"
+test/blank/none-vegetation_inat2363119_p2629367.jpg,blank,none,0,False,none,False,0,TN,5.89,,"{""animal_present"":false,""animal"":""none"",""is_tortoise_or_turtle"":false}"
+test/blank/none-vegetation_inat2370962_p2640437.jpg,blank,none,0,False,none,False,0,TN,7.04,,"{""animal_present"":false,""animal"":""none"",""is_tortoise_or_turtle"":false}"
+test/blank/none-vegetation_inat434377_p547274.jpg,blank,none,0,False,none,False,0,TN,10.19,,"{
+  ""animal_present"": false,
+  ""animal"": ""none"",
+  ""is_tortoise_or_turtle"": false
+}"
+test/blank/none-vegetation_inat643306_p810526.jpg,blank,none,0,False,none,False,0,TN,4.94,,"{
+  ""animal_present"": false,
+  ""animal"": ""none"",
+  ""is_tortoise_or_turtle"": false
+}"
+test/blank/none-vegetation_inat727255_p913525.jpg,blank,none,0,False,none,False,0,TN,6.58,,"{""animal_present"":false,""animal"":""none"",""is_tortoise_or_turtle"":false}"
+test/blank/none-vegetation_inat854191_p1082419.jpg,blank,none,0,False,none,False,0,TN,5.43,,"{
+  ""animal_present"": false,
+  ""animal"": ""none"",
+  ""is_tortoise_or_turtle"": false
+}"
+test/other_animal/animal-armadillo_inat191285713_p335532916.jpg,other_animal,Mexican Long-nosed Armadillo,0,True,nine-banded armadillo,False,0,TN,3.68,,"{""animal_present"": true, ""animal"": ""nine-banded armadillo"", ""is_tortoise_or_turtle"": false}"
+test/other_animal/animal-armadillo_inat195807991_p344573270.jpg,other_animal,Mexican Long-nosed Armadillo,0,True,nine-banded armadillo,False,0,TN,3.03,,"{""animal_present"": true, ""animal"": ""nine-banded armadillo"", ""is_tortoise_or_turtle"": false}"
+test/other_animal/animal-armadillo_inat198134424_p349146581.jpg,other_animal,Mexican Long-nosed Armadillo,0,True,nine-banded armadillo,False,0,TN,2.6,,"{""animal_present"":true,""animal"":""nine-banded armadillo"",""is_tortoise_or_turtle"":false}"
+test/other_animal/animal-armadillo_inat199288149_p351428572.jpg,other_animal,Mexican Long-nosed Armadillo,0,True,nine-banded armadillo,False,0,TN,2.99,,"{""animal_present"": true, ""animal"": ""nine-banded armadillo"", ""is_tortoise_or_turtle"": false}"
+test/other_animal/animal-armadillo_inat346715229_p632051919.jpg,other_animal,Mexican Long-nosed Armadillo,0,True,nine-banded armadillo,False,0,TN,3.39,,"{""animal_present"":true,""animal"":""nine-banded armadillo"",""is_tortoise_or_turtle"":false}"
+test/other_animal/animal-armadillo_inat349819612_p637939033.jpg,other_animal,Mexican Long-nosed Armadillo,0,True,nine-banded armadillo,False,0,TN,3.93,,"{
   ""animal_present"": true,
-  ""animal"": ""cattle"",
+  ""animal"": ""nine-banded armadillo"",
   ""is_tortoise_or_turtle"": false
 }"
-test/blank/nacti-blank_FL-06_0029867.jpg,blank,none,0,False,none,False,0,TN,4.13,,"{
-  ""animal_present"": false,
-  ""animal"": ""none"",
-  ""is_tortoise_or_turtle"": false
-}"
-test/blank/nacti-blank_FL-06_0033446.jpg,blank,none,0,False,none,False,0,TN,5.2,,"{
-  ""animal_present"": false,
-  ""animal"": ""none"",
-  ""is_tortoise_or_turtle"": false
-}"
-test/blank/nacti-blank_FL-06_0035294.jpg,blank,none,0,False,none,False,0,TN,4.26,,"{
-  ""animal_present"": false,
-  ""animal"": ""none"",
-  ""is_tortoise_or_turtle"": false
-}"
-test/blank/nacti-blank_FL-06_0036534.jpg,blank,none,0,False,none,False,0,TN,4.59,,"{""animal_present"": false, ""animal"": ""none"", ""is_tortoise_or_turtle"": false}"
-test/blank/nacti-blank_FL-08_0008039.jpg,blank,none,0,False,none,False,0,TN,8.84,,"{
-  ""animal_present"": false,
-  ""animal"": ""none"",
-  ""is_tortoise_or_turtle"": false
-}"
-test/blank/nacti-blank_FL-08_0030533.jpg,blank,none,0,False,none,False,0,TN,5.76,,"{""animal_present"": false, ""animal"": ""none"", ""is_tortoise_or_turtle"": false}"
-test/blank/nacti-blank_FL-08_0031221.jpg,blank,none,0,False,none,False,0,TN,4.85,,"{
-  ""animal_present"": false,
-  ""animal"": ""none"",
-  ""is_tortoise_or_turtle"": false
-}"
-test/blank/nacti-blank_FL-10_0006104.jpg,blank,none,0,True,bird,False,0,TN,6.38,,"{
+test/other_animal/animal-armadillo_inat381231350_p697540067.jpg,other_animal,Mexican Long-nosed Armadillo,0,True,nine-banded armadillo,False,0,TN,7.59,,"{""animal_present"":true,""animal"":""nine-banded armadillo"",""is_tortoise_or_turtle"":false}"
+test/other_animal/animal-armadillo_inat4004118_p4728813.jpg,other_animal,Mexican Long-nosed Armadillo,0,True,nine-banded armadillo,False,0,TN,5.83,,"{
   ""animal_present"": true,
-  ""animal"": ""bird"",
+  ""animal"": ""nine-banded armadillo"",
   ""is_tortoise_or_turtle"": false
 }"
-test/blank/nacti-blank_FL-10_0012964.jpg,blank,none,0,False,none,False,0,TN,7.73,,"{""animal_present"": false, ""animal"": ""none"", ""is_tortoise_or_turtle"": false}"
-test/blank/nacti-blank_FL-10_0020071.jpg,blank,none,0,False,none,False,0,TN,7.31,,"{
-  ""animal_present"": false,
-  ""animal"": ""none"",
-  ""is_tortoise_or_turtle"": false
-}"
-test/blank/nacti-blank_FL-10_0027398.jpg,blank,none,0,False,none,False,0,TN,8.95,,"{
-  ""animal_present"": false,
-  ""animal"": ""none"",
-  ""is_tortoise_or_turtle"": false
-}"
-test/blank/nacti-blank_FL-10_0027567.jpg,blank,none,0,False,none,False,0,TN,3.78,,"{
-  ""animal_present"": false,
-  ""animal"": ""none"",
-  ""is_tortoise_or_turtle"": false
-}"
-test/blank/nacti-blank_FL-14_0001258.jpg,blank,none,0,False,none,False,0,TN,29.0,,"{
-  ""animal_present"": false,
-  ""animal"": ""none"",
-  ""is_tortoise_or_turtle"": false
-}"
-test/blank/nacti-blank_FL-14_0009289.jpg,blank,none,0,True,feral hog,False,0,TN,12.98,,"{
+test/other_animal/animal-armadillo_inat414184474_p762418853.jpg,other_animal,Mexican Long-nosed Armadillo,0,True,nine-banded armadillo,False,0,TN,6.56,,"{""animal_present"":true,""animal"":""nine-banded armadillo"",""is_tortoise_or_turtle"":false}"
+test/other_animal/animal-armadillo_inat70067056_p113835816.jpg,other_animal,Mexican Long-nosed Armadillo,0,True,nine-banded armadillo,False,0,TN,3.94,,"{""animal_present"":true,""animal"":""nine-banded armadillo"",""is_tortoise_or_turtle"":false}"
+test/other_animal/animal-armadillo_inat9816450_p13435878.jpg,other_animal,Mexican Long-nosed Armadillo,0,True,nine-banded armadillo,False,0,TN,3.27,,"{""animal_present"": true, ""animal"": ""nine-banded armadillo"", ""is_tortoise_or_turtle"": false}"
+test/other_animal/animal-crab_inat1515045_p1876849.jpg,other_animal,Speckled Swimming Crab,0,True,speckled swimming crab,False,0,TN,4.38,,"{
   ""animal_present"": true,
-  ""animal"": ""feral hog"",
+  ""animal"": ""speckled swimming crab"",
   ""is_tortoise_or_turtle"": false
 }"
-test/blank/nacti-blank_FL-14_0013984.jpg,blank,none,0,False,none,False,0,TN,7.15,,"{
-  ""animal_present"": false,
-  ""animal"": ""none"",
-  ""is_tortoise_or_turtle"": false
-}"
-test/blank/nacti-blank_FL-14_0030110.jpg,blank,none,0,False,none,False,0,TN,13.79,,"{
-  ""animal_present"": false,
-  ""animal"": ""none"",
-  ""is_tortoise_or_turtle"": false
-}"
-test/blank/nacti-blank_FL-14_0032087.jpg,blank,none,0,False,none,False,0,TN,6.14,,"{
-  ""animal_present"": false,
-  ""animal"": ""none"",
-  ""is_tortoise_or_turtle"": false
-}"
-test/blank/nacti-blank_FL-19_0042105.jpg,blank,none,0,False,none,False,0,TN,4.58,,"{
-  ""animal_present"": false,
-  ""animal"": ""none"",
-  ""is_tortoise_or_turtle"": false
-}"
-test/blank/nacti-blank_FL-19_0050102.jpg,blank,none,0,False,none,False,0,TN,5.63,,"{
-  ""animal_present"": false,
-  ""animal"": ""none"",
-  ""is_tortoise_or_turtle"": false
-}"
-test/blank/nacti-blank_FL-19_0051499.jpg,blank,none,0,False,none,False,0,TN,8.25,,"{""animal_present"":false,""animal"":""none"",""is_tortoise_or_turtle"":false}"
-test/blank/nacti-blank_FL-19_0064027.jpg,blank,none,0,False,none,False,0,TN,3.87,,"{""animal_present"": false, ""animal"": ""none"", ""is_tortoise_or_turtle"": false}"
-test/blank/nacti-blank_FL-19_0067406.jpg,blank,none,0,False,none,False,0,TN,7.21,,"{""animal_present"":false,""animal"":""none"",""is_tortoise_or_turtle"":false}"
-test/blank/nacti-blank_FL-21_0009466.jpg,blank,none,0,True,cattle,False,0,TN,7.5,,"{
+test/other_animal/animal-crab_inat18625281_p28506415.jpg,other_animal,Atlantic Ghost Crab,0,True,ghost crab,False,0,TN,3.04,,"{
   ""animal_present"": true,
-  ""animal"": ""cattle"",
+  ""animal"": ""ghost crab"",
   ""is_tortoise_or_turtle"": false
 }"
-test/blank/nacti-blank_FL-21_0020098.jpg,blank,none,0,False,none,False,0,TN,4.65,,"{""animal_present"": false, ""animal"": ""none"", ""is_tortoise_or_turtle"": false}"
-test/blank/nacti-blank_FL-21_0034673.jpg,blank,none,0,False,none,False,0,TN,5.57,,"{""animal_present"":false,""animal"":""none"",""is_tortoise_or_turtle"":false}"
-test/blank/nacti-blank_FL-21_0035266.jpg,blank,none,0,False,none,False,0,TN,4.86,,"{""animal_present"":false,""animal"":""none"",""is_tortoise_or_turtle"":false}"
-test/blank/nacti-blank_FL-25_0029520.jpg,blank,none,0,False,none,False,0,TN,8.01,,"{
-  ""animal_present"": false,
-  ""animal"": ""none"",
+test/other_animal/animal-crab_inat18632570_p28519724.jpg,other_animal,Atlantic Ghost Crab,0,True,ghost crab,False,0,TN,9.37,,"{""animal_present"":true,""animal"":""ghost crab"",""is_tortoise_or_turtle"":false}"
+test/other_animal/animal-crab_inat19113923_p29336850.jpg,other_animal,Atlantic Ghost Crab,0,True,ghost crab,False,0,TN,3.38,,"{""animal_present"":true,""animal"":""ghost crab"",""is_tortoise_or_turtle"":false}"
+test/other_animal/animal-crab_inat2019731_p2461200.jpg,other_animal,Atlantic Blue Crab,0,True,swimming crab,False,0,TN,3.19,,"{
+  ""animal_present"": true,
+  ""animal"": ""swimming crab"",
   ""is_tortoise_or_turtle"": false
 }"
-test/blank/nacti-blank_FL-25_0037647.jpg,blank,none,0,False,none,False,0,TN,5.44,,"{""animal_present"": false, ""animal"": ""none"", ""is_tortoise_or_turtle"": false}"
-test/blank/nacti-blank_FL-25_0045309.jpg,blank,none,0,False,none,False,0,TN,6.2,,"{
-  ""animal_present"": false,
-  ""animal"": ""none"",
+test/other_animal/animal-crab_inat20336421_p31401972.jpg,other_animal,Atlantic Blue Crab,0,True,blue crab,False,0,TN,4.46,,"{
+  ""animal_present"": true,
+  ""animal"": ""blue crab"",
   ""is_tortoise_or_turtle"": false
 }"
-test/blank/nilgai-blank_nilgai_0100.jpg,blank,none,0,False,none,False,0,TN,5.3,,"{""animal_present"":false,""animal"":""none"",""is_tortoise_or_turtle"":false}"
-test/blank/nilgai-blank_nilgai_0110.jpg,blank,none,0,False,none,False,0,TN,5.44,,"{
-  ""animal_present"": false,
-  ""animal"": ""none"",
+test/other_animal/animal-crab_inat26440751_p41058115.jpg,other_animal,Atlantic Blue Crab,0,True,blue crab,False,0,TN,4.83,,"{""animal_present"": true, ""animal"": ""blue crab"", ""is_tortoise_or_turtle"": false}"
+test/other_animal/animal-crab_inat2770805_p3137756.jpg,other_animal,Gulf Marsh Fiddler Crab,0,True,fiddler crab,False,0,TN,3.51,,"{
+  ""animal_present"": true,
+  ""animal"": ""fiddler crab"",
   ""is_tortoise_or_turtle"": false
 }"
-test/blank/nilgai-blank_nilgai_0113.jpg,blank,none,0,False,none,False,0,TN,4.07,,"{
-  ""animal_present"": false,
-  ""animal"": ""none"",
+test/other_animal/animal-crab_inat30787862_p48120732.jpg,other_animal,Atlantic Blue Crab,0,True,blue crab,False,0,TN,3.33,,"{""animal_present"":true,""animal"":""blue crab"",""is_tortoise_or_turtle"":false}"
+test/other_animal/animal-crab_inat6048056_p7578943.jpg,other_animal,Atlantic Blue Crab,0,True,crab,False,0,TN,2.47,,"{""animal_present"": true, ""animal"": ""crab"", ""is_tortoise_or_turtle"": false}"
+test/other_animal/animal-crab_inat6188946_p7766256.jpg,other_animal,Atlantic Blue Crab,0,True,blue crab,False,0,TN,3.27,,"{""animal_present"":true,""animal"":""blue crab"",""is_tortoise_or_turtle"":false}"
+test/other_animal/animal-pangolin_inat165478238_p286452634.jpg,other_animal,White-bellied Pangolin,0,True,pangolin,False,0,TN,4.34,,"{""animal_present"": true, ""animal"": ""pangolin"", ""is_tortoise_or_turtle"": false}"
+test/other_animal/animal-pangolin_inat183886958_p320882427.jpg,other_animal,Black-bellied Pangolin,0,True,pangolin,False,0,TN,5.79,,"{
+  ""animal_present"": true,
+  ""animal"": ""pangolin"",
   ""is_tortoise_or_turtle"": false
 }"
-test/blank/nilgai-blank_nilgai_0114.jpg,blank,none,0,False,none,False,0,TN,2.76,,"{
-  ""animal_present"": false,
-  ""animal"": ""none"",
+test/other_animal/animal-pangolin_inat243354392_p433927666.jpg,other_animal,Temminck's Ground Pangolin,0,True,pangolin,False,0,TN,3.53,,"{
+  ""animal_present"": true,
+  ""animal"": ""pangolin"",
   ""is_tortoise_or_turtle"": false
 }"
-test/blank/nilgai-blank_nilgai_0120.jpg,blank,none,0,False,none,False,0,TN,6.67,,"{""animal_present"":false,""animal"":""none"",""is_tortoise_or_turtle"":false}"
-test/blank/nilgai-blank_nilgai_0135.jpg,blank,none,0,False,none,False,0,TN,6.03,,"{
-  ""animal_present"": false,
-  ""animal"": ""none"",
+test/other_animal/animal-pangolin_inat256665280_p460243395.jpg,other_animal,Temminck's Ground Pangolin,0,True,ground pangolin,False,0,TN,3.46,,"{""animal_present"": true, ""animal"": ""ground pangolin"", ""is_tortoise_or_turtle"": false}"
+test/other_animal/animal-pangolin_inat269794325_p485135162.jpg,other_animal,Taiwan Pangolin,0,True,pangolin,False,0,TN,4.25,,"{
+  ""animal_present"": true,
+  ""animal"": ""pangolin"",
   ""is_tortoise_or_turtle"": false
 }"
-test/blank/nilgai-blank_nilgai_0141.jpg,blank,none,0,False,none,False,0,TN,6.01,,"{
-  ""animal_present"": false,
-  ""animal"": ""none"",
+test/other_animal/animal-pangolin_inat292618829_p526600614.jpg,other_animal,White-bellied Pangolin,0,True,pangolin,False,0,TN,4.0,,"{""animal_present"":true,""animal"":""pangolin"",""is_tortoise_or_turtle"":false}"
+test/other_animal/animal-pangolin_inat29434404_p45937950.jpg,other_animal,Temminck's Ground Pangolin,0,True,pangolin,False,0,TN,7.08,,"{
+  ""animal_present"": true,
+  ""animal"": ""pangolin"",
   ""is_tortoise_or_turtle"": false
 }"
-test/blank/nilgai-blank_nilgai_0150.jpg,blank,none,0,False,none,False,0,TN,5.17,,"{
-  ""animal_present"": false,
-  ""animal"": ""none"",
+test/other_animal/animal-pangolin_inat310190481_p559811464.jpg,other_animal,Temminck's Ground Pangolin,0,True,ground pangolin,False,0,TN,3.26,,"{""animal_present"": true, ""animal"": ""ground pangolin"", ""is_tortoise_or_turtle"": false}"
+test/other_animal/animal-pangolin_inat339468755_p617544562.jpg,other_animal,Black-bellied Pangolin,0,True,pangolin,False,0,TN,7.37,,"{
+  ""animal_present"": true,
+  ""animal"": ""pangolin"",
   ""is_tortoise_or_turtle"": false
 }"
-test/blank/nilgai-blank_nilgai_0153.jpg,blank,none,0,True,Texas tortoise,True,1,FP,22.83,,"{
+test/other_animal/animal-pangolin_inat4779137_p5821899.jpg,other_animal,Black-bellied Pangolin,0,True,long-tailed pangolin,False,0,TN,3.43,,"{""animal_present"": true, ""animal"": ""long-tailed pangolin"", ""is_tortoise_or_turtle"": false}"
+test/other_animal/animal-pangolin_inat66087558_p106462331.jpg,other_animal,Sunda Pangolin,0,True,pangolin,False,0,TN,6.55,,"{
+  ""animal_present"": true,
+  ""animal"": ""pangolin"",
+  ""is_tortoise_or_turtle"": false
+}"
+test/other_animal/animal-sea-creature_inat101794627_p170043988.jpg,other_animal,Purple-brown Urchin,0,True,sea urchin,False,0,TN,3.01,,"{""animal_present"": true, ""animal"": ""sea urchin"", ""is_tortoise_or_turtle"": false}"
+test/other_animal/animal-sea-creature_inat1383113_p1709046.jpg,other_animal,Woody Chiton,0,True,lined chiton,False,0,TN,4.97,,"{
+  ""animal_present"": true,
+  ""animal"": ""lined chiton"",
+  ""is_tortoise_or_turtle"": false
+}"
+test/other_animal/animal-sea-creature_inat16873715_p25485104.jpg,other_animal,Atlantic Horseshoe Crab,0,True,horseshoe crab,False,0,TN,3.26,,"{""animal_present"": true, ""animal"": ""horseshoe crab"", ""is_tortoise_or_turtle"": false}"
+test/other_animal/animal-sea-creature_inat19628094_p30221671.jpg,other_animal,Atlantic Horseshoe Crab,0,True,horseshoe crab,False,0,TN,5.33,,"{
+  ""animal_present"": true,
+  ""animal"": ""horseshoe crab"",
+  ""is_tortoise_or_turtle"": false
+}"
+test/other_animal/animal-sea-creature_inat289196777_p520137556.jpg,other_animal,Texas Lightning Whelk,0,True,lightning whelk,False,0,TN,5.38,,"{
+  ""animal_present"": true,
+  ""animal"": ""lightning whelk"",
+  ""is_tortoise_or_turtle"": false
+}"
+test/other_animal/animal-sea-creature_inat326171471_p590691410.jpg,other_animal,Two-banded Sea Star,0,True,starfish,False,0,TN,5.69,,"{
+  ""animal_present"": true,
+  ""animal"": ""starfish"",
+  ""is_tortoise_or_turtle"": false
+}"
+test/other_animal/animal-sea-creature_inat328646264_p595576938.jpg,other_animal,Portuguese Man o' War,0,True,Portuguese man o' war,False,0,TN,3.1,,"{""animal_present"": true, ""animal"": ""Portuguese man o' war"", ""is_tortoise_or_turtle"": false}"
+test/other_animal/animal-sea-creature_inat332987551_p604440608.jpg,other_animal,Purple-brown Urchin,0,True,sea urchin,False,0,TN,6.22,,"{""animal_present"":true,""animal"":""sea urchin"",""is_tortoise_or_turtle"":false}"
+test/other_animal/animal-sea-creature_inat335397530_p609289480.jpg,other_animal,Two-banded Sea Star,0,True,sea star,False,0,TN,3.05,,"{
+  ""animal_present"": true,
+  ""animal"": ""sea star"",
+  ""is_tortoise_or_turtle"": false
+}"
+test/other_animal/animal-sea-creature_inat6003292_p7612539.jpg,other_animal,Atlantic Horseshoe Crab,0,True,horseshoe crab,False,0,TN,5.39,,"{
+  ""animal_present"": true,
+  ""animal"": ""horseshoe crab"",
+  ""is_tortoise_or_turtle"": false
+}"
+test/other_animal/animal-sea-creature_inat9566066_p13056826.jpg,other_animal,Cannonball Jelly,0,True,jellyfish,False,0,TN,4.37,,"{
+  ""animal_present"": true,
+  ""animal"": ""jellyfish"",
+  ""is_tortoise_or_turtle"": false
+}"
+test/tortoise/inat-tortoise_inat111531724_p188289979.jpg,tortoise,Texas tortoise,1,True,Texas tortoise,True,1,TP,3.2,,"{
   ""animal_present"": true,
   ""animal"": ""Texas tortoise"",
   ""is_tortoise_or_turtle"": true
 }"
-test/blank/nilgai-blank_nilgai_0161.jpg,blank,none,0,False,none,False,0,TN,6.98,,"{
-  ""animal_present"": false,
-  ""animal"": ""none"",
-  ""is_tortoise_or_turtle"": false
-}"
-test/blank/nilgai-blank_nilgai_0173.jpg,blank,none,0,False,none,False,0,TN,6.26,,"{
-  ""animal_present"": false,
-  ""animal"": ""none"",
-  ""is_tortoise_or_turtle"": false
-}"
-test/blank/nilgai-blank_nilgai_0178.jpg,blank,none,0,False,none,False,0,TN,7.83,,"{
-  ""animal_present"": false,
-  ""animal"": ""none"",
-  ""is_tortoise_or_turtle"": false
-}"
-test/blank/nilgai-blank_nilgai_0179.jpg,blank,none,0,False,none,False,0,TN,2.38,,"{""animal_present"":false,""animal"":""none"",""is_tortoise_or_turtle"":false}"
-test/blank/nilgai-blank_nilgai_0182.jpg,blank,none,0,False,none,False,0,TN,4.85,,"{
-  ""animal_present"": false,
-  ""animal"": ""none"",
-  ""is_tortoise_or_turtle"": false
-}"
-test/blank/nilgai-blank_nilgai_0205.jpg,blank,none,0,False,none,False,0,TN,5.31,,"{""animal_present"": false, ""animal"": ""none"", ""is_tortoise_or_turtle"": false}"
-test/blank/nilgai-blank_nilgai_0213.jpg,blank,none,0,False,none,False,0,TN,7.29,,"{""animal_present"":false,""animal"":""none"",""is_tortoise_or_turtle"":false}"
-test/blank/nilgai-blank_nilgai_0215.jpg,blank,none,0,False,none,False,0,TN,7.36,,"{""animal_present"": false, ""animal"": ""none"", ""is_tortoise_or_turtle"": false}"
-test/blank/nilgai-blank_nilgai_027.jpg,blank,none,0,False,none,False,0,TN,16.8,,"{
-  ""animal_present"": false,
-  ""animal"": ""none"",
-  ""is_tortoise_or_turtle"": false
-}"
-test/blank/nilgai-blank_nilgai_028.jpg,blank,none,0,False,none,False,0,TN,5.67,,"{
-  ""animal_present"": false,
-  ""animal"": ""none"",
-  ""is_tortoise_or_turtle"": false
-}"
-test/blank/nilgai-blank_nilgai_029.jpg,blank,none,0,False,none,False,0,TN,4.44,,"{""animal_present"":false,""animal"":""none"",""is_tortoise_or_turtle"":false}"
-test/blank/nilgai-blank_nilgai_033.jpg,blank,none,0,False,none,False,0,TN,8.82,,"{
-  ""animal_present"": false,
-  ""animal"": ""none"",
-  ""is_tortoise_or_turtle"": false
-}"
-test/other_animal/inat-armadillo_inat105649915_p177312167.jpg,other_animal,nine-banded armadillo,0,True,nine-banded armadillo,False,0,TN,5.63,,"{""animal_present"":true,""animal"":""nine-banded armadillo"",""is_tortoise_or_turtle"":false}"
-test/other_animal/inat-armadillo_inat116204313_p196130456.jpg,other_animal,nine-banded armadillo,0,True,nine-banded armadillo,False,0,TN,3.09,,"{""animal_present"":true,""animal"":""nine-banded armadillo"",""is_tortoise_or_turtle"":false}"
-test/other_animal/inat-armadillo_inat14191613_p21044937.jpg,other_animal,nine-banded armadillo,0,True,nine-banded armadillo,False,0,TN,5.45,,"{
-  ""animal_present"": true,
-  ""animal"": ""nine-banded armadillo"",
-  ""is_tortoise_or_turtle"": false
-}"
-test/other_animal/inat-armadillo_inat21683624_p33574762.jpg,other_animal,nine-banded armadillo,0,True,nine-banded armadillo,False,0,TN,2.66,,"{""animal_present"": true, ""animal"": ""nine-banded armadillo"", ""is_tortoise_or_turtle"": false}"
-test/other_animal/inat-armadillo_inat325712957_p589765141.jpg,other_animal,nine-banded armadillo,0,True,nine-banded armadillo,False,0,TN,3.73,,"{""animal_present"": true, ""animal"": ""nine-banded armadillo"", ""is_tortoise_or_turtle"": false}"
-test/other_animal/inat-armadillo_inat36747515_p58137390.jpg,other_animal,nine-banded armadillo,0,True,nine-banded armadillo,False,0,TN,2.99,,"{
-  ""animal_present"": true,
-  ""animal"": ""nine-banded armadillo"",
-  ""is_tortoise_or_turtle"": false
-}"
-test/other_animal/inat-armadillo_inat414184474_p762418853.jpg,other_animal,nine-banded armadillo,0,True,nine-banded armadillo,False,0,TN,3.62,,"{""animal_present"": true, ""animal"": ""nine-banded armadillo"", ""is_tortoise_or_turtle"": false}"
-test/other_animal/inat-armadillo_inat61911492_p99128807.jpg,other_animal,nine-banded armadillo,0,True,nine-banded armadillo,False,0,TN,8.35,,"{
-  ""animal_present"": true,
-  ""animal"": ""nine-banded armadillo"",
-  ""is_tortoise_or_turtle"": false
-}"
-test/other_animal/nacti-bird_FL-08_01_21_2016_FL-08_0014702.jpg,other_animal,bird,0,True,wild turkey,False,0,TN,2.83,,"{""animal_present"": true, ""animal"": ""wild turkey"", ""is_tortoise_or_turtle"": false}"
-test/other_animal/nacti-bird_FL-28_09_01_2016_FL-28_0059656.jpg,other_animal,bird,0,True,sandhill crane,False,0,TN,5.54,,"{
-  ""animal_present"": true,
-  ""animal"": ""sandhill crane"",
-  ""is_tortoise_or_turtle"": false
-}"
-test/other_animal/nacti-bobcat_FL-01_09_02_2015_FL-01_0037770.jpg,other_animal,bobcat,0,True,feral hog,False,0,TN,7.66,,"{
-  ""animal_present"": true,
-  ""animal"": ""feral hog"",
-  ""is_tortoise_or_turtle"": false
-}"
-test/other_animal/nacti-bobcat_FL-08_11_02_2015_FL-08_0011816.jpg,other_animal,bobcat,0,True,bobcat,False,0,TN,3.19,,"{
-  ""animal_present"": true,
-  ""animal"": ""bobcat"",
-  ""is_tortoise_or_turtle"": false
-}"
-test/other_animal/nacti-bobcat_FL-10_01_21_2016_FL-10_0011824.jpg,other_animal,bobcat,0,True,bobcat,False,0,TN,3.54,,"{
-  ""animal_present"": true,
-  ""animal"": ""bobcat"",
-  ""is_tortoise_or_turtle"": false
-}"
-test/other_animal/nacti-cattle_FL-06_06_29_2015_FL-06_0008938.jpg,other_animal,cattle,0,True,cattle,False,0,TN,8.34,,"{
-  ""animal_present"": true,
-  ""animal"": ""cattle"",
-  ""is_tortoise_or_turtle"": false
-}"
-test/other_animal/nacti-cattle_FL-25_08_04_2016_FL-25_0030806.jpg,other_animal,cattle,0,True,white-tailed deer,False,0,TN,4.98,,"{
-  ""animal_present"": true,
-  ""animal"": ""white-tailed deer"",
-  ""is_tortoise_or_turtle"": false
-}"
-test/other_animal/nacti-coyote_FL-05_06_29_2015_FL-05_0021403.jpg,other_animal,coyote,0,True,white-tailed deer,False,0,TN,9.16,,"{
-  ""animal_present"": true,
-  ""animal"": ""white-tailed deer"",
-  ""is_tortoise_or_turtle"": false
-}"
-test/other_animal/nacti-coyote_FL-08_03_07_2016_FL-08_0018695.jpg,other_animal,coyote,0,True,coyote,False,0,TN,4.02,,"{""animal_present"": true, ""animal"": ""coyote"", ""is_tortoise_or_turtle"": false}"
-test/other_animal/nacti-coyote_FL-08_07_29_2015_FL-08_0008722.jpg,other_animal,coyote,0,True,coyote,False,0,TN,4.13,,"{
-  ""animal_present"": true,
-  ""animal"": ""coyote"",
-  ""is_tortoise_or_turtle"": false
-}"
-test/other_animal/nacti-deer_FL-01_01_25_2016_FL-01_0042248.jpg,other_animal,deer,0,True,white-tailed deer,False,0,TN,3.61,,"{""animal_present"": true, ""animal"": ""white-tailed deer"", ""is_tortoise_or_turtle"": false}"
-test/other_animal/nacti-deer_FL-06_06_29_2015_FL-06_0002906.jpg,other_animal,deer,0,True,white-tailed deer,False,0,TN,3.25,,"{""animal_present"":true,""animal"":""white-tailed deer"",""is_tortoise_or_turtle"":false}"
-test/other_animal/nacti-deer_FL-37_09_08_2016_FL-37_0028669.jpg,other_animal,deer,0,True,white-tailed deer,False,0,TN,3.66,,"{
-  ""animal_present"": true,
-  ""animal"": ""white-tailed deer"",
-  ""is_tortoise_or_turtle"": false
-}"
-test/other_animal/nacti-feral-hog_FL-10_11_02_2015_FL-10_0008645.jpg,other_animal,feral hog,0,True,feral hog,False,0,TN,3.61,,"{
-  ""animal_present"": true,
-  ""animal"": ""feral hog"",
-  ""is_tortoise_or_turtle"": false
-}"
-test/other_animal/nacti-feral-hog_FL-25_11_02_2015_FL-25_0015062.jpg,other_animal,feral hog,0,True,cattle,False,0,TN,6.93,,"{
-  ""animal_present"": true,
-  ""animal"": ""cattle"",
-  ""is_tortoise_or_turtle"": false
-}"
-test/other_animal/nacti-feral-hog_FL-37_11_03_2015_FL-37_0001183.jpg,other_animal,feral hog,0,True,feral hog,False,0,TN,4.95,,"{""animal_present"": true, ""animal"": ""feral hog"", ""is_tortoise_or_turtle"": false}"
-test/other_animal/nacti-nine-banded-armadillo_FL-02_03_04_2016_FL-02_0056313.jpg,other_animal,nine-banded armadillo,0,False,none,False,0,TN,10.35,,"{
-  ""animal_present"": false,
-  ""animal"": ""none"",
-  ""is_tortoise_or_turtle"": false
-}"
-test/other_animal/nacti-nine-banded-armadillo_FL-06_04_04_2016_FL-06_0019857.jpg,other_animal,nine-banded armadillo,0,True,nine-banded armadillo,False,0,TN,4.2,,"{""animal_present"": true, ""animal"": ""nine-banded armadillo"", ""is_tortoise_or_turtle"": false}"
-test/other_animal/nacti-nine-banded-armadillo_FL-06_04_04_2016_FL-06_0019863.jpg,other_animal,nine-banded armadillo,0,True,nine-banded armadillo,False,0,TN,5.58,,"{""animal_present"": true, ""animal"": ""nine-banded armadillo"", ""is_tortoise_or_turtle"": false}"
-test/other_animal/nacti-nine-banded-armadillo_FL-06_07_28_2015_FL-06_0009835.jpg,other_animal,nine-banded armadillo,0,True,nine-banded armadillo,False,0,TN,13.36,,"{
-  ""animal_present"": true,
-  ""animal"": ""nine-banded armadillo"",
-  ""is_tortoise_or_turtle"": false
-}"
-test/other_animal/nacti-nine-banded-armadillo_FL-10_05_13_2015_FL-10_0001122.jpg,other_animal,nine-banded armadillo,0,False,none,False,0,TN,15.46,,"{
-  ""animal_present"": false,
-  ""animal"": ""none"",
-  ""is_tortoise_or_turtle"": false
-}"
-test/other_animal/nacti-nine-banded-armadillo_FL-14_12_06_2015_FL-14_0013514.jpg,other_animal,nine-banded armadillo,0,True,nine-banded armadillo,False,0,TN,7.14,,"{
-  ""animal_present"": true,
-  ""animal"": ""nine-banded armadillo"",
-  ""is_tortoise_or_turtle"": false
-}"
-test/other_animal/nacti-nine-banded-armadillo_FL-25_05_02_2016_FL-25_0025552.jpg,other_animal,nine-banded armadillo,0,False,none,False,0,TN,7.06,,"{""animal_present"":false,""animal"":""none"",""is_tortoise_or_turtle"":false}"
-test/other_animal/nacti-nine-banded-armadillo_FL-28_11_02_2015_FL-28_0041562.jpg,other_animal,nine-banded armadillo,0,True,nine-banded armadillo,False,0,TN,5.47,,"{
-  ""animal_present"": true,
-  ""animal"": ""nine-banded armadillo"",
-  ""is_tortoise_or_turtle"": false
-}"
-test/other_animal/nacti-opossum_FL-06_04_04_2016_FL-06_0019679.jpg,other_animal,opossum,0,True,Virginia opossum,False,0,TN,3.36,,"{
-  ""animal_present"": true,
-  ""animal"": ""Virginia opossum"",
-  ""is_tortoise_or_turtle"": false
-}"
-test/other_animal/nacti-opossum_FL-19_01_20_2016_FL-19_0043059.jpg,other_animal,opossum,0,False,none,False,0,TN,4.66,,"{""animal_present"":false,""animal"":""none"",""is_tortoise_or_turtle"":false}"
-test/other_animal/nacti-rabbit_FL-14_06_30_2015_FL-14_0008611.jpg,other_animal,rabbit,0,True,cottontail rabbit,False,0,TN,3.42,,"{""animal_present"": true, ""animal"": ""cottontail rabbit"", ""is_tortoise_or_turtle"": false}"
-test/other_animal/nacti-rabbit_FL-14_11_02_2015_FL-14_0012210.jpg,other_animal,rabbit,0,True,cottontail rabbit,False,0,TN,3.34,,"{
-  ""animal_present"": true,
-  ""animal"": ""cottontail rabbit"",
-  ""is_tortoise_or_turtle"": false
-}"
-test/other_animal/nacti-raccoon_FL-08_03_07_2016_FL-08_0017185.jpg,other_animal,raccoon,0,True,raccoon,False,0,TN,4.02,,"{
-  ""animal_present"": true,
-  ""animal"": ""raccoon"",
-  ""is_tortoise_or_turtle"": false
-}"
-test/other_animal/nacti-raccoon_FL-21_01_21_2016_FL-21_0023177.jpg,other_animal,raccoon,0,False,none,False,0,TN,4.65,,"{
-  ""animal_present"": false,
-  ""animal"": ""none"",
-  ""is_tortoise_or_turtle"": false
-}"
-test/other_animal/nacti-raccoon_FL-28_07_28_2015_FL-28_0029782.jpg,other_animal,raccoon,0,False,none,False,0,TN,5.87,,"{
-  ""animal_present"": false,
-  ""animal"": ""none"",
-  ""is_tortoise_or_turtle"": false
-}"
-test/other_animal/nacti-wild-turkey_FL-05_05_02_2016_FL-05_0038011.jpg,other_animal,wild turkey,0,True,wild turkey,False,0,TN,4.13,,"{
-  ""animal_present"": true,
-  ""animal"": ""wild turkey"",
-  ""is_tortoise_or_turtle"": false
-}"
-test/other_animal/nacti-wild-turkey_FL-14_04_05_2016_FL-14_0019080.jpg,other_animal,wild turkey,0,True,wild turkey,False,0,TN,3.98,,"{""animal_present"": true, ""animal"": ""wild turkey"", ""is_tortoise_or_turtle"": false}"
-test/other_animal/nilgai-animals_nilgai_011.jpg,other_animal,nilgai,0,True,nilgai,False,0,TN,3.59,,"{""animal_present"":true,""animal"":""nilgai"",""is_tortoise_or_turtle"":false}"
-test/other_animal/nilgai-animals_nilgai_0194.jpg,other_animal,deer,0,True,white-tailed deer,False,0,TN,3.59,,"{""animal_present"":true,""animal"":""white-tailed deer"",""is_tortoise_or_turtle"":false}"
-test/other_animal/nilgai-animals_nilgai_075.jpg,other_animal,nilgai,0,True,white-tailed deer,False,0,TN,7.88,,"{
-  ""animal_present"": true,
-  ""animal"": ""white-tailed deer"",
-  ""is_tortoise_or_turtle"": false
-}"
-test/tortoise/inat-tortoise_inat111531724_p188289979.jpg,tortoise,Texas tortoise,1,True,Texas tortoise,True,1,TP,2.93,,"{
-  ""animal_present"": true,
-  ""animal"": ""Texas tortoise"",
-  ""is_tortoise_or_turtle"": true
-}"
-test/tortoise/inat-tortoise_inat113893384_p192372863.jpg,tortoise,Texas tortoise,1,True,Texas tortoise,True,1,TP,10.24,,"{""animal_present"": true, ""animal"": ""Texas tortoise"", ""is_tortoise_or_turtle"": true}"
-test/tortoise/inat-tortoise_inat122849945_p208044730.jpg,tortoise,Texas tortoise,1,True,Texas tortoise,True,1,TP,3.47,,"{""animal_present"": true, ""animal"": ""Texas tortoise"", ""is_tortoise_or_turtle"": true}"
-test/tortoise/inat-tortoise_inat123901731_p209951120.jpg,tortoise,Texas tortoise,1,True,Texas tortoise,True,1,TP,3.49,,"{
-  ""animal_present"": true,
-  ""animal"": ""Texas tortoise"",
-  ""is_tortoise_or_turtle"": true
-}"
-test/tortoise/inat-tortoise_inat13134287_p19152068.jpg,tortoise,Texas tortoise,1,True,box turtle,True,1,TP,6.45,,"{
+test/tortoise/inat-tortoise_inat113893384_p192372863.jpg,tortoise,Texas tortoise,1,True,Texas tortoise,True,1,TP,6.51,,"{""animal_present"":true,""animal"":""Texas tortoise"",""is_tortoise_or_turtle"":true}"
+test/tortoise/inat-tortoise_inat122849945_p208044730.jpg,tortoise,Texas tortoise,1,True,Texas tortoise,True,1,TP,4.68,,"{""animal_present"": true, ""animal"": ""Texas tortoise"", ""is_tortoise_or_turtle"": true}"
+test/tortoise/inat-tortoise_inat123901731_p209951120.jpg,tortoise,Texas tortoise,1,True,Texas tortoise,True,1,TP,5.32,,"{""animal_present"": true, ""animal"": ""Texas tortoise"", ""is_tortoise_or_turtle"": true}"
+test/tortoise/inat-tortoise_inat13134287_p19152068.jpg,tortoise,Texas tortoise,1,True,box turtle,True,1,TP,4.22,,"{
   ""animal_present"": true,
   ""animal"": ""box turtle"",
   ""is_tortoise_or_turtle"": true
 }"
-test/tortoise/inat-tortoise_inat136362745_p232714869.jpg,tortoise,Texas tortoise,1,True,Texas tortoise,True,1,TP,2.8,,"{
+test/tortoise/inat-tortoise_inat136362745_p232714869.jpg,tortoise,Texas tortoise,1,True,Texas tortoise,True,1,TP,2.81,,"{""animal_present"": true, ""animal"": ""Texas tortoise"", ""is_tortoise_or_turtle"": true}"
+test/tortoise/inat-tortoise_inat1413764_p1749267.jpg,tortoise,Texas tortoise,1,True,Texas tortoise,True,1,TP,4.67,,"{""animal_present"":true,""animal"":""Texas tortoise"",""is_tortoise_or_turtle"":true}"
+test/tortoise/inat-tortoise_inat144491405_p248002221.jpg,tortoise,Texas tortoise,1,True,Texas tortoise,True,1,TP,5.5,,"{
   ""animal_present"": true,
   ""animal"": ""Texas tortoise"",
   ""is_tortoise_or_turtle"": true
 }"
-test/tortoise/inat-tortoise_inat1413764_p1749267.jpg,tortoise,Texas tortoise,1,True,Texas tortoise,True,1,TP,3.85,,"{""animal_present"":true,""animal"":""Texas tortoise"",""is_tortoise_or_turtle"":true}"
-test/tortoise/inat-tortoise_inat144491405_p248002221.jpg,tortoise,Texas tortoise,1,True,Texas tortoise,True,1,TP,5.17,,"{""animal_present"":true,""animal"":""Texas tortoise"",""is_tortoise_or_turtle"":true}"
-test/tortoise/inat-tortoise_inat147629139_p254064177.jpg,tortoise,Texas tortoise,1,True,Texas tortoise,True,1,TP,6.41,,"{""animal_present"":true,""animal"":""Texas tortoise"",""is_tortoise_or_turtle"":true}"
-test/tortoise/inat-tortoise_inat1485771_p1841205.jpg,tortoise,Texas tortoise,1,True,tortoise,True,1,TP,4.23,,"{""animal_present"":true,""animal"":""tortoise"",""is_tortoise_or_turtle"":true}"
-test/tortoise/inat-tortoise_inat152759377_p263745968.jpg,tortoise,Texas tortoise,1,True,Texas tortoise,True,1,TP,3.59,,"{""animal_present"": true, ""animal"": ""Texas tortoise"", ""is_tortoise_or_turtle"": true}"
-test/tortoise/inat-tortoise_inat154035212_p266112717.jpg,tortoise,Texas tortoise,1,True,Texas tortoise,True,1,TP,3.31,,"{""animal_present"":true,""animal"":""Texas tortoise"",""is_tortoise_or_turtle"":true}"
-test/tortoise/inat-tortoise_inat155407175_p268631962.jpg,tortoise,Texas tortoise,1,True,Texas tortoise,True,1,TP,11.7,,"{""animal_present"":true,""animal"":""Texas tortoise"",""is_tortoise_or_turtle"":true}"
-test/tortoise/inat-tortoise_inat157845710_p272861980.jpg,tortoise,Texas tortoise,1,True,Texas tortoise,True,1,TP,4.59,,"{
+test/tortoise/inat-tortoise_inat147629139_p254064177.jpg,tortoise,Texas tortoise,1,True,Texas tortoise,True,1,TP,4.7,,"{""animal_present"": true, ""animal"": ""Texas tortoise"", ""is_tortoise_or_turtle"": true}"
+test/tortoise/inat-tortoise_inat1485771_p1841205.jpg,tortoise,Texas tortoise,1,True,spur-thighed tortoise,True,1,TP,5.0,,"{
   ""animal_present"": true,
-  ""animal"": ""Texas tortoise"",
+  ""animal"": ""spur-thighed tortoise"",
   ""is_tortoise_or_turtle"": true
 }"
-test/tortoise/inat-tortoise_inat157858338_p272883280.jpg,tortoise,Texas tortoise,1,True,tortoise,True,1,TP,5.68,,"{""animal_present"":true,""animal"":""tortoise"",""is_tortoise_or_turtle"":true}"
-test/tortoise/inat-tortoise_inat159868364_p276235376.jpg,tortoise,Texas tortoise,1,True,Texas tortoise,True,1,TP,3.96,,"{""animal_present"":true,""animal"":""Texas tortoise"",""is_tortoise_or_turtle"":true}"
-test/tortoise/inat-tortoise_inat159868366_p276235388.jpg,tortoise,Texas tortoise,1,True,Texas tortoise,True,1,TP,3.1,,"{""animal_present"": true, ""animal"": ""Texas tortoise"", ""is_tortoise_or_turtle"": true}"
-test/tortoise/inat-tortoise_inat159868367_p276235407.jpg,tortoise,Texas tortoise,1,True,Texas tortoise,True,1,TP,3.45,,"{""animal_present"": true, ""animal"": ""Texas tortoise"", ""is_tortoise_or_turtle"": true}"
-test/tortoise/inat-tortoise_inat160095741_p276632449.jpg,tortoise,Texas tortoise,1,True,Texas tortoise,True,1,TP,2.47,,"{
-  ""animal_present"": true,
-  ""animal"": ""Texas tortoise"",
-  ""is_tortoise_or_turtle"": true
-}"
-test/tortoise/inat-tortoise_inat160968085_p278197651.jpg,tortoise,Texas tortoise,1,True,Texas tortoise,True,1,TP,3.84,,"{""animal_present"": true, ""animal"": ""Texas tortoise"", ""is_tortoise_or_turtle"": true}"
-test/tortoise/inat-tortoise_inat167114722_p289458074.jpg,tortoise,Texas tortoise,1,True,Texas tortoise,True,1,TP,3.23,,"{""animal_present"":true,""animal"":""Texas tortoise"",""is_tortoise_or_turtle"":true}"
-test/tortoise/inat-tortoise_inat167522461_p290212547.jpg,tortoise,Texas tortoise,1,True,Texas tortoise,True,1,TP,4.18,,"{""animal_present"":true,""animal"":""Texas tortoise"",""is_tortoise_or_turtle"":true}"
-test/tortoise/inat-tortoise_inat17530103_p26682149.jpg,tortoise,Texas tortoise,1,True,Texas tortoise,True,1,TP,4.17,,"{""animal_present"": true, ""animal"": ""Texas tortoise"", ""is_tortoise_or_turtle"": true}"
-test/tortoise/inat-tortoise_inat178639176_p310885514.jpg,tortoise,Texas tortoise,1,True,Texas tortoise,True,1,TP,3.38,,"{""animal_present"":true,""animal"":""Texas tortoise"",""is_tortoise_or_turtle"":true}"
-test/tortoise/inat-tortoise_inat181073413_p315525715.jpg,tortoise,Texas tortoise,1,True,Texas tortoise,True,1,TP,2.74,,"{""animal_present"":true,""animal"":""Texas tortoise"",""is_tortoise_or_turtle"":true}"
-test/tortoise/inat-tortoise_inat186952897_p326822891.jpg,tortoise,Texas tortoise,1,True,Texas tortoise,True,1,TP,3.42,,"{""animal_present"": true, ""animal"": ""Texas tortoise"", ""is_tortoise_or_turtle"": true}"
-test/tortoise/inat-tortoise_inat18903775_p28971436.jpg,tortoise,Texas tortoise,1,True,Texas tortoise,True,1,TP,2.82,,"{
-  ""animal_present"": true,
-  ""animal"": ""Texas tortoise"",
-  ""is_tortoise_or_turtle"": true
-}"
-test/tortoise/inat-tortoise_inat190032430_p333040988.jpg,tortoise,Texas tortoise,1,True,Texas tortoise,True,1,TP,2.92,,"{""animal_present"": true, ""animal"": ""Texas tortoise"", ""is_tortoise_or_turtle"": true}"
-test/tortoise/inat-tortoise_inat190252328_p333461423.jpg,tortoise,Texas tortoise,1,True,tortoise,True,1,TP,4.14,,"{
+test/tortoise/inat-tortoise_inat152759377_p263745968.jpg,tortoise,Texas tortoise,1,True,Texas tortoise,True,1,TP,3.56,,"{""animal_present"": true, ""animal"": ""Texas tortoise"", ""is_tortoise_or_turtle"": true}"
+test/tortoise/inat-tortoise_inat154035212_p266112717.jpg,tortoise,Texas tortoise,1,True,Texas tortoise,True,1,TP,7.03,,"{""animal_present"":true,""animal"":""Texas tortoise"",""is_tortoise_or_turtle"":true}"
+test/tortoise/inat-tortoise_inat155407175_p268631962.jpg,tortoise,Texas tortoise,1,True,Texas tortoise,True,1,TP,4.75,,"{""animal_present"":true,""animal"":""Texas tortoise"",""is_tortoise_or_turtle"":true}"
+test/tortoise/inat-tortoise_inat157845710_p272861980.jpg,tortoise,Texas tortoise,1,True,Texas tortoise,True,1,TP,5.01,,"{""animal_present"": true, ""animal"": ""Texas tortoise"", ""is_tortoise_or_turtle"": true}"
+test/tortoise/inat-tortoise_inat157858338_p272883280.jpg,tortoise,Texas tortoise,1,True,tortoise,True,1,TP,4.59,,"{
   ""animal_present"": true,
   ""animal"": ""tortoise"",
   ""is_tortoise_or_turtle"": true
 }"
-test/tortoise/inat-tortoise_inat19853289_p30608937.jpg,tortoise,Texas tortoise,1,True,Texas tortoise,True,1,TP,4.51,,"{""animal_present"": true, ""animal"": ""Texas tortoise"", ""is_tortoise_or_turtle"": true}"
-test/tortoise/inat-tortoise_inat198758732_p350382933.jpg,tortoise,Texas tortoise,1,True,Texas tortoise,True,1,TP,3.88,,"{
+test/tortoise/inat-tortoise_inat159868364_p276235376.jpg,tortoise,Texas tortoise,1,True,Texas tortoise,True,1,TP,5.3,,"{""animal_present"": true, ""animal"": ""Texas tortoise"", ""is_tortoise_or_turtle"": true}"
+test/tortoise/inat-tortoise_inat159868366_p276235388.jpg,tortoise,Texas tortoise,1,True,Texas tortoise,True,1,TP,4.67,,"{""animal_present"": true, ""animal"": ""Texas tortoise"", ""is_tortoise_or_turtle"": true}"
+test/tortoise/inat-tortoise_inat159868367_p276235407.jpg,tortoise,Texas tortoise,1,True,Texas tortoise,True,1,TP,4.26,,"{""animal_present"":true,""animal"":""Texas tortoise"",""is_tortoise_or_turtle"":true}"
+test/tortoise/inat-tortoise_inat160095741_p276632449.jpg,tortoise,Texas tortoise,1,True,Texas tortoise,True,1,TP,3.25,,"{
   ""animal_present"": true,
   ""animal"": ""Texas tortoise"",
   ""is_tortoise_or_turtle"": true
 }"
-test/tortoise/inat-tortoise_inat198762802_p350391764.jpg,tortoise,Texas tortoise,1,True,Texas tortoise,True,1,TP,8.32,,"{""animal_present"":true,""animal"":""Texas tortoise"",""is_tortoise_or_turtle"":true}"
-test/tortoise/inat-tortoise_inat1988782_p2426040.jpg,tortoise,Texas tortoise,1,True,Texas tortoise,True,1,TP,4.61,,"{
+test/tortoise/inat-tortoise_inat160968085_p278197651.jpg,tortoise,Texas tortoise,1,True,Texas tortoise,True,1,TP,6.4,,"{""animal_present"": true, ""animal"": ""Texas tortoise"", ""is_tortoise_or_turtle"": true}"
+test/tortoise/inat-tortoise_inat167114722_p289458074.jpg,tortoise,Texas tortoise,1,True,Texas tortoise,True,1,TP,70.04,,"{""animal_present"": true, ""animal"": ""Texas tortoise"", ""is_tortoise_or_turtle"": true}"
+test/tortoise/inat-tortoise_inat167522461_p290212547.jpg,tortoise,Texas tortoise,1,True,Texas tortoise,True,1,TP,4.78,,"{""animal_present"": true, ""animal"": ""Texas tortoise"", ""is_tortoise_or_turtle"": true}"
+test/tortoise/inat-tortoise_inat17530103_p26682149.jpg,tortoise,Texas tortoise,1,True,Texas tortoise,True,1,TP,7.85,,"{""animal_present"":true,""animal"":""Texas tortoise"",""is_tortoise_or_turtle"":true}"
+test/tortoise/inat-tortoise_inat178639176_p310885514.jpg,tortoise,Texas tortoise,1,True,Texas tortoise,True,1,TP,4.76,,"{""animal_present"": true, ""animal"": ""Texas tortoise"", ""is_tortoise_or_turtle"": true}"
+test/tortoise/inat-tortoise_inat181073413_p315525715.jpg,tortoise,Texas tortoise,1,True,Texas tortoise,True,1,TP,4.77,,"{
   ""animal_present"": true,
   ""animal"": ""Texas tortoise"",
   ""is_tortoise_or_turtle"": true
 }"
-test/tortoise/inat-tortoise_inat200087881_p352952691.jpg,tortoise,Texas tortoise,1,True,gopher tortoise,True,1,TP,3.39,,"{""animal_present"":true,""animal"":""gopher tortoise"",""is_tortoise_or_turtle"":true}"
-test/tortoise/inat-tortoise_inat200219018_p353205792.jpg,tortoise,Texas tortoise,1,True,tortoise,True,1,TP,3.3,,"{""animal_present"":true,""animal"":""tortoise"",""is_tortoise_or_turtle"":true}"
-test/tortoise/inat-tortoise_inat200469198_p353696395.jpg,tortoise,Texas tortoise,1,True,Texas tortoise,True,1,TP,3.65,,"{""animal_present"": true, ""animal"": ""Texas tortoise"", ""is_tortoise_or_turtle"": true}"
-test/tortoise/inat-tortoise_inat206969371_p366043134.jpg,tortoise,Texas tortoise,1,True,Texas tortoise,True,1,TP,3.22,,"{""animal_present"": true, ""animal"": ""Texas tortoise"", ""is_tortoise_or_turtle"": true}"
+test/tortoise/inat-tortoise_inat186952897_p326822891.jpg,tortoise,Texas tortoise,1,True,Texas tortoise,True,1,TP,4.0,,"{""animal_present"": true, ""animal"": ""Texas tortoise"", ""is_tortoise_or_turtle"": true}"
+test/tortoise/inat-tortoise_inat18903775_p28971436.jpg,tortoise,Texas tortoise,1,True,Texas tortoise,True,1,TP,8.62,,"{
+  ""animal_present"": true,
+  ""animal"": ""Texas tortoise"",
+  ""is_tortoise_or_turtle"": true
+}"
+test/tortoise/inat-tortoise_inat190032430_p333040988.jpg,tortoise,Texas tortoise,1,True,Texas tortoise,True,1,TP,5.1,,"{
+  ""animal_present"": true,
+  ""animal"": ""Texas tortoise"",
+  ""is_tortoise_or_turtle"": true
+}"
+test/tortoise/inat-tortoise_inat190252328_p333461423.jpg,tortoise,Texas tortoise,1,True,Texas tortoise,True,1,TP,5.19,,"{""animal_present"": true, ""animal"": ""Texas tortoise"", ""is_tortoise_or_turtle"": true}"
+test/tortoise/inat-tortoise_inat19853289_p30608937.jpg,tortoise,Texas tortoise,1,True,Texas tortoise,True,1,TP,7.14,,"{""animal_present"": true, ""animal"": ""Texas tortoise"", ""is_tortoise_or_turtle"": true}"
+test/tortoise/inat-tortoise_inat198758732_p350382933.jpg,tortoise,Texas tortoise,1,True,Texas tortoise,True,1,TP,4.96,,"{""animal_present"": true, ""animal"": ""Texas tortoise"", ""is_tortoise_or_turtle"": true}"
+test/tortoise/inat-tortoise_inat198762802_p350391764.jpg,tortoise,Texas tortoise,1,True,Texas tortoise,True,1,TP,3.28,,"{""animal_present"":true,""animal"":""Texas tortoise"",""is_tortoise_or_turtle"":true}"
+test/tortoise/inat-tortoise_inat1988782_p2426040.jpg,tortoise,Texas tortoise,1,True,Texas tortoise,True,1,TP,3.4,,"{
+  ""animal_present"": true,
+  ""animal"": ""Texas tortoise"",
+  ""is_tortoise_or_turtle"": true
+}"
+test/tortoise/inat-tortoise_inat200087881_p352952691.jpg,tortoise,Texas tortoise,1,True,Texas tortoise,True,1,TP,7.03,,"{""animal_present"":true,""animal"":""Texas tortoise"",""is_tortoise_or_turtle"":true}"
+test/tortoise/inat-tortoise_inat200219018_p353205792.jpg,tortoise,Texas tortoise,1,True,tortoise,True,1,TP,3.61,,"{""animal_present"": true, ""animal"": ""tortoise"", ""is_tortoise_or_turtle"": true}"
+test/tortoise/inat-tortoise_inat200469198_p353696395.jpg,tortoise,Texas tortoise,1,True,Texas tortoise,True,1,TP,3.32,,"{""animal_present"": true, ""animal"": ""Texas tortoise"", ""is_tortoise_or_turtle"": true}"
+test/tortoise/inat-tortoise_inat206969371_p366043134.jpg,tortoise,Texas tortoise,1,True,Texas tortoise,True,1,TP,6.86,,"{""animal_present"":true,""animal"":""Texas tortoise"",""is_tortoise_or_turtle"":true}"
 test/tortoise/inat-tortoise_inat208295424_p368526371.jpg,tortoise,Texas tortoise,1,True,Texas tortoise,True,1,TP,3.08,,"{
   ""animal_present"": true,
   ""animal"": ""Texas tortoise"",
   ""is_tortoise_or_turtle"": true
 }"
-test/tortoise/inat-tortoise_inat217522058_p384821051.jpg,tortoise,Texas tortoise,1,True,Texas tortoise,True,1,TP,4.68,,"{
-  ""animal_present"": true,
-  ""animal"": ""Texas tortoise"",
-  ""is_tortoise_or_turtle"": true
-}"
-test/tortoise/inat-tortoise_inat219799534_p389081519.jpg,tortoise,Texas tortoise,1,True,Texas tortoise,True,1,TP,3.07,,"{
-  ""animal_present"": true,
-  ""animal"": ""Texas tortoise"",
-  ""is_tortoise_or_turtle"": true
-}"
-test/tortoise/inat-tortoise_inat221203893_p391718964.jpg,tortoise,Texas tortoise,1,True,Texas tortoise,True,1,TP,3.06,,"{
-  ""animal_present"": true,
-  ""animal"": ""Texas tortoise"",
-  ""is_tortoise_or_turtle"": true
-}"
-test/tortoise/inat-tortoise_inat221382451_p392042027.jpg,tortoise,Texas tortoise,1,True,desert tortoise,True,1,TP,3.62,,"{
+test/tortoise/inat-tortoise_inat217522058_p384821051.jpg,tortoise,Texas tortoise,1,True,Texas tortoise,True,1,TP,7.15,,"{""animal_present"": true, ""animal"": ""Texas tortoise"", ""is_tortoise_or_turtle"": true}"
+test/tortoise/inat-tortoise_inat219799534_p389081519.jpg,tortoise,Texas tortoise,1,True,Texas tortoise,True,1,TP,5.03,,"{""animal_present"": true, ""animal"": ""Texas tortoise"", ""is_tortoise_or_turtle"": true}"
+test/tortoise/inat-tortoise_inat221203893_p391718964.jpg,tortoise,Texas tortoise,1,True,Texas tortoise,True,1,TP,4.27,,"{""animal_present"":true,""animal"":""Texas tortoise"",""is_tortoise_or_turtle"":true}"
+test/tortoise/inat-tortoise_inat221382451_p392042027.jpg,tortoise,Texas tortoise,1,True,desert tortoise,True,1,TP,3.43,,"{
   ""animal_present"": true,
   ""animal"": ""desert tortoise"",
   ""is_tortoise_or_turtle"": true
 }"
-test/tortoise/inat-tortoise_inat224019746_p396988791.jpg,tortoise,Texas tortoise,1,True,Texas tortoise,True,1,TP,3.22,,"{""animal_present"":true,""animal"":""Texas tortoise"",""is_tortoise_or_turtle"":true}"
-test/tortoise/inat-tortoise_inat232520515_p413137346.jpg,tortoise,Texas tortoise,1,True,Texas tortoise,True,1,TP,3.26,,"{""animal_present"":true,""animal"":""Texas tortoise"",""is_tortoise_or_turtle"":true}"
-test/tortoise/inat-tortoise_inat237994113_p423638535.jpg,tortoise,Texas tortoise,1,True,Texas tortoise,True,1,TP,3.71,,"{""animal_present"":true,""animal"":""Texas tortoise"",""is_tortoise_or_turtle"":true}"
-test/tortoise/inat-tortoise_inat240024936_p427571339.jpg,tortoise,Texas tortoise,1,True,Texas tortoise,True,1,TP,3.7,,"{
+test/tortoise/inat-tortoise_inat224019746_p396988791.jpg,tortoise,Texas tortoise,1,True,Texas tortoise,True,1,TP,4.54,,"{""animal_present"": true, ""animal"": ""Texas tortoise"", ""is_tortoise_or_turtle"": true}"
+test/tortoise/inat-tortoise_inat232520515_p413137346.jpg,tortoise,Texas tortoise,1,True,Texas tortoise,True,1,TP,4.34,,"{""animal_present"":true,""animal"":""Texas tortoise"",""is_tortoise_or_turtle"":true}"
+test/tortoise/inat-tortoise_inat237994113_p423638535.jpg,tortoise,Texas tortoise,1,True,Texas tortoise,True,1,TP,5.82,,"{""animal_present"": true, ""animal"": ""Texas tortoise"", ""is_tortoise_or_turtle"": true}"
+test/tortoise/inat-tortoise_inat240024936_p427571339.jpg,tortoise,Texas tortoise,1,True,Texas tortoise,True,1,TP,3.49,,"{
   ""animal_present"": true,
   ""animal"": ""Texas tortoise"",
   ""is_tortoise_or_turtle"": true
 }"
-test/tortoise/inat-tortoise_inat240025370_p427572029.jpg,tortoise,Texas tortoise,1,True,Texas tortoise,True,1,TP,3.67,,"{""animal_present"":true,""animal"":""Texas tortoise"",""is_tortoise_or_turtle"":true}"
-test/tortoise/inat-tortoise_inat2401499_p2677754.jpg,tortoise,Texas tortoise,1,True,Texas tortoise,True,1,TP,2.88,,"{""animal_present"": true, ""animal"": ""Texas tortoise"", ""is_tortoise_or_turtle"": true}"
-test/tortoise/inat-tortoise_inat24239180_p37483950.jpg,tortoise,Texas tortoise,1,True,Texas tortoise,True,1,TP,3.74,,"{""animal_present"": true, ""animal"": ""Texas tortoise"", ""is_tortoise_or_turtle"": true}"
-test/tortoise/inat-tortoise_inat245448352_p437990913.jpg,tortoise,Texas tortoise,1,True,Texas tortoise,True,1,TP,4.08,,"{""animal_present"": true, ""animal"": ""Texas tortoise"", ""is_tortoise_or_turtle"": true}"
-test/tortoise/inat-tortoise_inat247126897_p441307069.jpg,tortoise,Texas tortoise,1,True,Texas tortoise,True,1,TP,5.24,,"{""animal_present"": true, ""animal"": ""Texas tortoise"", ""is_tortoise_or_turtle"": true}"
-test/tortoise/inat-tortoise_inat247712569_p442478250.jpg,tortoise,Texas tortoise,1,True,tortoise,True,1,TP,4.29,,"{
-  ""animal_present"": true,
-  ""animal"": ""tortoise"",
-  ""is_tortoise_or_turtle"": true
-}"
-test/tortoise/inat-tortoise_inat253891852_p454668960.jpg,tortoise,Texas tortoise,1,True,Texas tortoise,True,1,TP,5.22,,"{
+test/tortoise/inat-tortoise_inat240025370_p427572029.jpg,tortoise,Texas tortoise,1,True,Texas tortoise,True,1,TP,3.77,,"{
   ""animal_present"": true,
   ""animal"": ""Texas tortoise"",
   ""is_tortoise_or_turtle"": true
 }"
-test/tortoise/inat-tortoise_inat257136792_p461207754.jpg,tortoise,Texas tortoise,1,True,Texas tortoise,True,1,TP,4.39,,"{""animal_present"":true,""animal"":""Texas tortoise"",""is_tortoise_or_turtle"":true}"
-test/tortoise/inat-tortoise_inat2580463_p2880541.jpg,tortoise,Texas tortoise,1,True,Texas tortoise,True,1,TP,5.3,,"{
+test/tortoise/inat-tortoise_inat2401499_p2677754.jpg,tortoise,Texas tortoise,1,True,Texas tortoise,True,1,TP,7.9,,"{
   ""animal_present"": true,
   ""animal"": ""Texas tortoise"",
   ""is_tortoise_or_turtle"": true
 }"
-test/tortoise/inat-tortoise_inat261756814_p470309593.jpg,tortoise,Texas tortoise,1,True,Texas tortoise,True,1,TP,2.97,,"{
+test/tortoise/inat-tortoise_inat24239180_p37483950.jpg,tortoise,Texas tortoise,1,True,Texas tortoise,True,1,TP,4.06,,"{""animal_present"":true,""animal"":""Texas tortoise"",""is_tortoise_or_turtle"":true}"
+test/tortoise/inat-tortoise_inat245448352_p437990913.jpg,tortoise,Texas tortoise,1,True,Texas tortoise,True,1,TP,7.45,,"{
   ""animal_present"": true,
   ""animal"": ""Texas tortoise"",
   ""is_tortoise_or_turtle"": true
 }"
-test/tortoise/inat-tortoise_inat26443697_p41062946.jpg,tortoise,Texas tortoise,1,True,Texas tortoise,True,1,TP,2.8,,"{""animal_present"": true, ""animal"": ""Texas tortoise"", ""is_tortoise_or_turtle"": true}"
-test/tortoise/inat-tortoise_inat26935322_p41855369.jpg,tortoise,Texas tortoise,1,True,Texas tortoise,True,1,TP,2.92,,"{""animal_present"": true, ""animal"": ""Texas tortoise"", ""is_tortoise_or_turtle"": true}"
-test/tortoise/inat-tortoise_inat27245486_p42370787.jpg,tortoise,Texas tortoise,1,True,Texas tortoise,True,1,TP,3.75,,"{""animal_present"": true, ""animal"": ""Texas tortoise"", ""is_tortoise_or_turtle"": true}"
-test/tortoise/inat-tortoise_inat275554434_p495115507.jpg,tortoise,Texas tortoise,1,True,Texas tortoise,True,1,TP,3.88,,"{
+test/tortoise/inat-tortoise_inat247126897_p441307069.jpg,tortoise,Texas tortoise,1,True,Texas tortoise,True,1,TP,4.0,,"{
   ""animal_present"": true,
   ""animal"": ""Texas tortoise"",
   ""is_tortoise_or_turtle"": true
 }"
-test/tortoise/inat-tortoise_inat275555628_p495117070.jpg,tortoise,Texas tortoise,1,True,Texas tortoise,True,1,TP,2.96,,"{""animal_present"":true,""animal"":""Texas tortoise"",""is_tortoise_or_turtle"":true}"
-test/tortoise/inat-tortoise_inat276607976_p496717006.jpg,tortoise,Texas tortoise,1,True,Texas tortoise,True,1,TP,4.46,,"{""animal_present"":true,""animal"":""Texas tortoise"",""is_tortoise_or_turtle"":true}"
-test/tortoise/inat-tortoise_inat282698715_p507915502.jpg,tortoise,Texas tortoise,1,True,Texas tortoise,True,1,TP,3.62,,"{""animal_present"":true,""animal"":""Texas tortoise"",""is_tortoise_or_turtle"":true}"
-test/tortoise/inat-tortoise_inat283444898_p509307933.jpg,tortoise,Texas tortoise,1,True,Texas tortoise,True,1,TP,3.7,,"{
+test/tortoise/inat-tortoise_inat247712569_p442478250.jpg,tortoise,Texas tortoise,1,True,Texas tortoise,True,1,TP,6.95,,"{
   ""animal_present"": true,
   ""animal"": ""Texas tortoise"",
   ""is_tortoise_or_turtle"": true
 }"
-test/tortoise/inat-tortoise_inat288879190_p519542456.jpg,tortoise,Texas tortoise,1,True,Texas tortoise,True,1,TP,3.62,,"{
+test/tortoise/inat-tortoise_inat253891852_p454668960.jpg,tortoise,Texas tortoise,1,True,red-footed tortoise,True,1,TP,5.81,,"{
+  ""animal_present"": true,
+  ""animal"": ""red-footed tortoise"",
+  ""is_tortoise_or_turtle"": true
+}"
+test/tortoise/inat-tortoise_inat257136792_p461207754.jpg,tortoise,Texas tortoise,1,True,Texas tortoise,True,1,TP,4.9,,"{""animal_present"": true, ""animal"": ""Texas tortoise"", ""is_tortoise_or_turtle"": true}"
+test/tortoise/inat-tortoise_inat2580463_p2880541.jpg,tortoise,Texas tortoise,1,True,Texas tortoise,True,1,TP,4.35,,"{""animal_present"":true,""animal"":""Texas tortoise"",""is_tortoise_or_turtle"":true}"
+test/tortoise/inat-tortoise_inat261756814_p470309593.jpg,tortoise,Texas tortoise,1,True,Texas tortoise,True,1,TP,3.62,,"{
   ""animal_present"": true,
   ""animal"": ""Texas tortoise"",
   ""is_tortoise_or_turtle"": true
 }"
-test/tortoise/inat-tortoise_inat294241206_p529605951.jpg,tortoise,Texas tortoise,1,True,Texas tortoise,True,1,TP,3.29,,"{""animal_present"": true, ""animal"": ""Texas tortoise"", ""is_tortoise_or_turtle"": true}"
-test/tortoise/inat-tortoise_inat294241791_p529607238.jpg,tortoise,Texas tortoise,1,True,Texas tortoise,True,1,TP,4.21,,"{
+test/tortoise/inat-tortoise_inat26443697_p41062946.jpg,tortoise,Texas tortoise,1,True,Texas tortoise,True,1,TP,3.46,,"{""animal_present"": true, ""animal"": ""Texas tortoise"", ""is_tortoise_or_turtle"": true}"
+test/tortoise/inat-tortoise_inat26935322_p41855369.jpg,tortoise,Texas tortoise,1,True,Texas tortoise,True,1,TP,4.71,,"{
   ""animal_present"": true,
   ""animal"": ""Texas tortoise"",
   ""is_tortoise_or_turtle"": true
 }"
-test/tortoise/inat-tortoise_inat297785955_p536327115.jpg,tortoise,Texas tortoise,1,True,Texas tortoise,True,1,TP,3.32,,"{""animal_present"": true, ""animal"": ""Texas tortoise"", ""is_tortoise_or_turtle"": true}"
-test/tortoise/inat-tortoise_inat30006178_p46856512.jpg,tortoise,Texas tortoise,1,True,Texas tortoise,True,1,TP,3.48,,"{""animal_present"":true,""animal"":""Texas tortoise"",""is_tortoise_or_turtle"":true}"
-test/tortoise/inat-tortoise_inat302247_p374826.jpg,tortoise,Texas tortoise,1,True,Texas tortoise,True,1,TP,3.02,,"{
+test/tortoise/inat-tortoise_inat27245486_p42370787.jpg,tortoise,Texas tortoise,1,True,Texas tortoise,True,1,TP,6.53,,"{""animal_present"": true, ""animal"": ""Texas tortoise"", ""is_tortoise_or_turtle"": true}"
+test/tortoise/inat-tortoise_inat275554434_p495115507.jpg,tortoise,Texas tortoise,1,True,Texas tortoise,True,1,TP,4.47,,"{
   ""animal_present"": true,
   ""animal"": ""Texas tortoise"",
   ""is_tortoise_or_turtle"": true
 }"
-test/tortoise/inat-tortoise_inat30329297_p47376394.jpg,tortoise,Texas tortoise,1,True,Texas tortoise,True,1,TP,3.31,,"{""animal_present"":true,""animal"":""Texas tortoise"",""is_tortoise_or_turtle"":true}"
-test/tortoise/inat-tortoise_inat305515499_p550862342.jpg,tortoise,Texas tortoise,1,True,Texas tortoise,True,1,TP,2.71,,"{""animal_present"":true,""animal"":""Texas tortoise"",""is_tortoise_or_turtle"":true}"
-test/tortoise/inat-tortoise_inat310453_p385219.jpg,tortoise,Texas tortoise,1,True,Texas tortoise,True,1,TP,3.25,,"{""animal_present"":true,""animal"":""Texas tortoise"",""is_tortoise_or_turtle"":true}"
-test/tortoise/inat-tortoise_inat310489_p385264.jpg,tortoise,Texas tortoise,1,True,Texas tortoise,True,1,TP,2.83,,"{""animal_present"":true,""animal"":""Texas tortoise"",""is_tortoise_or_turtle"":true}"
-test/tortoise/inat-tortoise_inat310556_p385341.jpg,tortoise,Texas tortoise,1,True,Texas tortoise,True,1,TP,2.77,,"{""animal_present"": true, ""animal"": ""Texas tortoise"", ""is_tortoise_or_turtle"": true}"
-test/tortoise/inat-tortoise_inat311322745_p561985753.jpg,tortoise,Texas tortoise,1,True,Texas tortoise,True,1,TP,3.87,,"{
+test/tortoise/inat-tortoise_inat275555628_p495117070.jpg,tortoise,Texas tortoise,1,True,Texas tortoise,True,1,TP,5.58,,"{""animal_present"":true,""animal"":""Texas tortoise"",""is_tortoise_or_turtle"":true}"
+test/tortoise/inat-tortoise_inat276607976_p496717006.jpg,tortoise,Texas tortoise,1,True,Texas tortoise,True,1,TP,3.82,,"{""animal_present"": true, ""animal"": ""Texas tortoise"", ""is_tortoise_or_turtle"": true}"
+test/tortoise/inat-tortoise_inat282698715_p507915502.jpg,tortoise,Texas tortoise,1,True,Texas tortoise,True,1,TP,3.35,,"{""animal_present"": true, ""animal"": ""Texas tortoise"", ""is_tortoise_or_turtle"": true}"
+test/tortoise/inat-tortoise_inat283444898_p509307933.jpg,tortoise,Texas tortoise,1,True,Texas tortoise,True,1,TP,2.82,,"{
   ""animal_present"": true,
   ""animal"": ""Texas tortoise"",
   ""is_tortoise_or_turtle"": true
 }"
-test/tortoise/inat-tortoise_inat316878923_p572553042.jpg,tortoise,Texas tortoise,1,True,Texas tortoise,True,1,TP,2.34,,"{""animal_present"": true, ""animal"": ""Texas tortoise"", ""is_tortoise_or_turtle"": true}"
-test/tortoise/inat-tortoise_inat320263962_p579018752.jpg,tortoise,Texas tortoise,1,True,Texas tortoise,True,1,TP,3.45,,"{""animal_present"":true,""animal"":""Texas tortoise"",""is_tortoise_or_turtle"":true}"
-test/tortoise/inat-tortoise_inat320872764_p580217428.jpg,tortoise,Texas tortoise,1,True,Texas tortoise,True,1,TP,5.06,,"{""animal_present"":true,""animal"":""Texas tortoise"",""is_tortoise_or_turtle"":true}"
-test/tortoise/inat-tortoise_inat322853078_p584116873.jpg,tortoise,Texas tortoise,1,True,Texas tortoise,True,1,TP,2.55,,"{""animal_present"":true,""animal"":""Texas tortoise"",""is_tortoise_or_turtle"":true}"
-test/tortoise/inat-tortoise_inat327171991_p592677689.jpg,tortoise,Texas tortoise,1,True,Texas tortoise,True,1,TP,5.94,,"{""animal_present"":true,""animal"":""Texas tortoise"",""is_tortoise_or_turtle"":true}"
-test/tortoise/inat-tortoise_inat327680785_p593687506.jpg,tortoise,Texas tortoise,1,True,Texas tortoise,True,1,TP,2.85,,"{""animal_present"":true,""animal"":""Texas tortoise"",""is_tortoise_or_turtle"":true}"
-test/tortoise/inat-tortoise_inat330369597_p599057368.jpg,tortoise,Texas tortoise,1,True,Texas tortoise,True,1,TP,3.29,,"{""animal_present"": true, ""animal"": ""Texas tortoise"", ""is_tortoise_or_turtle"": true}"
-test/tortoise/inat-tortoise_inat330726163_p599794626.jpg,tortoise,Texas tortoise,1,True,Texas tortoise,True,1,TP,4.45,,"{
+test/tortoise/inat-tortoise_inat288879190_p519542456.jpg,tortoise,Texas tortoise,1,True,Texas tortoise,True,1,TP,3.81,,"{""animal_present"": true, ""animal"": ""Texas tortoise"", ""is_tortoise_or_turtle"": true}"
+test/tortoise/inat-tortoise_inat294241206_p529605951.jpg,tortoise,Texas tortoise,1,True,Texas tortoise,True,1,TP,4.93,,"{
   ""animal_present"": true,
   ""animal"": ""Texas tortoise"",
   ""is_tortoise_or_turtle"": true
 }"
-test/tortoise/inat-tortoise_inat33223031_p52162973.jpg,tortoise,Texas tortoise,1,True,Texas tortoise,True,1,TP,3.45,,"{""animal_present"":true,""animal"":""Texas tortoise"",""is_tortoise_or_turtle"":true}"
-test/tortoise/inat-tortoise_inat336362982_p611226247.jpg,tortoise,Texas tortoise,1,True,Texas tortoise,True,1,TP,3.73,,"{
+test/tortoise/inat-tortoise_inat294241791_p529607238.jpg,tortoise,Texas tortoise,1,True,Texas tortoise,True,1,TP,4.33,,"{
   ""animal_present"": true,
   ""animal"": ""Texas tortoise"",
   ""is_tortoise_or_turtle"": true
 }"
-test/tortoise/inat-tortoise_inat337011123_p612543189.jpg,tortoise,Texas tortoise,1,True,Texas tortoise,True,1,TP,3.38,,"{""animal_present"":true,""animal"":""Texas tortoise"",""is_tortoise_or_turtle"":true}"
-test/tortoise/inat-tortoise_inat343456633_p625644605.jpg,tortoise,Texas tortoise,1,True,Texas tortoise,True,1,TP,4.89,,"{""animal_present"":true,""animal"":""Texas tortoise"",""is_tortoise_or_turtle"":true}"
-test/tortoise/inat-tortoise_inat346316715_p631270346.jpg,tortoise,Texas tortoise,1,True,Texas tortoise,True,1,TP,8.5,,"{
+test/tortoise/inat-tortoise_inat297785955_p536327115.jpg,tortoise,Texas tortoise,1,True,Texas tortoise,True,1,TP,5.3,,"{
   ""animal_present"": true,
   ""animal"": ""Texas tortoise"",
   ""is_tortoise_or_turtle"": true
 }"
-test/tortoise/inat-tortoise_inat347118507_p632854199.jpg,tortoise,Texas tortoise,1,True,Texas tortoise,True,1,TP,4.03,,"{""animal_present"": true, ""animal"": ""Texas tortoise"", ""is_tortoise_or_turtle"": true}"
-test/tortoise/inat-tortoise_inat350050908_p638638836.jpg,tortoise,Texas tortoise,1,True,Texas tortoise,True,1,TP,3.48,,"{""animal_present"": true, ""animal"": ""Texas tortoise"", ""is_tortoise_or_turtle"": true}"
-test/tortoise/inat-tortoise_inat354037005_p645912824.jpg,tortoise,Texas tortoise,1,True,Texas tortoise,True,1,TP,3.36,,"{
+test/tortoise/inat-tortoise_inat30006178_p46856512.jpg,tortoise,Texas tortoise,1,True,Texas tortoise,True,1,TP,4.1,,"{
   ""animal_present"": true,
   ""animal"": ""Texas tortoise"",
   ""is_tortoise_or_turtle"": true
 }"
-test/tortoise/inat-tortoise_inat35567802_p56097103.jpg,tortoise,Texas tortoise,1,True,Texas tortoise,True,1,TP,6.0,,"{""animal_present"": true, ""animal"": ""Texas tortoise"", ""is_tortoise_or_turtle"": true}"
-test/tortoise/inat-tortoise_inat358384739_p653774184.jpg,tortoise,Texas tortoise,1,True,Texas tortoise,True,1,TP,3.87,,"{""animal_present"":true,""animal"":""Texas tortoise"",""is_tortoise_or_turtle"":true}"
-test/tortoise/inat-tortoise_inat358632834_p654255676.jpg,tortoise,Texas tortoise,1,True,Texas tortoise,True,1,TP,4.08,,"{
+test/tortoise/inat-tortoise_inat302247_p374826.jpg,tortoise,Texas tortoise,1,True,Texas tortoise,True,1,TP,3.69,,"{
   ""animal_present"": true,
   ""animal"": ""Texas tortoise"",
   ""is_tortoise_or_turtle"": true
 }"
-test/tortoise/inat-tortoise_inat362449262_p661530096.jpg,tortoise,Texas tortoise,1,True,desert tortoise,True,1,TP,4.22,,"{""animal_present"": true, ""animal"": ""desert tortoise"", ""is_tortoise_or_turtle"": true}"
-test/tortoise/inat-tortoise_inat363496792_p663530010.jpg,tortoise,Texas tortoise,1,True,Texas tortoise,True,1,TP,3.59,,"{
+test/tortoise/inat-tortoise_inat30329297_p47376394.jpg,tortoise,Texas tortoise,1,True,Texas tortoise,True,1,TP,5.66,,"{""animal_present"":true,""animal"":""Texas tortoise"",""is_tortoise_or_turtle"":true}"
+test/tortoise/inat-tortoise_inat305515499_p550862342.jpg,tortoise,Texas tortoise,1,True,Texas tortoise,True,1,TP,4.08,,"{""animal_present"": true, ""animal"": ""Texas tortoise"", ""is_tortoise_or_turtle"": true}"
+test/tortoise/inat-tortoise_inat310453_p385219.jpg,tortoise,Texas tortoise,1,True,Texas tortoise,True,1,TP,4.84,,"{
   ""animal_present"": true,
   ""animal"": ""Texas tortoise"",
   ""is_tortoise_or_turtle"": true
 }"
-test/tortoise/inat-tortoise_inat363718127_p663951052.jpg,tortoise,Texas tortoise,1,True,box turtle,True,1,TP,5.48,,"{""animal_present"": true, ""animal"": ""box turtle"", ""is_tortoise_or_turtle"": true}"
-test/tortoise/inat-tortoise_inat363844950_p664191466.jpg,tortoise,Texas tortoise,1,True,Texas tortoise,True,1,TP,3.08,,"{""animal_present"": true, ""animal"": ""Texas tortoise"", ""is_tortoise_or_turtle"": true}"
-test/tortoise/inat-tortoise_inat36398580_p57532337.jpg,tortoise,Texas tortoise,1,True,Texas tortoise,True,1,TP,3.47,,"{""animal_present"": true, ""animal"": ""Texas tortoise"", ""is_tortoise_or_turtle"": true}"
-test/tortoise/inat-tortoise_inat366077557_p668405368.jpg,tortoise,Texas tortoise,1,True,Texas tortoise,True,1,TP,3.6,,"{
+test/tortoise/inat-tortoise_inat310489_p385264.jpg,tortoise,Texas tortoise,1,True,Texas tortoise,True,1,TP,4.7,,"{""animal_present"":true,""animal"":""Texas tortoise"",""is_tortoise_or_turtle"":true}"
+test/tortoise/inat-tortoise_inat310556_p385341.jpg,tortoise,Texas tortoise,1,True,Texas tortoise,True,1,TP,7.04,,"{""animal_present"": true, ""animal"": ""Texas tortoise"", ""is_tortoise_or_turtle"": true}"
+test/tortoise/inat-tortoise_inat311322745_p561985753.jpg,tortoise,Texas tortoise,1,True,Texas tortoise,True,1,TP,4.8,,"{""animal_present"":true,""animal"":""Texas tortoise"",""is_tortoise_or_turtle"":true}"
+test/tortoise/inat-tortoise_inat316878923_p572553042.jpg,tortoise,Texas tortoise,1,True,Texas tortoise,True,1,TP,3.28,,"{""animal_present"":true,""animal"":""Texas tortoise"",""is_tortoise_or_turtle"":true}"
+test/tortoise/inat-tortoise_inat320263962_p579018752.jpg,tortoise,Texas tortoise,1,True,Texas tortoise,True,1,TP,11.11,,"{
   ""animal_present"": true,
   ""animal"": ""Texas tortoise"",
   ""is_tortoise_or_turtle"": true
 }"
-test/tortoise/inat-tortoise_inat366082272_p668429561.jpg,tortoise,Texas tortoise,1,True,Texas tortoise,True,1,TP,3.55,,"{""animal_present"": true, ""animal"": ""Texas tortoise"", ""is_tortoise_or_turtle"": true}"
-test/tortoise/inat-tortoise_inat366083020_p668431292.jpg,tortoise,Texas tortoise,1,True,Texas tortoise,True,1,TP,3.02,,"{""animal_present"":true,""animal"":""Texas tortoise"",""is_tortoise_or_turtle"":true}"
-test/tortoise/inat-tortoise_inat367555611_p671247252.jpg,tortoise,Texas tortoise,1,True,Texas tortoise,True,1,TP,3.27,,"{""animal_present"":true,""animal"":""Texas tortoise"",""is_tortoise_or_turtle"":true}"
-test/tortoise/inat-tortoise_inat368103712_p672289199.jpg,tortoise,Texas tortoise,1,True,Texas tortoise,True,1,TP,3.44,,"{""animal_present"": true, ""animal"": ""Texas tortoise"", ""is_tortoise_or_turtle"": true}"
-test/tortoise/inat-tortoise_inat371141362_p678091570.jpg,tortoise,Texas tortoise,1,True,Texas tortoise,True,1,TP,4.02,,"{""animal_present"":true,""animal"":""Texas tortoise"",""is_tortoise_or_turtle"":true}"
-test/tortoise/inat-tortoise_inat375727409_p686913673.jpg,tortoise,Texas tortoise,1,True,Texas tortoise,True,1,TP,2.7,,"{
+test/tortoise/inat-tortoise_inat320872764_p580217428.jpg,tortoise,Texas tortoise,1,True,Texas tortoise,True,1,TP,6.28,,"{""animal_present"":true,""animal"":""Texas tortoise"",""is_tortoise_or_turtle"":true}"
+test/tortoise/inat-tortoise_inat322853078_p584116873.jpg,tortoise,Texas tortoise,1,True,Texas tortoise,True,1,TP,3.31,,"{""animal_present"":true,""animal"":""Texas tortoise"",""is_tortoise_or_turtle"":true}"
+test/tortoise/inat-tortoise_inat327171991_p592677689.jpg,tortoise,Texas tortoise,1,True,Texas tortoise,True,1,TP,5.09,,"{""animal_present"": true, ""animal"": ""Texas tortoise"", ""is_tortoise_or_turtle"": true}"
+test/tortoise/inat-tortoise_inat327680785_p593687506.jpg,tortoise,Texas tortoise,1,True,Texas tortoise,True,1,TP,5.13,,"{""animal_present"":true,""animal"":""Texas tortoise"",""is_tortoise_or_turtle"":true}"
+test/tortoise/inat-tortoise_inat32799881_p51470006.jpg,tortoise,Texas tortoise,1,True,Texas tortoise,True,1,TP,4.23,,"{
   ""animal_present"": true,
   ""animal"": ""Texas tortoise"",
   ""is_tortoise_or_turtle"": true
 }"
-test/tortoise/inat-tortoise_inat376871073_p689113169.jpg,tortoise,Texas tortoise,1,True,Texas tortoise,True,1,TP,5.68,,"{""animal_present"": true, ""animal"": ""Texas tortoise"", ""is_tortoise_or_turtle"": true}"
-test/tortoise/inat-tortoise_inat381344008_p697759018.jpg,tortoise,Texas tortoise,1,True,Texas tortoise,True,1,TP,3.45,,"{""animal_present"": true, ""animal"": ""Texas tortoise"", ""is_tortoise_or_turtle"": true}"
-test/tortoise/inat-tortoise_inat382058603_p699142468.jpg,tortoise,Texas tortoise,1,True,Texas tortoise,True,1,TP,5.44,,"{
+test/tortoise/inat-tortoise_inat330369597_p599057368.jpg,tortoise,Texas tortoise,1,True,Texas tortoise,True,1,TP,3.51,,"{""animal_present"":true,""animal"":""Texas tortoise"",""is_tortoise_or_turtle"":true}"
+test/tortoise/inat-tortoise_inat330726163_p599794626.jpg,tortoise,Texas tortoise,1,True,Texas tortoise,True,1,TP,6.55,,"{""animal_present"":true,""animal"":""Texas tortoise"",""is_tortoise_or_turtle"":true}"
+test/tortoise/inat-tortoise_inat33223031_p52162973.jpg,tortoise,Texas tortoise,1,True,Texas tortoise,True,1,TP,4.29,,"{""animal_present"":true,""animal"":""Texas tortoise"",""is_tortoise_or_turtle"":true}"
+test/tortoise/inat-tortoise_inat336362982_p611226247.jpg,tortoise,Texas tortoise,1,True,Texas tortoise,True,1,TP,3.0,,"{
   ""animal_present"": true,
   ""animal"": ""Texas tortoise"",
   ""is_tortoise_or_turtle"": true
 }"
-test/tortoise/inat-tortoise_inat3904964_p4589245.jpg,tortoise,Texas tortoise,1,True,Texas tortoise,True,1,TP,4.41,,"{
+test/tortoise/inat-tortoise_inat337011123_p612543189.jpg,tortoise,Texas tortoise,1,True,Texas tortoise,True,1,TP,6.49,,"{
   ""animal_present"": true,
   ""animal"": ""Texas tortoise"",
   ""is_tortoise_or_turtle"": true
 }"
-test/tortoise/inat-tortoise_inat3904988_p4589272.jpg,tortoise,Texas tortoise,1,True,Texas tortoise,True,1,TP,2.99,,"{""animal_present"":true,""animal"":""Texas tortoise"",""is_tortoise_or_turtle"":true}"
-test/tortoise/inat-tortoise_inat3904995_p4589288.jpg,tortoise,Texas tortoise,1,True,Texas tortoise,True,1,TP,2.97,,"{
+test/tortoise/inat-tortoise_inat343456633_p625644605.jpg,tortoise,Texas tortoise,1,True,Texas tortoise,True,1,TP,5.19,,"{
   ""animal_present"": true,
   ""animal"": ""Texas tortoise"",
   ""is_tortoise_or_turtle"": true
 }"
-test/tortoise/inat-tortoise_inat3905021_p4589341.jpg,tortoise,Texas tortoise,1,True,Texas tortoise,True,1,TP,3.09,,"{""animal_present"":true,""animal"":""Texas tortoise"",""is_tortoise_or_turtle"":true}"
-test/tortoise/inat-tortoise_inat3905084_p4589355.jpg,tortoise,Texas tortoise,1,True,Texas tortoise,True,1,TP,5.7,,"{""animal_present"": true, ""animal"": ""Texas tortoise"", ""is_tortoise_or_turtle"": true}"
-test/tortoise/inat-tortoise_inat3915709_p4605570.jpg,tortoise,Texas tortoise,1,True,Texas tortoise,True,1,TP,4.43,,"{""animal_present"":true,""animal"":""Texas tortoise"",""is_tortoise_or_turtle"":true}"
-test/tortoise/inat-tortoise_inat391758520_p717874646.jpg,tortoise,Texas tortoise,1,True,Texas tortoise,True,1,TP,3.38,,"{""animal_present"": true, ""animal"": ""Texas tortoise"", ""is_tortoise_or_turtle"": true}"
-test/tortoise/inat-tortoise_inat391758673_p717875172.jpg,tortoise,Texas tortoise,1,True,Texas tortoise,True,1,TP,2.99,,"{""animal_present"":true,""animal"":""Texas tortoise"",""is_tortoise_or_turtle"":true}"
-test/tortoise/inat-tortoise_inat394949303_p724117742.jpg,tortoise,Texas tortoise,1,True,Texas tortoise,True,1,TP,5.78,,"{
+test/tortoise/inat-tortoise_inat346316715_p631270346.jpg,tortoise,Texas tortoise,1,True,Texas tortoise,True,1,TP,8.28,,"{
   ""animal_present"": true,
   ""animal"": ""Texas tortoise"",
   ""is_tortoise_or_turtle"": true
 }"
-test/tortoise/inat-tortoise_inat396796667_p727689310.jpg,tortoise,Texas tortoise,1,True,desert tortoise,True,1,TP,3.8,,"{""animal_present"": true, ""animal"": ""desert tortoise"", ""is_tortoise_or_turtle"": true}"
-test/tortoise/inat-tortoise_inat401538153_p737007074.jpg,tortoise,Texas tortoise,1,True,Texas tortoise,True,1,TP,3.19,,"{""animal_present"": true, ""animal"": ""Texas tortoise"", ""is_tortoise_or_turtle"": true}"
-test/tortoise/inat-tortoise_inat407006050_p747868194.jpg,tortoise,Texas tortoise,1,True,Texas tortoise,True,1,TP,3.54,,"{""animal_present"": true, ""animal"": ""Texas tortoise"", ""is_tortoise_or_turtle"": true}"
-test/tortoise/inat-tortoise_inat411652803_p757326777.jpg,tortoise,Texas tortoise,1,True,Texas tortoise,True,1,TP,5.14,,"{
+test/tortoise/inat-tortoise_inat347118507_p632854199.jpg,tortoise,Texas tortoise,1,True,Texas tortoise,True,1,TP,4.09,,"{
   ""animal_present"": true,
   ""animal"": ""Texas tortoise"",
   ""is_tortoise_or_turtle"": true
 }"
-test/tortoise/inat-tortoise_inat413403168_p760854637.jpg,tortoise,Texas tortoise,1,True,Texas tortoise,True,1,TP,4.56,,"{""animal_present"":true,""animal"":""Texas tortoise"",""is_tortoise_or_turtle"":true}"
-test/tortoise/inat-tortoise_inat413814620_p761679038.jpg,tortoise,Texas tortoise,1,True,Texas tortoise,True,1,TP,4.35,,"{
+test/tortoise/inat-tortoise_inat350050908_p638638836.jpg,tortoise,Texas tortoise,1,True,Texas tortoise,True,1,TP,4.79,,"{""animal_present"": true, ""animal"": ""Texas tortoise"", ""is_tortoise_or_turtle"": true}"
+test/tortoise/inat-tortoise_inat354037005_p645912824.jpg,tortoise,Texas tortoise,1,True,Texas tortoise,True,1,TP,9.58,,"{
   ""animal_present"": true,
   ""animal"": ""Texas tortoise"",
   ""is_tortoise_or_turtle"": true
 }"
-test/tortoise/inat-tortoise_inat414375314_p762828560.jpg,tortoise,Texas tortoise,1,True,Texas tortoise,True,1,TP,3.89,,"{""animal_present"": true, ""animal"": ""Texas tortoise"", ""is_tortoise_or_turtle"": true}"
-test/tortoise/inat-tortoise_inat414537288_p763130789.jpg,tortoise,Texas tortoise,1,True,Texas tortoise,True,1,TP,3.29,,"{""animal_present"": true, ""animal"": ""Texas tortoise"", ""is_tortoise_or_turtle"": true}"
-test/tortoise/inat-tortoise_inat415088654_p764266293.jpg,tortoise,Texas tortoise,1,True,Texas tortoise,True,1,TP,5.3,,"{""animal_present"":true,""animal"":""Texas tortoise"",""is_tortoise_or_turtle"":true}"
-test/tortoise/inat-tortoise_inat46518697_p73780974.jpg,tortoise,Texas tortoise,1,True,Texas tortoise,True,1,TP,3.93,,"{
+test/tortoise/inat-tortoise_inat35567802_p56097103.jpg,tortoise,Texas tortoise,1,True,gopher tortoise,True,1,TP,5.57,,"{""animal_present"": true, ""animal"": ""gopher tortoise"", ""is_tortoise_or_turtle"": true}"
+test/tortoise/inat-tortoise_inat358384739_p653774184.jpg,tortoise,Texas tortoise,1,True,Texas tortoise,True,1,TP,5.82,,"{""animal_present"":true,""animal"":""Texas tortoise"",""is_tortoise_or_turtle"":true}"
+test/tortoise/inat-tortoise_inat358632834_p654255676.jpg,tortoise,Texas tortoise,1,True,Texas tortoise,True,1,TP,3.4,,"{
   ""animal_present"": true,
   ""animal"": ""Texas tortoise"",
   ""is_tortoise_or_turtle"": true
 }"
-test/tortoise/inat-tortoise_inat49191620_p78084311.jpg,tortoise,Texas tortoise,1,True,Texas tortoise,True,1,TP,3.95,,"{
+test/tortoise/inat-tortoise_inat362449262_p661530096.jpg,tortoise,Texas tortoise,1,True,Texas tortoise,True,1,TP,6.61,,"{
   ""animal_present"": true,
   ""animal"": ""Texas tortoise"",
   ""is_tortoise_or_turtle"": true
 }"
-test/tortoise/inat-tortoise_inat49531600_p78631365.jpg,tortoise,Texas tortoise,1,True,Texas tortoise,True,1,TP,3.79,,"{""animal_present"": true, ""animal"": ""Texas tortoise"", ""is_tortoise_or_turtle"": true}"
-test/tortoise/inat-tortoise_inat50008081_p79403012.jpg,tortoise,Texas tortoise,1,True,Texas tortoise,True,1,TP,3.34,,"{""animal_present"": true, ""animal"": ""Texas tortoise"", ""is_tortoise_or_turtle"": true}"
-test/tortoise/inat-tortoise_inat50015197_p79414426.jpg,tortoise,Texas tortoise,1,False,none,False,0,FN,4.21,,"{""animal_present"":false,""animal"":""none"",""is_tortoise_or_turtle"":false}"
-test/tortoise/inat-tortoise_inat50047505_p79468155.jpg,tortoise,Texas tortoise,1,True,Texas tortoise,True,1,TP,4.03,,"{""animal_present"": true, ""animal"": ""Texas tortoise"", ""is_tortoise_or_turtle"": true}"
-test/tortoise/inat-tortoise_inat50310447_p79880694.jpg,tortoise,Texas tortoise,1,True,Texas tortoise,True,1,TP,3.12,,"{
+test/tortoise/inat-tortoise_inat363496792_p663530010.jpg,tortoise,Texas tortoise,1,True,Texas tortoise,True,1,TP,5.14,,"{""animal_present"":true,""animal"":""Texas tortoise"",""is_tortoise_or_turtle"":true}"
+test/tortoise/inat-tortoise_inat363718127_p663951052.jpg,tortoise,Texas tortoise,1,True,box turtle,True,1,TP,7.73,,"{""animal_present"":true,""animal"":""box turtle"",""is_tortoise_or_turtle"":true}"
+test/tortoise/inat-tortoise_inat363844950_p664191466.jpg,tortoise,Texas tortoise,1,True,Texas tortoise,True,1,TP,6.99,,"{""animal_present"":true,""animal"":""Texas tortoise"",""is_tortoise_or_turtle"":true}"
+test/tortoise/inat-tortoise_inat36398580_p57532337.jpg,tortoise,Texas tortoise,1,True,Texas tortoise,True,1,TP,10.91,,"{""animal_present"":true,""animal"":""Texas tortoise"",""is_tortoise_or_turtle"":true}"
+test/tortoise/inat-tortoise_inat366077557_p668405368.jpg,tortoise,Texas tortoise,1,True,Texas tortoise,True,1,TP,4.4,,"{""animal_present"": true, ""animal"": ""Texas tortoise"", ""is_tortoise_or_turtle"": true}"
+test/tortoise/inat-tortoise_inat366082272_p668429561.jpg,tortoise,Texas tortoise,1,True,Texas tortoise,True,1,TP,3.36,,"{""animal_present"": true, ""animal"": ""Texas tortoise"", ""is_tortoise_or_turtle"": true}"
+test/tortoise/inat-tortoise_inat366083020_p668431292.jpg,tortoise,Texas tortoise,1,True,Texas tortoise,True,1,TP,4.3,,"{""animal_present"":true,""animal"":""Texas tortoise"",""is_tortoise_or_turtle"":true}"
+test/tortoise/inat-tortoise_inat367555611_p671247252.jpg,tortoise,Texas tortoise,1,True,Texas tortoise,True,1,TP,7.78,,"{""animal_present"":true,""animal"":""Texas tortoise"",""is_tortoise_or_turtle"":true}"
+test/tortoise/inat-tortoise_inat368103712_p672289199.jpg,tortoise,Texas tortoise,1,True,Texas tortoise,True,1,TP,6.16,,"{""animal_present"": true, ""animal"": ""Texas tortoise"", ""is_tortoise_or_turtle"": true}"
+test/tortoise/inat-tortoise_inat371141362_p678091570.jpg,tortoise,Texas tortoise,1,True,Texas tortoise,True,1,TP,4.75,,"{""animal_present"":true,""animal"":""Texas tortoise"",""is_tortoise_or_turtle"":true}"
+test/tortoise/inat-tortoise_inat375727409_p686913673.jpg,tortoise,Texas tortoise,1,True,Texas tortoise,True,1,TP,3.57,,"{
   ""animal_present"": true,
   ""animal"": ""Texas tortoise"",
   ""is_tortoise_or_turtle"": true
 }"
-test/tortoise/inat-tortoise_inat50321959_p79902201.jpg,tortoise,Texas tortoise,1,True,Texas tortoise,True,1,TP,3.42,,"{
+test/tortoise/inat-tortoise_inat376871073_p689113169.jpg,tortoise,Texas tortoise,1,True,Texas tortoise,True,1,TP,7.84,,"{""animal_present"":true,""animal"":""Texas tortoise"",""is_tortoise_or_turtle"":true}"
+test/tortoise/inat-tortoise_inat381344008_p697759018.jpg,tortoise,Texas tortoise,1,True,Texas tortoise,True,1,TP,4.21,,"{""animal_present"": true, ""animal"": ""Texas tortoise"", ""is_tortoise_or_turtle"": true}"
+test/tortoise/inat-tortoise_inat382058603_p699142468.jpg,tortoise,Texas tortoise,1,True,Texas tortoise,True,1,TP,5.69,,"{""animal_present"":true,""animal"":""Texas tortoise"",""is_tortoise_or_turtle"":true}"
+test/tortoise/inat-tortoise_inat3904964_p4589245.jpg,tortoise,Texas tortoise,1,True,Texas tortoise,True,1,TP,5.34,,"{""animal_present"": true, ""animal"": ""Texas tortoise"", ""is_tortoise_or_turtle"": true}"
+test/tortoise/inat-tortoise_inat3904988_p4589272.jpg,tortoise,Texas tortoise,1,True,Texas tortoise,True,1,TP,5.23,,"{""animal_present"":true,""animal"":""Texas tortoise"",""is_tortoise_or_turtle"":true}"
+test/tortoise/inat-tortoise_inat3904995_p4589288.jpg,tortoise,Texas tortoise,1,True,Texas tortoise,True,1,TP,5.39,,"{
   ""animal_present"": true,
   ""animal"": ""Texas tortoise"",
   ""is_tortoise_or_turtle"": true
 }"
-test/tortoise/inat-tortoise_inat50321990_p79902567.jpg,tortoise,Texas tortoise,1,True,Texas tortoise,True,1,TP,5.4,,"{""animal_present"":true,""animal"":""Texas tortoise"",""is_tortoise_or_turtle"":true}"
-test/tortoise/inat-tortoise_inat51418907_p81692497.jpg,tortoise,Texas tortoise,1,True,Texas tortoise,True,1,TP,4.76,,"{""animal_present"":true,""animal"":""Texas tortoise"",""is_tortoise_or_turtle"":true}"
-test/tortoise/inat-tortoise_inat5206995_p6428789.jpg,tortoise,Texas tortoise,1,True,Texas tortoise,True,1,TP,2.78,,"{""animal_present"":true,""animal"":""Texas tortoise"",""is_tortoise_or_turtle"":true}"
-test/tortoise/inat-tortoise_inat52812370_p83974716.jpg,tortoise,Texas tortoise,1,True,Texas tortoise,True,1,TP,2.85,,"{
+test/tortoise/inat-tortoise_inat3905021_p4589341.jpg,tortoise,Texas tortoise,1,True,Texas tortoise,True,1,TP,4.56,,"{""animal_present"":true,""animal"":""Texas tortoise"",""is_tortoise_or_turtle"":true}"
+test/tortoise/inat-tortoise_inat3905084_p4589355.jpg,tortoise,Texas tortoise,1,True,Texas tortoise,True,1,TP,3.21,,"{""animal_present"":true,""animal"":""Texas tortoise"",""is_tortoise_or_turtle"":true}"
+test/tortoise/inat-tortoise_inat3915709_p4605570.jpg,tortoise,Texas tortoise,1,True,Texas tortoise,True,1,TP,4.33,,"{
   ""animal_present"": true,
   ""animal"": ""Texas tortoise"",
   ""is_tortoise_or_turtle"": true
 }"
-test/tortoise/inat-tortoise_inat56893721_p90701181.jpg,tortoise,Texas tortoise,1,True,Texas tortoise,True,1,TP,3.32,,"{
+test/tortoise/inat-tortoise_inat391758520_p717874646.jpg,tortoise,Texas tortoise,1,True,Texas tortoise,True,1,TP,7.05,,"{""animal_present"":true,""animal"":""Texas tortoise"",""is_tortoise_or_turtle"":true}"
+test/tortoise/inat-tortoise_inat391758673_p717875172.jpg,tortoise,Texas tortoise,1,True,Texas tortoise,True,1,TP,3.39,,"{""animal_present"":true,""animal"":""Texas tortoise"",""is_tortoise_or_turtle"":true}"
+test/tortoise/inat-tortoise_inat394949303_p724117742.jpg,tortoise,Texas tortoise,1,True,Texas tortoise,True,1,TP,4.53,,"{
   ""animal_present"": true,
   ""animal"": ""Texas tortoise"",
   ""is_tortoise_or_turtle"": true
 }"
-test/tortoise/inat-tortoise_inat5821725_p7241032.jpg,tortoise,Texas tortoise,1,True,Texas tortoise,True,1,TP,3.38,,"{
+test/tortoise/inat-tortoise_inat396796667_p727689310.jpg,tortoise,Texas tortoise,1,True,desert tortoise,True,1,TP,5.46,,"{""animal_present"": true, ""animal"": ""desert tortoise"", ""is_tortoise_or_turtle"": true}"
+test/tortoise/inat-tortoise_inat401538153_p737007074.jpg,tortoise,Texas tortoise,1,True,Texas tortoise,True,1,TP,3.38,,"{
   ""animal_present"": true,
   ""animal"": ""Texas tortoise"",
   ""is_tortoise_or_turtle"": true
 }"
-test/tortoise/inat-tortoise_inat58765822_p93842807.jpg,tortoise,Texas tortoise,1,True,Texas tortoise,True,1,TP,4.02,,"{""animal_present"":true,""animal"":""Texas tortoise"",""is_tortoise_or_turtle"":true}"
-test/tortoise/inat-tortoise_inat59747333_p95487294.jpg,tortoise,Texas tortoise,1,True,Texas tortoise,True,1,TP,4.33,,"{
+test/tortoise/inat-tortoise_inat407006050_p747868194.jpg,tortoise,Texas tortoise,1,True,Texas tortoise,True,1,TP,6.15,,"{""animal_present"": true, ""animal"": ""Texas tortoise"", ""is_tortoise_or_turtle"": true}"
+test/tortoise/inat-tortoise_inat411652803_p757326777.jpg,tortoise,Texas tortoise,1,True,Texas tortoise,True,1,TP,3.99,,"{
   ""animal_present"": true,
   ""animal"": ""Texas tortoise"",
   ""is_tortoise_or_turtle"": true
 }"
-test/tortoise/inat-tortoise_inat65309128_p105091852.jpg,tortoise,Texas tortoise,1,True,Texas tortoise,True,1,TP,2.94,,"{""animal_present"":true,""animal"":""Texas tortoise"",""is_tortoise_or_turtle"":true}"
-test/tortoise/inat-tortoise_inat66841332_p107846449.jpg,tortoise,Texas tortoise,1,True,Texas tortoise,True,1,TP,3.32,,"{
+test/tortoise/inat-tortoise_inat413403168_p760854637.jpg,tortoise,Texas tortoise,1,True,Texas tortoise,True,1,TP,4.55,,"{
   ""animal_present"": true,
   ""animal"": ""Texas tortoise"",
   ""is_tortoise_or_turtle"": true
 }"
-test/tortoise/inat-tortoise_inat67765250_p109571794.jpg,tortoise,Texas tortoise,1,True,Texas tortoise,True,1,TP,4.4,,"{""animal_present"":true,""animal"":""Texas tortoise"",""is_tortoise_or_turtle"":true}"
-test/tortoise/inat-tortoise_inat68989459_p111845067.jpg,tortoise,Texas tortoise,1,True,Texas tortoise,True,1,TP,3.59,,"{""animal_present"":true,""animal"":""Texas tortoise"",""is_tortoise_or_turtle"":true}"
-test/tortoise/inat-tortoise_inat77338678_p126434787.jpg,tortoise,Texas tortoise,1,True,Texas tortoise,True,1,TP,3.34,,"{""animal_present"": true, ""animal"": ""Texas tortoise"", ""is_tortoise_or_turtle"": true}"
-test/tortoise/inat-tortoise_inat77503451_p126708599.jpg,tortoise,Texas tortoise,1,True,Texas tortoise,True,1,TP,4.86,,"{""animal_present"": true, ""animal"": ""Texas tortoise"", ""is_tortoise_or_turtle"": true}"
-test/tortoise/inat-tortoise_inat80173568_p131379905.jpg,tortoise,Texas tortoise,1,True,Texas tortoise,True,1,TP,3.65,,"{""animal_present"": true, ""animal"": ""Texas tortoise"", ""is_tortoise_or_turtle"": true}"
-test/tortoise/inat-tortoise_inat816680_p1030126.jpg,tortoise,Texas tortoise,1,True,gopher tortoise,True,1,TP,3.43,,"{""animal_present"":true,""animal"":""gopher tortoise"",""is_tortoise_or_turtle"":true}"
-test/tortoise/inat-tortoise_inat84776616_p139375590.jpg,tortoise,Texas tortoise,1,True,Texas tortoise,True,1,TP,4.57,,"{""animal_present"":true,""animal"":""Texas tortoise"",""is_tortoise_or_turtle"":true}"
-test/tortoise/inat-tortoise_inat8804476_p11823863.jpg,tortoise,Texas tortoise,1,True,Texas tortoise,True,1,TP,4.1,,"{""animal_present"":true,""animal"":""Texas tortoise"",""is_tortoise_or_turtle"":true}"
-test/tortoise/inat-tortoise_inat88321385_p145708429.jpg,tortoise,Texas tortoise,1,True,Texas tortoise,True,1,TP,3.34,,"{""animal_present"":true,""animal"":""Texas tortoise"",""is_tortoise_or_turtle"":true}"
-test/tortoise/inat-tortoise_inat90337547_p149291400.jpg,tortoise,Texas tortoise,1,True,Texas tortoise,True,1,TP,3.7,,"{
+test/tortoise/inat-tortoise_inat413814620_p761679038.jpg,tortoise,Texas tortoise,1,True,Texas tortoise,True,1,TP,4.06,,"{""animal_present"":true,""animal"":""Texas tortoise"",""is_tortoise_or_turtle"":true}"
+test/tortoise/inat-tortoise_inat414375314_p762828560.jpg,tortoise,Texas tortoise,1,True,Texas tortoise,True,1,TP,3.69,,"{""animal_present"":true,""animal"":""Texas tortoise"",""is_tortoise_or_turtle"":true}"
+test/tortoise/inat-tortoise_inat414537288_p763130789.jpg,tortoise,Texas tortoise,1,True,Texas tortoise,True,1,TP,4.16,,"{""animal_present"":true,""animal"":""Texas tortoise"",""is_tortoise_or_turtle"":true}"
+test/tortoise/inat-tortoise_inat415088654_p764266293.jpg,tortoise,Texas tortoise,1,True,Texas tortoise,True,1,TP,3.99,,"{
   ""animal_present"": true,
   ""animal"": ""Texas tortoise"",
   ""is_tortoise_or_turtle"": true
 }"
-test/tortoise/inat-tortoise_inat90557736_p149677215.jpg,tortoise,Texas tortoise,1,True,Texas tortoise,True,1,TP,4.0,,"{""animal_present"": true, ""animal"": ""Texas tortoise"", ""is_tortoise_or_turtle"": true}"
-test/tortoise/inat-tortoise_inat91717514_p151757016.jpg,tortoise,Texas tortoise,1,True,Texas tortoise,True,1,TP,3.38,,"{""animal_present"":true,""animal"":""Texas tortoise"",""is_tortoise_or_turtle"":true}"
-test/tortoise/inat-tortoise_inat94708694_p157140964.jpg,tortoise,Texas tortoise,1,True,Texas tortoise,True,1,TP,3.42,,"{""animal_present"": true, ""animal"": ""Texas tortoise"", ""is_tortoise_or_turtle"": true}"
-test/tortoise/inat-tortoise_inat97489251_p162142025.jpg,tortoise,Texas tortoise,1,True,Texas tortoise,True,1,TP,3.57,,"{""animal_present"": true, ""animal"": ""Texas tortoise"", ""is_tortoise_or_turtle"": true}"
-test/tortoise/inat-tortoise_inat98070563_p163209208.jpg,tortoise,Texas tortoise,1,True,Texas tortoise,True,1,TP,3.46,,"{""animal_present"":true,""animal"":""Texas tortoise"",""is_tortoise_or_turtle"":true}"
-test/tortoise/inat-tortoise_inat98304234_p163636339.jpg,tortoise,Texas tortoise,1,True,Texas tortoise,True,1,TP,3.2,,"{""animal_present"": true, ""animal"": ""Texas tortoise"", ""is_tortoise_or_turtle"": true}"
-test/tortoise/inat-tortoise_inat98304246_p163636486.jpg,tortoise,Texas tortoise,1,True,Texas tortoise,True,1,TP,3.78,,"{""animal_present"":true,""animal"":""Texas tortoise"",""is_tortoise_or_turtle"":true}"
-test/tortoise/inat-tortoise_inat99718317_p166294796.jpg,tortoise,Texas tortoise,1,True,Texas tortoise,True,1,TP,2.79,,"{""animal_present"": true, ""animal"": ""Texas tortoise"", ""is_tortoise_or_turtle"": true}"
-test/tortoise/inat-tortoise_inat99718593_p166295583.jpg,tortoise,Texas tortoise,1,True,Texas tortoise,True,1,TP,5.83,,"{""animal_present"": true, ""animal"": ""Texas tortoise"", ""is_tortoise_or_turtle"": true}"
+test/tortoise/inat-tortoise_inat46518697_p73780974.jpg,tortoise,Texas tortoise,1,True,Texas tortoise,True,1,TP,5.87,,"{""animal_present"":true,""animal"":""Texas tortoise"",""is_tortoise_or_turtle"":true}"
+test/tortoise/inat-tortoise_inat49191620_p78084311.jpg,tortoise,Texas tortoise,1,True,Texas tortoise,True,1,TP,6.47,,"{
+  ""animal_present"": true,
+  ""animal"": ""Texas tortoise"",
+  ""is_tortoise_or_turtle"": true
+}"
+test/tortoise/inat-tortoise_inat49531600_p78631365.jpg,tortoise,Texas tortoise,1,True,Texas tortoise,True,1,TP,5.32,,"{""animal_present"": true, ""animal"": ""Texas tortoise"", ""is_tortoise_or_turtle"": true}"
+test/tortoise/inat-tortoise_inat50008081_p79403012.jpg,tortoise,Texas tortoise,1,True,Texas tortoise,True,1,TP,4.2,,"{""animal_present"":true,""animal"":""Texas tortoise"",""is_tortoise_or_turtle"":true}"
+test/tortoise/inat-tortoise_inat50047505_p79468155.jpg,tortoise,Texas tortoise,1,True,Texas tortoise,True,1,TP,4.22,,"{""animal_present"":true,""animal"":""Texas tortoise"",""is_tortoise_or_turtle"":true}"
+test/tortoise/inat-tortoise_inat50310447_p79880694.jpg,tortoise,Texas tortoise,1,True,Texas tortoise,True,1,TP,5.23,,"{
+  ""animal_present"": true,
+  ""animal"": ""Texas tortoise"",
+  ""is_tortoise_or_turtle"": true
+}"
+test/tortoise/inat-tortoise_inat50321959_p79902201.jpg,tortoise,Texas tortoise,1,True,Texas tortoise,True,1,TP,5.09,,"{
+  ""animal_present"": true,
+  ""animal"": ""Texas tortoise"",
+  ""is_tortoise_or_turtle"": true
+}"
+test/tortoise/inat-tortoise_inat50321990_p79902567.jpg,tortoise,Texas tortoise,1,True,Texas tortoise,True,1,TP,3.82,,"{""animal_present"":true,""animal"":""Texas tortoise"",""is_tortoise_or_turtle"":true}"
+test/tortoise/inat-tortoise_inat51418907_p81692497.jpg,tortoise,Texas tortoise,1,True,Texas tortoise,True,1,TP,3.4,,"{""animal_present"":true,""animal"":""Texas tortoise"",""is_tortoise_or_turtle"":true}"
+test/tortoise/inat-tortoise_inat5206995_p6428789.jpg,tortoise,Texas tortoise,1,True,Texas tortoise,True,1,TP,4.66,,"{
+  ""animal_present"": true,
+  ""animal"": ""Texas tortoise"",
+  ""is_tortoise_or_turtle"": true
+}"
+test/tortoise/inat-tortoise_inat52812370_p83974716.jpg,tortoise,Texas tortoise,1,True,Texas tortoise,True,1,TP,4.29,,"{
+  ""animal_present"": true,
+  ""animal"": ""Texas tortoise"",
+  ""is_tortoise_or_turtle"": true
+}"
+test/tortoise/inat-tortoise_inat56893721_p90701181.jpg,tortoise,Texas tortoise,1,True,Texas tortoise,True,1,TP,5.45,,"{
+  ""animal_present"": true,
+  ""animal"": ""Texas tortoise"",
+  ""is_tortoise_or_turtle"": true
+}"
+test/tortoise/inat-tortoise_inat5821725_p7241032.jpg,tortoise,Texas tortoise,1,True,Texas tortoise,True,1,TP,3.43,,"{""animal_present"": true, ""animal"": ""Texas tortoise"", ""is_tortoise_or_turtle"": true}"
+test/tortoise/inat-tortoise_inat58765822_p93842807.jpg,tortoise,Texas tortoise,1,True,Texas tortoise,True,1,TP,5.79,,"{""animal_present"":true,""animal"":""Texas tortoise"",""is_tortoise_or_turtle"":true}"
+test/tortoise/inat-tortoise_inat59747333_p95487294.jpg,tortoise,Texas tortoise,1,True,Texas tortoise,True,1,TP,5.34,,"{
+  ""animal_present"": true,
+  ""animal"": ""Texas tortoise"",
+  ""is_tortoise_or_turtle"": true
+}"
+test/tortoise/inat-tortoise_inat65309128_p105091852.jpg,tortoise,Texas tortoise,1,True,Texas tortoise,True,1,TP,3.75,,"{""animal_present"": true, ""animal"": ""Texas tortoise"", ""is_tortoise_or_turtle"": true}"
+test/tortoise/inat-tortoise_inat66841332_p107846449.jpg,tortoise,Texas tortoise,1,True,Texas tortoise,True,1,TP,3.68,,"{
+  ""animal_present"": true,
+  ""animal"": ""Texas tortoise"",
+  ""is_tortoise_or_turtle"": true
+}"
+test/tortoise/inat-tortoise_inat67765250_p109571794.jpg,tortoise,Texas tortoise,1,True,Texas tortoise,True,1,TP,3.4,,"{""animal_present"": true, ""animal"": ""Texas tortoise"", ""is_tortoise_or_turtle"": true}"
+test/tortoise/inat-tortoise_inat68989459_p111845067.jpg,tortoise,Texas tortoise,1,True,Texas tortoise,True,1,TP,5.56,,"{
+  ""animal_present"": true,
+  ""animal"": ""Texas tortoise"",
+  ""is_tortoise_or_turtle"": true
+}"
+test/tortoise/inat-tortoise_inat77338678_p126434787.jpg,tortoise,Texas tortoise,1,True,Texas tortoise,True,1,TP,3.46,,"{""animal_present"": true, ""animal"": ""Texas tortoise"", ""is_tortoise_or_turtle"": true}"
+test/tortoise/inat-tortoise_inat77503451_p126708599.jpg,tortoise,Texas tortoise,1,True,Texas tortoise,True,1,TP,5.94,,"{
+  ""animal_present"": true,
+  ""animal"": ""Texas tortoise"",
+  ""is_tortoise_or_turtle"": true
+}"
+test/tortoise/inat-tortoise_inat80173568_p131379905.jpg,tortoise,Texas tortoise,1,True,Texas tortoise,True,1,TP,6.24,,"{""animal_present"": true, ""animal"": ""Texas tortoise"", ""is_tortoise_or_turtle"": true}"
+test/tortoise/inat-tortoise_inat816680_p1030126.jpg,tortoise,Texas tortoise,1,True,gopher tortoise,True,1,TP,5.76,,"{
+  ""animal_present"": true,
+  ""animal"": ""gopher tortoise"",
+  ""is_tortoise_or_turtle"": true
+}"
+test/tortoise/inat-tortoise_inat84776616_p139375590.jpg,tortoise,Texas tortoise,1,True,Texas tortoise,True,1,TP,5.32,,"{
+  ""animal_present"": true,
+  ""animal"": ""Texas tortoise"",
+  ""is_tortoise_or_turtle"": true
+}"
+test/tortoise/inat-tortoise_inat8804476_p11823863.jpg,tortoise,Texas tortoise,1,True,Texas tortoise,True,1,TP,5.01,,"{""animal_present"": true, ""animal"": ""Texas tortoise"", ""is_tortoise_or_turtle"": true}"
+test/tortoise/inat-tortoise_inat88321385_p145708429.jpg,tortoise,Texas tortoise,1,True,Texas tortoise,True,1,TP,3.16,,"{""animal_present"": true, ""animal"": ""Texas tortoise"", ""is_tortoise_or_turtle"": true}"
+test/tortoise/inat-tortoise_inat90337547_p149291400.jpg,tortoise,Texas tortoise,1,True,Texas tortoise,True,1,TP,3.75,,"{""animal_present"": true, ""animal"": ""Texas tortoise"", ""is_tortoise_or_turtle"": true}"
+test/tortoise/inat-tortoise_inat90557736_p149677215.jpg,tortoise,Texas tortoise,1,True,Texas tortoise,True,1,TP,3.35,,"{
+  ""animal_present"": true,
+  ""animal"": ""Texas tortoise"",
+  ""is_tortoise_or_turtle"": true
+}"
+test/tortoise/inat-tortoise_inat91717514_p151757016.jpg,tortoise,Texas tortoise,1,True,Texas tortoise,True,1,TP,4.52,,"{""animal_present"":true,""animal"":""Texas tortoise"",""is_tortoise_or_turtle"":true}"
+test/tortoise/inat-tortoise_inat94708694_p157140964.jpg,tortoise,Texas tortoise,1,True,Texas tortoise,True,1,TP,3.73,,"{""animal_present"": true, ""animal"": ""Texas tortoise"", ""is_tortoise_or_turtle"": true}"
+test/tortoise/inat-tortoise_inat97489251_p162142025.jpg,tortoise,Texas tortoise,1,True,Texas tortoise,True,1,TP,2.99,,"{""animal_present"":true,""animal"":""Texas tortoise"",""is_tortoise_or_turtle"":true}"
+test/tortoise/inat-tortoise_inat98070563_p163209208.jpg,tortoise,Texas tortoise,1,True,Texas tortoise,True,1,TP,3.11,,"{""animal_present"":true,""animal"":""Texas tortoise"",""is_tortoise_or_turtle"":true}"
+test/tortoise/inat-tortoise_inat98304234_p163636339.jpg,tortoise,Texas tortoise,1,True,Texas tortoise,True,1,TP,5.93,,"{
+  ""animal_present"": true,
+  ""animal"": ""Texas tortoise"",
+  ""is_tortoise_or_turtle"": true
+}"
+test/tortoise/inat-tortoise_inat98304246_p163636486.jpg,tortoise,Texas tortoise,1,True,Texas tortoise,True,1,TP,3.42,,"{
+  ""animal_present"": true,
+  ""animal"": ""Texas tortoise"",
+  ""is_tortoise_or_turtle"": true
+}"
+test/tortoise/inat-tortoise_inat99718317_p166294796.jpg,tortoise,Texas tortoise,1,True,Texas tortoise,True,1,TP,4.66,,"{""animal_present"":true,""animal"":""Texas tortoise"",""is_tortoise_or_turtle"":true}"
+test/tortoise/inat-tortoise_inat99718593_p166295583.jpg,tortoise,Texas tortoise,1,True,Texas tortoise,True,1,TP,3.38,,"{""animal_present"": true, ""animal"": ""Texas tortoise"", ""is_tortoise_or_turtle"": true}"

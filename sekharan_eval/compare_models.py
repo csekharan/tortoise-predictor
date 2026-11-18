@@ -26,7 +26,7 @@ print(f"{len(files)} images in both")
 
 def src(r):
     s = r["source"]
-    return "iNat" if s.startswith("iNat") else ("NACTI-FL" if s.startswith("NACTI") else "SouthTX")
+    return {"iNaturalist": "iNat", "Wikimedia Commons": "Commons"}.get(s, s[:9])
 
 
 def label(r):

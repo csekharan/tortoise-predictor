@@ -7,7 +7,7 @@ Code for the comparison described in the [main README](../README.md): zero-shot 
 | `zero_shot_gemini.py` | Asks Gemini, with no training and no examples, whether each image shows an animal and which one. An image counts as a tortoise when the answer names a tortoise or turtle. | Python 3.10+, `GEMINI_API_KEY` |
 | `eval_maskrcnn.py` | Runs the original model on the same images. An image counts as a tortoise when any detection scores above `--threshold` (default 0.5). | `requirements.txt` |
 | `compare_models.py` | Joins the two prediction files. Prints a breakdown by image type, where the models agree, misses, top false alarms and the threshold sweep. | Python only |
-| `make_figures.py` | Draws the four README figures, in light and dark versions, into `figures/`. Prints the numbers the README quotes. Needs both Gemini runs and the Mask R-CNN run in `results/`. | Python only |
+| `make_figures.py` | Draws the four README figures, in light and dark versions, into `figures/`. Prints the numbers the README quotes. Needs both Gemini runs and the Mask R-CNN run in `results/`, and reads the image groups (armadillos, beaches and so on) from the manifest. | Python only |
 
 ```text
 python zero_shot_gemini.py                    # original prompt
@@ -25,6 +25,6 @@ Results go to `results/`:
 - `metrics_*.json`: totals, plus Mask R-CNN's threshold sweep.
 - The neutral prompt writes `predictions_gemini-3.8-flash_neutral.csv` and `metrics_gemini-3.8-flash_neutral.json`.
 
-Both scorers save as they go, so an interrupted run resumes where it stopped. Use `--fresh` with `eval_maskrcnn.py` to start over.
+Both scorers save as they go, so an interrupted run resumes where it stopped. They keep only answers for images that are still in the manifest, so after the hold-out set changes, a plain rerun scores just the new images. Use `--fresh` to start over.
 
-The CSV and JSON files keep the manifest's labels. `make_figures.py` corrects one of them: it counts the bulldozer photo (`test/tortoise/inat-tortoise_inat50015197_p79414426.jpg`) as not a tortoise.
+The predictions in `results/` come from fresh runs on the current hold-out set, plus one top-up run of each scorer for the three images replaced afterwards (see the main README). Each metrics file's `seconds_this_run` and `token_usage_this_run` describe only the last run, which was that three-image top-up.

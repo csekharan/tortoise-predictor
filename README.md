@@ -2,24 +2,24 @@
 
 Texas tortoises (*Gopherus berlandieri*) hide in thick brush and are hard to survey by eye, so researchers set time-lapse camera traps that produce huge numbers of frames, almost none of which show a tortoise. Tleimat, Krell and McCracken (2026) trained a Mask R-CNN to find tortoises in those frames and released it.
 
-This repository asks whether a general-purpose multimodal model can do the same job **with no training at all**. It runs the released Mask R-CNN and Gemini 3.8 Flash on the same 274 hold-out images and compares the results.
+This repository asks whether a general-purpose multimodal model can do the same job **with no training at all**. It runs the released Mask R-CNN and Gemini 3.8 Flash on the same 274 hold-out images and compares the results. The hold-out set has the paper's counts: 165 tortoises, 65 photos with no animal, and 44 photos of animals that could pass for a tortoise.
 
 ## At a glance
 
 | | Mask R-CNN, trained | Gemini, original prompt | Gemini, neutral prompt |
 |---|:---:|:---:|:---:|
-| **Tortoises found** (of 164) | **164** | **164** | **164** |
-| **False alarms** (of 110 images without a tortoise) | 18 at threshold 0.5<br/>7 at 0.85 | 1 | **0** |
-| **Species named correctly** | does not name species | 152 (93%) | 60 (37%) |
+| **Tortoises found** (of 165) | **165** | **165** | **165** |
+| **False alarms** (of 109 images without a tortoise) | 38 at threshold 0.5<br/>22 at 0.85 | **0** | **0** |
+| **Species named correctly** | does not name species | 155 (94%) | 57 (35%) |
 | **Training images needed** | 2,705, every tortoise outlined by hand | none | none |
-| **Time for 274 images** | 14 min, laptop CPU | 5.6 min, API | 7.2 min, API |
+| **Time for 274 images** | about 13 min, laptop CPU | about 6 min, API | about 6.5 min, API |
 | **Runs offline** | yes | no | no |
 
-All three find every tortoise; they differ in false alarms. The original prompt lists example animals, Texas tortoise among them, and the neutral prompt names none. Dropping the hint removed Gemini's one false alarm, but most of its correct species names went with it.
+All three find every tortoise. They differ in false alarms: Mask R-CNN calls a third of the look-alike animals and empty scenes a tortoise, and Gemini calls none of them one. The original prompt lists example animals, Texas tortoise among them, and the neutral prompt names none. Both prompts find tortoises equally well, but without the hint Gemini names the right species far less often.
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="sekharan_eval/figures/confusion-dark.svg">
-  <img alt="Confusion matrices for 164 tortoise and 110 other images. Gemini original prompt: 164 found, 0 missed, 1 false alarm, 109 correct. Gemini neutral prompt: 164 found, 0 missed, 0 false alarms, 110 correct. Mask R-CNN at threshold 0.5: 164 found, 0 missed, 18 false alarms, 92 correct. Mask R-CNN at threshold 0.85: 164 found, 0 missed, 7 false alarms, 103 correct." src="sekharan_eval/figures/confusion-light.svg">
+  <img alt="Confusion matrices for 165 tortoise and 109 other images. Gemini original prompt: 165 found, 0 missed, 0 false alarms, 109 correct. Gemini neutral prompt: 165 found, 0 missed, 0 false alarms, 109 correct. Mask R-CNN at threshold 0.5: 165 found, 0 missed, 38 false alarms, 71 correct. Mask R-CNN at threshold 0.85: 165 found, 0 missed, 22 false alarms, 87 correct." src="sekharan_eval/figures/confusion-light.svg">
 </picture>
 
 ## The two methods
@@ -88,82 +88,98 @@ Return JSON only.
 </tr>
 </table>
 
+Both prompts are kept word for word from the first runs. The original prompt's example animals were written for an earlier version of the image set; none of them is a pangolin, crab or sea creature.
+
 ## The images
 
-The paper's images were never published. [`data/texas_tortoise_composite/`](data/texas_tortoise_composite/) rebuilds the paper's Table 1 from public sources, with the same number of tortoise, empty and other-animal images in each split:
+The paper's images were never published. [`data/texas_tortoise_composite/`](data/texas_tortoise_composite/) rebuilds the paper's Table 1 from public photos, with the same number of tortoise, no-animal and other-animal images in each split. This comparison uses only the hold-out set:
 
-| Split | Tortoise | Empty frame | Other animal | Total |
-|---|---:|---:|---:|---:|
-| Training | 1,332 | 420 | 953 | 2,705 |
-| Hold-out | 165 | 65 | 44 | 274 |
+| Class | Group | Images | Source |
+|---|---|---:|---|
+| **Tortoise** | Texas tortoise | **165** | iNaturalist photos, wild *Gopherus berlandieri* |
+| **No animal** | Vegetation and bushes | 22 | iNaturalist plant photos from around the paper's four study sites |
+| | Dry land: cracked mud, caliche, gravel, desert floor | 21 | Wikimedia Commons |
+| | Beaches: sand, dunes, seaweed, driftwood | 22 | Wikimedia Commons |
+| | *All no-animal photos* | **65** | |
+| **Other animal** | Armadillos, from around the study sites | 11 | iNaturalist |
+| | Pangolins, from Africa and Asia | 11 | iNaturalist |
+| | Crabs: blue, ghost, swimming and fiddler crabs, from Texas | 11 | iNaturalist |
+| | Other sea creatures: horseshoe crabs, sea urchins, sea stars, a chiton, a whelk, a man o' war and a jellyfish | 11 | iNaturalist |
+| | *All other animals* | **44** | |
+| | **Total** | **274** | |
 
-- **Tortoises:** research-grade iNaturalist photos.
-- **Empty frames and most other animals:** trail-camera frames, from NACTI's Florida cameras and from the South Texas sample published with a nilgai detection study.
-- **Armadillos:** weighted heavily, as in the paper, because they look most like tortoises.
+Every hold-out image is a photo, so no class can be told apart by camera type. The other animals were chosen because they have a hard shell or a domed back, and the empty scenes are the kind of ground a tortoise walks on.
 
-No iNaturalist photographer and no NACTI camera appears in both splits. This comparison uses only the hold-out images. The training split is there for anyone who wants to retrain the detector or try few-shot prompting.
+Every image was looked at before either model ran. A no-animal photo had to show no animal at all: no birds in the sky, insects on flowers, people or hands. An animal photo had to show the animal itself, not a burrow, a carcass or a bleached skeleton. Each image that broke a rule was replaced by the next one in a fixed random order. [`build_holdout.py`](data/texas_tortoise_composite/build_holdout.py) lists all 162 rejected images with the reason for each.
 
-One hold-out photo labeled tortoise (`inat-tortoise_inat50015197_p79414426.jpg`) shows a bulldozer and a pickup truck and no tortoise. The results below count it as not a tortoise, which leaves 164 tortoise images and 110 others.
+Three images were replaced after the first runs. All three methods then scored the replacements:
+- **A sea-turtle hatchling** on a beach photo I had passed. Both Gemini prompts answered "sea turtle", the only false alarm either one made.
+- **A small dark shape that may be a grasshopper**, which the neutral prompt named.
+- **An empty, worn whelk shell**, which the original prompt answered "none".
+
+To keep the check even-handed, every image Mask R-CNN called a tortoise got the same second look; none of them hid a tortoise or turtle. Mask R-CNN had 38 false alarms before the swap and 38 after.
+
+No iNaturalist photographer has images in both splits. The training split has the paper's counts for model M4 (1,332 / 420 / 953). Its tortoises are iNaturalist photos, and most of its other images are trail-camera frames. It is there for anyone who wants to retrain the detector or try few-shot prompting; neither method here uses it. See [the data README](data/texas_tortoise_composite/README.md) for every source, rule and licence.
 
 ## Results
 
 | Method | Found | Missed | False alarms | Precision | Recall | F1 | Accuracy | False-alarm rate (95% CI) |
 |---|---:|---:|---:|---:|---:|---:|---:|---|
-| **Gemini 3.8 Flash, neutral prompt** | **164** | **0** | **0** | **1.000** | **1.000** | **1.000** | **1.000** | **0.0%** (0.0–3.3%) |
-| Gemini 3.8 Flash, original prompt | 164 | 0 | 1 | 0.994 | 1.000 | 0.997 | 0.996 | 0.9% (0.0–5.0%) |
-| Mask R-CNN, threshold 0.5 (paper's default) | 164 | 0 | 18 | 0.901 | 1.000 | 0.948 | 0.934 | 16.4% (10.0–24.6%) |
-| Mask R-CNN, threshold 0.85 (paper's best F1) | 164 | 0 | 7 | 0.959 | 1.000 | 0.979 | 0.974 | 6.4% (2.6–12.7%) |
-| Mask R-CNN, threshold 0.95 | 161 | 3 | 4 | 0.976 | 0.982 | 0.979 | 0.974 | 3.6% (1.0–9.0%) |
+| **Gemini 3.8 Flash, neutral prompt** | **165** | **0** | **0** | **1.000** | **1.000** | **1.000** | **1.000** | **0.0%** (0.0–3.3%) |
+| **Gemini 3.8 Flash, original prompt** | **165** | **0** | **0** | **1.000** | **1.000** | **1.000** | **1.000** | **0.0%** (0.0–3.3%) |
+| Mask R-CNN, threshold 0.5 (paper's default) | 165 | 0 | 38 | 0.813 | 1.000 | 0.897 | 0.861 | 34.9% (26.0–44.6%) |
+| Mask R-CNN, threshold 0.85 (paper's best F1) | 165 | 0 | 22 | 0.882 | 1.000 | 0.938 | 0.920 | 20.2% (13.1–28.9%) |
+| Mask R-CNN, threshold 0.95 | 162 | 3 | 16 | 0.910 | 0.982 | 0.945 | 0.931 | 14.7% (8.6–22.7%) |
 
-Intervals are exact Clopper–Pearson intervals. The two methods made their false alarms on different images, so the gap is unlikely to be chance (exact McNemar test on the 110 non-tortoise images):
-- **Mask R-CNN vs. the original prompt:** 18 images only Mask R-CNN flagged, 1 only Gemini flagged (p < 0.001).
-- **Mask R-CNN vs. the neutral prompt:** 18 against 0 (p < 0.0001).
+Intervals are exact Clopper–Pearson intervals. On the 109 images without a tortoise, Mask R-CNN at 0.5 flagged 38 that Gemini did not, and Gemini flagged none that Mask R-CNN did not. The gap is far beyond chance: exact McNemar test, p < 10⁻¹¹ for either prompt.
 
-For context, the paper reports this same model on its own trail-camera hold-out set, at threshold 0.5 and counting each tortoise whose box overlaps the drawn outline: precision 0.93, recall 0.83, accuracy 0.86, false-positive rate 0.09 and F1 0.88 (Table 3). Recall is much higher here because every tortoise in this hold-out set is a clear hand-held photo; see [Limits](#limits).
+For context, the paper reports this same model on its own trail-camera hold-out set, at threshold 0.5 and counting each tortoise whose box overlaps the drawn outline: precision 0.93, recall 0.83, accuracy 0.86, false-positive rate 0.09 and F1 0.88 (Table 3). Recall is higher here because every tortoise is a clear hand-held photo. The false-positive rate is higher because these negatives were picked to look like tortoises, while the paper's were frames from its own cameras. See [Limits](#limits).
 
 ### Where the false alarms come from
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="sekharan_eval/figures/false-alarms-dark.svg">
-  <img alt="Images without a tortoise that each method called tortoise. Mask R-CNN: 6 of 16 armadillos, 3 of 3 feral hogs, 2 of 21 South Texas empty frames, 2 of 4 deer, 2 of 2 wild turkeys, 1 bobcat, 1 bird and the bulldozer photo. Gemini with the original prompt: 1 South Texas empty frame. Gemini with the neutral prompt: none. No method flagged the 44 Florida empty frames or the 14 other animals." src="sekharan_eval/figures/false-alarms-light.svg">
+  <img alt="Images without a tortoise that each method called tortoise. Mask R-CNN at threshold 0.5: 7 of 11 armadillos, 9 of 11 pangolins, 6 of 11 crabs, 6 of 11 other sea creatures, 2 of 22 vegetation photos, 3 of 21 dry-land photos and 5 of 22 beach photos, 38 in all. Gemini with either prompt: none." src="sekharan_eval/figures/false-alarms-light.svg">
 </picture>
 
-- **Armadillos:** they account for a third of Mask R-CNN's false alarms. Gemini called none of the 16 a tortoise under either prompt.
-- **Other animals:** Mask R-CNN also flagged every feral hog and wild turkey in the set.
-- **Gemini's one error:** with the original prompt, it called an empty South Texas trail-camera frame "Texas tortoise". With the neutral prompt it called the same frame "wild turkey": not a tortoise call, though the frame is labeled empty.
-- **Empty Florida frames:** no method flagged any of the 44.
+- **Armour-backed animals:** Mask R-CNN called 9 of the 11 pangolins and 7 of the 11 armadillos a tortoise, the two groups that look most like one.
+- **Shells on a beach:** it also called 6 crabs and 6 other sea creatures a tortoise: two horseshoe crabs, a chiton, the whelk, a jellyfish and a man o' war.
+- **Empty scenes:** 10 of the 65 photos with no animal at all were flagged, half of them beaches.
+- **Gemini:** neither prompt called any of the 109 a tortoise. Both named every armadillo "nine-banded armadillo", every pangolin a pangolin and every crab a crab. They also named each sea creature, from "horseshoe crab" to "Portuguese man o' war".
+- **One odd answer:** the neutral prompt named a "Namaqua chameleon" in a beach photo of kelp with no animal in it. It is a wrong answer, but not a tortoise call.
 
 ### Raising the threshold does not close the gap
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="sekharan_eval/figures/tradeoff-dark.svg">
-  <img alt="Mask R-CNN's trade-off between tortoises found and false alarms across all thresholds, with Gemini's two points: neutral prompt at 0 false alarms and 164 found, original prompt at 1 and 164. Mask R-CNN at 0.5: 18 false alarms, 0 missed; at 0.85: 7 and 0; at 0.95: 4 and 3; at 0.99: 0 and 14." src="sekharan_eval/figures/tradeoff-light.svg">
+  <img alt="Mask R-CNN's trade-off between tortoises found and false alarms across all thresholds, with Gemini's point: both prompts at 0 false alarms and 165 found. Mask R-CNN at 0.5: 38 false alarms, 0 missed; at 0.85: 22 and 0; at 0.95: 16 and 3; at 0.99: 3 and 15." src="sekharan_eval/figures/tradeoff-light.svg">
 </picture>
 
-Mask R-CNN ranks images well (ROC AUC 0.997). Its trouble is a handful of confident mistakes:
-- Every real tortoise scores at least 0.885, but six non-tortoise images score higher than that. The highest, an armadillo at 0.99, outscores 14 of the tortoises.
-- At its best setting with no missed tortoises, it still raises 6 false alarms.
-- Getting to zero false alarms costs 14 tortoises.
+Mask R-CNN ranks images fairly well (ROC AUC 0.990). Its trouble is confident mistakes:
+- Every real tortoise scores at least 0.885, but 20 of the images without a tortoise score higher than that.
+- The highest, a pangolin at 0.995, outscores 26 of the tortoises.
+- At the strictest threshold that still finds every tortoise, it raises 20 false alarms.
+- Getting to zero false alarms costs 26 tortoises.
 
-Gemini's two results sit in the top-left corner, where no point on the Mask R-CNN curve reaches.
+Gemini, with either prompt, sits in the top-left corner, where no point on the Mask R-CNN curve reaches.
 
 ### Does the prompt matter?
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="sekharan_eval/figures/species-dark.svg">
-  <img alt="What Gemini called the 164 tortoise photos. Original prompt: Texas tortoise 152, tortoise 5, desert tortoise 3, gopher tortoise 2, box turtle 2. Neutral prompt: Texas tortoise 60, tortoise 38, desert tortoise 26, gopher tortoise 22, red-footed tortoise 7, other tortoise species 9, box turtle 2." src="sekharan_eval/figures/species-light.svg">
+  <img alt="What Gemini called the 165 tortoise photos. Original prompt: Texas tortoise 155, tortoise 2, desert tortoise 2, gopher tortoise 2, red-footed tortoise 1, other tortoise species 1, box turtle 2. Neutral prompt: Texas tortoise 57, tortoise 39, desert tortoise 26, gopher tortoise 27, red-footed tortoise 6, other tortoise species 8, box turtle 2." src="sekharan_eval/figures/species-light.svg">
 </picture>
 
-For finding tortoises, no: both prompts found all 164 tortoises. The neutral prompt even removed the one false alarm.
+For finding tortoises, no: both prompts found all 165 and raised no false alarms.
 
 For naming the species, yes:
 
-| What Gemini called the 164 Texas tortoises | Original prompt | Neutral prompt |
+| What Gemini called the 165 Texas tortoises | Original prompt | Neutral prompt |
 |---|---:|---:|
-| Texas tortoise, the right species | **152** (93%) | 60 (37%) |
-| "Tortoise", with no species | 5 | 38 |
-| Desert or gopher tortoise, the two other North American *Gopherus* species | 5 | 48 |
-| Species from other continents (red-footed, African spurred, Russian and others) | 0 | 16 |
+| Texas tortoise, the right species | **155** (94%) | 57 (35%) |
+| "Tortoise", with no species | 2 | 39 |
+| Desert or gopher tortoise, the two other North American *Gopherus* species | 4 | 53 |
+| Species from other continents (red-footed, African spurred, Greek, hingeback and others) | 2 | 14 |
 | Box turtle | 2 | 2 |
 
 Asked a yes-or-no tortoise question, Gemini does not need the hint. To name the species without it, the model probably needs other context, such as where the photo was taken; that is untested. The scoring here counts any tortoise or turtle answer as a hit. Box turtles also live in South Texas, so a real survey would need to treat "turtle" answers differently.
@@ -173,17 +189,19 @@ Asked a yes-or-no tortoise question, Gemini does not need the hint. To name the 
 | | Mask R-CNN | Gemini, original prompt | Gemini, neutral prompt |
 |---|---|---|---|
 | **Where it ran** | Laptop CPU (Intel Core i7-1255U), PyTorch, offline | Gemini API | Gemini API |
-| **Time per request** (median) | 3.0 s per image | 4.0 s | 5.4 s |
-| **All 274 images** | 14 min 14 s | 5 min 34 s, 4 requests at a time | 7 min 10 s, 4 requests at a time |
-| **Tokens per image** | none | about 1,420: 1,160 in, 30 out, 230 thinking | about 1,440: 1,130 in, 17 out, 300 thinking |
+| **Time per image** (median) | 2.8 s | 4.8 s per request | 4.8 s per request |
+| **All 274 images** | about 13 min of compute | about 6 min, 4 requests at a time | about 6.5 min, 4 requests at a time |
+| **Tokens per image** | none | about 1,400 | about 1,450 |
 
-A GPU would make Mask R-CNN much faster; that was not measured here. Gemini's time depends on the network and on how many requests run at once. The neutral prompt is shorter, but Gemini spent more tokens thinking about each image.
+The three runs shared one laptop and one network connection at the same time, so the times are rough. The token counts come from the first full runs with the same prompts, on the earlier version of the image set. The scripts record usage per run, and the last runs only scored the three replaced images. A GPU would make Mask R-CNN much faster; that was not measured here.
 
 ## Limits
 
-- **No trail-camera tortoises.** Every tortoise here is a hand-held photo, often a close-up, while the empty frames and most other animals are trail-camera frames. Hard cases from real deployments are untested for both methods: tortoises far away, partly hidden or cut off at the frame edge. Both methods could also partly be telling phone photos from camera frames.
+- **No trail-camera tortoises.** Every image here is a hand-held photo, and most tortoises are clear close-ups. Real survey frames are trail-camera pictures, and their hard cases are untested for both methods: tortoises far away, partly hidden or cut off at the frame edge.
+- **Hard negatives, by design.** The other animals and empty scenes were chosen to look like a tortoise or the ground it walks on, so Mask R-CNN's false-alarm rate here is far above the paper's. Neither number is the rate a real survey would see.
+- **Label checks are by eye.** I looked at every image, and at the no-animal photos again at a larger size, and still missed a sea-turtle hatchling that Gemini found. A few small mistakes may remain.
 - **Possible prior exposure.** The paper drew some of its training tortoises from iNaturalist, and Gemini was trained on web data, so either model may have seen some of these photos before.
-- **Small negative set.** With 110 non-tortoise images, zero false alarms is consistent with a true rate of up to 3.3%, and one false alarm with up to 5%.
+- **Small negative set.** With 109 non-tortoise images, zero false alarms is consistent with a true rate of up to 3.3%.
 - **Per-image scoring.** An image counts as found if the method flags it anywhere. The paper's rule also requires the predicted box to overlap the drawn tortoise.
 
 ## Next steps
@@ -209,7 +227,7 @@ python compare_models.py                     # breakdown by image type
 python make_figures.py                       # redraws the figures and prints the numbers above
 ```
 
-Both scorers save as they go and resume where they stopped. See [`sekharan_eval/README.md`](sekharan_eval/README.md) for all options.
+Both scorers save as they go and resume where they stopped. See [`sekharan_eval/README.md`](sekharan_eval/README.md) for all options. The images are in the repository; `data/texas_tortoise_composite/build_holdout.py` rebuilds the hold-out set from its sources.
 
 ## Repository layout
 
@@ -231,8 +249,8 @@ tortoise-predictor/
 
 - **Original detector:** Tleimat JM, Krell E, McCracken SF. 2026. Needle in a haystack: towards the use of machine learning to detect Texas tortoises in large datasets. *Amphibian & Reptile Conservation* 20(1): 67–81 (e356). Code and weights from [github.com/jtleimat/tortoise-predictor](https://github.com/jtleimat/tortoise-predictor), MIT licence ([`tleimat_original/LICENSE`](tleimat_original/LICENSE)).
 - **Images:** each image keeps its own licence. `manifest.csv` gives the licence, credit line and source page for every image.
-  - iNaturalist photos are under their photographers' Creative Commons licences. About half are non-commercial, so the image set as a whole is for research use.
-  - NACTI frames: Tabak MA et al. 2019, *Methods in Ecology and Evolution* 10(4): 585–590, via LILA BC, under the CDLA-Permissive-1.0 licence.
-  - South Texas frames: Kutugata M et al. 2021, *Journal of Fish and Wildlife Management* 12(2): 412–421, MIT licence.
+  - iNaturalist photos are under their photographers' Creative Commons licences. Most are non-commercial, so the image set as a whole is for research use.
+  - Wikimedia Commons photos are under their authors' CC0, public-domain, CC BY or CC BY-SA licences.
+  - Training-set trail-camera frames: NACTI (Tabak MA et al. 2019, *Methods in Ecology and Evolution* 10(4): 585–590, via LILA BC, CDLA-Permissive-1.0) and the South Texas sample of Kutugata M et al. 2021 (*Journal of Fish and Wildlife Management* 12(2): 412–421, MIT licence).
 
   See [`data/texas_tortoise_composite/README.md`](data/texas_tortoise_composite/README.md) for details.

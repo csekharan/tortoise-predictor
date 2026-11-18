@@ -1,275 +1,275 @@
 file,truth_class,truth_species,source,truth_positive,max_score,n_dets_over_0.5,top_box_xyxy,width,height,seconds
-test/blank/nacti-blank_FL-01_0046295.jpg,blank,none,"NACTI (LILA BC), Archbold FL",0,0.0,0,,2048,1436,3.31
-test/blank/nacti-blank_FL-01_0047689.jpg,blank,none,"NACTI (LILA BC), Archbold FL",0,0.0,0,,2048,1436,3.3
-test/blank/nacti-blank_FL-01_0064110.jpg,blank,none,"NACTI (LILA BC), Archbold FL",0,0.3678,0,934 1436 963 1436,2048,1436,3.54
-test/blank/nacti-blank_FL-01_0071339.jpg,blank,none,"NACTI (LILA BC), Archbold FL",0,0.0,0,,2048,1436,3.43
-test/blank/nacti-blank_FL-01_0072025.jpg,blank,none,"NACTI (LILA BC), Archbold FL",0,0.3678,0,358 1436 387 1436,2048,1436,2.98
-test/blank/nacti-blank_FL-01_0086580.jpg,blank,none,"NACTI (LILA BC), Archbold FL",0,0.3678,0,2026 1436 2048 1436,2048,1436,3.22
-test/blank/nacti-blank_FL-02_0012944.jpg,blank,none,"NACTI (LILA BC), Archbold FL",0,0.3678,0,1435 1436 1466 1436,2048,1436,3.11
-test/blank/nacti-blank_FL-02_0013912.jpg,blank,none,"NACTI (LILA BC), Archbold FL",0,0.3678,0,57 1436 85 1436,2048,1436,3.15
-test/blank/nacti-blank_FL-02_0023980.jpg,blank,none,"NACTI (LILA BC), Archbold FL",0,0.0,0,,2048,1436,3.21
-test/blank/nacti-blank_FL-02_0048875.jpg,blank,none,"NACTI (LILA BC), Archbold FL",0,0.3678,0,617 1436 647 1436,2048,1436,3.25
-test/blank/nacti-blank_FL-02_0058515.jpg,blank,none,"NACTI (LILA BC), Archbold FL",0,0.0,0,,2048,1436,3.7
-test/blank/nacti-blank_FL-02_0063792.jpg,blank,none,"NACTI (LILA BC), Archbold FL",0,0.3678,0,1450 1436 1480 1436,2048,1436,3.73
-test/blank/nacti-blank_FL-05_0010010.jpg,blank,none,"NACTI (LILA BC), Archbold FL",0,0.3678,0,840 1436 868 1436,2048,1436,3.71
-test/blank/nacti-blank_FL-05_0038665.jpg,blank,none,"NACTI (LILA BC), Archbold FL",0,0.3678,0,1734 1436 1765 1436,2048,1436,3.14
-test/blank/nacti-blank_FL-06_0019241.jpg,blank,none,"NACTI (LILA BC), Archbold FL",0,0.1613,0,1069 1436 1102 1436,2048,1436,3.21
-test/blank/nacti-blank_FL-06_0029867.jpg,blank,none,"NACTI (LILA BC), Archbold FL",0,0.3678,0,1141 1436 1173 1436,2048,1436,3.5
-test/blank/nacti-blank_FL-06_0033446.jpg,blank,none,"NACTI (LILA BC), Archbold FL",0,0.3678,0,1378 1436 1409 1436,2048,1436,3.26
-test/blank/nacti-blank_FL-06_0035294.jpg,blank,none,"NACTI (LILA BC), Archbold FL",0,0.3678,0,710 1436 740 1436,2048,1436,3.34
-test/blank/nacti-blank_FL-06_0036534.jpg,blank,none,"NACTI (LILA BC), Archbold FL",0,0.3678,0,918 1436 951 1436,2048,1436,3.31
-test/blank/nacti-blank_FL-08_0008039.jpg,blank,none,"NACTI (LILA BC), Archbold FL",0,0.4257,0,1858 968 2037 1252,2048,1436,3.23
-test/blank/nacti-blank_FL-08_0030533.jpg,blank,none,"NACTI (LILA BC), Archbold FL",0,0.3678,0,1104 1436 1136 1436,2048,1436,3.44
-test/blank/nacti-blank_FL-08_0031221.jpg,blank,none,"NACTI (LILA BC), Archbold FL",0,0.3678,0,0 1436 20 1436,2048,1436,3.53
-test/blank/nacti-blank_FL-10_0006104.jpg,blank,none,"NACTI (LILA BC), Archbold FL",0,0.0989,0,1590 326 1913 472,2048,1436,3.63
-test/blank/nacti-blank_FL-10_0012964.jpg,blank,none,"NACTI (LILA BC), Archbold FL",0,0.1427,0,738 1436 769 1436,2048,1436,3.62
-test/blank/nacti-blank_FL-10_0020071.jpg,blank,none,"NACTI (LILA BC), Archbold FL",0,0.0,0,,2048,1436,3.33
-test/blank/nacti-blank_FL-10_0027398.jpg,blank,none,"NACTI (LILA BC), Archbold FL",0,0.0,0,,2048,1436,3.24
-test/blank/nacti-blank_FL-10_0027567.jpg,blank,none,"NACTI (LILA BC), Archbold FL",0,0.0,0,,2048,1436,3.68
-test/blank/nacti-blank_FL-14_0001258.jpg,blank,none,"NACTI (LILA BC), Archbold FL",0,0.3678,0,681 1436 709 1436,2048,1436,3.68
-test/blank/nacti-blank_FL-14_0009289.jpg,blank,none,"NACTI (LILA BC), Archbold FL",0,0.2448,0,1709 463 1776 512,2048,1436,3.73
-test/blank/nacti-blank_FL-14_0013984.jpg,blank,none,"NACTI (LILA BC), Archbold FL",0,0.0,0,,2048,1436,3.31
-test/blank/nacti-blank_FL-14_0030110.jpg,blank,none,"NACTI (LILA BC), Archbold FL",0,0.0,0,,2048,1436,3.28
-test/blank/nacti-blank_FL-14_0032087.jpg,blank,none,"NACTI (LILA BC), Archbold FL",0,0.0,0,,2048,1436,3.39
-test/blank/nacti-blank_FL-19_0042105.jpg,blank,none,"NACTI (LILA BC), Archbold FL",0,0.3678,0,1247 1436 1278 1436,2048,1436,3.34
-test/blank/nacti-blank_FL-19_0050102.jpg,blank,none,"NACTI (LILA BC), Archbold FL",0,0.3678,0,48 1436 81 1436,2048,1436,3.22
-test/blank/nacti-blank_FL-19_0051499.jpg,blank,none,"NACTI (LILA BC), Archbold FL",0,0.0,0,,2048,1436,3.19
-test/blank/nacti-blank_FL-19_0064027.jpg,blank,none,"NACTI (LILA BC), Archbold FL",0,0.0556,0,1333 282 2014 713,2048,1436,3.26
-test/blank/nacti-blank_FL-19_0067406.jpg,blank,none,"NACTI (LILA BC), Archbold FL",0,0.0,0,,2048,1436,3.23
-test/blank/nacti-blank_FL-21_0009466.jpg,blank,none,"NACTI (LILA BC), Archbold FL",0,0.0621,0,1479 42 2010 303,2048,1436,3.19
-test/blank/nacti-blank_FL-21_0020098.jpg,blank,none,"NACTI (LILA BC), Archbold FL",0,0.213,0,68 94 1947 1100,2048,1436,3.24
-test/blank/nacti-blank_FL-21_0034673.jpg,blank,none,"NACTI (LILA BC), Archbold FL",0,0.1422,0,823 1435 858 1436,2048,1436,3.3
-test/blank/nacti-blank_FL-21_0035266.jpg,blank,none,"NACTI (LILA BC), Archbold FL",0,0.3678,0,717 1436 747 1436,2048,1436,3.44
-test/blank/nacti-blank_FL-25_0029520.jpg,blank,none,"NACTI (LILA BC), Archbold FL",0,0.1576,0,2019 1436 2047 1436,2048,1436,3.36
-test/blank/nacti-blank_FL-25_0037647.jpg,blank,none,"NACTI (LILA BC), Archbold FL",0,0.0,0,,2048,1436,3.41
-test/blank/nacti-blank_FL-25_0045309.jpg,blank,none,"NACTI (LILA BC), Archbold FL",0,0.0,0,,2048,1436,3.66
-test/blank/nilgai-blank_nilgai_0100.jpg,blank,none,"Kutugata et al. 2021 sample (github.com/mkutu/Nilgai), South Texas",0,0.0,0,,669,346,4.97
-test/blank/nilgai-blank_nilgai_0110.jpg,blank,none,"Kutugata et al. 2021 sample (github.com/mkutu/Nilgai), South Texas",0,0.0,0,,669,346,4.43
-test/blank/nilgai-blank_nilgai_0113.jpg,blank,none,"Kutugata et al. 2021 sample (github.com/mkutu/Nilgai), South Texas",0,0.0,0,,669,346,3.34
-test/blank/nilgai-blank_nilgai_0114.jpg,blank,none,"Kutugata et al. 2021 sample (github.com/mkutu/Nilgai), South Texas",0,0.7613,1,345 17 652 336,669,346,3.27
-test/blank/nilgai-blank_nilgai_0120.jpg,blank,none,"Kutugata et al. 2021 sample (github.com/mkutu/Nilgai), South Texas",0,0.9336,1,177 120 260 189,669,346,3.19
-test/blank/nilgai-blank_nilgai_0135.jpg,blank,none,"Kutugata et al. 2021 sample (github.com/mkutu/Nilgai), South Texas",0,0.0,0,,669,346,3.23
-test/blank/nilgai-blank_nilgai_0141.jpg,blank,none,"Kutugata et al. 2021 sample (github.com/mkutu/Nilgai), South Texas",0,0.0,0,,669,346,3.24
-test/blank/nilgai-blank_nilgai_0150.jpg,blank,none,"Kutugata et al. 2021 sample (github.com/mkutu/Nilgai), South Texas",0,0.0,0,,669,346,3.26
-test/blank/nilgai-blank_nilgai_0153.jpg,blank,none,"Kutugata et al. 2021 sample (github.com/mkutu/Nilgai), South Texas",0,0.0,0,,669,346,3.53
-test/blank/nilgai-blank_nilgai_0161.jpg,blank,none,"Kutugata et al. 2021 sample (github.com/mkutu/Nilgai), South Texas",0,0.0,0,,669,346,4.44
-test/blank/nilgai-blank_nilgai_0173.jpg,blank,none,"Kutugata et al. 2021 sample (github.com/mkutu/Nilgai), South Texas",0,0.0,0,,669,346,3.38
-test/blank/nilgai-blank_nilgai_0178.jpg,blank,none,"Kutugata et al. 2021 sample (github.com/mkutu/Nilgai), South Texas",0,0.0,0,,669,346,3.27
-test/blank/nilgai-blank_nilgai_0179.jpg,blank,none,"Kutugata et al. 2021 sample (github.com/mkutu/Nilgai), South Texas",0,0.0,0,,669,346,3.22
-test/blank/nilgai-blank_nilgai_0182.jpg,blank,none,"Kutugata et al. 2021 sample (github.com/mkutu/Nilgai), South Texas",0,0.0,0,,669,346,3.29
-test/blank/nilgai-blank_nilgai_0205.jpg,blank,none,"Kutugata et al. 2021 sample (github.com/mkutu/Nilgai), South Texas",0,0.0,0,,669,346,3.41
-test/blank/nilgai-blank_nilgai_0213.jpg,blank,none,"Kutugata et al. 2021 sample (github.com/mkutu/Nilgai), South Texas",0,0.0,0,,669,346,3.42
-test/blank/nilgai-blank_nilgai_0215.jpg,blank,none,"Kutugata et al. 2021 sample (github.com/mkutu/Nilgai), South Texas",0,0.0,0,,669,346,3.44
-test/blank/nilgai-blank_nilgai_027.jpg,blank,none,"Kutugata et al. 2021 sample (github.com/mkutu/Nilgai), South Texas",0,0.0,0,,669,346,3.45
-test/blank/nilgai-blank_nilgai_028.jpg,blank,none,"Kutugata et al. 2021 sample (github.com/mkutu/Nilgai), South Texas",0,0.0,0,,669,346,3.24
-test/blank/nilgai-blank_nilgai_029.jpg,blank,none,"Kutugata et al. 2021 sample (github.com/mkutu/Nilgai), South Texas",0,0.0,0,,669,346,4.17
-test/blank/nilgai-blank_nilgai_033.jpg,blank,none,"Kutugata et al. 2021 sample (github.com/mkutu/Nilgai), South Texas",0,0.0,0,,669,346,3.17
-test/other_animal/inat-armadillo_inat105649915_p177312167.jpg,other_animal,nine-banded armadillo,iNaturalist,0,0.653,1,183 252 433 450,720,720,2.31
-test/other_animal/inat-armadillo_inat116204313_p196130456.jpg,other_animal,nine-banded armadillo,iNaturalist,0,0.0912,0,45 382 555 601,768,1024,2.92
-test/other_animal/inat-armadillo_inat14191613_p21044937.jpg,other_animal,nine-banded armadillo,iNaturalist,0,0.0,0,,1024,558,3.34
-test/other_animal/inat-armadillo_inat21683624_p33574762.jpg,other_animal,nine-banded armadillo,iNaturalist,0,0.1965,0,308 126 797 626,1024,728,3.0
-test/other_animal/inat-armadillo_inat325712957_p589765141.jpg,other_animal,nine-banded armadillo,iNaturalist,0,0.9897,3,384 639 669 761,1024,768,2.93
-test/other_animal/inat-armadillo_inat36747515_p58137390.jpg,other_animal,nine-banded armadillo,iNaturalist,0,0.3701,0,309 175 756 567,1024,684,3.17
-test/other_animal/inat-armadillo_inat414184474_p762418853.jpg,other_animal,nine-banded armadillo,iNaturalist,0,0.0,0,,1024,645,3.28
-test/other_animal/inat-armadillo_inat61911492_p99128807.jpg,other_animal,nine-banded armadillo,iNaturalist,0,0.0,0,,1024,683,3.11
-test/other_animal/nacti-bird_FL-08_01_21_2016_FL-08_0014702.jpg,other_animal,bird,"NACTI (LILA BC), Archbold FL",0,0.971,1,933 654 1495 1242,2048,1436,3.03
-test/other_animal/nacti-bird_FL-28_09_01_2016_FL-28_0059656.jpg,other_animal,bird,"NACTI (LILA BC), Archbold FL",0,0.3678,0,27 1436 56 1436,2048,1436,3.02
-test/other_animal/nacti-bobcat_FL-01_09_02_2015_FL-01_0037770.jpg,other_animal,bobcat,"NACTI (LILA BC), Archbold FL",0,0.0785,0,1251 1362 1489 1432,2048,1436,2.99
-test/other_animal/nacti-bobcat_FL-08_11_02_2015_FL-08_0011816.jpg,other_animal,bobcat,"NACTI (LILA BC), Archbold FL",0,0.5208,1,89 694 996 1181,2048,1436,3.89
-test/other_animal/nacti-bobcat_FL-10_01_21_2016_FL-10_0011824.jpg,other_animal,bobcat,"NACTI (LILA BC), Archbold FL",0,0.0,0,,2048,1436,3.2
-test/other_animal/nacti-cattle_FL-06_06_29_2015_FL-06_0008938.jpg,other_animal,cattle,"NACTI (LILA BC), Archbold FL",0,0.1526,0,457 1435 493 1436,2048,1436,3.0
-test/other_animal/nacti-cattle_FL-25_08_04_2016_FL-25_0030806.jpg,other_animal,cattle,"NACTI (LILA BC), Archbold FL",0,0.3678,0,1116 1436 1148 1436,2048,1436,3.14
-test/other_animal/nacti-coyote_FL-05_06_29_2015_FL-05_0021403.jpg,other_animal,coyote,"NACTI (LILA BC), Archbold FL",0,0.3678,0,538 1436 567 1436,2048,1436,3.1
-test/other_animal/nacti-coyote_FL-08_03_07_2016_FL-08_0018695.jpg,other_animal,coyote,"NACTI (LILA BC), Archbold FL",0,0.3678,0,1160 1436 1191 1436,2048,1436,3.03
-test/other_animal/nacti-coyote_FL-08_07_29_2015_FL-08_0008722.jpg,other_animal,coyote,"NACTI (LILA BC), Archbold FL",0,0.1262,0,1113 1436 1144 1436,2048,1436,3.05
-test/other_animal/nacti-deer_FL-01_01_25_2016_FL-01_0042248.jpg,other_animal,deer,"NACTI (LILA BC), Archbold FL",0,0.509,1,780 698 1875 1434,2048,1436,3.06
-test/other_animal/nacti-deer_FL-06_06_29_2015_FL-06_0002906.jpg,other_animal,deer,"NACTI (LILA BC), Archbold FL",0,0.1438,0,1414 1435 1447 1436,2048,1436,2.98
-test/other_animal/nacti-deer_FL-37_09_08_2016_FL-37_0028669.jpg,other_animal,deer,"NACTI (LILA BC), Archbold FL",0,0.7326,1,1206 642 1551 791,2048,1436,3.01
-test/other_animal/nacti-feral-hog_FL-10_11_02_2015_FL-10_0008645.jpg,other_animal,feral hog,"NACTI (LILA BC), Archbold FL",0,0.9865,1,79 638 521 1073,2048,1436,3.04
-test/other_animal/nacti-feral-hog_FL-25_11_02_2015_FL-25_0015062.jpg,other_animal,feral hog,"NACTI (LILA BC), Archbold FL",0,0.7634,1,1133 626 1685 1001,2048,1436,3.0
-test/other_animal/nacti-feral-hog_FL-37_11_03_2015_FL-37_0001183.jpg,other_animal,feral hog,"NACTI (LILA BC), Archbold FL",0,0.9313,1,963 568 2034 1174,2048,1436,3.03
-test/other_animal/nacti-nine-banded-armadillo_FL-02_03_04_2016_FL-02_0056313.jpg,other_animal,nine-banded armadillo,"NACTI (LILA BC), Archbold FL",0,0.3678,0,307 1436 335 1436,2048,1436,3.01
-test/other_animal/nacti-nine-banded-armadillo_FL-06_04_04_2016_FL-06_0019857.jpg,other_animal,nine-banded armadillo,"NACTI (LILA BC), Archbold FL",0,0.8222,1,33 1213 370 1419,2048,1436,3.12
-test/other_animal/nacti-nine-banded-armadillo_FL-06_04_04_2016_FL-06_0019863.jpg,other_animal,nine-banded armadillo,"NACTI (LILA BC), Archbold FL",0,0.7259,1,17 1261 236 1424,2048,1436,2.99
-test/other_animal/nacti-nine-banded-armadillo_FL-06_07_28_2015_FL-06_0009835.jpg,other_animal,nine-banded armadillo,"NACTI (LILA BC), Archbold FL",0,0.3678,0,1494 1436 1525 1436,2048,1436,3.0
-test/other_animal/nacti-nine-banded-armadillo_FL-10_05_13_2015_FL-10_0001122.jpg,other_animal,nine-banded armadillo,"NACTI (LILA BC), Archbold FL",0,0.0,0,,2048,1436,3.04
-test/other_animal/nacti-nine-banded-armadillo_FL-14_12_06_2015_FL-14_0013514.jpg,other_animal,nine-banded armadillo,"NACTI (LILA BC), Archbold FL",0,0.6926,1,1242 833 1384 1027,2048,1436,3.05
-test/other_animal/nacti-nine-banded-armadillo_FL-25_05_02_2016_FL-25_0025552.jpg,other_animal,nine-banded armadillo,"NACTI (LILA BC), Archbold FL",0,0.1503,0,855 90 1305 757,2048,1436,3.04
-test/other_animal/nacti-nine-banded-armadillo_FL-28_11_02_2015_FL-28_0041562.jpg,other_animal,nine-banded armadillo,"NACTI (LILA BC), Archbold FL",0,0.6051,1,419 1348 675 1427,2048,1436,3.16
-test/other_animal/nacti-opossum_FL-06_04_04_2016_FL-06_0019679.jpg,other_animal,opossum,"NACTI (LILA BC), Archbold FL",0,0.3678,0,860 1436 892 1436,2048,1436,3.23
-test/other_animal/nacti-opossum_FL-19_01_20_2016_FL-19_0043059.jpg,other_animal,opossum,"NACTI (LILA BC), Archbold FL",0,0.3678,0,95 1436 129 1436,2048,1436,2.99
-test/other_animal/nacti-rabbit_FL-14_06_30_2015_FL-14_0008611.jpg,other_animal,rabbit,"NACTI (LILA BC), Archbold FL",0,0.0,0,,2048,1436,3.12
-test/other_animal/nacti-rabbit_FL-14_11_02_2015_FL-14_0012210.jpg,other_animal,rabbit,"NACTI (LILA BC), Archbold FL",0,0.3678,0,939 1436 969 1436,2048,1436,3.0
-test/other_animal/nacti-raccoon_FL-08_03_07_2016_FL-08_0017185.jpg,other_animal,raccoon,"NACTI (LILA BC), Archbold FL",0,0.0,0,,2048,1436,2.98
-test/other_animal/nacti-raccoon_FL-21_01_21_2016_FL-21_0023177.jpg,other_animal,raccoon,"NACTI (LILA BC), Archbold FL",0,0.1577,0,492 1435 523 1436,2048,1436,3.06
-test/other_animal/nacti-raccoon_FL-28_07_28_2015_FL-28_0029782.jpg,other_animal,raccoon,"NACTI (LILA BC), Archbold FL",0,0.3678,0,924 1436 956 1436,2048,1436,3.02
-test/other_animal/nacti-wild-turkey_FL-05_05_02_2016_FL-05_0038011.jpg,other_animal,wild turkey,"NACTI (LILA BC), Archbold FL",0,0.8704,1,1127 890 1218 935,2048,1436,3.08
-test/other_animal/nacti-wild-turkey_FL-14_04_05_2016_FL-14_0019080.jpg,other_animal,wild turkey,"NACTI (LILA BC), Archbold FL",0,0.7212,3,855 518 974 552,2048,1436,2.99
-test/other_animal/nilgai-animals_nilgai_011.jpg,other_animal,nilgai,"Kutugata et al. 2021 sample (github.com/mkutu/Nilgai), South Texas",0,0.0,0,,669,346,3.03
-test/other_animal/nilgai-animals_nilgai_0194.jpg,other_animal,deer,"Kutugata et al. 2021 sample (github.com/mkutu/Nilgai), South Texas",0,0.4858,0,19 54 520 346,669,346,3.02
-test/other_animal/nilgai-animals_nilgai_075.jpg,other_animal,nilgai,"Kutugata et al. 2021 sample (github.com/mkutu/Nilgai), South Texas",0,0.0,0,,669,346,3.09
-test/tortoise/inat-tortoise_inat111531724_p188289979.jpg,tortoise,Texas tortoise,iNaturalist,1,0.9987,1,113 340 701 643,1024,791,2.94
-test/tortoise/inat-tortoise_inat113893384_p192372863.jpg,tortoise,Texas tortoise,iNaturalist,1,0.9988,1,51 232 608 623,768,1024,2.85
-test/tortoise/inat-tortoise_inat122849945_p208044730.jpg,tortoise,Texas tortoise,iNaturalist,1,0.9855,1,150 224 482 496,685,664,2.37
-test/tortoise/inat-tortoise_inat123901731_p209951120.jpg,tortoise,Texas tortoise,iNaturalist,1,0.9984,1,73 1 765 567,768,1024,2.89
-test/tortoise/inat-tortoise_inat13134287_p19152068.jpg,tortoise,Texas tortoise,iNaturalist,1,0.9789,4,25 14 625 627,1024,681,3.13
-test/tortoise/inat-tortoise_inat136362745_p232714869.jpg,tortoise,Texas tortoise,iNaturalist,1,0.9989,1,232 126 951 574,1024,652,3.33
-test/tortoise/inat-tortoise_inat1413764_p1749267.jpg,tortoise,Texas tortoise,iNaturalist,1,0.9994,1,148 188 849 633,1024,754,2.98
-test/tortoise/inat-tortoise_inat144491405_p248002221.jpg,tortoise,Texas tortoise,iNaturalist,1,0.9913,1,165 5 963 539,1024,576,3.35
-test/tortoise/inat-tortoise_inat147629139_p254064177.jpg,tortoise,Texas tortoise,iNaturalist,1,0.9989,1,113 203 965 850,1021,1024,2.38
-test/tortoise/inat-tortoise_inat1485771_p1841205.jpg,tortoise,Texas tortoise,iNaturalist,1,0.9997,1,230 64 720 434,720,434,3.37
-test/tortoise/inat-tortoise_inat152759377_p263745968.jpg,tortoise,Texas tortoise,iNaturalist,1,0.9994,1,104 328 681 830,768,1024,2.86
-test/tortoise/inat-tortoise_inat154035212_p266112717.jpg,tortoise,Texas tortoise,iNaturalist,1,0.999,1,16 8 855 619,1024,768,2.87
-test/tortoise/inat-tortoise_inat155407175_p268631962.jpg,tortoise,Texas tortoise,iNaturalist,1,0.9988,1,207 206 503 368,1024,768,2.87
-test/tortoise/inat-tortoise_inat157845710_p272861980.jpg,tortoise,Texas tortoise,iNaturalist,1,0.9943,2,191 14 1024 719,1024,768,2.89
-test/tortoise/inat-tortoise_inat157858338_p272883280.jpg,tortoise,Texas tortoise,iNaturalist,1,0.9991,2,206 510 329 625,1024,723,3.02
-test/tortoise/inat-tortoise_inat159868364_p276235376.jpg,tortoise,Texas tortoise,iNaturalist,1,0.9808,1,0 278 355 613,473,1024,2.9
-test/tortoise/inat-tortoise_inat159868366_p276235388.jpg,tortoise,Texas tortoise,iNaturalist,1,0.9999,1,138 452 317 596,473,1024,2.84
-test/tortoise/inat-tortoise_inat159868367_p276235407.jpg,tortoise,Texas tortoise,iNaturalist,1,0.9905,1,167 469 328 589,473,1024,2.91
-test/tortoise/inat-tortoise_inat160095741_p276632449.jpg,tortoise,Texas tortoise,iNaturalist,1,0.9997,1,291 233 462 435,768,1024,2.86
-test/tortoise/inat-tortoise_inat160968085_p278197651.jpg,tortoise,Texas tortoise,iNaturalist,1,0.9995,1,43 327 544 706,768,1024,2.97
-test/tortoise/inat-tortoise_inat167114722_p289458074.jpg,tortoise,Texas tortoise,iNaturalist,1,0.9992,1,129 358 407 541,461,1024,2.79
-test/tortoise/inat-tortoise_inat167522461_p290212547.jpg,tortoise,Texas tortoise,iNaturalist,1,0.9996,1,208 289 540 661,768,1024,2.94
-test/tortoise/inat-tortoise_inat17530103_p26682149.jpg,tortoise,Texas tortoise,iNaturalist,1,0.9994,1,7 66 898 646,1024,649,3.31
-test/tortoise/inat-tortoise_inat178639176_p310885514.jpg,tortoise,Texas tortoise,iNaturalist,1,0.9977,1,129 129 933 728,1024,768,2.92
-test/tortoise/inat-tortoise_inat181073413_p315525715.jpg,tortoise,Texas tortoise,iNaturalist,1,0.9936,1,96 212 747 1004,768,1024,2.91
-test/tortoise/inat-tortoise_inat186952897_p326822891.jpg,tortoise,Texas tortoise,iNaturalist,1,0.9404,1,194 372 678 686,1024,768,2.99
-test/tortoise/inat-tortoise_inat18903775_p28971436.jpg,tortoise,Texas tortoise,iNaturalist,1,0.9996,1,111 103 638 477,1024,683,3.26
-test/tortoise/inat-tortoise_inat190032430_p333040988.jpg,tortoise,Texas tortoise,iNaturalist,1,0.9998,1,334 191 723 639,1024,768,2.89
-test/tortoise/inat-tortoise_inat190252328_p333461423.jpg,tortoise,Texas tortoise,iNaturalist,1,0.9993,1,43 93 729 527,1024,683,3.16
-test/tortoise/inat-tortoise_inat19853289_p30608937.jpg,tortoise,Texas tortoise,iNaturalist,1,0.9993,1,338 279 661 548,1024,744,3.01
-test/tortoise/inat-tortoise_inat198758732_p350382933.jpg,tortoise,Texas tortoise,iNaturalist,1,0.9975,1,250 52 712 391,1024,768,2.98
-test/tortoise/inat-tortoise_inat198762802_p350391764.jpg,tortoise,Texas tortoise,iNaturalist,1,0.9563,2,144 337 637 634,768,1024,3.09
-test/tortoise/inat-tortoise_inat1988782_p2426040.jpg,tortoise,Texas tortoise,iNaturalist,1,0.9994,1,80 126 327 296,568,426,3.51
-test/tortoise/inat-tortoise_inat200087881_p352952691.jpg,tortoise,Texas tortoise,iNaturalist,1,0.9999,2,157 479 703 765,768,1024,3.39
-test/tortoise/inat-tortoise_inat200219018_p353205792.jpg,tortoise,Texas tortoise,iNaturalist,1,0.9956,2,4 444 389 761,460,1024,2.83
-test/tortoise/inat-tortoise_inat200469198_p353696395.jpg,tortoise,Texas tortoise,iNaturalist,1,0.9962,1,391 378 648 484,1024,891,2.71
-test/tortoise/inat-tortoise_inat206969371_p366043134.jpg,tortoise,Texas tortoise,iNaturalist,1,0.9994,1,108 430 597 721,768,1024,3.07
-test/tortoise/inat-tortoise_inat208295424_p368526371.jpg,tortoise,Texas tortoise,iNaturalist,1,0.9995,1,170 409 517 586,1024,768,2.97
-test/tortoise/inat-tortoise_inat217522058_p384821051.jpg,tortoise,Texas tortoise,iNaturalist,1,0.9991,1,41 3 847 685,1024,768,3.12
-test/tortoise/inat-tortoise_inat219799534_p389081519.jpg,tortoise,Texas tortoise,iNaturalist,1,0.9956,1,180 292 679 705,768,1024,3.09
-test/tortoise/inat-tortoise_inat221203893_p391718964.jpg,tortoise,Texas tortoise,iNaturalist,1,0.9995,1,226 193 540 582,768,1024,3.02
-test/tortoise/inat-tortoise_inat221382451_p392042027.jpg,tortoise,Texas tortoise,iNaturalist,1,0.9993,1,153 174 799 561,1024,768,2.92
-test/tortoise/inat-tortoise_inat224019746_p396988791.jpg,tortoise,Texas tortoise,iNaturalist,1,0.9989,4,83 38 713 716,768,1024,2.86
-test/tortoise/inat-tortoise_inat232520515_p413137346.jpg,tortoise,Texas tortoise,iNaturalist,1,0.9959,1,288 425 506 747,768,1024,2.94
-test/tortoise/inat-tortoise_inat237994113_p423638535.jpg,tortoise,Texas tortoise,iNaturalist,1,0.9995,1,0 299 606 757,768,1024,3.0
-test/tortoise/inat-tortoise_inat240024936_p427571339.jpg,tortoise,Texas tortoise,iNaturalist,1,0.9999,2,189 572 374 715,768,1024,3.18
-test/tortoise/inat-tortoise_inat240025370_p427572029.jpg,tortoise,Texas tortoise,iNaturalist,1,0.9996,1,195 482 493 843,768,1024,2.91
-test/tortoise/inat-tortoise_inat2401499_p2677754.jpg,tortoise,Texas tortoise,iNaturalist,1,0.9994,1,133 191 896 611,1024,681,3.19
-test/tortoise/inat-tortoise_inat24239180_p37483950.jpg,tortoise,Texas tortoise,iNaturalist,1,0.9969,1,75 24 961 742,1024,768,2.92
-test/tortoise/inat-tortoise_inat245448352_p437990913.jpg,tortoise,Texas tortoise,iNaturalist,1,0.9995,1,193 514 450 724,576,1024,3.42
-test/tortoise/inat-tortoise_inat247126897_p441307069.jpg,tortoise,Texas tortoise,iNaturalist,1,0.9998,1,208 410 491 650,768,1024,2.96
-test/tortoise/inat-tortoise_inat247712569_p442478250.jpg,tortoise,Texas tortoise,iNaturalist,1,0.9995,1,360 147 889 501,1024,768,2.87
-test/tortoise/inat-tortoise_inat253891852_p454668960.jpg,tortoise,Texas tortoise,iNaturalist,1,0.9971,1,32 371 314 562,473,1024,2.91
-test/tortoise/inat-tortoise_inat257136792_p461207754.jpg,tortoise,Texas tortoise,iNaturalist,1,0.9997,1,24 310 995 890,1024,1024,2.37
-test/tortoise/inat-tortoise_inat2580463_p2880541.jpg,tortoise,Texas tortoise,iNaturalist,1,0.9988,1,190 79 659 527,1024,683,3.15
-test/tortoise/inat-tortoise_inat261756814_p470309593.jpg,tortoise,Texas tortoise,iNaturalist,1,0.9977,1,254 139 727 510,1024,714,3.01
-test/tortoise/inat-tortoise_inat26443697_p41062946.jpg,tortoise,Texas tortoise,iNaturalist,1,0.9988,1,188 173 894 528,1024,670,3.26
-test/tortoise/inat-tortoise_inat26935322_p41855369.jpg,tortoise,Texas tortoise,iNaturalist,1,0.9636,1,103 253 645 762,768,1024,2.94
-test/tortoise/inat-tortoise_inat27245486_p42370787.jpg,tortoise,Texas tortoise,iNaturalist,1,0.9998,1,230 463 499 728,768,1024,2.88
-test/tortoise/inat-tortoise_inat275554434_p495115507.jpg,tortoise,Texas tortoise,iNaturalist,1,0.9995,1,187 325 549 805,771,1024,2.9
-test/tortoise/inat-tortoise_inat275555628_p495117070.jpg,tortoise,Texas tortoise,iNaturalist,1,0.9995,1,193 355 771 1024,771,1024,2.91
-test/tortoise/inat-tortoise_inat276607976_p496717006.jpg,tortoise,Texas tortoise,iNaturalist,1,0.9993,1,147 278 570 513,1024,768,2.84
-test/tortoise/inat-tortoise_inat282698715_p507915502.jpg,tortoise,Texas tortoise,iNaturalist,1,0.9995,1,244 484 713 755,768,1024,2.91
-test/tortoise/inat-tortoise_inat283444898_p509307933.jpg,tortoise,Texas tortoise,iNaturalist,1,0.9995,1,232 159 1012 675,1024,768,2.98
-test/tortoise/inat-tortoise_inat288879190_p519542456.jpg,tortoise,Texas tortoise,iNaturalist,1,0.9996,1,211 361 538 638,768,1024,3.17
-test/tortoise/inat-tortoise_inat294241206_p529605951.jpg,tortoise,Texas tortoise,iNaturalist,1,0.9681,1,263 336 593 709,768,1024,2.92
-test/tortoise/inat-tortoise_inat294241791_p529607238.jpg,tortoise,Texas tortoise,iNaturalist,1,0.9975,2,299 360 563 728,768,1024,2.97
-test/tortoise/inat-tortoise_inat297785955_p536327115.jpg,tortoise,Texas tortoise,iNaturalist,1,0.9998,1,427 230 672 410,1024,768,2.88
-test/tortoise/inat-tortoise_inat30006178_p46856512.jpg,tortoise,Texas tortoise,iNaturalist,1,0.9994,1,151 163 807 593,1024,686,3.18
-test/tortoise/inat-tortoise_inat302247_p374826.jpg,tortoise,Texas tortoise,iNaturalist,1,0.9985,2,4 0 638 534,800,600,2.9
-test/tortoise/inat-tortoise_inat30329297_p47376394.jpg,tortoise,Texas tortoise,iNaturalist,1,0.9417,1,225 318 594 698,768,1024,2.9
-test/tortoise/inat-tortoise_inat305515499_p550862342.jpg,tortoise,Texas tortoise,iNaturalist,1,0.9992,1,10 225 588 631,771,1024,2.88
-test/tortoise/inat-tortoise_inat310453_p385219.jpg,tortoise,Texas tortoise,iNaturalist,1,0.9998,1,126 51 748 557,1024,768,2.83
-test/tortoise/inat-tortoise_inat310489_p385264.jpg,tortoise,Texas tortoise,iNaturalist,1,0.9998,1,277 191 712 469,864,648,2.9
-test/tortoise/inat-tortoise_inat310556_p385341.jpg,tortoise,Texas tortoise,iNaturalist,1,0.9989,1,252 149 691 436,864,644,2.98
-test/tortoise/inat-tortoise_inat311322745_p561985753.jpg,tortoise,Texas tortoise,iNaturalist,1,0.9986,2,67 410 483 682,576,1024,3.73
+test/blank/none-beach_commons105447183.jpg,blank,none,Wikimedia Commons,0,0.9014,1,459 43 960 348,960,640,2.37
+test/blank/none-beach_commons109960431.jpg,blank,none,Wikimedia Commons,0,0.0,0,,960,960,2.02
+test/blank/none-beach_commons110113932.jpg,blank,none,Wikimedia Commons,0,0.5334,1,711 485 784 508,960,640,2.57
+test/blank/none-beach_commons114028597.jpg,blank,none,Wikimedia Commons,0,0.0,0,,960,720,2.36
+test/blank/none-beach_commons114836053.jpg,blank,none,Wikimedia Commons,0,0.0,0,,960,720,2.21
+test/blank/none-beach_commons114956623.jpg,blank,none,Wikimedia Commons,0,0.0,0,,960,640,2.91
+test/blank/none-beach_commons124965084.jpg,blank,none,Wikimedia Commons,0,0.0,0,,960,639,2.86
+test/blank/none-beach_commons125721726.jpg,blank,none,Wikimedia Commons,0,0.0785,0,373 279 938 609,960,640,2.57
+test/blank/none-beach_commons126445621.jpg,blank,none,Wikimedia Commons,0,0.0,0,,960,643,2.5
+test/blank/none-beach_commons141198686.jpg,blank,none,Wikimedia Commons,0,0.0,0,,960,720,2.62
+test/blank/none-beach_commons14438303.jpg,blank,none,Wikimedia Commons,0,0.8506,1,409 86 451 96,960,720,2.54
+test/blank/none-beach_commons153480624.jpg,blank,none,Wikimedia Commons,0,0.0,0,,960,1141,2.28
+test/blank/none-beach_commons1630159.jpg,blank,none,Wikimedia Commons,0,0.0,0,,960,720,2.39
+test/blank/none-beach_commons164516739.jpg,blank,none,Wikimedia Commons,0,0.091,0,370 169 403 176,960,720,2.39
+test/blank/none-beach_commons168346574.jpg,blank,none,Wikimedia Commons,0,0.3678,0,547 720 561 720,960,720,2.34
+test/blank/none-beach_commons2982089.jpg,blank,none,Wikimedia Commons,0,0.0,0,,960,1280,2.58
+test/blank/none-beach_commons47140708.jpg,blank,none,Wikimedia Commons,0,0.0,0,,960,720,2.62
+test/blank/none-beach_commons60037253.jpg,blank,none,Wikimedia Commons,0,0.9823,3,1 201 76 272,960,720,2.68
+test/blank/none-beach_commons65061786.jpg,blank,none,Wikimedia Commons,0,0.0,0,,960,654,2.83
+test/blank/none-beach_commons80730910.jpg,blank,none,Wikimedia Commons,0,0.0,0,,960,636,2.84
+test/blank/none-beach_commons85592033.jpg,blank,none,Wikimedia Commons,0,0.5221,1,0 10 960 1282,960,1282,2.73
+test/blank/none-beach_commons99435030.jpg,blank,none,Wikimedia Commons,0,0.0,0,,960,1280,2.58
+test/blank/none-dry-land_commons107589129.jpg,blank,none,Wikimedia Commons,0,0.0,0,,960,720,2.52
+test/blank/none-dry-land_commons107999407.jpg,blank,none,Wikimedia Commons,0,0.0,0,,960,720,2.72
+test/blank/none-dry-land_commons12433183.jpg,blank,none,Wikimedia Commons,0,0.0,0,,960,708,2.6
+test/blank/none-dry-land_commons130745001.jpg,blank,none,Wikimedia Commons,0,0.0,0,,960,638,3.18
+test/blank/none-dry-land_commons135977711.jpg,blank,none,Wikimedia Commons,0,0.0,0,,960,641,2.78
+test/blank/none-dry-land_commons160707971.jpg,blank,none,Wikimedia Commons,0,0.0,0,,960,1440,2.97
+test/blank/none-dry-land_commons163157811.jpg,blank,none,Wikimedia Commons,0,0.7749,1,938 524 960 550,960,720,2.72
+test/blank/none-dry-land_commons163784473.jpg,blank,none,Wikimedia Commons,0,0.3822,0,318 791 899 1240,960,1280,2.68
+test/blank/none-dry-land_commons164630289.jpg,blank,none,Wikimedia Commons,0,0.9758,1,890 535 952 559,960,640,2.77
+test/blank/none-dry-land_commons170761164.jpg,blank,none,Wikimedia Commons,0,0.0561,0,951 640 960 640,960,640,2.7
+test/blank/none-dry-land_commons197746174.jpg,blank,none,Wikimedia Commons,0,0.0,0,,960,600,2.9
+test/blank/none-dry-land_commons203035816.jpg,blank,none,Wikimedia Commons,0,0.0,0,,960,720,2.47
+test/blank/none-dry-land_commons24125157.jpg,blank,none,Wikimedia Commons,0,0.0,0,,960,718,2.66
+test/blank/none-dry-land_commons24897439.jpg,blank,none,Wikimedia Commons,0,0.0,0,,960,720,2.55
+test/blank/none-dry-land_commons31196253.jpg,blank,none,Wikimedia Commons,0,0.3678,0,754 640 769 640,960,640,2.88
+test/blank/none-dry-land_commons3193235.jpg,blank,none,Wikimedia Commons,0,0.1756,0,0 18 955 530,960,1440,3.34
+test/blank/none-dry-land_commons3457540.jpg,blank,none,Wikimedia Commons,0,0.4609,0,0 0 729 706,960,720,3.0
+test/blank/none-dry-land_commons36266425.jpg,blank,none,Wikimedia Commons,0,0.0,0,,960,720,2.85
+test/blank/none-dry-land_commons6993047.jpg,blank,none,Wikimedia Commons,0,0.0,0,,960,720,2.7
+test/blank/none-dry-land_commons70538123.jpg,blank,none,Wikimedia Commons,0,0.5068,1,225 326 265 345,960,1283,2.67
+test/blank/none-dry-land_commons8949675.jpg,blank,none,Wikimedia Commons,0,0.0,0,,960,679,2.78
+test/blank/none-vegetation_inat1291129_p1619630.jpg,blank,none,iNaturalist,0,0.0,0,,960,720,2.65
+test/blank/none-vegetation_inat1297000_p1627406.jpg,blank,none,iNaturalist,0,0.0,0,,1024,768,2.67
+test/blank/none-vegetation_inat1369794_p1694191.jpg,blank,none,iNaturalist,0,0.6288,1,441 346 815 555,1024,576,3.07
+test/blank/none-vegetation_inat1378447_p1703496.jpg,blank,none,iNaturalist,0,0.0,0,,768,1024,2.56
+test/blank/none-vegetation_inat1395046_p1724835.jpg,blank,none,iNaturalist,0,0.0,0,,1024,768,2.53
+test/blank/none-vegetation_inat1492355_p1849158.jpg,blank,none,iNaturalist,0,0.0521,0,389 258 550 351,576,1024,2.91
+test/blank/none-vegetation_inat1553562_p1924054.jpg,blank,none,iNaturalist,0,0.0714,0,24 202 244 373,768,1024,2.62
+test/blank/none-vegetation_inat1616321_p1985720.jpg,blank,none,iNaturalist,0,0.0,0,,1024,768,2.58
+test/blank/none-vegetation_inat1833844_p2226743.jpg,blank,none,iNaturalist,0,0.0,0,,683,1024,2.84
+test/blank/none-vegetation_inat1889820_p2304522.jpg,blank,none,iNaturalist,0,0.1281,0,106 75 573 873,768,1024,2.74
+test/blank/none-vegetation_inat204965_p260176.jpg,blank,none,iNaturalist,0,0.0,0,,720,960,2.59
+test/blank/none-vegetation_inat2096300_p2509518.jpg,blank,none,iNaturalist,0,0.0,0,,1024,768,2.62
+test/blank/none-vegetation_inat2283851_p2556955.jpg,blank,none,iNaturalist,0,0.1125,0,338 696 709 878,768,1024,2.69
+test/blank/none-vegetation_inat2284879_p2557835.jpg,blank,none,iNaturalist,0,0.0,0,,768,1024,2.71
+test/blank/none-vegetation_inat2291117_p2558079.jpg,blank,none,iNaturalist,0,0.3823,0,306 237 569 355,768,1024,2.68
+test/blank/none-vegetation_inat2352653_p2614934.jpg,blank,none,iNaturalist,0,0.0,0,,1024,683,3.06
+test/blank/none-vegetation_inat2363119_p2629367.jpg,blank,none,iNaturalist,0,0.0,0,,768,1024,2.79
+test/blank/none-vegetation_inat2370962_p2640437.jpg,blank,none,iNaturalist,0,0.0,0,,768,1024,2.74
+test/blank/none-vegetation_inat434377_p547274.jpg,blank,none,iNaturalist,0,0.1613,0,330 426 340 426,568,426,2.59
+test/blank/none-vegetation_inat643306_p810526.jpg,blank,none,iNaturalist,0,0.8896,1,449 546 707 744,1024,768,2.58
+test/blank/none-vegetation_inat727255_p913525.jpg,blank,none,iNaturalist,0,0.3678,0,769 637 784 637,960,637,2.86
+test/blank/none-vegetation_inat854191_p1082419.jpg,blank,none,iNaturalist,0,0.0,0,,768,1024,2.6
+test/other_animal/animal-armadillo_inat191285713_p335532916.jpg,other_animal,Mexican Long-nosed Armadillo,iNaturalist,0,0.9853,1,120 410 395 700,473,1024,2.6
+test/other_animal/animal-armadillo_inat195807991_p344573270.jpg,other_animal,Mexican Long-nosed Armadillo,iNaturalist,0,0.5177,1,190 105 698 583,1024,768,2.43
+test/other_animal/animal-armadillo_inat198134424_p349146581.jpg,other_animal,Mexican Long-nosed Armadillo,iNaturalist,0,0.9562,1,233 134 739 624,1024,722,2.64
+test/other_animal/animal-armadillo_inat199288149_p351428572.jpg,other_animal,Mexican Long-nosed Armadillo,iNaturalist,0,0.7613,1,311 197 744 894,1024,1016,2.19
+test/other_animal/animal-armadillo_inat346715229_p632051919.jpg,other_animal,Mexican Long-nosed Armadillo,iNaturalist,0,0.0,0,,1024,512,2.73
+test/other_animal/animal-armadillo_inat349819612_p637939033.jpg,other_animal,Mexican Long-nosed Armadillo,iNaturalist,0,0.9652,1,141 346 307 478,768,1024,2.52
+test/other_animal/animal-armadillo_inat381231350_p697540067.jpg,other_animal,Mexican Long-nosed Armadillo,iNaturalist,0,0.6961,2,776 282 1010 425,1024,683,2.86
+test/other_animal/animal-armadillo_inat4004118_p4728813.jpg,other_animal,Mexican Long-nosed Armadillo,iNaturalist,0,0.0,0,,1024,678,3.09
+test/other_animal/animal-armadillo_inat414184474_p762418853.jpg,other_animal,Mexican Long-nosed Armadillo,iNaturalist,0,0.0,0,,1024,645,3.0
+test/other_animal/animal-armadillo_inat70067056_p113835816.jpg,other_animal,Mexican Long-nosed Armadillo,iNaturalist,0,0.7731,1,270 259 430 322,1024,485,2.62
+test/other_animal/animal-armadillo_inat9816450_p13435878.jpg,other_animal,Mexican Long-nosed Armadillo,iNaturalist,0,0.0,0,,1024,768,2.65
+test/other_animal/animal-crab_inat1515045_p1876849.jpg,other_animal,Speckled Swimming Crab,iNaturalist,0,0.2315,0,242 85 798 361,960,540,2.94
+test/other_animal/animal-crab_inat18625281_p28506415.jpg,other_animal,Atlantic Ghost Crab,iNaturalist,0,0.4266,0,375 264 702 415,1024,768,2.47
+test/other_animal/animal-crab_inat18632570_p28519724.jpg,other_animal,Atlantic Ghost Crab,iNaturalist,0,0.0,0,,768,1024,2.49
+test/other_animal/animal-crab_inat19113923_p29336850.jpg,other_animal,Atlantic Ghost Crab,iNaturalist,0,0.4514,0,48 56 1024 534,1024,576,2.82
+test/other_animal/animal-crab_inat2019731_p2461200.jpg,other_animal,Atlantic Blue Crab,iNaturalist,0,0.8814,2,1 439 757 1005,768,1024,2.77
+test/other_animal/animal-crab_inat20336421_p31401972.jpg,other_animal,Atlantic Blue Crab,iNaturalist,0,0.6017,1,569 183 725 339,1024,683,3.43
+test/other_animal/animal-crab_inat26440751_p41058115.jpg,other_animal,Atlantic Blue Crab,iNaturalist,0,0.9862,1,983 0 1024 32,1024,498,2.71
+test/other_animal/animal-crab_inat2770805_p3137756.jpg,other_animal,Gulf Marsh Fiddler Crab,iNaturalist,0,0.0634,0,1016 767 1024 768,1024,768,2.77
+test/other_animal/animal-crab_inat30787862_p48120732.jpg,other_animal,Atlantic Blue Crab,iNaturalist,0,0.9832,1,364 210 810 451,1024,768,2.62
+test/other_animal/animal-crab_inat6048056_p7578943.jpg,other_animal,Atlantic Blue Crab,iNaturalist,0,0.7174,1,92 238 788 564,1024,768,2.65
+test/other_animal/animal-crab_inat6188946_p7766256.jpg,other_animal,Atlantic Blue Crab,iNaturalist,0,0.9651,1,65 156 1001 630,1024,768,2.82
+test/other_animal/animal-pangolin_inat165478238_p286452634.jpg,other_animal,White-bellied Pangolin,iNaturalist,0,0.9759,1,238 0 1001 662,1024,685,2.93
+test/other_animal/animal-pangolin_inat183886958_p320882427.jpg,other_animal,Black-bellied Pangolin,iNaturalist,0,0.0,0,,1024,683,2.93
+test/other_animal/animal-pangolin_inat243354392_p433927666.jpg,other_animal,Temminck's Ground Pangolin,iNaturalist,0,0.9726,3,326 306 447 389,1024,576,3.18
+test/other_animal/animal-pangolin_inat256665280_p460243395.jpg,other_animal,Temminck's Ground Pangolin,iNaturalist,0,0.9942,1,41 229 944 571,1024,683,3.01
+test/other_animal/animal-pangolin_inat269794325_p485135162.jpg,other_animal,Taiwan Pangolin,iNaturalist,0,0.9952,1,486 337 656 591,768,1024,2.69
+test/other_animal/animal-pangolin_inat292618829_p526600614.jpg,other_animal,White-bellied Pangolin,iNaturalist,0,0.8952,1,14 97 796 768,1024,768,2.58
+test/other_animal/animal-pangolin_inat29434404_p45937950.jpg,other_animal,Temminck's Ground Pangolin,iNaturalist,0,0.962,1,52 387 673 600,712,949,2.59
+test/other_animal/animal-pangolin_inat310190481_p559811464.jpg,other_animal,Temminck's Ground Pangolin,iNaturalist,0,0.9389,2,42 130 730 979,771,1024,2.72
+test/other_animal/animal-pangolin_inat339468755_p617544562.jpg,other_animal,Black-bellied Pangolin,iNaturalist,0,0.0,0,,1024,683,2.83
+test/other_animal/animal-pangolin_inat4779137_p5821899.jpg,other_animal,Black-bellied Pangolin,iNaturalist,0,0.5116,1,354 131 681 267,800,600,2.66
+test/other_animal/animal-pangolin_inat66087558_p106462331.jpg,other_animal,Sunda Pangolin,iNaturalist,0,0.8363,1,276 120 1015 542,1024,683,2.91
+test/other_animal/animal-sea-creature_inat101794627_p170043988.jpg,other_animal,Purple-brown Urchin,iNaturalist,0,0.0,0,,768,1024,2.73
+test/other_animal/animal-sea-creature_inat1383113_p1709046.jpg,other_animal,Woody Chiton,iNaturalist,0,0.9671,1,194 235 874 599,1024,920,2.25
+test/other_animal/animal-sea-creature_inat16873715_p25485104.jpg,other_animal,Atlantic Horseshoe Crab,iNaturalist,0,0.0,0,,768,1024,2.67
+test/other_animal/animal-sea-creature_inat19628094_p30221671.jpg,other_animal,Atlantic Horseshoe Crab,iNaturalist,0,0.8482,2,269 224 605 598,1024,768,2.67
+test/other_animal/animal-sea-creature_inat289196777_p520137556.jpg,other_animal,Texas Lightning Whelk,iNaturalist,0,0.581,1,0 319 768 1024,768,1024,2.88
+test/other_animal/animal-sea-creature_inat326171471_p590691410.jpg,other_animal,Two-banded Sea Star,iNaturalist,0,0.0,0,,768,1024,2.62
+test/other_animal/animal-sea-creature_inat328646264_p595576938.jpg,other_animal,Portuguese Man o' War,iNaturalist,0,0.5271,1,250 55 281 69,1024,768,2.57
+test/other_animal/animal-sea-creature_inat332987551_p604440608.jpg,other_animal,Purple-brown Urchin,iNaturalist,0,0.0,0,,768,1024,2.63
+test/other_animal/animal-sea-creature_inat335397530_p609289480.jpg,other_animal,Two-banded Sea Star,iNaturalist,0,0.0,0,,1024,1024,1.93
+test/other_animal/animal-sea-creature_inat6003292_p7612539.jpg,other_animal,Atlantic Horseshoe Crab,iNaturalist,0,0.9935,1,203 193 551 372,1020,600,3.33
+test/other_animal/animal-sea-creature_inat9566066_p13056826.jpg,other_animal,Cannonball Jelly,iNaturalist,0,0.96,1,189 284 626 763,768,1024,2.78
+test/tortoise/inat-tortoise_inat111531724_p188289979.jpg,tortoise,Texas tortoise,iNaturalist,1,0.9987,1,113 340 701 643,1024,791,2.68
+test/tortoise/inat-tortoise_inat113893384_p192372863.jpg,tortoise,Texas tortoise,iNaturalist,1,0.9988,1,51 232 608 623,768,1024,2.7
+test/tortoise/inat-tortoise_inat122849945_p208044730.jpg,tortoise,Texas tortoise,iNaturalist,1,0.9855,1,150 224 482 496,685,664,2.09
+test/tortoise/inat-tortoise_inat123901731_p209951120.jpg,tortoise,Texas tortoise,iNaturalist,1,0.9984,1,73 1 765 567,768,1024,2.59
+test/tortoise/inat-tortoise_inat13134287_p19152068.jpg,tortoise,Texas tortoise,iNaturalist,1,0.9789,4,25 14 625 627,1024,681,2.87
+test/tortoise/inat-tortoise_inat136362745_p232714869.jpg,tortoise,Texas tortoise,iNaturalist,1,0.9989,1,232 126 951 574,1024,652,3.09
+test/tortoise/inat-tortoise_inat1413764_p1749267.jpg,tortoise,Texas tortoise,iNaturalist,1,0.9994,1,148 188 849 633,1024,754,2.61
+test/tortoise/inat-tortoise_inat144491405_p248002221.jpg,tortoise,Texas tortoise,iNaturalist,1,0.9913,1,165 5 963 539,1024,576,3.19
+test/tortoise/inat-tortoise_inat147629139_p254064177.jpg,tortoise,Texas tortoise,iNaturalist,1,0.9989,1,113 203 965 850,1021,1024,2.2
+test/tortoise/inat-tortoise_inat1485771_p1841205.jpg,tortoise,Texas tortoise,iNaturalist,1,0.9997,1,230 64 720 434,720,434,3.12
+test/tortoise/inat-tortoise_inat152759377_p263745968.jpg,tortoise,Texas tortoise,iNaturalist,1,0.9994,1,104 328 681 830,768,1024,2.47
+test/tortoise/inat-tortoise_inat154035212_p266112717.jpg,tortoise,Texas tortoise,iNaturalist,1,0.999,1,16 8 855 619,1024,768,2.64
+test/tortoise/inat-tortoise_inat155407175_p268631962.jpg,tortoise,Texas tortoise,iNaturalist,1,0.9988,1,207 206 503 368,1024,768,2.56
+test/tortoise/inat-tortoise_inat157845710_p272861980.jpg,tortoise,Texas tortoise,iNaturalist,1,0.9943,2,191 14 1024 719,1024,768,2.62
+test/tortoise/inat-tortoise_inat157858338_p272883280.jpg,tortoise,Texas tortoise,iNaturalist,1,0.9991,2,206 510 329 625,1024,723,3.17
+test/tortoise/inat-tortoise_inat159868364_p276235376.jpg,tortoise,Texas tortoise,iNaturalist,1,0.9808,1,0 278 355 613,473,1024,3.18
+test/tortoise/inat-tortoise_inat159868366_p276235388.jpg,tortoise,Texas tortoise,iNaturalist,1,0.9999,1,138 452 317 596,473,1024,2.77
+test/tortoise/inat-tortoise_inat159868367_p276235407.jpg,tortoise,Texas tortoise,iNaturalist,1,0.9905,1,167 469 328 589,473,1024,2.81
+test/tortoise/inat-tortoise_inat160095741_p276632449.jpg,tortoise,Texas tortoise,iNaturalist,1,0.9997,1,291 233 462 435,768,1024,2.78
+test/tortoise/inat-tortoise_inat160968085_p278197651.jpg,tortoise,Texas tortoise,iNaturalist,1,0.9995,1,43 327 544 706,768,1024,2.46
+test/tortoise/inat-tortoise_inat167114722_p289458074.jpg,tortoise,Texas tortoise,iNaturalist,1,0.9992,1,129 358 407 541,461,1024,2.64
+test/tortoise/inat-tortoise_inat167522461_p290212547.jpg,tortoise,Texas tortoise,iNaturalist,1,0.9996,1,208 289 540 661,768,1024,2.79
+test/tortoise/inat-tortoise_inat17530103_p26682149.jpg,tortoise,Texas tortoise,iNaturalist,1,0.9994,1,7 66 898 646,1024,649,3.13
+test/tortoise/inat-tortoise_inat178639176_p310885514.jpg,tortoise,Texas tortoise,iNaturalist,1,0.9977,1,129 129 933 728,1024,768,2.94
+test/tortoise/inat-tortoise_inat181073413_p315525715.jpg,tortoise,Texas tortoise,iNaturalist,1,0.9936,1,96 212 747 1004,768,1024,3.12
+test/tortoise/inat-tortoise_inat186952897_p326822891.jpg,tortoise,Texas tortoise,iNaturalist,1,0.9404,1,194 372 678 686,1024,768,3.06
+test/tortoise/inat-tortoise_inat18903775_p28971436.jpg,tortoise,Texas tortoise,iNaturalist,1,0.9996,1,111 103 638 477,1024,683,3.13
+test/tortoise/inat-tortoise_inat190032430_p333040988.jpg,tortoise,Texas tortoise,iNaturalist,1,0.9998,1,334 191 723 639,1024,768,2.78
+test/tortoise/inat-tortoise_inat190252328_p333461423.jpg,tortoise,Texas tortoise,iNaturalist,1,0.9993,1,43 93 729 527,1024,683,3.34
+test/tortoise/inat-tortoise_inat19853289_p30608937.jpg,tortoise,Texas tortoise,iNaturalist,1,0.9993,1,338 279 661 548,1024,744,3.18
+test/tortoise/inat-tortoise_inat198758732_p350382933.jpg,tortoise,Texas tortoise,iNaturalist,1,0.9975,1,250 52 712 391,1024,768,2.96
+test/tortoise/inat-tortoise_inat198762802_p350391764.jpg,tortoise,Texas tortoise,iNaturalist,1,0.9563,2,144 337 637 634,768,1024,3.04
+test/tortoise/inat-tortoise_inat1988782_p2426040.jpg,tortoise,Texas tortoise,iNaturalist,1,0.9994,1,80 126 327 296,568,426,2.72
+test/tortoise/inat-tortoise_inat200087881_p352952691.jpg,tortoise,Texas tortoise,iNaturalist,1,0.9999,2,157 479 703 765,768,1024,2.85
+test/tortoise/inat-tortoise_inat200219018_p353205792.jpg,tortoise,Texas tortoise,iNaturalist,1,0.9956,2,4 444 389 761,460,1024,2.74
+test/tortoise/inat-tortoise_inat200469198_p353696395.jpg,tortoise,Texas tortoise,iNaturalist,1,0.9962,1,391 378 648 484,1024,891,2.36
+test/tortoise/inat-tortoise_inat206969371_p366043134.jpg,tortoise,Texas tortoise,iNaturalist,1,0.9994,1,108 430 597 721,768,1024,2.86
+test/tortoise/inat-tortoise_inat208295424_p368526371.jpg,tortoise,Texas tortoise,iNaturalist,1,0.9995,1,170 409 517 586,1024,768,3.57
+test/tortoise/inat-tortoise_inat217522058_p384821051.jpg,tortoise,Texas tortoise,iNaturalist,1,0.9991,1,41 3 847 685,1024,768,3.16
+test/tortoise/inat-tortoise_inat219799534_p389081519.jpg,tortoise,Texas tortoise,iNaturalist,1,0.9956,1,180 292 679 705,768,1024,2.98
+test/tortoise/inat-tortoise_inat221203893_p391718964.jpg,tortoise,Texas tortoise,iNaturalist,1,0.9995,1,226 193 540 582,768,1024,2.91
+test/tortoise/inat-tortoise_inat221382451_p392042027.jpg,tortoise,Texas tortoise,iNaturalist,1,0.9993,1,153 174 799 561,1024,768,3.03
+test/tortoise/inat-tortoise_inat224019746_p396988791.jpg,tortoise,Texas tortoise,iNaturalist,1,0.9989,4,83 38 713 716,768,1024,2.83
+test/tortoise/inat-tortoise_inat232520515_p413137346.jpg,tortoise,Texas tortoise,iNaturalist,1,0.9959,1,288 425 506 747,768,1024,2.83
+test/tortoise/inat-tortoise_inat237994113_p423638535.jpg,tortoise,Texas tortoise,iNaturalist,1,0.9995,1,0 299 606 757,768,1024,2.66
+test/tortoise/inat-tortoise_inat240024936_p427571339.jpg,tortoise,Texas tortoise,iNaturalist,1,0.9999,2,189 572 374 715,768,1024,2.69
+test/tortoise/inat-tortoise_inat240025370_p427572029.jpg,tortoise,Texas tortoise,iNaturalist,1,0.9996,1,195 482 493 843,768,1024,2.76
+test/tortoise/inat-tortoise_inat2401499_p2677754.jpg,tortoise,Texas tortoise,iNaturalist,1,0.9994,1,133 191 896 611,1024,681,3.12
+test/tortoise/inat-tortoise_inat24239180_p37483950.jpg,tortoise,Texas tortoise,iNaturalist,1,0.9969,1,75 24 961 742,1024,768,3.88
+test/tortoise/inat-tortoise_inat245448352_p437990913.jpg,tortoise,Texas tortoise,iNaturalist,1,0.9995,1,193 514 450 724,576,1024,3.17
+test/tortoise/inat-tortoise_inat247126897_p441307069.jpg,tortoise,Texas tortoise,iNaturalist,1,0.9998,1,208 410 491 650,768,1024,2.81
+test/tortoise/inat-tortoise_inat247712569_p442478250.jpg,tortoise,Texas tortoise,iNaturalist,1,0.9995,1,360 147 889 501,1024,768,2.93
+test/tortoise/inat-tortoise_inat253891852_p454668960.jpg,tortoise,Texas tortoise,iNaturalist,1,0.9971,1,32 371 314 562,473,1024,2.85
+test/tortoise/inat-tortoise_inat257136792_p461207754.jpg,tortoise,Texas tortoise,iNaturalist,1,0.9997,1,24 310 995 890,1024,1024,2.29
+test/tortoise/inat-tortoise_inat2580463_p2880541.jpg,tortoise,Texas tortoise,iNaturalist,1,0.9988,1,190 79 659 527,1024,683,3.03
+test/tortoise/inat-tortoise_inat261756814_p470309593.jpg,tortoise,Texas tortoise,iNaturalist,1,0.9977,1,254 139 727 510,1024,714,2.87
+test/tortoise/inat-tortoise_inat26443697_p41062946.jpg,tortoise,Texas tortoise,iNaturalist,1,0.9988,1,188 173 894 528,1024,670,3.58
+test/tortoise/inat-tortoise_inat26935322_p41855369.jpg,tortoise,Texas tortoise,iNaturalist,1,0.9636,1,103 253 645 762,768,1024,2.98
+test/tortoise/inat-tortoise_inat27245486_p42370787.jpg,tortoise,Texas tortoise,iNaturalist,1,0.9998,1,230 463 499 728,768,1024,3.22
+test/tortoise/inat-tortoise_inat275554434_p495115507.jpg,tortoise,Texas tortoise,iNaturalist,1,0.9995,1,187 325 549 805,771,1024,3.18
+test/tortoise/inat-tortoise_inat275555628_p495117070.jpg,tortoise,Texas tortoise,iNaturalist,1,0.9995,1,193 355 771 1024,771,1024,3.01
+test/tortoise/inat-tortoise_inat276607976_p496717006.jpg,tortoise,Texas tortoise,iNaturalist,1,0.9993,1,147 278 570 513,1024,768,2.88
+test/tortoise/inat-tortoise_inat282698715_p507915502.jpg,tortoise,Texas tortoise,iNaturalist,1,0.9995,1,244 484 713 755,768,1024,3.15
+test/tortoise/inat-tortoise_inat283444898_p509307933.jpg,tortoise,Texas tortoise,iNaturalist,1,0.9995,1,232 159 1012 675,1024,768,3.36
+test/tortoise/inat-tortoise_inat288879190_p519542456.jpg,tortoise,Texas tortoise,iNaturalist,1,0.9996,1,211 361 538 638,768,1024,2.78
+test/tortoise/inat-tortoise_inat294241206_p529605951.jpg,tortoise,Texas tortoise,iNaturalist,1,0.9681,1,263 336 593 709,768,1024,2.75
+test/tortoise/inat-tortoise_inat294241791_p529607238.jpg,tortoise,Texas tortoise,iNaturalist,1,0.9975,2,299 360 563 728,768,1024,2.69
+test/tortoise/inat-tortoise_inat297785955_p536327115.jpg,tortoise,Texas tortoise,iNaturalist,1,0.9998,1,427 230 672 410,1024,768,2.68
+test/tortoise/inat-tortoise_inat30006178_p46856512.jpg,tortoise,Texas tortoise,iNaturalist,1,0.9994,1,151 163 807 593,1024,686,2.94
+test/tortoise/inat-tortoise_inat302247_p374826.jpg,tortoise,Texas tortoise,iNaturalist,1,0.9985,2,4 0 638 534,800,600,2.95
+test/tortoise/inat-tortoise_inat30329297_p47376394.jpg,tortoise,Texas tortoise,iNaturalist,1,0.9417,1,225 318 594 698,768,1024,2.66
+test/tortoise/inat-tortoise_inat305515499_p550862342.jpg,tortoise,Texas tortoise,iNaturalist,1,0.9992,1,10 225 588 631,771,1024,2.61
+test/tortoise/inat-tortoise_inat310453_p385219.jpg,tortoise,Texas tortoise,iNaturalist,1,0.9998,1,126 51 748 557,1024,768,2.51
+test/tortoise/inat-tortoise_inat310489_p385264.jpg,tortoise,Texas tortoise,iNaturalist,1,0.9998,1,277 191 712 469,864,648,2.62
+test/tortoise/inat-tortoise_inat310556_p385341.jpg,tortoise,Texas tortoise,iNaturalist,1,0.9989,1,252 149 691 436,864,644,2.73
+test/tortoise/inat-tortoise_inat311322745_p561985753.jpg,tortoise,Texas tortoise,iNaturalist,1,0.9986,2,67 410 483 682,576,1024,3.23
 test/tortoise/inat-tortoise_inat316878923_p572553042.jpg,tortoise,Texas tortoise,iNaturalist,1,0.9992,1,147 215 596 669,768,1024,2.91
-test/tortoise/inat-tortoise_inat320263962_p579018752.jpg,tortoise,Texas tortoise,iNaturalist,1,0.9934,1,293 110 1001 739,1024,768,2.91
-test/tortoise/inat-tortoise_inat320872764_p580217428.jpg,tortoise,Texas tortoise,iNaturalist,1,0.9994,2,81 293 575 645,768,1024,2.95
-test/tortoise/inat-tortoise_inat322853078_p584116873.jpg,tortoise,Texas tortoise,iNaturalist,1,0.9997,1,397 280 681 499,1024,768,2.88
-test/tortoise/inat-tortoise_inat327171991_p592677689.jpg,tortoise,Texas tortoise,iNaturalist,1,0.9995,1,112 242 638 743,768,1024,2.9
+test/tortoise/inat-tortoise_inat320263962_p579018752.jpg,tortoise,Texas tortoise,iNaturalist,1,0.9934,1,293 110 1001 739,1024,768,2.87
+test/tortoise/inat-tortoise_inat320872764_p580217428.jpg,tortoise,Texas tortoise,iNaturalist,1,0.9994,2,81 293 575 645,768,1024,2.81
+test/tortoise/inat-tortoise_inat322853078_p584116873.jpg,tortoise,Texas tortoise,iNaturalist,1,0.9997,1,397 280 681 499,1024,768,2.86
+test/tortoise/inat-tortoise_inat327171991_p592677689.jpg,tortoise,Texas tortoise,iNaturalist,1,0.9995,1,112 242 638 743,768,1024,3.41
 test/tortoise/inat-tortoise_inat327680785_p593687506.jpg,tortoise,Texas tortoise,iNaturalist,1,0.9995,1,148 497 329 621,576,1024,3.44
-test/tortoise/inat-tortoise_inat330369597_p599057368.jpg,tortoise,Texas tortoise,iNaturalist,1,0.9993,1,274 115 630 460,1024,576,3.51
-test/tortoise/inat-tortoise_inat330726163_p599794626.jpg,tortoise,Texas tortoise,iNaturalist,1,0.9996,1,155 133 823 545,1024,768,3.04
-test/tortoise/inat-tortoise_inat33223031_p52162973.jpg,tortoise,Texas tortoise,iNaturalist,1,0.9981,1,247 164 787 632,1024,768,3.23
-test/tortoise/inat-tortoise_inat336362982_p611226247.jpg,tortoise,Texas tortoise,iNaturalist,1,0.9883,1,136 407 499 688,1024,768,3.05
-test/tortoise/inat-tortoise_inat337011123_p612543189.jpg,tortoise,Texas tortoise,iNaturalist,1,0.9991,1,154 151 660 511,1024,683,3.6
-test/tortoise/inat-tortoise_inat343456633_p625644605.jpg,tortoise,Texas tortoise,iNaturalist,1,0.9987,1,116 515 527 882,768,1024,2.96
-test/tortoise/inat-tortoise_inat346316715_p631270346.jpg,tortoise,Texas tortoise,iNaturalist,1,0.9996,1,339 421 525 558,768,1024,2.92
-test/tortoise/inat-tortoise_inat347118507_p632854199.jpg,tortoise,Texas tortoise,iNaturalist,1,0.9999,1,261 391 550 591,768,1024,2.93
-test/tortoise/inat-tortoise_inat350050908_p638638836.jpg,tortoise,Texas tortoise,iNaturalist,1,0.9995,1,210 248 650 556,1024,768,2.94
-test/tortoise/inat-tortoise_inat354037005_p645912824.jpg,tortoise,Texas tortoise,iNaturalist,1,0.9993,2,79 646 349 877,768,1024,3.09
-test/tortoise/inat-tortoise_inat35567802_p56097103.jpg,tortoise,Texas tortoise,iNaturalist,1,0.9997,1,56 36 862 569,1024,768,3.27
-test/tortoise/inat-tortoise_inat358384739_p653774184.jpg,tortoise,Texas tortoise,iNaturalist,1,0.9968,2,192 230 852 805,1024,936,2.89
-test/tortoise/inat-tortoise_inat358632834_p654255676.jpg,tortoise,Texas tortoise,iNaturalist,1,0.9901,1,131 254 461 611,576,1024,3.52
-test/tortoise/inat-tortoise_inat362449262_p661530096.jpg,tortoise,Texas tortoise,iNaturalist,1,0.9996,1,244 232 826 622,1024,768,2.91
-test/tortoise/inat-tortoise_inat363496792_p663530010.jpg,tortoise,Texas tortoise,iNaturalist,1,0.9988,1,296 657 357 697,610,1024,3.49
-test/tortoise/inat-tortoise_inat363718127_p663951052.jpg,tortoise,Texas tortoise,iNaturalist,1,0.9999,1,149 327 370 470,576,1024,3.4
-test/tortoise/inat-tortoise_inat363844950_p664191466.jpg,tortoise,Texas tortoise,iNaturalist,1,0.9999,1,356 350 725 533,1024,768,3.05
-test/tortoise/inat-tortoise_inat36398580_p57532337.jpg,tortoise,Texas tortoise,iNaturalist,1,0.9984,1,192 142 981 639,1024,668,3.33
-test/tortoise/inat-tortoise_inat366077557_p668405368.jpg,tortoise,Texas tortoise,iNaturalist,1,0.9987,1,280 158 719 442,1024,768,3.0
-test/tortoise/inat-tortoise_inat366082272_p668429561.jpg,tortoise,Texas tortoise,iNaturalist,1,0.9997,1,254 125 783 506,1024,768,3.09
-test/tortoise/inat-tortoise_inat366083020_p668431292.jpg,tortoise,Texas tortoise,iNaturalist,1,0.9995,1,415 326 613 425,1024,768,2.9
-test/tortoise/inat-tortoise_inat367555611_p671247252.jpg,tortoise,Texas tortoise,iNaturalist,1,0.9999,1,286 251 571 450,1024,768,2.95
-test/tortoise/inat-tortoise_inat368103712_p672289199.jpg,tortoise,Texas tortoise,iNaturalist,1,0.9993,1,315 146 933 536,1024,683,3.18
-test/tortoise/inat-tortoise_inat371141362_p678091570.jpg,tortoise,Texas tortoise,iNaturalist,1,0.9987,1,381 400 626 584,768,1024,2.92
-test/tortoise/inat-tortoise_inat375727409_p686913673.jpg,tortoise,Texas tortoise,iNaturalist,1,0.9994,1,15 251 526 678,768,1024,2.94
-test/tortoise/inat-tortoise_inat376871073_p689113169.jpg,tortoise,Texas tortoise,iNaturalist,1,0.9996,1,335 384 892 872,1024,1024,2.33
-test/tortoise/inat-tortoise_inat381344008_p697759018.jpg,tortoise,Texas tortoise,iNaturalist,1,0.9995,1,82 338 450 634,576,1024,3.27
-test/tortoise/inat-tortoise_inat382058603_p699142468.jpg,tortoise,Texas tortoise,iNaturalist,1,0.9967,1,138 384 420 749,576,1024,3.32
-test/tortoise/inat-tortoise_inat3904964_p4589245.jpg,tortoise,Texas tortoise,iNaturalist,1,0.9994,1,430 310 721 555,1024,768,2.97
-test/tortoise/inat-tortoise_inat3904988_p4589272.jpg,tortoise,Texas tortoise,iNaturalist,1,0.9997,1,407 328 638 502,1024,768,2.9
+test/tortoise/inat-tortoise_inat32799881_p51470006.jpg,tortoise,Texas tortoise,iNaturalist,1,0.9871,1,73 173 723 911,768,1024,3.1
+test/tortoise/inat-tortoise_inat330369597_p599057368.jpg,tortoise,Texas tortoise,iNaturalist,1,0.9993,1,274 115 630 460,1024,576,3.72
+test/tortoise/inat-tortoise_inat330726163_p599794626.jpg,tortoise,Texas tortoise,iNaturalist,1,0.9996,1,155 133 823 545,1024,768,3.0
+test/tortoise/inat-tortoise_inat33223031_p52162973.jpg,tortoise,Texas tortoise,iNaturalist,1,0.9981,1,247 164 787 632,1024,768,3.15
+test/tortoise/inat-tortoise_inat336362982_p611226247.jpg,tortoise,Texas tortoise,iNaturalist,1,0.9883,1,136 407 499 688,1024,768,3.15
+test/tortoise/inat-tortoise_inat337011123_p612543189.jpg,tortoise,Texas tortoise,iNaturalist,1,0.9991,1,154 151 660 511,1024,683,3.35
+test/tortoise/inat-tortoise_inat343456633_p625644605.jpg,tortoise,Texas tortoise,iNaturalist,1,0.9987,1,116 515 527 882,768,1024,2.94
+test/tortoise/inat-tortoise_inat346316715_p631270346.jpg,tortoise,Texas tortoise,iNaturalist,1,0.9996,1,339 421 525 558,768,1024,3.27
+test/tortoise/inat-tortoise_inat347118507_p632854199.jpg,tortoise,Texas tortoise,iNaturalist,1,0.9999,1,261 391 550 591,768,1024,2.88
+test/tortoise/inat-tortoise_inat350050908_p638638836.jpg,tortoise,Texas tortoise,iNaturalist,1,0.9995,1,210 248 650 556,1024,768,2.74
+test/tortoise/inat-tortoise_inat354037005_p645912824.jpg,tortoise,Texas tortoise,iNaturalist,1,0.9993,2,79 646 349 877,768,1024,2.73
+test/tortoise/inat-tortoise_inat35567802_p56097103.jpg,tortoise,Texas tortoise,iNaturalist,1,0.9997,1,56 36 862 569,1024,768,2.66
+test/tortoise/inat-tortoise_inat358384739_p653774184.jpg,tortoise,Texas tortoise,iNaturalist,1,0.9968,2,192 230 852 805,1024,936,2.28
+test/tortoise/inat-tortoise_inat358632834_p654255676.jpg,tortoise,Texas tortoise,iNaturalist,1,0.9901,1,131 254 461 611,576,1024,3.1
+test/tortoise/inat-tortoise_inat362449262_p661530096.jpg,tortoise,Texas tortoise,iNaturalist,1,0.9996,1,244 232 826 622,1024,768,2.73
+test/tortoise/inat-tortoise_inat363496792_p663530010.jpg,tortoise,Texas tortoise,iNaturalist,1,0.9988,1,296 657 357 697,610,1024,3.06
+test/tortoise/inat-tortoise_inat363718127_p663951052.jpg,tortoise,Texas tortoise,iNaturalist,1,0.9999,1,149 327 370 470,576,1024,3.07
+test/tortoise/inat-tortoise_inat363844950_p664191466.jpg,tortoise,Texas tortoise,iNaturalist,1,0.9999,1,356 350 725 533,1024,768,2.58
+test/tortoise/inat-tortoise_inat36398580_p57532337.jpg,tortoise,Texas tortoise,iNaturalist,1,0.9984,1,192 142 981 639,1024,668,3.32
+test/tortoise/inat-tortoise_inat366077557_p668405368.jpg,tortoise,Texas tortoise,iNaturalist,1,0.9987,1,280 158 719 442,1024,768,2.91
+test/tortoise/inat-tortoise_inat366082272_p668429561.jpg,tortoise,Texas tortoise,iNaturalist,1,0.9997,1,254 125 783 506,1024,768,2.68
+test/tortoise/inat-tortoise_inat366083020_p668431292.jpg,tortoise,Texas tortoise,iNaturalist,1,0.9995,1,415 326 613 425,1024,768,2.81
+test/tortoise/inat-tortoise_inat367555611_p671247252.jpg,tortoise,Texas tortoise,iNaturalist,1,0.9999,1,286 251 571 450,1024,768,2.78
+test/tortoise/inat-tortoise_inat368103712_p672289199.jpg,tortoise,Texas tortoise,iNaturalist,1,0.9993,1,315 146 933 536,1024,683,2.87
+test/tortoise/inat-tortoise_inat371141362_p678091570.jpg,tortoise,Texas tortoise,iNaturalist,1,0.9987,1,381 400 626 584,768,1024,2.62
+test/tortoise/inat-tortoise_inat375727409_p686913673.jpg,tortoise,Texas tortoise,iNaturalist,1,0.9994,1,15 251 526 678,768,1024,2.79
+test/tortoise/inat-tortoise_inat376871073_p689113169.jpg,tortoise,Texas tortoise,iNaturalist,1,0.9996,1,335 384 892 872,1024,1024,2.08
+test/tortoise/inat-tortoise_inat381344008_p697759018.jpg,tortoise,Texas tortoise,iNaturalist,1,0.9995,1,82 338 450 634,576,1024,3.19
+test/tortoise/inat-tortoise_inat382058603_p699142468.jpg,tortoise,Texas tortoise,iNaturalist,1,0.9967,1,138 384 420 749,576,1024,2.94
+test/tortoise/inat-tortoise_inat3904964_p4589245.jpg,tortoise,Texas tortoise,iNaturalist,1,0.9994,1,430 310 721 555,1024,768,2.66
+test/tortoise/inat-tortoise_inat3904988_p4589272.jpg,tortoise,Texas tortoise,iNaturalist,1,0.9997,1,407 328 638 502,1024,768,2.7
 test/tortoise/inat-tortoise_inat3904995_p4589288.jpg,tortoise,Texas tortoise,iNaturalist,1,0.9968,1,469 359 669 498,1024,768,2.9
-test/tortoise/inat-tortoise_inat3905021_p4589341.jpg,tortoise,Texas tortoise,iNaturalist,1,0.9983,1,442 209 640 319,1024,768,2.85
-test/tortoise/inat-tortoise_inat3905084_p4589355.jpg,tortoise,Texas tortoise,iNaturalist,1,0.9992,1,365 235 789 551,1024,768,2.92
-test/tortoise/inat-tortoise_inat3915709_p4605570.jpg,tortoise,Texas tortoise,iNaturalist,1,0.9986,1,53 27 934 617,1024,768,2.89
-test/tortoise/inat-tortoise_inat391758520_p717874646.jpg,tortoise,Texas tortoise,iNaturalist,1,0.9996,1,187 281 490 699,768,1024,3.01
-test/tortoise/inat-tortoise_inat391758673_p717875172.jpg,tortoise,Texas tortoise,iNaturalist,1,0.9941,1,292 374 624 840,768,1024,2.92
-test/tortoise/inat-tortoise_inat394949303_p724117742.jpg,tortoise,Texas tortoise,iNaturalist,1,0.9994,1,175 494 593 785,768,1024,2.89
-test/tortoise/inat-tortoise_inat396796667_p727689310.jpg,tortoise,Texas tortoise,iNaturalist,1,0.9996,1,105 128 775 528,1024,683,3.26
-test/tortoise/inat-tortoise_inat401538153_p737007074.jpg,tortoise,Texas tortoise,iNaturalist,1,0.9969,1,27 305 431 653,473,1024,3.17
-test/tortoise/inat-tortoise_inat407006050_p747868194.jpg,tortoise,Texas tortoise,iNaturalist,1,0.9991,1,251 222 732 509,1024,727,3.13
-test/tortoise/inat-tortoise_inat411652803_p757326777.jpg,tortoise,Texas tortoise,iNaturalist,1,0.991,2,81 379 690 902,768,1024,2.92
-test/tortoise/inat-tortoise_inat413403168_p760854637.jpg,tortoise,Texas tortoise,iNaturalist,1,0.9998,1,224 362 565 711,768,1024,2.98
-test/tortoise/inat-tortoise_inat413814620_p761679038.jpg,tortoise,Texas tortoise,iNaturalist,1,0.9983,1,252 274 687 739,1024,768,2.95
-test/tortoise/inat-tortoise_inat414375314_p762828560.jpg,tortoise,Texas tortoise,iNaturalist,1,0.9901,1,107 221 870 726,1024,1024,2.3
-test/tortoise/inat-tortoise_inat414537288_p763130789.jpg,tortoise,Texas tortoise,iNaturalist,1,0.9542,1,250 46 958 477,1024,683,3.18
-test/tortoise/inat-tortoise_inat415088654_p764266293.jpg,tortoise,Texas tortoise,iNaturalist,1,0.9998,1,315 487 563 673,768,1024,2.98
-test/tortoise/inat-tortoise_inat46518697_p73780974.jpg,tortoise,Texas tortoise,iNaturalist,1,0.9999,1,212 559 420 731,768,1024,2.95
-test/tortoise/inat-tortoise_inat49191620_p78084311.jpg,tortoise,Texas tortoise,iNaturalist,1,0.9995,2,96 174 560 642,1024,768,2.89
-test/tortoise/inat-tortoise_inat49531600_p78631365.jpg,tortoise,Texas tortoise,iNaturalist,1,0.8855,1,225 397 646 723,768,1024,2.89
-test/tortoise/inat-tortoise_inat50008081_p79403012.jpg,tortoise,Texas tortoise,iNaturalist,1,0.9996,2,320 215 703 529,1024,683,3.45
-test/tortoise/inat-tortoise_inat50015197_p79414426.jpg,tortoise,Texas tortoise,iNaturalist,1,0.9879,1,1 351 49 526,1024,576,3.41
-test/tortoise/inat-tortoise_inat50047505_p79468155.jpg,tortoise,Texas tortoise,iNaturalist,1,0.9995,1,104 267 543 630,768,1024,2.9
-test/tortoise/inat-tortoise_inat50310447_p79880694.jpg,tortoise,Texas tortoise,iNaturalist,1,0.9998,1,330 183 858 589,1024,797,2.82
-test/tortoise/inat-tortoise_inat50321959_p79902201.jpg,tortoise,Texas tortoise,iNaturalist,1,0.9971,1,361 298 766 545,1024,684,3.2
-test/tortoise/inat-tortoise_inat50321990_p79902567.jpg,tortoise,Texas tortoise,iNaturalist,1,0.9972,1,281 182 785 538,1024,684,3.18
-test/tortoise/inat-tortoise_inat51418907_p81692497.jpg,tortoise,Texas tortoise,iNaturalist,1,0.9993,1,161 236 632 579,1024,768,2.91
-test/tortoise/inat-tortoise_inat5206995_p6428789.jpg,tortoise,Texas tortoise,iNaturalist,1,0.9849,1,147 283 911 1024,1024,1024,2.33
-test/tortoise/inat-tortoise_inat52812370_p83974716.jpg,tortoise,Texas tortoise,iNaturalist,1,0.9997,1,293 237 736 489,1024,683,3.38
-test/tortoise/inat-tortoise_inat56893721_p90701181.jpg,tortoise,Texas tortoise,iNaturalist,1,0.9993,1,138 68 988 746,1024,768,2.98
-test/tortoise/inat-tortoise_inat5821725_p7241032.jpg,tortoise,Texas tortoise,iNaturalist,1,0.999,1,437 386 682 531,1024,768,2.86
-test/tortoise/inat-tortoise_inat58765822_p93842807.jpg,tortoise,Texas tortoise,iNaturalist,1,0.9944,1,141 150 768 1024,768,1024,2.91
-test/tortoise/inat-tortoise_inat59747333_p95487294.jpg,tortoise,Texas tortoise,iNaturalist,1,0.9808,1,133 100 941 687,1024,770,2.99
-test/tortoise/inat-tortoise_inat65309128_p105091852.jpg,tortoise,Texas tortoise,iNaturalist,1,0.9994,1,237 188 820 516,1024,683,3.36
-test/tortoise/inat-tortoise_inat66841332_p107846449.jpg,tortoise,Texas tortoise,iNaturalist,1,0.9988,1,138 289 700 580,1024,683,3.24
-test/tortoise/inat-tortoise_inat67765250_p109571794.jpg,tortoise,Texas tortoise,iNaturalist,1,0.9987,1,180 493 632 825,768,1024,2.93
-test/tortoise/inat-tortoise_inat68989459_p111845067.jpg,tortoise,Texas tortoise,iNaturalist,1,0.9995,1,17 369 271 740,498,1024,3.31
-test/tortoise/inat-tortoise_inat77338678_p126434787.jpg,tortoise,Texas tortoise,iNaturalist,1,0.9992,1,41 126 989 958,1024,1021,2.52
-test/tortoise/inat-tortoise_inat77503451_p126708599.jpg,tortoise,Texas tortoise,iNaturalist,1,0.9994,1,37 61 927 739,1024,869,2.66
-test/tortoise/inat-tortoise_inat80173568_p131379905.jpg,tortoise,Texas tortoise,iNaturalist,1,0.9996,1,318 261 624 571,1024,768,3.0
-test/tortoise/inat-tortoise_inat816680_p1030126.jpg,tortoise,Texas tortoise,iNaturalist,1,0.9999,1,131 242 259 341,426,568,2.9
-test/tortoise/inat-tortoise_inat84776616_p139375590.jpg,tortoise,Texas tortoise,iNaturalist,1,0.9949,1,310 489 528 824,768,1024,2.96
-test/tortoise/inat-tortoise_inat8804476_p11823863.jpg,tortoise,Texas tortoise,iNaturalist,1,0.9985,1,173 362 578 886,768,1024,2.99
-test/tortoise/inat-tortoise_inat88321385_p145708429.jpg,tortoise,Texas tortoise,iNaturalist,1,0.9988,1,190 196 903 593,1024,683,3.18
-test/tortoise/inat-tortoise_inat90337547_p149291400.jpg,tortoise,Texas tortoise,iNaturalist,1,0.9994,1,160 205 839 580,1024,797,2.81
-test/tortoise/inat-tortoise_inat90557736_p149677215.jpg,tortoise,Texas tortoise,iNaturalist,1,0.9996,1,174 245 699 518,1024,683,3.24
-test/tortoise/inat-tortoise_inat91717514_p151757016.jpg,tortoise,Texas tortoise,iNaturalist,1,0.9789,2,397 170 841 604,1024,683,3.2
-test/tortoise/inat-tortoise_inat94708694_p157140964.jpg,tortoise,Texas tortoise,iNaturalist,1,0.9996,1,224 157 805 591,1024,768,3.03
-test/tortoise/inat-tortoise_inat97489251_p162142025.jpg,tortoise,Texas tortoise,iNaturalist,1,0.9985,1,41 298 750 885,768,1024,2.95
-test/tortoise/inat-tortoise_inat98070563_p163209208.jpg,tortoise,Texas tortoise,iNaturalist,1,0.9965,1,194 210 710 617,1024,768,3.01
-test/tortoise/inat-tortoise_inat98304234_p163636339.jpg,tortoise,Texas tortoise,iNaturalist,1,0.9996,1,100 141 739 503,1024,683,3.21
-test/tortoise/inat-tortoise_inat98304246_p163636486.jpg,tortoise,Texas tortoise,iNaturalist,1,0.9999,1,108 141 806 565,1024,683,3.24
-test/tortoise/inat-tortoise_inat99718317_p166294796.jpg,tortoise,Texas tortoise,iNaturalist,1,0.9994,1,465 328 749 549,1024,768,2.92
-test/tortoise/inat-tortoise_inat99718593_p166295583.jpg,tortoise,Texas tortoise,iNaturalist,1,0.9969,1,249 140 982 595,1024,768,2.97
+test/tortoise/inat-tortoise_inat3905021_p4589341.jpg,tortoise,Texas tortoise,iNaturalist,1,0.9983,1,442 209 640 319,1024,768,2.77
+test/tortoise/inat-tortoise_inat3905084_p4589355.jpg,tortoise,Texas tortoise,iNaturalist,1,0.9992,1,365 235 789 551,1024,768,2.68
+test/tortoise/inat-tortoise_inat3915709_p4605570.jpg,tortoise,Texas tortoise,iNaturalist,1,0.9986,1,53 27 934 617,1024,768,2.74
+test/tortoise/inat-tortoise_inat391758520_p717874646.jpg,tortoise,Texas tortoise,iNaturalist,1,0.9996,1,187 281 490 699,768,1024,3.08
+test/tortoise/inat-tortoise_inat391758673_p717875172.jpg,tortoise,Texas tortoise,iNaturalist,1,0.9941,1,292 374 624 840,768,1024,3.01
+test/tortoise/inat-tortoise_inat394949303_p724117742.jpg,tortoise,Texas tortoise,iNaturalist,1,0.9994,1,175 494 593 785,768,1024,2.96
+test/tortoise/inat-tortoise_inat396796667_p727689310.jpg,tortoise,Texas tortoise,iNaturalist,1,0.9996,1,105 128 775 528,1024,683,3.08
+test/tortoise/inat-tortoise_inat401538153_p737007074.jpg,tortoise,Texas tortoise,iNaturalist,1,0.9969,1,27 305 431 653,473,1024,3.25
+test/tortoise/inat-tortoise_inat407006050_p747868194.jpg,tortoise,Texas tortoise,iNaturalist,1,0.9991,1,251 222 732 509,1024,727,3.18
+test/tortoise/inat-tortoise_inat411652803_p757326777.jpg,tortoise,Texas tortoise,iNaturalist,1,0.991,2,81 379 690 902,768,1024,2.66
+test/tortoise/inat-tortoise_inat413403168_p760854637.jpg,tortoise,Texas tortoise,iNaturalist,1,0.9998,1,224 362 565 711,768,1024,2.85
+test/tortoise/inat-tortoise_inat413814620_p761679038.jpg,tortoise,Texas tortoise,iNaturalist,1,0.9983,1,252 274 687 739,1024,768,2.79
+test/tortoise/inat-tortoise_inat414375314_p762828560.jpg,tortoise,Texas tortoise,iNaturalist,1,0.9901,1,107 221 870 726,1024,1024,2.13
+test/tortoise/inat-tortoise_inat414537288_p763130789.jpg,tortoise,Texas tortoise,iNaturalist,1,0.9542,1,250 46 958 477,1024,683,2.79
+test/tortoise/inat-tortoise_inat415088654_p764266293.jpg,tortoise,Texas tortoise,iNaturalist,1,0.9998,1,315 487 563 673,768,1024,2.56
+test/tortoise/inat-tortoise_inat46518697_p73780974.jpg,tortoise,Texas tortoise,iNaturalist,1,0.9999,1,212 559 420 731,768,1024,2.72
+test/tortoise/inat-tortoise_inat49191620_p78084311.jpg,tortoise,Texas tortoise,iNaturalist,1,0.9995,2,96 174 560 642,1024,768,2.48
+test/tortoise/inat-tortoise_inat49531600_p78631365.jpg,tortoise,Texas tortoise,iNaturalist,1,0.8855,1,225 397 646 723,768,1024,2.59
+test/tortoise/inat-tortoise_inat50008081_p79403012.jpg,tortoise,Texas tortoise,iNaturalist,1,0.9996,2,320 215 703 529,1024,683,2.86
+test/tortoise/inat-tortoise_inat50047505_p79468155.jpg,tortoise,Texas tortoise,iNaturalist,1,0.9995,1,104 267 543 630,768,1024,2.69
+test/tortoise/inat-tortoise_inat50310447_p79880694.jpg,tortoise,Texas tortoise,iNaturalist,1,0.9998,1,330 183 858 589,1024,797,2.61
+test/tortoise/inat-tortoise_inat50321959_p79902201.jpg,tortoise,Texas tortoise,iNaturalist,1,0.9971,1,361 298 766 545,1024,684,2.81
+test/tortoise/inat-tortoise_inat50321990_p79902567.jpg,tortoise,Texas tortoise,iNaturalist,1,0.9972,1,281 182 785 538,1024,684,2.93
+test/tortoise/inat-tortoise_inat51418907_p81692497.jpg,tortoise,Texas tortoise,iNaturalist,1,0.9993,1,161 236 632 579,1024,768,2.78
+test/tortoise/inat-tortoise_inat5206995_p6428789.jpg,tortoise,Texas tortoise,iNaturalist,1,0.9849,1,147 283 911 1024,1024,1024,2.11
+test/tortoise/inat-tortoise_inat52812370_p83974716.jpg,tortoise,Texas tortoise,iNaturalist,1,0.9997,1,293 237 736 489,1024,683,3.15
+test/tortoise/inat-tortoise_inat56893721_p90701181.jpg,tortoise,Texas tortoise,iNaturalist,1,0.9993,1,138 68 988 746,1024,768,2.76
+test/tortoise/inat-tortoise_inat5821725_p7241032.jpg,tortoise,Texas tortoise,iNaturalist,1,0.999,1,437 386 682 531,1024,768,2.73
+test/tortoise/inat-tortoise_inat58765822_p93842807.jpg,tortoise,Texas tortoise,iNaturalist,1,0.9944,1,141 150 768 1024,768,1024,2.76
+test/tortoise/inat-tortoise_inat59747333_p95487294.jpg,tortoise,Texas tortoise,iNaturalist,1,0.9808,1,133 100 941 687,1024,770,3.24
+test/tortoise/inat-tortoise_inat65309128_p105091852.jpg,tortoise,Texas tortoise,iNaturalist,1,0.9994,1,237 188 820 516,1024,683,2.96
+test/tortoise/inat-tortoise_inat66841332_p107846449.jpg,tortoise,Texas tortoise,iNaturalist,1,0.9988,1,138 289 700 580,1024,683,3.09
+test/tortoise/inat-tortoise_inat67765250_p109571794.jpg,tortoise,Texas tortoise,iNaturalist,1,0.9987,1,180 493 632 825,768,1024,2.99
+test/tortoise/inat-tortoise_inat68989459_p111845067.jpg,tortoise,Texas tortoise,iNaturalist,1,0.9995,1,17 369 271 740,498,1024,2.95
+test/tortoise/inat-tortoise_inat77338678_p126434787.jpg,tortoise,Texas tortoise,iNaturalist,1,0.9992,1,41 126 989 958,1024,1021,2.32
+test/tortoise/inat-tortoise_inat77503451_p126708599.jpg,tortoise,Texas tortoise,iNaturalist,1,0.9994,1,37 61 927 739,1024,869,2.39
+test/tortoise/inat-tortoise_inat80173568_p131379905.jpg,tortoise,Texas tortoise,iNaturalist,1,0.9996,1,318 261 624 571,1024,768,2.76
+test/tortoise/inat-tortoise_inat816680_p1030126.jpg,tortoise,Texas tortoise,iNaturalist,1,0.9999,1,131 242 259 341,426,568,2.59
+test/tortoise/inat-tortoise_inat84776616_p139375590.jpg,tortoise,Texas tortoise,iNaturalist,1,0.9949,1,310 489 528 824,768,1024,2.68
+test/tortoise/inat-tortoise_inat8804476_p11823863.jpg,tortoise,Texas tortoise,iNaturalist,1,0.9985,1,173 362 578 886,768,1024,2.63
+test/tortoise/inat-tortoise_inat88321385_p145708429.jpg,tortoise,Texas tortoise,iNaturalist,1,0.9988,1,190 196 903 593,1024,683,2.8
+test/tortoise/inat-tortoise_inat90337547_p149291400.jpg,tortoise,Texas tortoise,iNaturalist,1,0.9994,1,160 205 839 580,1024,797,2.49
+test/tortoise/inat-tortoise_inat90557736_p149677215.jpg,tortoise,Texas tortoise,iNaturalist,1,0.9996,1,174 245 699 518,1024,683,3.66
+test/tortoise/inat-tortoise_inat91717514_p151757016.jpg,tortoise,Texas tortoise,iNaturalist,1,0.9789,2,397 170 841 604,1024,683,3.45
+test/tortoise/inat-tortoise_inat94708694_p157140964.jpg,tortoise,Texas tortoise,iNaturalist,1,0.9996,1,224 157 805 591,1024,768,2.81
+test/tortoise/inat-tortoise_inat97489251_p162142025.jpg,tortoise,Texas tortoise,iNaturalist,1,0.9985,1,41 298 750 885,768,1024,2.71
+test/tortoise/inat-tortoise_inat98070563_p163209208.jpg,tortoise,Texas tortoise,iNaturalist,1,0.9965,1,194 210 710 617,1024,768,2.73
+test/tortoise/inat-tortoise_inat98304234_p163636339.jpg,tortoise,Texas tortoise,iNaturalist,1,0.9996,1,100 141 739 503,1024,683,3.12
+test/tortoise/inat-tortoise_inat98304246_p163636486.jpg,tortoise,Texas tortoise,iNaturalist,1,0.9999,1,108 141 806 565,1024,683,3.05
+test/tortoise/inat-tortoise_inat99718317_p166294796.jpg,tortoise,Texas tortoise,iNaturalist,1,0.9994,1,465 328 749 549,1024,768,2.79
+test/tortoise/inat-tortoise_inat99718593_p166295583.jpg,tortoise,Texas tortoise,iNaturalist,1,0.9969,1,249 140 982 595,1024,768,3.04

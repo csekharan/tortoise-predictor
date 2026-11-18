@@ -22,11 +22,19 @@ from html import escape
 HERE = os.path.dirname(os.path.abspath(__file__))
 RESULTS = os.path.join(HERE, "results")
 FIGURES = os.path.join(HERE, "figures")
+MANIFEST = os.path.join(os.path.dirname(HERE), "data", "texas_tortoise_composite", "manifest.csv")
 GEMINI_FILES = {"gem": "predictions_gemini-3.8-flash.csv", "neu": "predictions_gemini-3.8-flash_neutral.csv"}
 
-# The manifest labels this photo a tortoise, but it shows a bulldozer and a
-# pickup truck and no tortoise, so it is scored as a negative here.
-LABEL_FIXES = {"test/tortoise/inat-tortoise_inat50015197_p79414426.jpg": 0}
+# Hold-out groups (manifest "stratum" column) -> label in the false-alarm chart, in chart order.
+GROUPS = {
+    "animal_armadillo": "Armadillos",
+    "animal_pangolin": "Pangolins",
+    "animal_crab": "Crabs",
+    "animal_sea_creature": "Other sea creatures",
+    "none_vegetation": "Vegetation and bushes",
+    "none_dry_land": "Dry land",
+    "none_beach": "Beaches",
+}
 
 # Colour follows the method in every chart: blue = Gemini with the original
 # prompt, aqua = Gemini with the neutral prompt, orange = Mask R-CNN. These are
@@ -50,12 +58,12 @@ PAD = 32
 def load() -> list[dict]:
     gem = {k: {r["file"]: r for r in csv.DictReader(open(os.path.join(RESULTS, f), encoding="utf-8"))}
            for k, f in GEMINI_FILES.items()}
+    stratum = {r["file"]: r["stratum"] for r in csv.DictReader(open(MANIFEST, encoding="utf-8"))}
     rows = []
     for r in csv.DictReader(open(os.path.join(RESULTS, "predictions_maskrcnn.csv"), encoding="utf-8")):
         f = r["file"]
-        src = "South Texas" if "Kutugata" in r["source"] else ("Florida" if "NACTI" in r["source"] else "iNaturalist")
-        row = {"file": f, "truth": LABEL_FIXES.get(f, int(r["truth_positive"])),
-               "cls": r["truth_class"], "species": r["truth_species"], "src": src, "score": float(r["max_score"])}
+        row = {"file": f, "truth": int(r["truth_positive"]), "cls": r["truth_class"], "species": r["truth_species"],
+               "group": stratum[f], "score": float(r["max_score"])}
         for k, g in gem.items():
             row[k] = int(g[f]["pred_positive"])
             row[k + "_name"] = g[f]["pred_animal"]
@@ -203,8 +211,8 @@ def fig_confusion(theme, grid, n_pos, n_neg):
                                      "middle", 'fill-opacity="0.88"'))
         y = cells_top + 2 * ch + 40
     h = y - 4
-    body.append(text(PAD, h - 18, "Scored per image. One photo the manifest labels tortoise shows a bulldozer and a "
-                     "truck; it is counted as not a tortoise.", 11.5, t["muted"]))
+    body.append(text(PAD, h - 18, f"Scored per image. Not a tortoise: {n_neg} images, of look-alike animals "
+                     "and of scenes with no animal.", 11.5, t["muted"]))
     flat = [p for row in grid for p in row]
     return svg(theme, h, body, "Confusion matrices: Gemini zero-shot vs Mask R-CNN",
                "; ".join(f"{p[0]}, {p[1]}: {p[2]['TP']} found, {p[2]['FN']} missed, {p[2]['FP']} false alarms, "
@@ -213,35 +221,20 @@ def fig_confusion(theme, grid, n_pos, n_neg):
 
 # ---------------------------------------------------------------- figure 2
 
-SPECIES_NAMES = {"nine-banded armadillo": "Nine-banded armadillo", "feral hog": "Feral hog", "wild turkey": "Wild turkey",
-                 "deer": "Deer", "bird": "Bird", "bobcat": "Bobcat"}
 SERIES = ("gem", "neu", "mrc")
+GROUP_DETAIL = {"animal_sea_creature": "7 kinds", "none_vegetation": "no animal",
+                "none_dry_land": "no animal", "none_beach": "no animal"}
 
 
 def false_alarm_groups(rows):
-    groups: dict[str, list] = {}
-    for r in rows:
-        if r["truth"]:
-            continue
-        if r["file"] in LABEL_FIXES:
-            key = "Bulldozer photo (labeled tortoise)"
-        elif r["cls"] == "blank":
-            key = f"Empty frame, {r['src']}"
-        else:
-            key = r["species"]
-        g = groups.setdefault(key, {"n": 0, "gem": 0, "neu": 0, "mrc": 0})
-        g["n"] += 1
-        g["gem"] += r["gem"]
-        g["neu"] += r["neu"]
-        g["mrc"] += r["score"] > 0.5
-    flagged = lambda g: any(g[s] for s in SERIES)  # noqa: E731
-    folded = sorted(k for k, g in groups.items() if not flagged(g) and not k.startswith("Empty"))
-    out = [dict(name=SPECIES_NAMES.get(k, k[0].upper() + k[1:]), detail="", **g)
-           for k, g in groups.items() if k not in folded]
-    out.append(dict(name="Other animals", detail=", ".join(folded),
-                    **{f: sum(groups[k][f] for k in folded) for f in ("n",) + SERIES}))
-    out.sort(key=lambda g: (-g["mrc"], -g["gem"], -g["n"]))
-    return [g for g in out if flagged(g)] + [g for g in out if not flagged(g)]
+    """One row per hold-out group of non-tortoise images, in GROUPS order."""
+    out = []
+    for key, name in GROUPS.items():
+        neg = [r for r in rows if r["group"] == key and not r["truth"]]
+        out.append(dict(name=name, detail=GROUP_DETAIL.get(key, ""), n=len(neg),
+                        gem=sum(r["gem"] for r in neg), neu=sum(r["neu"] for r in neg),
+                        mrc=sum(r["score"] > 0.5 for r in neg)))
+    return out
 
 
 def fig_false_alarms(theme, groups, totals):
@@ -301,17 +294,18 @@ def fig_tradeoff(theme, rows, gem_c, neu_c, n_pos, n_neg):
                        ("mrc", "Mask R-CNN as its threshold varies", "line")], 100, step=230)
 
     left, right, top, bottom = PAD + 52, W - PAD - 20, 130, 470
-    xmax, ymin, ymax = 25, 138, 168
+    beyond = sum(1 - r["truth"] for r in rows if r["score"] > 0.05)
+    xmax, ymin, ymax = 10 * math.ceil(beyond / 10), 138, 168
     sx = lambda v: left + (right - left) * v / xmax  # noqa: E731
     sy = lambda v: bottom - (bottom - top) * (v - ymin) / (ymax - ymin)  # noqa: E731
-    for v in range(0, xmax + 1, 5):
+    for v in range(0, xmax + 1, 10):
         body.append(f'<line x1="{sx(v):.1f}" y1="{top}" x2="{sx(v):.1f}" y2="{bottom}" stroke="{t["grid"]}"/>')
         body.append(text(sx(v), bottom + 18, str(v), 12, t["muted"], anchor="middle"))
     for v in (140, 145, 150, 155, 160):
         body.append(f'<line x1="{left}" y1="{sy(v):.1f}" x2="{right}" y2="{sy(v):.1f}" stroke="{t["grid"]}"/>')
         body.append(text(left - 8, sy(v) + 4, str(v), 12, t["muted"], anchor="end"))
     body.append(f'<line x1="{left}" y1="{sy(n_pos):.1f}" x2="{right}" y2="{sy(n_pos):.1f}" stroke="{t["axis"]}"/>')
-    body.append(text(left - 8, sy(n_pos) + 4, f"{n_pos}", 12, t["ink2"], 600, "end"))
+    body.append(text(left - 14, sy(n_pos) + 4, f"{n_pos}", 12, t["ink2"], 600, "end"))
     body.append(f'<line x1="{left}" y1="{bottom}" x2="{right}" y2="{bottom}" stroke="{t["axis"]}"/>')
     body.append(text((left + right) / 2, bottom + 40, f"False alarms (of {n_neg} images without a tortoise)",
                      12.5, t["muted"], anchor="middle"))
@@ -330,8 +324,7 @@ def fig_tradeoff(theme, rows, gem_c, neu_c, n_pos, n_neg):
     body.append(f'<clipPath id="plot"><rect x="{left}" y="{top - 6}" width="{right - left}" height="{bottom - top + 6}"/></clipPath>')
     body.append(f'<path d="{d}" fill="none" stroke="{t["mrc"]}" stroke-width="2" stroke-linejoin="round" '
                 f'stroke-linecap="round" clip-path="url(#plot)"/>')
-    beyond = sum(1 - r["truth"] for r in rows if r["score"] > 0.05)
-    body.append(text(right, sy(n_pos) - 10, f"continues to {beyond} false alarms at threshold 0.05 →", 11.5,
+    body.append(text(sx(beyond) - 4, sy(n_pos) - 10, f"threshold 0.05: {beyond} false alarms", 11.5,
                      t["muted"], anchor="end"))
 
     def mark(thr, dx, dy, anchor="start"):
@@ -341,17 +334,22 @@ def fig_tradeoff(theme, rows, gem_c, neu_c, n_pos, n_neg):
         body.append(f'<circle cx="{cx:.1f}" cy="{cy:.1f}" r="4.5" fill="{t["mrc"]}" stroke="{t["surface"]}" stroke-width="2"/>')
         body.append(text(cx + dx, cy + dy, f"threshold {thr}", 12, t["ink"], 500, anchor))
         body.append(text(cx + dx, cy + dy + 15, f"{fp_} false alarms, {n_pos - tp_} missed", 11.5, t["ink2"], 400, anchor))
-    mark(0.5, 0, 24, "middle")
-    mark(0.85, 8, 24)
-    mark(0.95, 12, 30)
-    mark(0.99, 10, 24)
-    for c, key in ((gem_c, "gem"), (neu_c, "neu")):
-        body.append(f'<circle cx="{sx(c["FP"]):.1f}" cy="{sy(c["TP"]):.1f}" r="7" fill="{t[key]}" '
+    mark(0.5, 10, 24)
+    mark(0.85, 10, 24)
+    mark(0.95, 12, 26)
+    mark(0.99, 12, 26)
+    same = (gem_c["FP"], gem_c["TP"]) == (neu_c["FP"], neu_c["TP"])
+    # Where the two Gemini points coincide, the original prompt sits inside the neutral one.
+    for c, key, r in ((neu_c, "neu", 9 if same else 7), (gem_c, "gem", 5 if same else 7)):
+        body.append(f'<circle cx="{sx(c["FP"]):.1f}" cy="{sy(c["TP"]):.1f}" r="{r}" fill="{t[key]}" '
                     f'stroke="{t["surface"]}" stroke-width="2"/>')
     gy = sy(n_pos)
     body.append(text(left + 2, gy - 32, "Gemini, zero-shot", 12.5, t["ink"], 600))
-    body.append(text(left + 2, gy - 16, f"neutral prompt: {neu_c['FP']} false alarms  ·  original prompt: {gem_c['FP']}  ·  "
-                     f"none missed", 11.5, t["ink2"]))
+    if same:
+        body.append(text(left + 2, gy - 16, f"both prompts: {neu_c['FP']} false alarms, none missed", 11.5, t["ink2"]))
+    else:
+        body.append(text(left + 2, gy - 16, f"neutral prompt: {neu_c['FP']} false alarms  ·  original prompt: "
+                         f"{gem_c['FP']}  ·  none missed", 11.5, t["ink2"]))
     h = bottom + 64
     return svg(theme, h, body, "Threshold trade-off: Mask R-CNN vs Gemini",
                f"Gemini neutral prompt: {neu_c['FP']} false alarms, {neu_c['TP']} of {n_pos} found. Original prompt: "
