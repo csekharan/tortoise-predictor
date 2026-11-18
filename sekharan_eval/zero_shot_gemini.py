@@ -1,6 +1,6 @@
 """Zero-shot animal identification of the 274 hold-out images with Gemini Flash.
 
-For every image in texas_tortoise_composite/test/ the model is asked, with no
+For every image in data/texas_tortoise_composite/test/ the model is asked, with no
 training and no examples, whether an animal is present and, if so, which one.
 A prediction counts as POSITIVE when the model names a tortoise or turtle and
 NEGATIVE otherwise (another animal, or no animal). Ground truth comes from
@@ -19,6 +19,7 @@ Usage (PowerShell: $env:GEMINI_API_KEY="..."; cmd: set GEMINI_API_KEY=...):
     python zero_shot_gemini.py --workers 8         # more parallel requests
     python zero_shot_gemini.py --env-file ..\\some\\.env
     python zero_shot_gemini.py --model gemini-3.8-flash --thinking-level low
+    python zero_shot_gemini.py --prompt neutral    # no animal named, no tortoise question
 """
 from __future__ import annotations
 
@@ -38,28 +39,48 @@ import urllib.error
 import urllib.request
 
 HERE = os.path.dirname(os.path.abspath(__file__))
-DATA = os.path.join(HERE, "texas_tortoise_composite")
+REPO = os.path.dirname(HERE)
+DATA = os.path.join(REPO, "data", "texas_tortoise_composite")
 API = "https://generativelanguage.googleapis.com/v1beta/models/{model}:generateContent"
 
-PROMPT = (
-    "Look at this photograph. Is there an animal in it?\n"
-    "If yes, give the animal's common name as precisely as you can "
-    "(for example: Texas tortoise, box turtle, nine-banded armadillo, raccoon, "
-    "white-tailed deer, cattle, bird, feral hog, coyote).\n"
-    "If there is no animal, answer no animal.\n"
-    "Return JSON only."
-)
+# --prompt picks one of these. "original" is the prompt of the first run, kept
+# word for word so that run can be reproduced. It names "Texas tortoise" first
+# among its examples and asks a yes/no tortoise question, both of which can
+# nudge the model toward the target class. "neutral" names no animal and asks
+# nothing about tortoises: the model only says what it sees, and the tortoise
+# decision is made afterwards from the name it gave (POSITIVE_WORDS below).
+PROMPTS = {
+    "original": (
+        "Look at this photograph. Is there an animal in it?\n"
+        "If yes, give the animal's common name as precisely as you can "
+        "(for example: Texas tortoise, box turtle, nine-banded armadillo, raccoon, "
+        "white-tailed deer, cattle, bird, feral hog, coyote).\n"
+        "If there is no animal, answer no animal.\n"
+        "Return JSON only."
+    ),
+    "neutral": (
+        "Look at this photograph. Is there an animal in it?\n"
+        "If yes, give the animal's common name as precisely as you can.\n"
+        "If there is no animal, answer none.\n"
+        "Return JSON only."
+    ),
+}
 
 # Structured output: the model must return exactly these fields.
-SCHEMA = {
-    "type": "OBJECT",
-    "properties": {
-        "animal_present": {"type": "BOOLEAN"},
-        "animal": {"type": "STRING",
-                   "description": "Common name of the animal, or \"none\" if no animal."},
-        "is_tortoise_or_turtle": {"type": "BOOLEAN"},
+_PRESENT = {"type": "BOOLEAN"}
+_ANIMAL = {"type": "STRING", "description": "Common name of the animal, or \"none\" if no animal."}
+SCHEMAS = {
+    "original": {
+        "type": "OBJECT",
+        "properties": {"animal_present": _PRESENT, "animal": _ANIMAL,
+                       "is_tortoise_or_turtle": {"type": "BOOLEAN"}},
+        "required": ["animal_present", "animal", "is_tortoise_or_turtle"],
     },
-    "required": ["animal_present", "animal", "is_tortoise_or_turtle"],
+    "neutral": {
+        "type": "OBJECT",
+        "properties": {"animal_present": _PRESENT, "animal": _ANIMAL},
+        "required": ["animal_present", "animal"],
+    },
 }
 
 # Names that count as the positive class when the model's own flag is missing.
@@ -117,9 +138,10 @@ class Gemini:
     """Thin REST client: one image in, one JSON object out, with retries."""
 
     def __init__(self, key: str, model: str, temperature: float, thinking_level: str | None,
-                 timeout: float = 120.0, tries: int = 6):
+                 prompt: str = "original", timeout: float = 120.0, tries: int = 6):
         self.url = API.format(model=model)
         self.key = key
+        self.prompt = PROMPTS[prompt]
         self.timeout = timeout
         self.tries = tries
         self.usage = collections.Counter()
@@ -127,7 +149,7 @@ class Gemini:
         self.gen_config: dict = {
             "temperature": temperature,
             "responseMimeType": "application/json",
-            "responseSchema": SCHEMA,
+            "responseSchema": SCHEMAS[prompt],
             # Generous: on thinking models the thoughts count against this
             # limit, and a tight cap returns an empty answer (MAX_TOKENS).
             "maxOutputTokens": 4096,
@@ -141,7 +163,7 @@ class Gemini:
         body = json.dumps({
             "contents": [{"role": "user", "parts": [
                 {"inlineData": {"mimeType": mime_of(path), "data": data}},
-                {"text": PROMPT},
+                {"text": self.prompt},
             ]}],
             "generationConfig": self.gen_config,
         }).encode("utf-8")
@@ -227,11 +249,14 @@ def main() -> None:
     ap.add_argument("--workers", type=int, default=4, help="parallel requests (default 4)")
     ap.add_argument("--limit", type=int, default=0, help="only N images, drawn at random across classes (smoke test)")
     ap.add_argument("--seed", type=int, default=0, help="random seed for --limit")
-    ap.add_argument("--out", default=os.path.join(HERE, "zero_shot_results"))
+    ap.add_argument("--out", default=os.path.join(HERE, "results"))
     ap.add_argument("--env-file", help="read the API key from a KEY=VALUE file")
     ap.add_argument("--temperature", type=float, default=0.0)
     ap.add_argument("--thinking-level", choices=["minimal", "low", "medium", "high"],
                     help="send thinkingConfig.thinkingLevel (Gemini 3 models); default: not sent, model default")
+    ap.add_argument("--prompt", choices=sorted(PROMPTS), default="original",
+                    help="original: the first run's prompt (lists Texas tortoise first, asks a tortoise yes/no); "
+                         "neutral: names no animal, tortoise decided from the name the model gives")
     ap.add_argument("--fresh", action="store_true", help="ignore earlier results and score every image again")
     args = ap.parse_args()
 
@@ -250,7 +275,8 @@ def main() -> None:
     order = {r["file"]: i for i, r in enumerate(rows)}
 
     os.makedirs(args.out, exist_ok=True)
-    tag = re.sub(r"[^A-Za-z0-9.-]+", "_", args.model)
+    # The original prompt keeps the first run's file names; other prompts get a suffix.
+    tag = re.sub(r"[^A-Za-z0-9.-]+", "_", args.model) + ("" if args.prompt == "original" else f"_{args.prompt}")
     pred_csv = os.path.join(args.out, f"predictions_{tag}.csv")
     metrics_json = os.path.join(args.out, f"metrics_{tag}.json")
 
@@ -263,9 +289,9 @@ def main() -> None:
                     done[r["file"]] = r
     todo = [r for r in rows if r["file"] not in done]
     print(f"{len(rows)} hold-out images, {len(done)} already answered, {len(todo)} to send "
-          f"to {args.model} with {args.workers} workers", flush=True)
+          f"to {args.model} ({args.prompt} prompt) with {args.workers} workers", flush=True)
 
-    client = Gemini(key, args.model, args.temperature, args.thinking_level)
+    client = Gemini(key, args.model, args.temperature, args.thinking_level, args.prompt)
     lock = threading.Lock()
     stop = threading.Event()
     fatal: list[str] = []
@@ -330,7 +356,8 @@ def main() -> None:
     tp, tn, fp, fn = c["TP"], c["TN"], c["FP"], c["FN"]
     div = lambda a, b: round(a / b, 4) if b else None  # noqa: E731
     metrics = {
-        "model": args.model, "temperature": args.temperature, "thinking_level": args.thinking_level,
+        "model": args.model, "prompt_variant": args.prompt, "prompt": PROMPTS[args.prompt],
+        "temperature": args.temperature, "thinking_level": args.thinking_level,
         "images_scored": len(recs), "errors": errors,
         "positive": "tortoise or turtle", "negative": "any other animal, or no animal",
         "TP": tp, "TN": tn, "FP": fp, "FN": fn,
@@ -351,7 +378,7 @@ def main() -> None:
     with open(metrics_json, "w", encoding="utf-8") as f:
         json.dump(metrics, f, indent=2, ensure_ascii=False)
 
-    print("\n=== Zero-shot results:", args.model, "===")
+    print(f"\n=== Zero-shot results: {args.model}, {args.prompt} prompt ===")
     print(f"scored {len(recs)} of {len(rows)} images" + (f", {errors} errors (run again to retry them)" if errors else ""))
     print(f"TP={tp}  TN={tn}  FP={fp}  FN={fn}")
     for k in ("accuracy", "precision", "recall_sensitivity", "specificity", "f1"):

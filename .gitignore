@@ -1,0 +1,11 @@
+# Images of the composite set (1.6 GB) stay out of git. Its manifest, README and
+# build scripts are tracked, so the images can be rebuilt with
+# data/texas_tortoise_composite/build_tortoise_dataset.py.
+/data/texas_tortoise_composite/train/
+/data/texas_tortoise_composite/test/
+
+# Run logs print local file paths; the CSV and JSON results hold everything else.
+*.log
+*.part
+__pycache__/
+.env

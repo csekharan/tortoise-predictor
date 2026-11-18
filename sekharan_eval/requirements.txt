@@ -1,0 +1,5 @@
+# zero_shot_gemini.py and compare_models.py use the Python standard library only.
+# eval_maskrcnn.py needs these (CPU builds are enough):
+torch
+torchvision
+pillow

@@ -1,0 +1,330 @@
+{
+  "model": "tortoisemodel.keras (Mask R-CNN ResNet-50 FPN, Tleimat et al. 2026)",
+  "device": "cpu",
+  "torch": "2.15.0+cpu",
+  "torchvision": "0.29.2+cpu",
+  "images_scored": 274,
+  "scoring": "image level: positive if any tortoise detection scores above the threshold",
+  "threshold": 0.5,
+  "TP": 165,
+  "TN": 92,
+  "FP": 17,
+  "FN": 0,
+  "accuracy": 0.938,
+  "precision": 0.9066,
+  "recall_sensitivity": 1.0,
+  "specificity": 0.844,
+  "false_positive_rate": 0.156,
+  "f1": 0.951,
+  "roc_auc": 0.9979,
+  "median_seconds_per_image": 3.04,
+  "seconds_this_run": 854.3,
+  "threshold_sweep": [
+    {
+      "threshold": 0.05,
+      "TP": 165,
+      "TN": 43,
+      "FP": 66,
+      "FN": 0,
+      "accuracy": 0.7591,
+      "precision": 0.7143,
+      "recall_sensitivity": 1.0,
+      "specificity": 0.3945,
+      "false_positive_rate": 0.6055,
+      "f1": 0.8333
+    },
+    {
+      "threshold": 0.1,
+      "TP": 165,
+      "TN": 48,
+      "FP": 61,
+      "FN": 0,
+      "accuracy": 0.7774,
+      "precision": 0.7301,
+      "recall_sensitivity": 1.0,
+      "specificity": 0.4404,
+      "false_positive_rate": 0.5596,
+      "f1": 0.844
+    },
+    {
+      "threshold": 0.15,
+      "TP": 165,
+      "TN": 52,
+      "FP": 57,
+      "FN": 0,
+      "accuracy": 0.792,
+      "precision": 0.7432,
+      "recall_sensitivity": 1.0,
+      "specificity": 0.4771,
+      "false_positive_rate": 0.5229,
+      "f1": 0.8527
+    },
+    {
+      "threshold": 0.2,
+      "TP": 165,
+      "TN": 58,
+      "FP": 51,
+      "FN": 0,
+      "accuracy": 0.8139,
+      "precision": 0.7639,
+      "recall_sensitivity": 1.0,
+      "specificity": 0.5321,
+      "false_positive_rate": 0.4679,
+      "f1": 0.8661
+    },
+    {
+      "threshold": 0.25,
+      "TP": 165,
+      "TN": 60,
+      "FP": 49,
+      "FN": 0,
+      "accuracy": 0.8212,
+      "precision": 0.771,
+      "recall_sensitivity": 1.0,
+      "specificity": 0.5505,
+      "false_positive_rate": 0.4495,
+      "f1": 0.8707
+    },
+    {
+      "threshold": 0.3,
+      "TP": 165,
+      "TN": 60,
+      "FP": 49,
+      "FN": 0,
+      "accuracy": 0.8212,
+      "precision": 0.771,
+      "recall_sensitivity": 1.0,
+      "specificity": 0.5505,
+      "false_positive_rate": 0.4495,
+      "f1": 0.8707
+    },
+    {
+      "threshold": 0.35,
+      "TP": 165,
+      "TN": 60,
+      "FP": 49,
+      "FN": 0,
+      "accuracy": 0.8212,
+      "precision": 0.771,
+      "recall_sensitivity": 1.0,
+      "specificity": 0.5505,
+      "false_positive_rate": 0.4495,
+      "f1": 0.8707
+    },
+    {
+      "threshold": 0.4,
+      "TP": 165,
+      "TN": 90,
+      "FP": 19,
+      "FN": 0,
+      "accuracy": 0.9307,
+      "precision": 0.8967,
+      "recall_sensitivity": 1.0,
+      "specificity": 0.8257,
+      "false_positive_rate": 0.1743,
+      "f1": 0.9456
+    },
+    {
+      "threshold": 0.45,
+      "TP": 165,
+      "TN": 91,
+      "FP": 18,
+      "FN": 0,
+      "accuracy": 0.9343,
+      "precision": 0.9016,
+      "recall_sensitivity": 1.0,
+      "specificity": 0.8349,
+      "false_positive_rate": 0.1651,
+      "f1": 0.9483
+    },
+    {
+      "threshold": 0.5,
+      "TP": 165,
+      "TN": 92,
+      "FP": 17,
+      "FN": 0,
+      "accuracy": 0.938,
+      "precision": 0.9066,
+      "recall_sensitivity": 1.0,
+      "specificity": 0.844,
+      "false_positive_rate": 0.156,
+      "f1": 0.951
+    },
+    {
+      "threshold": 0.55,
+      "TP": 165,
+      "TN": 94,
+      "FP": 15,
+      "FN": 0,
+      "accuracy": 0.9453,
+      "precision": 0.9167,
+      "recall_sensitivity": 1.0,
+      "specificity": 0.8624,
+      "false_positive_rate": 0.1376,
+      "f1": 0.9565
+    },
+    {
+      "threshold": 0.6,
+      "TP": 165,
+      "TN": 94,
+      "FP": 15,
+      "FN": 0,
+      "accuracy": 0.9453,
+      "precision": 0.9167,
+      "recall_sensitivity": 1.0,
+      "specificity": 0.8624,
+      "false_positive_rate": 0.1376,
+      "f1": 0.9565
+    },
+    {
+      "threshold": 0.65,
+      "TP": 165,
+      "TN": 95,
+      "FP": 14,
+      "FN": 0,
+      "accuracy": 0.9489,
+      "precision": 0.9218,
+      "recall_sensitivity": 1.0,
+      "specificity": 0.8716,
+      "false_positive_rate": 0.1284,
+      "f1": 0.9593
+    },
+    {
+      "threshold": 0.7,
+      "TP": 165,
+      "TN": 97,
+      "FP": 12,
+      "FN": 0,
+      "accuracy": 0.9562,
+      "precision": 0.9322,
+      "recall_sensitivity": 1.0,
+      "specificity": 0.8899,
+      "false_positive_rate": 0.1101,
+      "f1": 0.9649
+    },
+    {
+      "threshold": 0.75,
+      "TP": 165,
+      "TN": 100,
+      "FP": 9,
+      "FN": 0,
+      "accuracy": 0.9672,
+      "precision": 0.9483,
+      "recall_sensitivity": 1.0,
+      "specificity": 0.9174,
+      "false_positive_rate": 0.0826,
+      "f1": 0.9735
+    },
+    {
+      "threshold": 0.8,
+      "TP": 165,
+      "TN": 102,
+      "FP": 7,
+      "FN": 0,
+      "accuracy": 0.9745,
+      "precision": 0.9593,
+      "recall_sensitivity": 1.0,
+      "specificity": 0.9358,
+      "false_positive_rate": 0.0642,
+      "f1": 0.9792
+    },
+    {
+      "threshold": 0.85,
+      "TP": 165,
+      "TN": 103,
+      "FP": 6,
+      "FN": 0,
+      "accuracy": 0.9781,
+      "precision": 0.9649,
+      "recall_sensitivity": 1.0,
+      "specificity": 0.945,
+      "false_positive_rate": 0.055,
+      "f1": 0.9821
+    },
+    {
+      "threshold": 0.9,
+      "TP": 164,
+      "TN": 104,
+      "FP": 5,
+      "FN": 1,
+      "accuracy": 0.9781,
+      "precision": 0.9704,
+      "recall_sensitivity": 0.9939,
+      "specificity": 0.9541,
+      "false_positive_rate": 0.0459,
+      "f1": 0.982
+    },
+    {
+      "threshold": 0.95,
+      "TP": 162,
+      "TN": 106,
+      "FP": 3,
+      "FN": 3,
+      "accuracy": 0.9781,
+      "precision": 0.9818,
+      "recall_sensitivity": 0.9818,
+      "specificity": 0.9725,
+      "false_positive_rate": 0.0275,
+      "f1": 0.9818
+    }
+  ],
+  "flagged_by_true_label_and_source": {
+    "blank [Kutugata]": {
+      "not flagged": 19,
+      "flagged": 2
+    },
+    "blank [NACTI]": {
+      "not flagged": 44
+    },
+    "other_animal: bird [NACTI]": {
+      "flagged": 1,
+      "not flagged": 1
+    },
+    "other_animal: bobcat [NACTI]": {
+      "not flagged": 2,
+      "flagged": 1
+    },
+    "other_animal: cattle [NACTI]": {
+      "not flagged": 2
+    },
+    "other_animal: coyote [NACTI]": {
+      "not flagged": 3
+    },
+    "other_animal: deer [Kutugata]": {
+      "not flagged": 1
+    },
+    "other_animal: deer [NACTI]": {
+      "flagged": 2,
+      "not flagged": 1
+    },
+    "other_animal: feral hog [NACTI]": {
+      "flagged": 3
+    },
+    "other_animal: nilgai [Kutugata]": {
+      "not flagged": 2
+    },
+    "other_animal: nine-banded armadillo [NACTI]": {
+      "not flagged": 4,
+      "flagged": 4
+    },
+    "other_animal: nine-banded armadillo [iNaturalist]": {
+      "flagged": 2,
+      "not flagged": 6
+    },
+    "other_animal: opossum [NACTI]": {
+      "not flagged": 2
+    },
+    "other_animal: rabbit [NACTI]": {
+      "not flagged": 2
+    },
+    "other_animal: raccoon [NACTI]": {
+      "not flagged": 3
+    },
+    "other_animal: wild turkey [NACTI]": {
+      "flagged": 2
+    },
+    "tortoise [iNaturalist]": {
+      "flagged": 165
+    }
+  }
+}
