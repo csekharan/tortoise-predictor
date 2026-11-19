@@ -1,6 +1,6 @@
 # Finding Texas tortoises in images: a trained Mask R-CNN vs. zero-shot Gemini
 
-Texas tortoises (*Gopherus berlandieri*) hide in thick brush and are hard to survey by eye, so researchers set time-lapse camera traps that produce huge numbers of frames, almost none of which show a tortoise. Tleimat, Krell and McCracken (2026) trained a Mask R-CNN to find tortoises in those frames and released it.
+Texas tortoises (*Gopherus berlandieri*) hide in thick brush and are hard to survey by eye, so researchers set time-lapse camera traps that produce huge numbers of frames, almost none of which show a tortoise. [Tleimat, Krell and McCracken (2026)](#references) trained a Mask R-CNN to find tortoises in those frames and released it.
 
 This repository asks whether a general-purpose multimodal model can do the same job **with no training at all**. It runs the released Mask R-CNN and Gemini 3.8 Flash on the same 274 hold-out images and compares the results. The hold-out set has the paper's counts: 165 tortoises, 65 photos of coastal grasses and shrubs with no animal in them, and 44 photos of animals that could pass for a tortoise.
 
@@ -43,7 +43,7 @@ flowchart LR
 
 | | Original: Mask R-CNN | New: zero-shot Gemini |
 |---|---|---|
-| **Model** | Mask R-CNN with a ResNet-50 FPN backbone, pretrained on COCO and fine-tuned for one class, "tortoise" | Gemini 3.8 Flash, a general multimodal model, used as is |
+| **Model** | Mask R-CNN (He et al. 2017) with a ResNet-50 (He et al. 2016) and feature-pyramid (Lin et al. 2017) backbone, pretrained on COCO (Lin et al. 2014) and fine-tuned for one class, "tortoise": transfer learning | Gemini 3.8 Flash (Google 2026), a general multimodal model, used as is |
 | **What it needs** | 2,705 training images with every tortoise outlined by hand | Nothing: no training and no example images |
 | **Output per image** | Tortoise outlines and boxes, each with a confidence score | A JSON answer: is there an animal, and what is it |
 | **Called a tortoise when** | Any detection scores above a threshold (0.5 by default) | The answer names a tortoise or turtle |
@@ -129,9 +129,9 @@ No iNaturalist photographer has images in both splits. The training split has th
 | Mask R-CNN, threshold 0.85 (paper's best F1) | 165 | 0 | 22 | 0.882 | 1.000 | 0.938 | 0.920 | 20.2% (13.1–28.9%) |
 | Mask R-CNN, threshold 0.95 | 162 | 3 | 14 | 0.920 | 0.982 | 0.950 | 0.938 | 12.8% (7.2–20.6%) |
 
-Intervals are exact Clopper–Pearson intervals. On the 109 images without a tortoise, Mask R-CNN at 0.5 flagged 40 that Gemini did not, and Gemini flagged none that Mask R-CNN did not. The gap is far beyond chance: exact McNemar test, p < 10⁻¹¹ for either prompt.
+Intervals are exact Clopper–Pearson intervals (Clopper and Pearson 1934). On the 109 images without a tortoise, Mask R-CNN at 0.5 flagged 40 that Gemini did not, and Gemini flagged none that Mask R-CNN did not. The gap is far beyond chance: exact McNemar test (McNemar 1947), p < 10⁻¹¹ for either prompt.
 
-For context, the paper reports this same model on its own trail-camera hold-out set, at threshold 0.5 and counting each tortoise whose box overlaps the drawn outline: precision 0.93, recall 0.83, accuracy 0.86, false-positive rate 0.09 and F1 0.88 (Table 3). Recall is higher here because every tortoise is a clear hand-held photo. The false-positive rate is higher because these negatives were picked to look like tortoises, while the paper's were frames from its own cameras. See [Limits](#limits).
+For context, the paper (Tleimat et al. 2026) reports this same model on its own trail-camera hold-out set, at threshold 0.5 and counting each tortoise whose box overlaps the drawn outline: precision 0.93, recall 0.83, accuracy 0.86, false-positive rate 0.09 and F1 0.88 (Table 3). Recall is higher here because every tortoise is a clear hand-held photo. The false-positive rate is higher because these negatives were picked to look like tortoises, while the paper's were frames from its own cameras. See [Limits](#limits).
 
 ### Where the false alarms come from
 
@@ -185,7 +185,7 @@ Asked a yes-or-no tortoise question, Gemini does not need the hint. To name the 
 
 | | Mask R-CNN | Gemini, original prompt | Gemini, neutral prompt |
 |---|---|---|---|
-| **Where it ran** | Laptop CPU (Intel Core i7-1255U), PyTorch, offline | Gemini API | Gemini API |
+| **Where it ran** | Laptop CPU (Intel Core i7-1255U), PyTorch (Ansel et al. 2024) and TorchVision, offline | Gemini API | Gemini API |
 | **Time per image** (median) | 2.9 s | 4.8 s per request | 4.8 s per request |
 | **All 274 images** | about 13 min of compute | about 6 min, 4 requests at a time | about 6.5 min, 4 requests at a time |
 | **Tokens per image** | none | about 1,400 | about 1,450 |
@@ -244,9 +244,25 @@ tortoise-predictor/
 
 ## Credits and licences
 
-- **Original detector:** Tleimat JM, Krell E, McCracken SF. 2026. Needle in a haystack: towards the use of machine learning to detect Texas tortoises in large datasets. *Amphibian & Reptile Conservation* 20(1): 67–81 (e356). Code and weights from [github.com/jtleimat/tortoise-predictor](https://github.com/jtleimat/tortoise-predictor), MIT licence ([`tleimat_original/LICENSE`](tleimat_original/LICENSE)).
+- **Original detector:** code and weights from [github.com/jtleimat/tortoise-predictor](https://github.com/jtleimat/tortoise-predictor) (Tleimat et al. 2026), MIT licence ([`tleimat_original/LICENSE`](tleimat_original/LICENSE)).
 - **Images:** each image keeps its own licence. `manifest.csv` gives the licence, credit line and source page for every image.
   - iNaturalist photos are under their photographers' Creative Commons licences. Most are non-commercial, so the image set as a whole is for research use.
-  - Training-set trail-camera frames: NACTI (Tabak MA et al. 2019, *Methods in Ecology and Evolution* 10(4): 585–590, via LILA BC, CDLA-Permissive-1.0) and the South Texas sample of Kutugata M et al. 2021 (*Journal of Fish and Wildlife Management* 12(2): 412–421, MIT licence).
+  - Training-set trail-camera frames: NACTI (Tabak et al. 2019), via LILA BC under the CDLA-Permissive-1.0 licence, and the South Texas sample of Kutugata et al. (2021), MIT licence.
 
   See [`data/texas_tortoise_composite/README.md`](data/texas_tortoise_composite/README.md) for details.
+
+## References
+
+- Ansel J, Yang E, He H, Gimelshein N, Jain A, Voznesensky M, Bao B, Bell P, Berard D, Burovski E, Chauhan G, et al. 2024. PyTorch 2: faster machine learning through dynamic Python bytecode transformation and graph compilation. Pp. 929–947 In: *Proceedings of the 29th ACM International Conference on Architectural Support for Programming Languages and Operating Systems (ASPLOS '24), Volume 2*. Association for Computing Machinery, New York.
+- Clopper CJ, Pearson ES. 1934. The use of confidence or fiducial limits illustrated in the case of the binomial. *Biometrika* 26(4): 404–413.
+- Google. 2026. Gemini 3.8 Flash, used through the Gemini API (`generativelanguage.googleapis.com`), November 2026. [ai.google.dev](https://ai.google.dev/).
+- He K, Gkioxari G, Dollár P, Girshick R. 2017. Mask R-CNN. Pp. 2961–2969 In: *Proceedings of the IEEE International Conference on Computer Vision (ICCV)*, Venice. IEEE.
+- He K, Zhang X, Ren S, Sun J. 2016. Deep residual learning for image recognition. Pp. 770–778 In: *Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition (CVPR)*, Las Vegas. IEEE.
+- iNaturalist. Observations of *Gopherus berlandieri*, coastal plants, armadillos, pangolins, crabs and sea creatures. [www.inaturalist.org](https://www.inaturalist.org), accessed November 2026.
+- Kutugata M, Baumgardt J, Goolsby JA, Racelis AE. 2021. Automatic camera-trap classification using wildlife-specific deep learning in nilgai management. *Journal of Fish and Wildlife Management* 12(2): 412–421. Images from [github.com/mkutu/Nilgai](https://github.com/mkutu/Nilgai).
+- Lin TY, Dollár P, Girshick R, He K, Hariharan B, Belongie S. 2017. Feature pyramid networks for object detection. Pp. 2117–2125 In: *Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition (CVPR)*, Honolulu. IEEE.
+- Lin TY, Maire M, Belongie S, Hays J, Perona P, Ramanan D, Dollár P, Zitnick CL. 2014. Microsoft COCO: common objects in context. Pp. 740–755 In: *Computer Vision – ECCV 2014, 13th European Conference*, Zurich. Springer.
+- McNemar Q. 1947. Note on the sampling error of the difference between correlated proportions or percentages. *Psychometrika* 12(2): 153–157.
+- Tabak MA, Norouzzadeh MS, Wolfson DW, Sweeney SJ, VerCauteren KC, Snow NP, et al. 2019. Machine learning to classify animal species in camera trap images: applications in ecology. *Methods in Ecology and Evolution* 10(4): 585–590. Images (NACTI) from [lila.science/datasets/nacti](https://lila.science/datasets/nacti/).
+- Tleimat JM, Krell E, McCracken SF. 2026. Needle in a haystack: towards the use of machine learning to detect Texas tortoises in large datasets. *Amphibian & Reptile Conservation* 20(1): 67–81 (e356).
+- TorchVision maintainers and contributors. 2016. TorchVision: PyTorch's computer vision library. [github.com/pytorch/vision](https://github.com/pytorch/vision).
