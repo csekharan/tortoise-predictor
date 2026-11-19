@@ -198,6 +198,30 @@ Asked a yes-or-no tortoise question, Gemini does not need the hint. To name the 
 
 The three runs shared one laptop and one network connection at the same time, so the times are rough. The token counts come from the first full runs with the same prompts, on the earlier version of the image set. The scripts record usage per run, and the last runs only scored the three replaced images. A GPU would make Mask R-CNN much faster; that was not measured here.
 
+## Merits of the zero-shot approach
+
+The paper's detector answers one question: is there a tortoise, and where? Gemini also says what each animal is. The paper compared its detector (the "TT model") with two existing classifiers that do name animals, and neither one named the Texas tortoise reliably (Tleimat et al. 2026, Table 4, on the paper's own trail-camera test set):
+
+| Model | What it outputs | How often it called a Texas tortoise a tortoise | Source |
+|---|---|---|---|
+| Texas tortoise Mask R-CNN (TT, model M4) | one class, "tortoise", with a score and an outline; nothing about other animals | 139 of 167 (83%) | paper, Table 4 |
+| Wildlife Insights (WI; Ahumada et al. 2020) | species labels from a large multi-species classifier | 27 of 174 (16%); 116 of 168 (69%) if any animal label counts | paper, Table 4 |
+| South Texas wildlife model (ST; Kutugata et al. 2021) | labels for South Texas species | 0 of 163; 99 of 163 (61%) if any animal label counts | paper, Table 4 |
+| **Gemini 3.8 Flash, zero-shot** | **a free-text common name for any animal** | **165 of 165** as a tortoise; **155** as "Texas tortoise" (original prompt), 57 (neutral prompt) | this repository |
+
+The first three rows come from the paper's trail-camera images and the last from this repository's hand-held photos, so the rows show what each model can output more than which is more accurate.
+
+What naming adds:
+- **Every negative gets a name too.** Mask R-CNN's 40 false alarms here come with only a score. Gemini called the same images "nine-banded armadillo", "pangolin", "blue crab" or "horseshoe crab", so a reviewer can see at a glance why an image is not a tortoise.
+- **The other animals become data.** A survey that pages through millions of frames for tortoises also gets armadillo, hog or crab records from the same pass. A single-class detector throws those away.
+- **No training set, no outlines.** The TT model needed 2,705 images with every tortoise outlined by hand. WI and ST were trained on large labelled collections, and the paper notes that WI also requires data sharing and can cost money. Gemini needs neither.
+- **A new target is a new sentence.** Looking for box turtles or gopher tortoises means editing the prompt, not collecting and outlining a new training set. This repository has not tested that beyond the two prompts above.
+
+What it costs:
+- **Images go to Google.** Like WI, it is an outside service with a per-image price, and it needs an internet connection. The released detector runs offline.
+- **The right species name depends on the prompt.** Without "Texas tortoise" among the examples, Gemini named the species correctly only 57 times in 165, though it still called every one a tortoise.
+- **The model can change.** A hosted model may be updated, so results may not reproduce exactly later. The released weights never change.
+
 ## Limits
 
 - **No trail-camera tortoises.** Every image here is a hand-held photo, and most tortoises are clear close-ups. Real survey frames are trail-camera pictures, and their hard cases are untested for both methods: tortoises far away, partly hidden or cut off at the frame edge.
@@ -259,6 +283,7 @@ tortoise-predictor/
 
 ## References
 
+- Ahumada JA, Fegraus E, Birch T, Flores N, Kays R, O'Brien TG, Palmer J, Schuttler S, Zhao JY, Jetz W, Kinnaird M. 2020. Wildlife Insights: a platform to maximize the potential of camera trap and other passive sensor wildlife data for the planet. *Environmental Conservation* 47(1): 1–6.
 - Ansel J, Yang E, He H, Gimelshein N, Jain A, Voznesensky M, Bao B, Bell P, Berard D, Burovski E, Chauhan G, et al. 2024. PyTorch 2: faster machine learning through dynamic Python bytecode transformation and graph compilation. Pp. 929–947 In: *Proceedings of the 29th ACM International Conference on Architectural Support for Programming Languages and Operating Systems (ASPLOS '24), Volume 2*. Association for Computing Machinery, New York.
 - Clopper CJ, Pearson ES. 1934. The use of confidence or fiducial limits illustrated in the case of the binomial. *Biometrika* 26(4): 404–413.
 - Google. 2026. Gemini 3.8 Flash, used through the Gemini API (`generativelanguage.googleapis.com`), November 2026. [ai.google.dev](https://ai.google.dev/).
