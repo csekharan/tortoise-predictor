@@ -4,14 +4,20 @@ Texas tortoises (*Gopherus berlandieri*) hide in thick brush and are hard to sur
 
 This repository asks whether a general-purpose multimodal model can do the same job **with no training at all**. It runs the released Mask R-CNN and Gemini 3.8 Flash on the same 274 hold-out images and compares the results. The hold-out set has the paper's counts: 165 tortoises, 65 photos of coastal grasses and shrubs with no animal in them, and 44 photos of animals that could pass for a tortoise.
 
+> [!IMPORTANT]
+> **Nothing is trained in this repository.** Both methods are only run, and only on the 274 hold-out images.
+> - **Mask R-CNN uses Tleimat et al.'s released weights, as is.** The file is [`tleimat_original/tortoisemodel.keras`](tleimat_original/tortoisemodel.keras); despite the `.keras` name, it is a PyTorch weights file. It is loaded the same way the authors' own [`tortoise_predictor.py`](tleimat_original/tortoise_predictor.py) loads it, with no retraining or fine-tuning. The authors trained it on their own unpublished images, starting from a model pretrained on COCO (transfer learning).
+> - **Gemini gets no training and no example images.**
+> - **The training split in [`data/texas_tortoise_composite/train/`](data/texas_tortoise_composite/train/) is not used by either method.** It mirrors the paper's training-set counts for anyone who wants to retrain or try few-shot prompting later.
+
 ## At a glance
 
-| | Mask R-CNN, trained | Gemini, original prompt | Gemini, neutral prompt |
+| | Mask R-CNN, authors' released weights | Gemini, original prompt | Gemini, neutral prompt |
 |---|:---:|:---:|:---:|
 | **Tortoises found** (of 165) | **165** | **165** | **165** |
 | **False alarms** (of 109 images without a tortoise) | 40 at threshold 0.5<br/>22 at 0.85 | **0** | **0** |
 | **Species named correctly** | does not name species | 155 (94%) | 57 (35%) |
-| **Training images needed** | 2,705, every tortoise outlined by hand | none | none |
+| **Training images needed** | 2,705, every tortoise outlined by hand, used by the authors to make the weights; none used here | none | none |
 | **Time for 274 images** | about 13 min, laptop CPU | about 6 min, API | about 6.5 min, API |
 | **Runs offline** | yes | no | no |
 
@@ -29,7 +35,7 @@ flowchart LR
     img["Image<br/>camera trap or phone"]
     subgraph og ["Original: trained Mask R-CNN (Tleimat et al. 2026)"]
         direction LR
-        m1["Mask R-CNN, ResNet-50 FPN<br/>fine-tuned on 2,705 labelled images"] --> m2["Tortoise outlines<br/>with confidence scores"] --> m3{"Any score<br/>above 0.5?"}
+        m1["Mask R-CNN, ResNet-50 FPN<br/>authors' released weights<br/>tortoisemodel.keras, not retrained"] --> m2["Tortoise outlines<br/>with confidence scores"] --> m3{"Any score<br/>above 0.5?"}
     end
     subgraph new ["New: zero-shot Gemini 3.8 Flash"]
         direction LR
@@ -44,7 +50,7 @@ flowchart LR
 | | Original: Mask R-CNN | New: zero-shot Gemini |
 |---|---|---|
 | **Model** | Mask R-CNN (He et al. 2017) with a ResNet-50 (He et al. 2016) and feature-pyramid (Lin et al. 2017) backbone, pretrained on COCO (Lin et al. 2014) and fine-tuned for one class, "tortoise": transfer learning | Gemini 3.8 Flash (Google 2026), a general multimodal model, used as is |
-| **What it needs** | 2,705 training images with every tortoise outlined by hand | Nothing: no training and no example images |
+| **What it needs** | The authors trained it on 2,705 of their own images, with every tortoise outlined by hand. Here their released weights (`tortoisemodel.keras`) are only run, not retrained | Nothing: no training and no example images |
 | **Output per image** | Tortoise outlines and boxes, each with a confidence score | A JSON answer: is there an animal, and what is it |
 | **Called a tortoise when** | Any detection scores above a threshold (0.5 by default) | The answer names a tortoise or turtle |
 | **Runs on** | Your own computer, offline | Google's API, with an internet connection and an API key |
@@ -117,7 +123,7 @@ Four images were replaced after the first runs, and all three methods then score
 
 None of these was a tortoise call, so Gemini's results did not change. To keep the check even-handed, every vegetation photo Mask R-CNN called a tortoise got the same second look; none hid an animal.
 
-No iNaturalist photographer has images in both splits. The training split has the paper's counts for model M4 (1,332 / 420 / 953). Its tortoises are iNaturalist photos, and most of its other images are trail-camera frames. It is there for anyone who wants to retrain the detector or try few-shot prompting; neither method here uses it. See [the data README](data/texas_tortoise_composite/README.md) for every source, rule and licence.
+No iNaturalist photographer has images in both splits. **Neither method uses the training split.** It has the paper's counts for model M4 (1,332 / 420 / 953). Its tortoises are iNaturalist photos, and most of its other images are trail-camera frames. It is there for anyone who wants to retrain the detector or try few-shot prompting. See [the data README](data/texas_tortoise_composite/README.md) for every source, rule and licence.
 
 ## Results
 
